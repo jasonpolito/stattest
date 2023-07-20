@@ -14,8 +14,8 @@ tabs:
           -
             handle: related_doctors
             field:
-              mode: default
-              create: true
+              mode: select
+              create: false
               collections:
                 - doctors
               type: entries

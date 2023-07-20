@@ -14,8 +14,8 @@ tabs:
           -
             handle: related_locations
             field:
-              mode: default
-              create: true
+              mode: select
+              create: false
               type: entries
               display: Locations
               icon: entries
