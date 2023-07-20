@@ -1,0 +1,17 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: color_primary
+            field:
+              allow_any: true
+              type: color
+              display: 'Primary Color'
+              icon: color
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false

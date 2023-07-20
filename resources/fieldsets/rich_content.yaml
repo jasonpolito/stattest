@@ -1,0 +1,238 @@
+title: Blocks
+fields:
+  -
+    handle: content
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - h1
+        - h4
+        - underline
+        - strikethrough
+        - alignleft
+        - aligncenter
+        - alignright
+      smart_typography: false
+      save_html: false
+      inline: false
+      toolbar_mode: fixed
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: false
+      antlers: true
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      sets:
+        blocks:
+          display: Blocks
+          instructions: null
+          icon: layout-flip-down
+          sets:
+            hero:
+              display: Hero
+              instructions: null
+              icon: layout-flip-down
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: true
+                    type: text
+                    display: Title
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: content
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    smart_typography: false
+                    save_html: false
+                    inline: false
+                    toolbar_mode: fixed
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    remove_empty_nodes: false
+                    antlers: false
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    always_show_set_button: false
+                    collapse: false
+                    previews: true
+                    type: bard
+                    display: Content
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+            button:
+              display: Button
+              instructions: null
+              icon: form-text-field
+              fields:
+                -
+                  handle: text
+                  field:
+                    input_type: text
+                    placeholder: 'Button text'
+                    character_limit: 40
+                    antlers: true
+                    type: text
+                    display: Text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+            side_by_side:
+              display: 'Side by side'
+              instructions: null
+              icon: layout-flip-right
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: true
+                    type: text
+                    display: Title
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    width: 75
+                -
+                  handle: link_title
+                  field:
+                    default: false
+                    type: toggle
+                    display: 'Link title'
+                    icon: toggle
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    width: 25
+                -
+                  handle: title_url
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Title url'
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    if_any:
+                      link_title: 'equals true'
+                    width: 50
+                -
+                  handle: content
+                  field:
+                    antlers: false
+                    type: textarea
+                    display: Content
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: img
+                  field:
+                    max_files: 1
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    show_set_alt: true
+                    type: assets
+                    display: Image
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: image_on_left
+                  field:
+                    inline_label: 'Image will display to the left of content'
+                    default: false
+                    type: toggle
+                    icon: toggle
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    display: 'Image on left'
+            code:
+              display: Code
+              instructions: null
+              icon: programming-script-code-brackets
+              fields:
+                -
+                  handle: code
+                  field:
+                    theme: material
+                    mode: htmlmixed
+                    mode_selectable: true
+                    indent_type: tabs
+                    indent_size: 4
+                    key_map: default
+                    line_numbers: true
+                    line_wrapping: true
+                    antlers: true
+                    type: code
+                    display: Code
+                    icon: code
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+      always_show_set_button: false
+      collapse: false
+      previews: true
+      type: bard
+      display: Content
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

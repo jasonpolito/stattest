@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title ?? site:name }}</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    {{ style:color_primary | shades:tailwind:primary }}
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': {
+                            50: 'var(--primary-50)',
+                            100: 'var(--primary-100)',
+                            200: 'var(--primary-200)',
+                            300: 'var(--primary-300)',
+                            400: 'var(--primary-400)',
+                            DEFAULT: 'var(--primary-500)',
+                            500: 'var(--primary-500)',
+                            600: 'var(--primary-600)',
+                            700: 'var(--primary-700)',
+                            800: 'var(--primary-800)',
+                            900: 'var(--primary-900)',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            position: relative;
+        }
+
+        @media (max-width: 639px) {
+            .hero+.side-by-side {
+                padding-top: 0;
+            }
+        }
+
+        .side-by-side+.side-by-side {
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body class="leading-normal text-gray-800 bg-gray-100">
+    {{ partial:global/header }}
+    {{ template_content }}
+</body>
+</html>

@@ -1,0 +1,26 @@
+<header>
+    <div class="container mx-auto">
+        <div class="flex justify-between">
+            <div>
+                //logo
+            </div>
+            <nav>
+                <ul class="flex items-center">
+                    {{ nav:main }}
+                        <li>
+                            <a href="{{ url }}">{{ title }}</a>
+                            {{#
+                                {{ if children }}
+                                    <ul>
+                                        {{ children }}
+                                            <li><a href="{{ url }}">{{ title }}</a></li>
+                                        {{ /children }}
+                                    </ul>
+                                {{ /if }}
+                            #}}
+                    {{ /nav:main }}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

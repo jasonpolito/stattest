@@ -1,0 +1,11 @@
+editor:
+  title: Editor
+  permissions:
+    - 'access cp'
+    - 'view pages entries'
+    - 'edit pages entries'
+    - 'create pages entries'
+    - 'publish pages entries'
+    - 'reorder pages entries'
+    - 'edit other authors pages entries'
+    - 'publish other authors pages entries'
