@@ -19,6 +19,9 @@ preferences:
     top_level:
       'users::permissions': '@alias'
     content:
-      reorder: true
-      items:
-        'content::collections::doctors': '@move'
+      'content::collections':
+        action: '@modify'
+        reorder: true
+        children:
+          'content::collections::doctors': '@inherit'
+          'content::collections::locations': '@inherit'
