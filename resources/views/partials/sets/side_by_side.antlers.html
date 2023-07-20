@@ -4,9 +4,11 @@
             class="flex {{ !image_on_left ?= 'flex-row-reverse' }} flex-wrap items-center gap-8 -mx-6 lg:gap-12 sm:mx-0 lg:flex-nowrap">
             <div
                 class="w-full overflow-hidden lg:w-1/2 lg:h-auto min-h-[12rem] sm:min-h-[18rem] md:min-h-[24rem] sm:h-full min-h">
-                <img src="{{ img:url }}" alt="{{ img:alt }}"
-                    style="aspect-ratio: {{ img:width }} / {{ img:height }}; object-position: {{ img:focus_css }};"
-                    class="transition-all duration-500 hover:scale-[1.1] absolute object-cover h-full min-w-full">
+                <div class="absolute transition-all duration-500 hover:scale-[1.1] top-0 left-0 w-full h-full">
+                    <img src="{{ img:url }}" alt="{{ img:alt }}"
+                        style="aspect-ratio: {{ img:width }} / {{ img:height }}; object-position: {{ img:focus_css }};"
+                        class="absolute object-cover h-full min-w-full ">
+                </div>
             </div>
             <div class="w-full px-6 sm:px-0 lg:w-1/2 lg:py-24">
                 <h3 class="mb-6 text-2xl font-bold md:text-3xl lg:text-4xl">{{ title }}</h3>

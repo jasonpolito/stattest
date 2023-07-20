@@ -1,0 +1,465 @@
+title: Footer
+data:
+  link_columns:
+    -
+      id: lkagvz0z
+      content:
+        -
+          type: paragraph
+          attrs:
+            textAlign: left
+          content:
+            -
+              type: text
+              text: '[adfasdf](dsfsdfsd)'
+      type: column
+      enabled: true
+    -
+      id: lkafye4c
+      title: 'Digital Marketing'
+      type: column
+      enabled: true
+      bard_field:
+        -
+          type: bulletList
+          content:
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/web-design'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Web Design & Development'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/logo-design'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Branding & Identity'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/search-engine-optimization'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Search Engine Optimization'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/paid-search-marketing'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Paid Search Marketing'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/social-media-marketing'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Social Media Marketing'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/geofencing'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Geofencing Marketing'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'All Digital Marketing Services'
+      content:
+        -
+          type: bulletList
+          content:
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/web-design'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Web Design & Development'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/logo-design'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Branding & Identity'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/search-engine-optimization'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Search Engine Optimization'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/paid-search-marketing'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Paid Search Marketing'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/social-media-marketing'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Social Media Marketing'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services/geofencing'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Geofencing Marketing'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/services'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'All Digital Marketing Services'
+    -
+      id: lkafytjg
+      title: 'Recent Projects'
+      type: column
+      enabled: true
+      content:
+        -
+          type: bulletList
+          content:
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/work/uf-health'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'UF Health Spine Center at Halifax Health'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/work/law-firm-digital-marketing'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Innovative Law Firm Digital Marketing'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/work/mmb-campaign'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Dr. Mary McLeod Bethune Statuary Project'
+    -
+      id: lkafz145
+      title: Connect
+      type: column
+      enabled: true
+      content:
+        -
+          type: bulletList
+          content:
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'tel:3863127777'
+                            rel: null
+                            target: null
+                            title: null
+                      text: '(386) 312-7777'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/start'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Free Consultation'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/blog'
+                            rel: null
+                            target: null
+                            title: null
+                      text: 'Marketing Blog'
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://placementlabs.com/careers'
+                            rel: null
+                            target: null
+                            title: null
+                      text: Careers
+            -
+              type: listItem
+              content:
+                -
+                  type: paragraph
+                  attrs:
+                    textAlign: left
+                  content:
+                    -
+                      type: text
+                      marks:
+                        -
+                          type: link
+                          attrs:
+                            href: 'https://clients.placementlabs.com/login'
+                            rel: null
+                            target: _blank
+                            title: null
+                      text: 'Client Login'
