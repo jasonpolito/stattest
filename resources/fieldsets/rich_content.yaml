@@ -1,4 +1,4 @@
-title: Blocks
+title: 'Page Blocks'
 fields:
   -
     handle: content
@@ -347,10 +347,10 @@ fields:
                     visibility: visible
                     hide_display: false
       always_show_set_button: false
-      collapse: false
+      collapse: accordion
       previews: true
       type: bard
-      display: Content
+      display: 'Page Blocks'
       icon: bard
       listable: hidden
       instructions_position: above
