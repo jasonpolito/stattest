@@ -70,7 +70,7 @@ tabs:
             field:
               options:
                 placement: 'Placement Labs'
-                flowers: Flowers
+                flowers: 'Flowers (test)'
               taggable: false
               push_tags: false
               placeholder: 'Select theme'
