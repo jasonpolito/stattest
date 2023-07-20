@@ -3,7 +3,7 @@ id: c4386b62-387f-4af2-820d-0552e6c02c65
 blueprint: page
 title: Services
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1689825107
+updated_at: 1689825601
 template: page
 content:
   -
@@ -77,10 +77,10 @@ content:
   -
     type: set
     attrs:
-      id: lkam8h0h
+      id: lkamj2hr
       values:
         type: partial_block
-        selected_partial: 57761880-98ea-455e-8ad6-a0c882dd21cb
+        selected_partial: eb5a0978-deb1-4146-ab71-9a2b167d6647
   -
     type: paragraph
     attrs:
