@@ -3,7 +3,7 @@ id: c4386b62-387f-4af2-820d-0552e6c02c65
 blueprint: page
 title: Services
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1689813851
+updated_at: 1689825107
 template: page
 content:
   -
@@ -44,6 +44,43 @@ content:
         content: 'We want people to love your brand as much as you do.'
         img: martin-martz-cr9vea2ehhu-unsplash.jpg
         image_on_left: true
+  -
+    type: set
+    attrs:
+      id: lkak5uf7
+      values:
+        type: hero
+        title: 'Are you ready to grow your business?'
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Let’s build a campaign that creates customers.'
+  -
+    type: set
+    attrs:
+      id: lkakhomp
+      values:
+        type: quote
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Working with the members of Placement Labs has been the best experience with a marketing firm we have had at Halifax Health. I have been impressed by the commitment and quality work they have provided our organization.'
+        author: 'John Guthries'
+        author_title: 'Vice President, Communications | Halifax Health'
+        image: john-guthrie-halifax-health.png
+  -
+    type: set
+    attrs:
+      id: lkam8h0h
+      values:
+        type: partial_block
+        selected_partial: 57761880-98ea-455e-8ad6-a0c882dd21cb
   -
     type: paragraph
     attrs:

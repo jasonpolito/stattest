@@ -1,5 +1,6 @@
 name: jason
 super: true
+avatar: yannick-apollon-f93mcmzhd4i-unsplash.jpg
 id: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
 password_hash: $2y$10$6AyOXE1oRISsPbz6YnovWeeh9m71ZIiyH7OwW2zrcM8rfRhmHC1pO
 preferences:

@@ -7,7 +7,7 @@
     <title>{{ title ?? site:name }}</title>
     {{ site:icon | favicon }}
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    {{ style:color_primary | shades:tailwind:primary }}
+    {{ site:color_primary | shades:tailwind:primary }}
     <script>
         tailwind.config = {
             theme: {
@@ -56,7 +56,11 @@
     </style>
 </head>
 <body class="leading-normal text-gray-800 bg-gray-100">
-    {{ partial:global/header }}
+    {{ if {partial:exists src="themes/{site:theme}/global/header"} }}
+        {{ partial src="themes/{site:theme}/global/header" }}
+    {{ else }}
+        {{ partial:global/header }}
+    {{ /if }}
     {{ template_content }}
     {{ partial:global/footer }}
 </body>

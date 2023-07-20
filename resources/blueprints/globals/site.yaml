@@ -1,6 +1,6 @@
 tabs:
-  main:
-    display: Main
+  general:
+    display: General
     sections:
       -
         fields:
@@ -36,6 +36,62 @@ tabs:
               display: Icon
               icon: assets
               width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: logo_html
+            field:
+              theme: material
+              mode: htmlmixed
+              mode_selectable: true
+              indent_type: tabs
+              indent_size: 4
+              key_map: default
+              line_numbers: true
+              line_wrapping: true
+              antlers: true
+              type: code
+              display: 'Logo HTML'
+              icon: code
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  style:
+    display: Style
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: theme
+            field:
+              options:
+                placement: 'Placement Labs'
+                flowers: Flowers
+              taggable: false
+              push_tags: false
+              placeholder: 'Select theme'
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Theme
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: color_primary
+            field:
+              allow_any: true
+              type: color
+              display: 'Primary Color'
+              icon: color
               listable: hidden
               instructions_position: above
               visibility: visible

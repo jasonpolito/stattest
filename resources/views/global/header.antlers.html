@@ -1,14 +1,14 @@
-<header class="py-12 text-white bg-gray-900">
+<header class="py-8 text-white bg-gray-900">
     <x-container>
-        <div class="flex justify-between">
+        <div class="flex items-center justify-between">
             <div>
-                <img src="{{ site:logo }}" alt="">
+                <a href="/" class="block w-[12rem] md:w-[18rem]">{{ site:logo_html }}</a>
             </div>
             <nav>
-                <ul class="flex items-center">
+                <ul class="items-center hidden md:flex">
                     {{ nav:main }}
                         <li>
-                            <a href="{{ url }}">{{ title }}</a>
+                            <a href="{{ url }}" class="block px-5 py-4">{{ title }}</a>
                             {{#
                                 {{ if children }}
                                     <ul>

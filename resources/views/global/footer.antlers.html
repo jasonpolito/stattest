@@ -3,12 +3,12 @@
         <x-container>
             <ul class="flex flex-wrap sm:flex-nowrap md:gap-8 md:justify-between">
                 {{ footer:link_columns }}
-                    <li class="w-full sm:w-1/2 md:w-auto">
+                    <li class="w-full sm:w-1/2 md:w-auto max-w-[24rem]">
                         {{ if title }}
                             <h5 class="mb-6 text-lg font-bold">{{ title }}</h5>
                         {{ /if }}
                         <div
-                            class="mb-8 font-light prose-sm prose opacity-60 prose-invert prose-a:font-light prose-p:font-light prose-a:no-underline hover:prose-a:underline">
+                            class="mb-8 font-light prose-sm prose prose-a:opacity-60 prose-a:hover:opacity-75 prose-invert prose-a:font-light prose-p:font-light prose-a:no-underline hover:prose-a:underline">
                             {{ content }}
                         </div>
                     </li>

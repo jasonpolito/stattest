@@ -11,7 +11,31 @@ data:
           content:
             -
               type: text
-              text: '[adfasdf](dsfsdfsd)'
+              text: '{{ site:logo_html }}'
+        -
+          type: paragraph
+          attrs:
+            textAlign: left
+          content:
+            -
+              type: text
+              marks:
+                -
+                  type: link
+                  attrs:
+                    href: 'https://maps.google.com/?q=728%20Fentress%20Blvd,%20%20%20%20%20%20%20%20Daytona%20Beach,%20FL%2032114'
+                    rel: 'noopener noreferrer'
+                    target: _blank
+                    title: null
+              text: '728 Fentress Blvd, Daytona Beach, FL'
+        -
+          type: paragraph
+          attrs:
+            textAlign: start
+          content:
+            -
+              type: text
+              text: 'Placement Labs is a top-rated digital marketing agency based in Daytona Beach, Florida.'
       type: column
       enabled: true
     -
