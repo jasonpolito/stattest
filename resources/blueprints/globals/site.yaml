@@ -63,7 +63,6 @@ tabs:
     display: Style
     sections:
       -
-        display: 'New Section'
         fields:
           -
             handle: theme
@@ -86,6 +85,16 @@ tabs:
               visibility: visible
               hide_display: false
           -
+            handle: colors
+            field:
+              type: section
+              display: Colors
+              icon: section
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: color_primary
             field:
               allow_any: true
@@ -96,3 +105,61 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              width: 25
+          -
+            handle: color_secondary
+            field:
+              allow_any: true
+              type: color
+              display: 'Secondary Color'
+              icon: color
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  advanced:
+    display: Advanced
+    sections:
+      -
+        fields:
+          -
+            handle: insert_into_head
+            field:
+              theme: material
+              mode: htmlmixed
+              mode_selectable: true
+              indent_type: tabs
+              indent_size: 4
+              key_map: default
+              line_numbers: true
+              line_wrapping: true
+              antlers: true
+              type: code
+              display: '<head>'
+              icon: code
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              instructions: 'Any code placed here will be injected into the &lt;head&gt; tag.'
+          -
+            handle: insert_into_body
+            field:
+              theme: material
+              mode: htmlmixed
+              mode_selectable: true
+              indent_type: tabs
+              indent_size: 4
+              key_map: default
+              line_numbers: true
+              line_wrapping: true
+              antlers: false
+              type: code
+              display: '<body>'
+              icon: code
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              instructions: 'Any code placed here will be injected into the &lt;body&gt; tag.'

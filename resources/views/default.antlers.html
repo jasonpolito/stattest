@@ -1,1 +1,5 @@
-{{ content }}
+{{ if use_page_blocks }}
+    {{ partial:blocks }}
+{{ /else }}
+    {{ partial src='templates/{template}' use_context="true" }}
+{{ /if }}

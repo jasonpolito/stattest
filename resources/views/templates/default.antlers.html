@@ -1,0 +1,7 @@
+{{ content }}
+    {{ if {partial:exists src="themes/{site:theme}/partials/sets/{type}"} }}
+        {{ partial src="themes/{site:theme}/partials/sets/{type}" }}
+    {{ else }}
+        {{ partial src="sets/{type}" :content="content" }}
+    {{ /if }}
+{{ /content }}

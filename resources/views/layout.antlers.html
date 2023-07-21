@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title ?? site:name }}</title>
     {{ site:icon | favicon }}
+    {{ site:insert_into_head }}
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
     {{ site:color_primary | shades:tailwind:primary }}
+    {{ site:color_secondary | shades:tailwind:secondary }}
     <script>
         tailwind.config = {
             theme: {
@@ -26,6 +28,19 @@
                             700: 'var(--primary-700)',
                             800: 'var(--primary-800)',
                             900: 'var(--primary-900)',
+                        },
+                        'secondary': {
+                            50: 'var(--secondary-50)',
+                            100: 'var(--secondary-100)',
+                            200: 'var(--secondary-200)',
+                            300: 'var(--secondary-300)',
+                            400: 'var(--secondary-400)',
+                            DEFAULT: 'var(--secondary-500)',
+                            500: 'var(--secondary-500)',
+                            600: 'var(--secondary-600)',
+                            700: 'var(--secondary-700)',
+                            800: 'var(--secondary-800)',
+                            900: 'var(--secondary-900)',
                         },
                     }
                 }
@@ -64,5 +79,6 @@
     {{ /if }}
     {{ template_content }}
     {{ partial:global/footer }}
+    {{ site:insert_into_body }}
 </body>
 </html>

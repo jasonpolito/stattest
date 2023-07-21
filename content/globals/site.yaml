@@ -14,4 +14,46 @@ data:
       </svg>
     mode: htmlmixed
   theme: placement
-  color_primary: '#00eb9c'
+  color_primary: '#eb1000'
+  color_secondary: '#f5b400'
+  insert_into_head:
+    code: |-
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Placement Labs",
+          "url": "https://placementlabs.com/",
+          "logo": "https://placementlabs.com/img/2b924b90-7285-48a0-b69d-0014be422b41/pl-schema-logo.png",
+          "areaServed": ["Daytona Beach", "DeLand", "New Smyrna Beach", "Ormond Beach", "Deltona", "Port Orange", "Orange City", "DeBary", "Edgewater", "Holly Hill", "Orlando", "Kissimmee", "Sanford", "Casselberry", "Clermont", "Winter Garden", "Winter Springs"],
+          "sameAs": "https://www.facebook.com/placementlabs"
+        }
+      </script>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Placement Labs",
+          "image": " https://placementlabs.com/img/2b924b90-7285-48a0-b69d-0014be422b41/pl-schema-logo.png",
+          "url": " https://placementlabs.com/ ",
+          "telephone": "(386) 312-7777",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "728 Fentress Blvd",
+            "addressLocality": "Daytona Beach",
+            "addressRegion": "FL",
+            "postalCode": "32114",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 29.2062662,
+            "longitude": -81.0855855
+          },
+          "sameAs": " https://www.facebook.com/placementlabs "
+        }
+      </script>
+    mode: htmlmixed
+  insert_into_body:
+    code: "<script>console.log('inserted from globals')</script>"
+    mode: htmlmixed

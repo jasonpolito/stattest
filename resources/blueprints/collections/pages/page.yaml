@@ -345,11 +345,12 @@ tabs:
                             instructions_position: above
                             visibility: visible
                             hide_display: false
+              if:
+                use_blocks: 'equals true'
   seo:
     display: SEO
     sections:
-      -
-        display: 'New Section'
+      - {  }
   sidebar:
     display: Details
     sections:
@@ -361,6 +362,24 @@ tabs:
               type: slug
               localizable: true
           -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: use_blocks
+            field:
+              default: false
+              type: toggle
+              display: 'Use blocks'
+              icon: toggle
+              instructions: 'By enabling this option, this record will utilize the block builder instead of the selected template.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: parent
             field:
               type: entries
@@ -368,10 +387,4 @@ tabs:
                 - pages
               max_items: 1
               listable: false
-              localizable: true
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
               localizable: true

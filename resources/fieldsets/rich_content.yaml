@@ -346,7 +346,7 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
-      always_show_set_button: false
+      always_show_set_button: true
       collapse: accordion
       previews: true
       type: bard
@@ -356,3 +356,6 @@ fields:
       instructions_position: above
       visibility: visible
       hide_display: false
+      if:
+        custom_content: 'equals true'
+      always_save: true
