@@ -17,7 +17,8 @@
         "michaelmannucci/shades": "^1.0",
         "statamic/cms": "^4.0",
         "stillat/antlers-components": "^2.0",
-        "stillat/relationships": "^2.1"
+        "stillat/relationships": "^2.1",
+        "xndbogdan/statamic-bard-text-color": "^4.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",

@@ -25,3 +25,6 @@ preferences:
         children:
           'content::collections::doctors': '@inherit'
           'content::collections::locations': '@inherit'
+  assets:
+    assets:
+      mode: grid

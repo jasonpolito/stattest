@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a87f66d98b91671f6908931e8a5d9dca",
+    "content-hash": "f804f4951a2d902f41f07d3160a0031c",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -5119,16 +5119,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v4.11.0",
+            "version": "v4.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "ba62a751f0c79b74a647c9dc48dab8c676710050"
+                "reference": "f8fcb062488507c2dc96e96b8a2377ce8c5c7246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/ba62a751f0c79b74a647c9dc48dab8c676710050",
-                "reference": "ba62a751f0c79b74a647c9dc48dab8c676710050",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/f8fcb062488507c2dc96e96b8a2377ce8c5c7246",
+                "reference": "f8fcb062488507c2dc96e96b8a2377ce8c5c7246",
                 "shasum": ""
             },
             "require": {
@@ -5209,7 +5209,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v4.11.0"
+                "source": "https://github.com/statamic/cms/tree/v4.12.0"
             },
             "funding": [
                 {
@@ -5217,7 +5217,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-13T21:16:38+00:00"
+            "time": "2023-07-20T22:01:12+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -8736,6 +8736,56 @@
                 "source": "https://github.com/wilderborn/partyline/tree/1.0.2"
             },
             "time": "2022-12-14T18:38:34+00:00"
+        },
+        {
+            "name": "xndbogdan/statamic-bard-text-color",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xndbogdan/statamic-bard-text-color.git",
+                "reference": "1829498b0e56d47a20e5808a9493f6d9dc67e99d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xndbogdan/statamic-bard-text-color/zipball/1829498b0e56d47a20e5808a9493f6d9dc67e99d",
+                "reference": "1829498b0e56d47a20e5808a9493f6d9dc67e99d",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Bard Text Color",
+                    "description": "Text Color plugin for statamic bard"
+                },
+                "laravel": {
+                    "providers": [
+                        "XndBogdan\\BardTextColor\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "XndBogdan\\BardTextColor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Statamic Bard Text Color",
+            "keywords": [
+                "bard",
+                "statamic",
+                "text-color"
+            ],
+            "support": {
+                "issues": "https://github.com/xndbogdan/statamic-bard-text-color/issues",
+                "source": "https://github.com/xndbogdan/statamic-bard-text-color/tree/v4.0.0"
+            },
+            "time": "2023-06-12T09:36:57+00:00"
         }
     ],
     "packages-dev": [

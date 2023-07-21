@@ -126,42 +126,29 @@ fields:
                   handle: title
                   field:
                     input_type: text
-                    antlers: true
+                    antlers: false
                     type: text
                     display: Title
                     icon: text
+                    width: 50
                     listable: hidden
                     instructions_position: above
                     visibility: visible
                     hide_display: false
-                    width: 75
                 -
-                  handle: link_title
-                  field:
-                    default: false
-                    type: toggle
-                    display: 'Link title'
-                    icon: toggle
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    hide_display: false
-                    width: 25
-                -
-                  handle: title_url
+                  handle: href
                   field:
                     input_type: text
-                    antlers: false
+                    antlers: true
                     type: text
-                    display: 'Title url'
+                    display: URL
                     icon: text
                     listable: hidden
                     instructions_position: above
                     visibility: visible
                     hide_display: false
-                    if_any:
-                      link_title: 'equals true'
                     width: 50
+                    placeholder: /slug
                 -
                   handle: content
                   field:
@@ -202,6 +189,102 @@ fields:
                     visibility: visible
                     hide_display: false
                     display: 'Image on left'
+                -
+                  handle: btns
+                  field:
+                    collapse: false
+                    previews: true
+                    fullscreen: true
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        instructions: null
+                        icon: null
+                        sets:
+                          buttons:
+                            display: Buttons
+                            instructions: null
+                            icon: null
+                            fields:
+                              -
+                                handle: text
+                                field:
+                                  input_type: text
+                                  antlers: false
+                                  type: text
+                                  display: Text
+                                  icon: text
+                                  width: 50
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  placeholder: 'Click Me'
+                              -
+                                handle: url
+                                field:
+                                  input_type: text
+                                  antlers: false
+                                  type: text
+                                  display: URL
+                                  icon: text
+                                  width: 50
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  placeholder: /slug
+                              -
+                                handle: style
+                                field:
+                                  options:
+                                    primary: Primary
+                                    secondary: Secondary
+                                    none: Un-styled
+                                  taggable: false
+                                  push_tags: false
+                                  multiple: false
+                                  clearable: false
+                                  searchable: true
+                                  cast_booleans: false
+                                  default: primary
+                                  type: select
+                                  display: Style
+                                  icon: select
+                                  width: 50
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: size
+                                field:
+                                  options:
+                                    sm: Small
+                                    normal: Normal
+                                    lg: Large
+                                  taggable: false
+                                  push_tags: false
+                                  multiple: false
+                                  clearable: false
+                                  searchable: true
+                                  cast_booleans: false
+                                  default: normal
+                                  type: select
+                                  display: Size
+                                  icon: select
+                                  width: 50
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                    type: replicator
+                    display: Buttons
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
             code:
               display: Code
               instructions: null
@@ -356,6 +439,6 @@ fields:
       instructions_position: above
       visibility: visible
       hide_display: false
-      if:
-        custom_content: 'equals true'
       always_save: true
+      if:
+        use_blocks: 'equals true'
