@@ -5,7 +5,7 @@ title: Services
 template: default
 use_blocks: true
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1690386576
+updated_at: 1690390830
 content:
   -
     type: set
@@ -28,9 +28,39 @@ content:
       values:
         type: side-by-side
         title: 'Hello sire'
-        content: 'asdga dsga'
+        content: 'asdga dsgaasdfafsd'
         img: andrey-k-oaddhrvsyjs-unsplash.jpg
         image_on_left: false
+        href: '#'
+        btns:
+          -
+            id: lkjyr5gf
+            text: 'Hello World'
+            url: '#'
+            style: primary
+            size: normal
+            type: buttons
+            enabled: true
+  -
+    type: set
+    attrs:
+      id: lkjz1dj5
+      values:
+        type: side-by-side
+        title: 'Hello sire'
+        content: 'asdga dsgaasdfafsd'
+        img: yannick-apollon-f93mcmzhd4i-unsplash.jpg
+        image_on_left: true
+        href: '#'
+        btns:
+          -
+            id: lkjyr5gf
+            text: 'Hello World'
+            url: '#'
+            style: primary
+            size: normal
+            type: buttons
+            enabled: true
   -
     type: paragraph
     attrs:

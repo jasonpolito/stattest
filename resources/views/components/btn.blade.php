@@ -3,6 +3,8 @@
     'size' => 'normal',
 ])
 @php
+    $style = $style ?: 'primary';
+    $size = $size ?: 'normal';
     $hover = 'hover:brightness-105 hover:shadow-md';
     $base = 'inline-block rounded leading-normal my-6 sm:my-8 transition-all mr-2';
     $css = implode(' ', [$base, $hover]);
