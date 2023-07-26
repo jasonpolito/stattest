@@ -5,7 +5,7 @@ title: Services
 template: default
 use_blocks: true
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1690393123
+updated_at: 1690399228
 content:
   -
     type: set
@@ -24,22 +24,29 @@ content:
   -
     type: set
     attrs:
-      id: lkjz1dj5
+      id: lkk0k4fp
       values:
-        type: side-by-side
-        title: 'Hello sire'
-        content: 'asdga dsgaasdfafsd'
-        img: yannick-apollon-f93mcmzhd4i-unsplash.jpg
-        image_on_left: true
-        href: '#'
-        btns:
+        type: columns
+        columns:
           -
-            id: lkjyr5gf
-            text: 'Hello World'
-            url: '#'
-            style: primary
-            size: normal
-            type: buttons
+            id: lkk0k778
+            width: 100
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: asdadfasfd
+              -
+                type: heading
+                attrs:
+                  level: 2
+                content:
+                  -
+                    type: text
+                    text: adsgagsdasdgasgd
+            type: new_set
             enabled: true
   -
     type: set
@@ -47,14 +54,36 @@ content:
       id: lkjw6kf4
       values:
         type: side-by-side
-        title: 'Hello sire'
-        content: 'asdga dsgaasdfafsd'
+        title: 'Web Design & Development'
+        content: |
+          Increase awareness, credibility, and revenue.
         img: andrey-k-oaddhrvsyjs-unsplash.jpg
         image_on_left: false
         btns:
           -
             id: lkjyr5gf
-            text: 'Hello World'
+            text: 'View Service'
+            url: '#'
+            style: primary
+            size: normal
+            type: buttons
+            enabled: true
+        href: '#hfg'
+  -
+    type: set
+    attrs:
+      id: lkjz1dj5
+      values:
+        type: side-by-side
+        title: 'Logo & Branding'
+        content: 'We want people to love your brand as much as you do.'
+        img: yannick-apollon-f93mcmzhd4i-unsplash.jpg
+        image_on_left: true
+        href: '#'
+        btns:
+          -
+            id: lkjyr5gf
+            text: 'View Service'
             url: '#'
             style: primary
             size: normal

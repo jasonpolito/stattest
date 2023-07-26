@@ -429,6 +429,93 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
+            columns:
+              display: Columns
+              instructions: null
+              icon: layout-three-columns
+              fields:
+                -
+                  handle: columns
+                  field:
+                    collapse: false
+                    previews: true
+                    fullscreen: true
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        instructions: null
+                        icon: null
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            instructions: null
+                            icon: null
+                            fields:
+                              -
+                                handle: width
+                                field:
+                                  options:
+                                    - 25
+                                    - 33
+                                    - 50
+                                    - 66
+                                    - 75
+                                    - 100
+                                  default: 100
+                                  type: width
+                                  display: Width
+                                  icon: width
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: content
+                                field:
+                                  buttons:
+                                    - h2
+                                    - h3
+                                    - bold
+                                    - italic
+                                    - unorderedlist
+                                    - orderedlist
+                                    - removeformat
+                                    - quote
+                                    - anchor
+                                    - image
+                                    - table
+                                  smart_typography: false
+                                  save_html: false
+                                  inline: false
+                                  toolbar_mode: fixed
+                                  reading_time: false
+                                  word_count: false
+                                  fullscreen: true
+                                  allow_source: true
+                                  enable_input_rules: true
+                                  enable_paste_rules: true
+                                  remove_empty_nodes: false
+                                  antlers: false
+                                  link_noopener: false
+                                  link_noreferrer: false
+                                  target_blank: false
+                                  always_show_set_button: true
+                                  collapse: false
+                                  previews: true
+                                  type: bard
+                                  display: Content
+                                  icon: bard
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                    type: replicator
+                    display: Columns
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
       always_show_set_button: true
       collapse: accordion
       previews: true

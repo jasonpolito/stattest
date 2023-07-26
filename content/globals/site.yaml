@@ -14,7 +14,7 @@ data:
       </svg>
     mode: htmlmixed
   theme: placement
-  color_primary: '#00a4eb'
+  color_primary: '#db00be'
   color_secondary: '#f5b400'
   insert_into_head:
     code: |-
