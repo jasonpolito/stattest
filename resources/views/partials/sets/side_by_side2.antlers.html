@@ -6,10 +6,10 @@
                 <a href="{{ href }}"
                     class="w-full block group overflow-hidden lg:w-2/3 xl:w-3/5 lg:h-auto min-h-[12rem] sm:min-h-[18rem] md:min-h-[24rem] sm:h-full min-h">
                     <div
-                        class="absolute transition-all duration-700 hover:grayscale hover:scale-[1.1] top-0 left-0 w-full h-full">
+                        class="absolute hover:blur-sm transition-all duration-1000 hover:grayscale hover:scale-[1.1] top-0 left-0 w-full h-full">
                         <img src="{{ img:url }}" alt="{{ img:alt }}"
                             style="aspect-ratio: {{ img:width }} / {{ img:height }}; object-position: {{ img:focus_css }};"
-                            class="absolute object-cover h-full min-w-full blur-md">
+                            class="absolute object-cover h-full min-w-full ">
                     </div>
                     <div
                         class="transition-all duration-700 opacity-0 pointer-events-none fill-parent bg-primary mix-blend-multiply group-hover:opacity-100">
@@ -29,14 +29,11 @@
                 </a>
             {{ else }}
                 <div
-                    class="w-full group overflow-hidden lg:w-2/3 xl:w-3/5 lg:h-auto min-h-[12rem] sm:min-h-[18rem] md:min-h-[24rem] sm:h-full min-h">
+                    class="w-full overflow-hidden lg:w-2/3 xl:w-3/5 lg:h-auto min-h-[12rem] sm:min-h-[18rem] md:min-h-[24rem] sm:h-full min-h">
                     <div class="fill-parent">
                         <img src="{{ img:url }}" alt="{{ img:alt }}"
                             style="aspect-ratio: {{ img:width }} / {{ img:height }}; object-position: {{ img:focus_css }};"
                             class="absolute object-cover h-full min-w-full ">
-                    </div>
-                    <div
-                        class="transition-all duration-700 opacity-0 pointer-events-none fill-parent bg-primary mix-blend-multiply group-hover:opacity-100">
                     </div>
                 </div>
             {{ /if }}
