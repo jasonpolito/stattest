@@ -12,8 +12,7 @@ tabs:
               validate:
                 - required
           -
-            handle: content
-            field: rich_content.content
+            import: rich_content
   sidebar:
     display: Sidebar
     sections:
@@ -24,4 +23,15 @@ tabs:
             field:
               type: slug
               localizable: true
+          -
+            handle: use_blocks
+            field:
+              default: false
+              type: toggle
+              display: 'Use blocks'
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
 title: Partial

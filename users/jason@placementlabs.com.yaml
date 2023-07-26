@@ -15,16 +15,18 @@ preferences:
         - status
     locations:
       after_save: continue_editing
-  nav:
-    top_level:
-      'users::permissions': '@alias'
-    content:
-      'content::collections':
-        action: '@modify'
-        reorder: true
-        children:
-          'content::collections::doctors': '@inherit'
-          'content::collections::locations': '@inherit'
+    views:
+      after_save: continue_editing
+      columns:
+        - title
+        - status
+        - handle
   assets:
     assets:
       mode: grid
+  nav:
+    content:
+      reorder: true
+      items:
+        'content::collections::pages': '@move'
+        'content::collections::partials': '@move'

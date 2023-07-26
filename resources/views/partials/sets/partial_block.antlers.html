@@ -1,7 +1,11 @@
-{{ selected_partial:content }}
+{{ content }}
     {{ if {partial:exists src="themes/{site:theme}/partials/sets/{type}"} }}
         {{ partial src="themes/{site:theme}/partials/sets/{type}" }}
     {{ else }}
-        {{ partial src="sets/{type}" }}
+        {{ if {partial:exists src="sets/{type}"} }}
+            {{ partial src="sets/{type}" }}
+        {{ else }}
+            {{ partial:render_view type="{type}" }}
+        {{ /if }}
     {{ /if }}
-{{ /selected_partial:content }}
+{{ /content }}

@@ -1,0 +1,7 @@
+{{ _entry = ({collection:views handle:is="{type}" limit="1"} | first); }}
+{{ preBladeMarkup = _entry.markup | antlers }}
+{{? 
+    use Illuminate\Support\Facades\Blade;
+    $markup = Blade::render($preBladeMarkup);
+?}}
+{{ markup }}

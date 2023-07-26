@@ -3,7 +3,8 @@ id: 57761880-98ea-455e-8ad6-a0c882dd21cb
 blueprint: partial
 title: 'John Guthrie Quote'
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1689824837
+updated_at: 1690239280
+use_blocks: true
 content:
   -
     type: set

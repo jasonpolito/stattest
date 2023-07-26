@@ -117,7 +117,7 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
-            side_by_side:
+            side-by-side:
               display: 'Side by side'
               instructions: null
               icon: layout-flip-right
@@ -442,3 +442,4 @@ fields:
       always_save: true
       if:
         use_blocks: 'equals true'
+      word_count: false

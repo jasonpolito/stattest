@@ -5,11 +5,16 @@
                 <a href="/" class="block w-[12rem] md:w-[18rem]">{{ site:logo_html }}</a>
             </div>
             <nav x-data="{open: false}" @click.outside="open = false">
-                <button class="p-4 -m-4 lg:hidden" @click="open = true">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
+                <button class="p-4 -m-4 lg:hidden" @click="open = !open">
+                    <svg xmlns="http://www.w3.org/2000/svg" x-show="!open" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                     </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none" x-show="open" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+
                 </button>
                 <ul class="absolute right-0 z-10 items-center hidden pb-4 bg-gray-900 lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
                     :class="{'block': open, 'hidden': !open}">

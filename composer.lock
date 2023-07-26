@@ -2000,16 +2000,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.15.0",
+            "version": "v10.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c7599dc92e04532824bafbd226c2936ce6a905b8"
+                "reference": "5c93d2795c393b462481179ce42dedfb30cc19b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c7599dc92e04532824bafbd226c2936ce6a905b8",
-                "reference": "c7599dc92e04532824bafbd226c2936ce6a905b8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/5c93d2795c393b462481179ce42dedfb30cc19b5",
+                "reference": "5c93d2795c393b462481179ce42dedfb30cc19b5",
                 "shasum": ""
             },
             "require": {
@@ -2196,7 +2196,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-07-11T13:43:52+00:00"
+            "time": "2023-07-26T03:30:46+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -2322,16 +2322,16 @@
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "f23fe9d4e95255dacee1bf3525e0810d1a1b0f37"
+                "reference": "e5a3057a5591e1cfe8183034b0203921abe2c902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/f23fe9d4e95255dacee1bf3525e0810d1a1b0f37",
-                "reference": "f23fe9d4e95255dacee1bf3525e0810d1a1b0f37",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/e5a3057a5591e1cfe8183034b0203921abe2c902",
+                "reference": "e5a3057a5591e1cfe8183034b0203921abe2c902",
                 "shasum": ""
             },
             "require": {
@@ -2378,7 +2378,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "time": "2023-01-30T18:31:20+00:00"
+            "time": "2023-07-14T13:56:28+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -5119,16 +5119,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v4.12.0",
+            "version": "v4.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "f8fcb062488507c2dc96e96b8a2377ce8c5c7246"
+                "reference": "4f3b3a889adec241192fbd93550e075095de4d93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/f8fcb062488507c2dc96e96b8a2377ce8c5c7246",
-                "reference": "f8fcb062488507c2dc96e96b8a2377ce8c5c7246",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/4f3b3a889adec241192fbd93550e075095de4d93",
+                "reference": "4f3b3a889adec241192fbd93550e075095de4d93",
                 "shasum": ""
             },
             "require": {
@@ -5209,7 +5209,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v4.12.0"
+                "source": "https://github.com/statamic/cms/tree/v4.13.2"
             },
             "funding": [
                 {
@@ -5217,7 +5217,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-20T22:01:12+00:00"
+            "time": "2023-07-26T14:13:11+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -9613,16 +9613,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "10.1.2",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "db1497ec8dd382e82c962f7abbe0320e4882ee4e"
+                "reference": "be1fe461fdc917de2a29a452ccf2657d325b443d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/db1497ec8dd382e82c962f7abbe0320e4882ee4e",
-                "reference": "db1497ec8dd382e82c962f7abbe0320e4882ee4e",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/be1fe461fdc917de2a29a452ccf2657d325b443d",
+                "reference": "be1fe461fdc917de2a29a452ccf2657d325b443d",
                 "shasum": ""
             },
             "require": {
@@ -9679,7 +9679,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.2"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.3"
             },
             "funding": [
                 {
@@ -9687,7 +9687,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-22T09:04:27+00:00"
+            "time": "2023-07-26T13:45:28+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
