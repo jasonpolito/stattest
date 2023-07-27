@@ -9,21 +9,10 @@
                     <div class="text-lg font-light text-gray-700">
                         {{ content }}
                     </div>
-                    {{ if buttons }}
-                        <div class="pt-8"></div>
-                    {{ /if }}
-                    {{ buttons }}
-                        <x-btn url="{url}" style="{style.value}">
-                            {{ text }}
-                            {{ if icon }}
-                                <x-slot:icon>
-                                    {{ icon }}
-                                </x-slot:icon>
-                            {{ /if }}
-                        </x-btn>
-                    {{ /buttons }}
+                    {{ partial:partials/buttons }}
                 </div>
                 <div class="w-full md:w-1/2">
+                    <div class="-mt-8 -ml-8 fill-parent bg-primary-50"></div>
                     <img src="{{ image:url }}" alt="">
                 </div>
             </div>

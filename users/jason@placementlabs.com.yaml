@@ -30,3 +30,4 @@ preferences:
       items:
         'content::collections::pages': '@move'
         'content::collections::partials': '@move'
+        'content::collections::blocks': '@move'

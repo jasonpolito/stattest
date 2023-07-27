@@ -5,7 +5,7 @@ title: Home
 author: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
 mode: htmlmixed
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1690489147
+updated_at: 1690489529
 template: default
 custom_content: false
 use_blocks: true
@@ -20,11 +20,21 @@ content:
         title: 'Immigration Lawyer Online'
         content:
           -
-            type: paragraph
+            type: heading
+            attrs:
+              level: 3
             content:
               -
                 type: text
-                text: 'Need assistance with your immigration status? Compassionate legal support for individuals and families.'
+                text: 'Need assistance with your immigration status?'
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                text: 'Compassionate legal support for individuals and families.'
         image: adobestock_569812342.jpeg
         buttons:
           -

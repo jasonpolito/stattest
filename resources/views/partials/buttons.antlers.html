@@ -1,0 +1,13 @@
+{{ if buttons }}
+    <div class="pt-8"></div>
+{{ /if }}
+{{ buttons }}
+    <x-btn url="{url}" style="{style.value}">
+        {{ text }}
+        {{ if icon }}
+            <x-slot:icon>
+                {{ icon }}
+            </x-slot:icon>
+        {{ /if }}
+    </x-btn>
+{{ /buttons }}
