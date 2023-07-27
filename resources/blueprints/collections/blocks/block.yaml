@@ -36,8 +36,16 @@ tabs:
       -
         fields:
           -
-            handle: slug
+            handle: handle
             field:
               type: slug
               localizable: true
+              display: Handle
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              from: title
+              generate: true
+              show_regenerate: false
+              hide_display: false
 title: Block

@@ -1,17 +1,18 @@
 @props([
     'style' => 'primary',
+    'icon' => false,
     'size' => 'normal',
 ])
 @php
     $style = $style ?: 'primary';
     $size = $size ?: 'normal';
     $hover = 'hover:brightness-105 hover:shadow-md';
-    $base = 'inline-block rounded leading-normal mb-6 transition-all mr-2';
+    $base = 'inline-block group rounded leading-normal mb-6 transition-all mr-2';
     $css = implode(' ', [$base, $hover]);
     $styles = [
         'primary' => 'bg-primary-500 text-white',
         'secondary' => 'bg-secondary-500 text-white',
-        'none' => '',
+        'unstyled' => '',
     ];
     $sizes = [
         'sm' => 'py-1 px-3 sm:py-2 sm:px-4 text-sm',
@@ -21,5 +22,10 @@
 @endphp
 <a href="{{ $url ?? '#' }}" {{ $attributes->class([$css, $styles[$style], $sizes[$size]]) }}>
     <span class="rounded opacity-50 fill-parent to-primary-600 bg-gradient-to-b from-transparent"></span>
-    <span>{{ $slot }}</span>
+    <span class="flex items-center">
+        <span>{{ $slot }}</span>
+        @if ($icon)
+            <span class="pl-3 transition-all group-hover:translate-x-[0.15rem]">{!! Str::replace('<svg ', '<svg class="w-6 h-6" ', $icon) !!}</span>
+        @endif
+    </span>
 </a>

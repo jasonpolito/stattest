@@ -1,8 +1,10 @@
-<header class="py-4 text-white bg-gray-900 sm:py-8">
+<header class="py-4">
     <x-container>
         <div class="flex items-center justify-between">
             <div>
-                <a href="/" class="block w-[12rem] md:w-[18rem]">{{ site:logo_html }}</a>
+                <a href="/" class="block w-[12rem] md:w-[16rem]">
+                    <img src="{{ site:logo }}" alt="">
+                </a>
             </div>
             <nav x-data="{open: false}" @click.outside="open = false">
                 <button class="p-4 -m-4 lg:hidden" @click="open = !open">
@@ -16,7 +18,7 @@
                     </svg>
 
                 </button>
-                <ul class="absolute right-0 z-10 items-center hidden pb-4 bg-gray-900 lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
+                <ul class="absolute right-0 z-10 items-center hidden pb-4 lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
                     :class="{'block': open, 'hidden': !open}">
                     {{ nav:main }}
                         <li>

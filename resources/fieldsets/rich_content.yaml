@@ -98,6 +98,29 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
+                    width: 66
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    mode: grid
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    show_set_alt: true
+                    type: assets
+                    display: Image
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    width: 33
+                -
+                  import: buttons
+                -
+                  import: custom_html
             button:
               display: Button
               instructions: null
@@ -285,6 +308,40 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
+                -
+                  handle: use_custom_html
+                  field:
+                    default: false
+                    type: toggle
+                    display: 'Use custom HTML'
+                    icon: toggle
+                    instructions: 'Override the default block HTML'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: custom_html
+                  field:
+                    theme: material
+                    mode: htmlmixed
+                    mode_selectable: true
+                    indent_type: tabs
+                    indent_size: 4
+                    key_map: default
+                    line_numbers: true
+                    line_wrapping: true
+                    antlers: true
+                    type: code
+                    display: 'Custom HTML'
+                    icon: code
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    if:
+                      use_custom_html: 'equals true'
+                    always_save: true
             code:
               display: Code
               instructions: null

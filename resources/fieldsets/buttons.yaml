@@ -1,0 +1,99 @@
+title: Buttons
+fields:
+  -
+    handle: buttons
+    field:
+      collapse: false
+      previews: true
+      fullscreen: true
+      sets:
+        buttons:
+          display: Buttons
+          instructions: null
+          icon: null
+          sets:
+            buttons:
+              display: Buttons
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: text
+                  field:
+                    input_type: text
+                    placeholder: 'Click Me'
+                    antlers: true
+                    type: text
+                    display: Text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: url
+                  field:
+                    input_type: text
+                    placeholder: /button-url
+                    antlers: true
+                    type: text
+                    display: URL
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: style
+                  field:
+                    options:
+                      primary: Primary
+                      secondary: Secondary
+                      unstyled: Un-styled
+                    taggable: false
+                    push_tags: false
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    cast_booleans: false
+                    default: primary
+                    type: select
+                    display: Style
+                    icon: select
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: icon
+                  field:
+                    type: icon
+                    display: Icon
+                    icon: icon_picker
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    directory: resources/heroicons
+                    width: 50
+                -
+                  handle: open_in_new_tab
+                  field:
+                    default: false
+                    type: toggle
+                    display: 'Open in new tab'
+                    icon: toggle
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+      type: replicator
+      display: Buttons
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
