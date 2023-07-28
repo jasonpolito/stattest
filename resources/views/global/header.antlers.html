@@ -18,11 +18,11 @@
                     </svg>
 
                 </button>
-                <ul class="absolute right-0 z-10 items-center hidden pb-4 lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
+                <ul class="absolute right-0 z-10 items-center hidden pb-4 bg-white lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
                     :class="{'block': open, 'hidden': !open}">
                     {{ nav:main }}
                         <li>
-                            <a href="{{ url }}" class="block px-5 py-4">{{ title }}</a>
+                            <a href="{{ url }}" class="block px-4 py-2 lg:px-5 lg:py-4">{{ title }}</a>
                             {{#
                                 {{ if children }}
                                     <ul>

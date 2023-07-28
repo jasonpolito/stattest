@@ -41,79 +41,31 @@ tabs:
               visibility: visible
               hide_display: false
           -
-            handle: logo_html
+            handle: header
             field:
-              theme: material
-              mode: htmlmixed
-              mode_selectable: true
-              indent_type: tabs
-              indent_size: 4
-              key_map: default
-              line_numbers: true
-              line_wrapping: true
-              antlers: true
-              type: code
-              display: 'Logo HTML'
-              icon: code
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-  style:
-    display: Style
-    sections:
-      -
-        fields:
-          -
-            handle: theme
-            field:
-              options:
-                placement: 'Placement Labs'
-                flowers: 'Flowers (test)'
-              taggable: false
-              push_tags: false
-              placeholder: 'Select theme'
-              multiple: false
-              clearable: false
-              searchable: true
-              cast_booleans: false
-              type: select
-              display: Theme
-              icon: select
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - partials
+              type: entries
+              display: Header
+              icon: entries
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
           -
-            handle: colors
+            handle: footer
             field:
-              type: section
-              display: Colors
-              icon: section
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: color_primary
-            field:
-              allow_any: true
-              type: color
-              display: 'Primary Color'
-              icon: color
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-              width: 25
-          -
-            handle: color_secondary
-            field:
-              allow_any: true
-              type: color
-              display: 'Secondary Color'
-              icon: color
-              width: 25
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - partials
+              type: entries
+              display: Footer
+              icon: entries
               listable: hidden
               instructions_position: above
               visibility: visible

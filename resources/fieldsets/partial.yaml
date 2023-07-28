@@ -1,0 +1,17 @@
+title: Partial
+fields:
+  -
+    handle: selected_partial
+    field:
+      max_items: 1
+      mode: default
+      create: true
+      collections:
+        - partials
+      type: entries
+      display: Partial
+      icon: entries
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

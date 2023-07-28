@@ -1,11 +1,10 @@
-{{ if use_custom_html }}
-    {{ custom_html }}
-{{ else }}
+{{ partial:block }}
     <x-section class="block--hero">
         <x-container>
             <div class="flex items-center">
                 <div class="w-full md:w-1/2 md:pr-16">
-                    <h1 class="mb-8 text-4xl font-bold md:text-5xl lg:text-6xl">{{ title }}</h1>
+                    <{{ title_tag }} class="mb-8 text-4xl font-bold md:text-5xl lg:text-6xl">{{ title_text }}
+                    </{{ title_tag }}>
                     <div class="text-lg font-light text-gray-700">
                         {{ content }}
                     </div>
@@ -13,9 +12,9 @@
                 </div>
                 <div class="w-full md:w-1/2">
                     <div class="-mt-8 -ml-8 fill-parent bg-primary-50"></div>
-                    <img src="{{ image:url }}" alt="">
+                    <img src="{{ image:url }}" alt="{{ image:alt }}">
                 </div>
             </div>
         </x-container>
     </x-section>
-{{ /if }}
+{{ /partial:block }}

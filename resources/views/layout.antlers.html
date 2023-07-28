@@ -78,14 +78,22 @@
         }
     </style>
 </head>
-<body class="leading-normal text-gray-800 bg-gray-100">
-    {{ if {partial:exists src="themes/{site:theme}/global/header"} }}
-        {{ partial src="themes/{site:theme}/global/header" }}
-    {{ else }}
-        {{ partial:global/header }}
-    {{ /if }}
+<body class="leading-normal text-gray-800">
+    {{ site:header }}
+        {{ content }}
+        {{ /content }}
+        {{ partial:blocks }}
+    {{ /site:header }}
     {{ template_content }}
-    {{ partial:global/footer }}
+    {{ if {partial:exists src="footer"} }}
+        {{ partial src="footer" }}
+    {{ else }}
+        {{ site:footer }}
+            {{ content }}
+            {{ /content }}
+            {{ partial:blocks }}
+        {{ /site:footer }}
+    {{ /if }}
     {{ site:insert_into_body }}
 </body>
 </html>

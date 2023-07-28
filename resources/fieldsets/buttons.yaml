@@ -5,7 +5,7 @@ fields:
     field:
       collapse: false
       previews: true
-      fullscreen: true
+      fullscreen: false
       sets:
         buttons:
           display: Buttons

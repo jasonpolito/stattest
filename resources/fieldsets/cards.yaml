@@ -1,0 +1,19 @@
+title: Cards
+fields:
+  -
+    import: title
+  -
+    handle: entries
+    field:
+      mode: default
+      create: false
+      collections:
+        - pages
+        - services
+      type: entries
+      display: Entries
+      icon: entries
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

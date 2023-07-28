@@ -1,0 +1,83 @@
+title: Title
+fields:
+  -
+    handle: title_text
+    field:
+      input_type: text
+      placeholder: 'A nice title.'
+      antlers: true
+      type: text
+      display: 'Title text'
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: title_tag
+    field:
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: h1
+      type: select
+      display: 'Title tag'
+      icon: select
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: title_size
+    field:
+      options:
+        lg: Large
+        md: Medium
+        sm: Small
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: lg
+      type: select
+      display: 'Title size'
+      icon: select
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: align_title
+    field:
+      options:
+        left: Left
+        center: Center
+        right: Right
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: left
+      type: select
+      display: 'Align title'
+      icon: select
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

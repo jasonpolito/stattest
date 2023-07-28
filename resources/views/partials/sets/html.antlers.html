@@ -1,0 +1,8 @@
+{{ if markup }}
+    {{ preBladeMarkup = markup | antlers }}
+    {{? 
+    use Illuminate\Support\Facades\Blade;
+    $rendered = Blade::render($preBladeMarkup);
+?}}
+    {{ rendered }}
+{{ /if }}

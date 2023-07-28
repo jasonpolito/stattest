@@ -21,6 +21,12 @@ preferences:
         - title
         - status
         - handle
+    services:
+      columns:
+        - title
+        - slug
+        - image
+        - status
   assets:
     assets:
       mode: grid

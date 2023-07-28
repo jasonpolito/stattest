@@ -17,7 +17,7 @@ markup:
                     </div>
                     <div class="w-full md:w-1/2">
                         <div class="-mt-8 -ml-8 fill-parent bg-primary-50"></div>
-                        <img src="{{ image:url }}" alt="">
+                        <img src="{{ image:url }}" alt="{{ image:alt }}">
                     </div>
                 </div>
             </x-container>
@@ -25,6 +25,6 @@ markup:
     {{ /partial:block }}
   mode: htmlmixed
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1690490468
+updated_at: 1690491354
 handle: hero
 ---

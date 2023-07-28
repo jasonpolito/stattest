@@ -1,7 +1,9 @@
 {{ _entry = ({collection:blocks handle:is="{type}" limit="1"} | first); }}
-{{ preBladeMarkup = _entry.markup | antlers }}
-{{? 
+{{ if _entry }}
+    {{ preBladeMarkup = _entry.markup | antlers }}
+    {{? 
     use Illuminate\Support\Facades\Blade;
     $markup = Blade::render($preBladeMarkup);
 ?}}
-{{ markup }}
+    {{ markup }}
+{{ /if }}
