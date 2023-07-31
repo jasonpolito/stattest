@@ -1,0 +1,39 @@
+{{ partial:block }}
+    <x-section>
+        <x-container>
+            {{ partial:partials/title }}
+            <x-cols class="justify-center" gap="sm">
+                {{ entries }}
+                    <x-col class="w-full lg:w-1/3 md:w-1/2" gap="sm">
+                        <a href="{{ url }}"
+                            class="flex items-stretch transition-all duration-700 hover:bg-primary flex-nowrap md:flex-wrap bg-primary-50 group">
+                            <div class="w-1/3 md:w-full">
+                                <div class=" overflow-hidden bg-primary-50 pt-[100%] md:pt-[66%]">
+                                    <div
+                                        class="transition-all duration-700 fill-parent group-hover:grayscale group-hover:scale-105 group-hover:blur-sm">
+                                        {{ partial:partials/img }}
+                                    </div>
+                                    <div
+                                        class="transition-all duration-700 opacity-0 bg-primary fill-parent group-hover:opacity-30 mix-blend-multiply">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full pt-2 md:pt-0 md:h-16">
+                                <div class="flex flex-col justify-end w-full md:fill-parent">
+                                    <div
+                                        class="p-4 px-6 pb-16 text-lg transition-all duration-700 md:pb-4 md:group-hover:pb-16 md:pt-0 md:group-hover:pt-6 bg-primary-50 group-hover:text-white group-hover:bg-primary text-primary-900">
+                                        {{ title }}
+                                        <div class="flex flex-col justify-end px-6 py-6 fill-parent">
+                                            <span
+                                                class="flex justify-end text-white transition-all duration-700 -translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">{{ heroicon:solid:arrow-long-right class="w-8 h-8" }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </x-col>
+                {{ /entries }}
+            </x-cols>
+        </x-container>
+    </x-section>
+{{ /partial:block }}

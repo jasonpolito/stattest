@@ -1,0 +1,33 @@
+title: 'Advanced options'
+fields:
+  -
+    handle: advanced_options
+    field:
+      fields:
+        -
+          handle: custom_css
+          field:
+            theme: material
+            mode: css
+            mode_selectable: true
+            indent_type: tabs
+            indent_size: 4
+            key_map: default
+            line_numbers: true
+            line_wrapping: false
+            antlers: true
+            type: code
+            display: 'Custom CSS'
+            icon: code
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+      type: collapse
+      display: 'Advanced options'
+      icon: section
+      instructions: 'Configure additional options such as appearance and custom code.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

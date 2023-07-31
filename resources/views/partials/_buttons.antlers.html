@@ -2,11 +2,11 @@
     <div class="pt-8"></div>
 {{ /if }}
 {{ buttons }}
-    <x-btn url="{url}" style="{style.value}">
+    <x-btn url="{url}" style="{details.style}" size="{details.size}">
         {{ text }}
-        {{ if icon }}
+        {{ if details:icon }}
             <x-slot:icon>
-                {{ icon }}
+                {{ heroicon:solid icon="{details.icon | replace('-small', '')}" }}
             </x-slot:icon>
         {{ /if }}
     </x-btn>

@@ -38,7 +38,13 @@ return [
     */
 
     'widgets' => [
-        'getting_started',
+        [
+            'type' => 'images_missing_alt', // Required
+            'container' => 'assets', // Default: "assets" – The container to search through. Can also be an array to include multiple containers.
+            'limit' => 5, // Default: 5 – The number of images to display in the widget.
+            'width' => 50, // Default: 100 – The size of the widget.
+        ],
+        // 'getting_started',
     ],
 
     /*

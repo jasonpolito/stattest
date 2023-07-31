@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title ?? site:name }}</title>
+    <title>{{ meta_title ?? title ?? site:name }}</title>
+    <meta property="og:title" content="{{ meta_title ?? title ?? site:name }}" />
+    <meta property="og:description" content="{{ meta_description ?? title ?? site:name }}" />
+    <meta property="og:image" content="{{ config:app:url }}{{ opengraph_image }}" />
     {{ site:icon | favicon }}
     {{ site:insert_into_head }}
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
@@ -46,6 +49,17 @@
             }
         }
     </script>
+    <style type="text/tailwindcss">
+        @media screen(md) {
+            .md\:fill-parent {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
     <style>
         * {
             position: relative;

@@ -13,16 +13,16 @@ fields:
           icon: null
           sets:
             buttons:
-              display: Buttons
+              display: Button
               instructions: null
-              icon: null
+              icon: form-text-field
               fields:
                 -
                   handle: text
                   field:
                     input_type: text
                     placeholder: 'Click Me'
-                    antlers: true
+                    antlers: false
                     type: text
                     display: Text
                     icon: text
@@ -35,8 +35,8 @@ fields:
                   handle: url
                   field:
                     input_type: text
-                    placeholder: /button-url
-                    antlers: true
+                    placeholder: /example/url
+                    antlers: false
                     type: text
                     display: URL
                     icon: text
@@ -46,46 +46,68 @@ fields:
                     visibility: visible
                     hide_display: false
                 -
-                  handle: style
+                  handle: details
                   field:
-                    options:
-                      primary: Primary
-                      secondary: Secondary
-                      unstyled: Un-styled
-                    taggable: false
-                    push_tags: false
-                    multiple: false
-                    clearable: false
-                    searchable: true
-                    cast_booleans: false
-                    default: primary
-                    type: select
-                    display: Style
-                    icon: select
-                    width: 50
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    hide_display: false
-                -
-                  handle: icon
-                  field:
-                    type: icon
-                    display: Icon
-                    icon: icon_picker
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    hide_display: false
-                    directory: resources/heroicons
-                    width: 50
-                -
-                  handle: open_in_new_tab
-                  field:
-                    default: false
-                    type: toggle
-                    display: 'Open in new tab'
-                    icon: toggle
+                    fields:
+                      -
+                        handle: style
+                        field:
+                          options:
+                            primary: Primary
+                            secondary: Secondary
+                            unstyled: Un-styled
+                          default: primary
+                          type: button_group
+                          display: Style
+                          icon: button_group
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          hide_display: false
+                          width: 50
+                      -
+                        handle: size
+                        field:
+                          options:
+                            sm: Small
+                            normal: Normal
+                            lg: Large
+                          type: button_group
+                          display: Size
+                          icon: button_group
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          hide_display: false
+                          width: 50
+                          default: normal
+                      -
+                        handle: icon
+                        field:
+                          directory: resources/heroicons
+                          type: icon
+                          display: Icon
+                          icon: icon_picker
+                          width: 50
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          hide_display: false
+                      -
+                        handle: new_tab
+                        field:
+                          default: false
+                          type: toggle
+                          display: 'New tab'
+                          icon: toggle
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          hide_display: false
+                          width: 50
+                    type: collapse
+                    display: 'Additional options'
+                    icon: section
                     listable: hidden
                     instructions_position: above
                     visibility: visible

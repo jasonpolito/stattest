@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f804f4951a2d902f41f07d3160a0031c",
+    "content-hash": "ed34ddb6156d49776edf477b3a2d590b",
     "packages": [
+        {
+            "name": "acquaint-softtech/stata-mailer",
+            "version": "v0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acquaint-softtech/stata-mailer.git",
+                "reference": "1e9621fddc75eb70adf03041f7f51796c643841f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acquaint-softtech/stata-mailer/zipball/1e9621fddc75eb70adf03041f7f51796c643841f",
+                "reference": "1e9621fddc75eb70adf03041f7f51796c643841f",
+                "shasum": ""
+            },
+            "require": {
+                "stillat/proteus": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Stata Mailer",
+                    "description": "Stata Mailer addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "AcquaintSofttech\\StataMailer\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AcquaintSofttech\\StataMailer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Stata mailer is a Statamic add-on that simplifies Laravel’s Mail configuration with Statamic without prior coding knowledge. Just install it and let it handle the rest.",
+            "support": {
+                "issues": "https://github.com/acquaint-softtech/stata-mailer/issues",
+                "source": "https://github.com/acquaint-softtech/stata-mailer/tree/v0.0.3"
+            },
+            "time": "2023-07-05T06:52:22+00:00"
+        },
         {
             "name": "ajthinking/archetype",
             "version": "v1.1.5",
@@ -68,6 +113,352 @@
                 "source": "https://github.com/ajthinking/archetype/tree/v1.1.5"
             },
             "time": "2022-08-24T05:52:35+00:00"
+        },
+        {
+            "name": "aryehraber/statamic-color-extractor",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aryehraber/statamic-color-extractor.git",
+                "reference": "7d22090c5245800ec588eb959695281775d82b20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aryehraber/statamic-color-extractor/zipball/7d22090c5245800ec588eb959695281775d82b20",
+                "reference": "7d22090c5245800ec588eb959695281775d82b20",
+                "shasum": ""
+            },
+            "require": {
+                "davidgorges/color-contrast": "^1.0",
+                "jonaskohl/color-extractor": "^0.4",
+                "statamic/cms": "^3.3|^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "ColorExtractor",
+                    "slug": "color_extractor",
+                    "description": "Extract colors from images."
+                },
+                "laravel": {
+                    "providers": [
+                        "AryehRaber\\ColorExtractor\\ColorExtractorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AryehRaber\\ColorExtractor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aryeh Raber",
+                    "email": "aryeh.raber@gmail.com",
+                    "homepage": "https://aryeh.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Extract colors from images.",
+            "homepage": "https://github.com/aryehraber/statamic-color-extractor",
+            "keywords": [
+                "color extractor",
+                "image color",
+                "statamic"
+            ],
+            "support": {
+                "issues": "https://github.com/aryehraber/statamic-color-extractor/issues",
+                "source": "https://github.com/aryehraber/statamic-color-extractor/tree/v1.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/aryehraber",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-05-31T13:33:19+00:00"
+        },
+        {
+            "name": "aryehraber/statamic-logbook",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aryehraber/statamic-logbook.git",
+                "reference": "c5ac19058dd4941d86187cd18601df730fea84c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aryehraber/statamic-logbook/zipball/c5ac19058dd4941d86187cd18601df730fea84c4",
+                "reference": "c5ac19058dd4941d86187cd18601df730fea84c4",
+                "shasum": ""
+            },
+            "require": {
+                "rap2hpoutre/laravel-log-viewer": "^2.3.0",
+                "statamic/cms": "^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Logbook",
+                    "description": "Manage and view log files in the CP.",
+                    "version": "3.0.0"
+                },
+                "laravel": {
+                    "providers": [
+                        "AryehRaber\\Logbook\\LogbookServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AryehRaber\\Logbook\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aryeh Raber",
+                    "email": "aryeh.raber@gmail.com",
+                    "homepage": "https://aryeh.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manage and view log files in the CP.",
+            "homepage": "https://github.com/aryehraber/statamic-logbook",
+            "keywords": [
+                "logbook",
+                "logs",
+                "statamic"
+            ],
+            "support": {
+                "issues": "https://github.com/aryehraber/statamic-logbook/issues",
+                "source": "https://github.com/aryehraber/statamic-logbook/tree/v3.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/aryehraber",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-05-10T11:22:18+00:00"
+        },
+        {
+            "name": "bepsvpt/blurhash",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bepsvpt/blurhash.git",
+                "reference": "ef9fe9180e65d2bbf1e6392ad57ec57a6d6eba21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bepsvpt/blurhash/zipball/ef9fe9180e65d2bbf1e6392ad57ec57a6d6eba21",
+                "reference": "ef9fe9180e65d2bbf1e6392ad57ec57a6d6eba21",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "illuminate/support": "~8.0 || ~9.0 || ~10.0",
+                "intervention/image": "~2.7",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "~2.30",
+                "laravel/pint": "~1.5",
+                "orchestra/testbench": "~6.27 || ~7.24 || ~8.3",
+                "phpstan/phpstan": "~1.10",
+                "phpunit/phpunit": "~9.6 || ~10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "BlurHash": "Bepsvpt\\Blurhash\\Facades\\BlurHash"
+                    },
+                    "providers": [
+                        "Bepsvpt\\Blurhash\\BlurHashServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bepsvpt\\Blurhash\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "bepsvpt",
+                    "email": "og7lsrszah6y3lz@infinitefa.email"
+                }
+            ],
+            "description": "A PHP implementation of BlurHash with Laravel integration.",
+            "homepage": "https://github.com/bepsvpt/blurhash",
+            "keywords": [
+                "blurhash",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/bepsvpt/blurhash/issues",
+                "source": "https://github.com/bepsvpt/blurhash/tree/2.1.1"
+            },
+            "time": "2023-04-24T14:00:45+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-heroicons",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-heroicons.git",
+                "reference": "f756c807b0d04afd2caf7079bac26492da9cc6d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/f756c807b0d04afd2caf7079bac26492da9cc6d4",
+                "reference": "f756c807b0d04afd2caf7079bac26492da9cc6d4",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1",
+                "illuminate/support": "^9.0|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BladeUI\\Heroicons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-heroicons",
+            "keywords": [
+                "Heroicons",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-heroicons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/2.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/caneco",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-01-11T08:38:22+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-icons",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-icons.git",
+                "reference": "4d6b6b2548b1994a777211a985e18691701891e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/4d6b6b2548b1994a777211a985e18691701891e4",
+                "reference": "4d6b6b2548b1994a777211a985e18691701891e4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0|^9.0|^10.0",
+                "illuminate/filesystem": "^8.0|^9.0|^10.0",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "illuminate/view": "^8.0|^9.0|^10.0",
+                "php": "^7.4|^8.0",
+                "symfony/console": "^5.3|^6.0",
+                "symfony/finder": "^5.3|^6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "bin": [
+                "bin/blade-icons-generate"
+            ],
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Icons\\BladeIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "BladeUI\\Icons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of icons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-icons",
+            "keywords": [
+                "blade",
+                "icons",
+                "laravel",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-icons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-icons"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-09T15:47:26+00:00"
         },
         {
             "name": "brick/math",
@@ -754,6 +1145,54 @@
             "time": "2022-02-25T21:32:43+00:00"
         },
         {
+            "name": "davidgorges/color-contrast",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidgorges/color-contrast-php.git",
+                "reference": "92513baf33753cc75a76b3f9ad2f5c1fd694d81a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidgorges/color-contrast-php/zipball/92513baf33753cc75a76b3f9ad2f5c1fd694d81a",
+                "reference": "92513baf33753cc75a76b3f9ad2f5c1fd694d81a",
+                "shasum": ""
+            },
+            "require": {
+                "mischiefcollective/colorjizz": "^1.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "phpstan/phpstan": "^0.11.8",
+                "phpunit/phpunit": "^8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ColorContrast\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A tiny library to find color combinations with a contrast threshold",
+            "homepage": "http://www.davidgorges.de",
+            "keywords": [
+                "WCAG 2.0",
+                "color",
+                "contrast",
+                "library",
+                "usability"
+            ],
+            "support": {
+                "issues": "https://github.com/davidgorges/color-contrast-php/issues",
+                "source": "https://github.com/davidgorges/color-contrast-php/tree/v1.0.0"
+            },
+            "time": "2019-06-28T13:49:45+00:00"
+        },
+        {
             "name": "dflydev/dot-access-data",
             "version": "v3.0.2",
             "source": {
@@ -1247,6 +1686,58 @@
                 }
             ],
             "time": "2022-02-20T15:07:15+00:00"
+        },
+        {
+            "name": "goldnead/statamic-collapse-fieldtype",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/goldnead/statamic-collapse-fieldtype.git",
+                "reference": "77bcc0503b5e0196a9c53d60699d74f9380f941c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/goldnead/statamic-collapse-fieldtype/zipball/77bcc0503b5e0196a9c53d60699d74f9380f941c",
+                "reference": "77bcc0503b5e0196a9c53d60699d74f9380f941c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0|^8.1|^8.2",
+                "statamic/cms": "3.* | 4.*"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Collapse-Fieldtype",
+                    "description": "A Collapse-Fieldtype for Statamic to beautifully hide and show your fields."
+                },
+                "laravel": {
+                    "providers": [
+                        "Goldnead\\CollapseFieldtype\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Goldnead\\CollapseFieldtype\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "goldnead",
+                    "email": "info@adriangoldner.com"
+                }
+            ],
+            "description": "A Collapse-Fieldtype for Statamic to beautifully hide and show your fields.",
+            "support": {
+                "issues": "https://github.com/goldnead/statamic-collapse-fieldtype/issues",
+                "source": "https://github.com/goldnead/statamic-collapse-fieldtype/tree/v1.0.5"
+            },
+            "time": "2023-05-15T16:51:48+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -1804,6 +2295,47 @@
             "time": "2022-05-21T17:30:32+00:00"
         },
         {
+            "name": "jacksleight/statamic-miniset",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jacksleight/statamic-miniset.git",
+                "reference": "9defc91b65e390f21995212c345369cd0f82670f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jacksleight/statamic-miniset/zipball/9defc91b65e390f21995212c345369cd0f82670f",
+                "reference": "9defc91b65e390f21995212c345369cd0f82670f",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Miniset",
+                    "description": "This Statamic addon allows you to create compact sets of fields that either combine into a string of classes, or return a simple array of values."
+                },
+                "laravel": {
+                    "providers": [
+                        "JackSleight\\StatamicMiniset\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JackSleight\\StatamicMiniset\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/jacksleight/statamic-miniset/issues",
+                "source": "https://github.com/jacksleight/statamic-miniset/tree/1.0.0"
+            },
+            "time": "2023-05-04T09:41:06+00:00"
+        },
+        {
             "name": "james-heinrich/getid3",
             "version": "v1.9.22",
             "source": {
@@ -1869,6 +2401,67 @@
                 "source": "https://github.com/JamesHeinrich/getID3/tree/v1.9.22"
             },
             "time": "2022-09-29T16:41:13+00:00"
+        },
+        {
+            "name": "jonaskohl/color-extractor",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:jonaskohl/color-extractor.git",
+                "reference": "b17e23cfbb65f51eb12b8985a2336ca7160b03f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonaskohl/color-extractor/zipball/b17e23cfbb65f51eb12b8985a2336ca7160b03f0",
+                "reference": "b17e23cfbb65f51eb12b8985a2336ca7160b03f0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": ">=5.4.0"
+            },
+            "replace": {
+                "league/color-extractor": "*",
+                "matthecat/colorextractor": "*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2",
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Kohl",
+                    "email": "contact@jonaskohl.de",
+                    "homepage": "https://jonaskohl.de/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mathieu Lechat",
+                    "email": "math.lechat@gmail.com",
+                    "homepage": "http://matthecat.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Extract colors from an image as a human would do.",
+            "homepage": "https://github.com/jonaskohl/color-extractor",
+            "keywords": [
+                "color",
+                "extract",
+                "human",
+                "image",
+                "palette"
+            ],
+            "time": "2021-05-28T12:19:20+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3071,6 +3664,73 @@
             "time": "2022-12-08T12:29:14+00:00"
         },
         {
+            "name": "masterminds/html5",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "3c5d5a56d56f48a1ca08a0670f0f80c1dad368f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/3c5d5a56d56f48a1ca08a0670f0f80c1dad368f3",
+                "reference": "3c5d5a56d56f48a1ca08a0670f0f80c1dad368f3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7.21 || ^6 || ^7 || ^8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.8.0"
+            },
+            "time": "2023-04-26T07:27:39+00:00"
+        },
+        {
             "name": "michaelmannucci/shades",
             "version": "v1.0.0",
             "source": {
@@ -3172,6 +3832,37 @@
                 "source": "https://github.com/michelf/php-smartypants/tree/1.8.1"
             },
             "time": "2016-12-13T01:01:17+00:00"
+        },
+        {
+            "name": "mischiefcollective/colorjizz",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:mikeemoo/ColorJizz-PHP.git",
+                "reference": "361b8a8727d13b67cb593a936a715ad2204ececb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikeemoo/ColorJizz-PHP/zipball/361b8a8727d13b67cb593a936a715ad2204ececb",
+                "reference": "361b8a8727d13b67cb593a936a715ad2204ececb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MischiefCollective": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Classes for manipulating colors, converting to different formats and finding color harmonies",
+            "homepage": "http://mikeefranklin.co.uk:8080/job/ColorJizz-PHP/",
+            "time": "2016-11-14T16:58:48+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3336,6 +4027,62 @@
                 }
             ],
             "time": "2022-08-04T09:53:51+00:00"
+        },
+        {
+            "name": "ndx/statamic-bard-color-picker",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/new-data-services/statamic-bard-color-picker.git",
+                "reference": "984d7cf082a496febda2d8d7d9b35de458865b76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/new-data-services/statamic-bard-color-picker/zipball/984d7cf082a496febda2d8d7d9b35de458865b76",
+                "reference": "984d7cf082a496febda2d8d7d9b35de458865b76",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "statamic/cms": "^3.4 || ^4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0",
+                "pestphp/pest": "^1.22"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Bard Color Picker",
+                    "description": "Text color picker with swatches for Bard fields"
+                },
+                "laravel": {
+                    "providers": [
+                        "Ndx\\BardColorPicker\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ndx\\BardColorPicker\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "new-data-services GmbH",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Text color picker with swatches for Bard fields",
+            "support": {
+                "issues": "https://github.com/new-data-services/statamic-bard-color-picker/issues",
+                "source": "https://github.com/new-data-services/statamic-bard-color-picker/tree/v1.2.0"
+            },
+            "time": "2023-05-08T15:05:57+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -3729,6 +4476,194 @@
                 }
             ],
             "time": "2023-02-08T01:06:31+00:00"
+        },
+        {
+            "name": "o1y/statamic-flexible-width",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/o1y/statamic-flexible-width.git",
+                "reference": "d8c00ff38b183c6088e5b0d8716fe46c7b8d2196"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/o1y/statamic-flexible-width/zipball/d8c00ff38b183c6088e5b0d8716fe46c7b8d2196",
+                "reference": "d8c00ff38b183c6088e5b0d8716fe46c7b8d2196",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Flexible Width",
+                    "description": "Statamic Flexible Width addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "O1y\\StatamicFlexibleWidth\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "O1y\\StatamicFlexibleWidth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Mesieh",
+                    "email": "mail@olivermesieh.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Flexible width fieldtype for Statamic",
+            "support": {
+                "issues": "https://github.com/o1y/statamic-flexible-width/issues",
+                "source": "https://github.com/o1y/statamic-flexible-width/tree/1.0.0"
+            },
+            "time": "2023-06-12T11:36:31+00:00"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "paragonie/sodium_compat",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/sodium_compat.git",
+                "reference": "e592a3e06d1fa0d43988c7c7d9948ca836f644b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/e592a3e06d1fa0d43988c7c7d9948ca836f644b6",
+                "reference": "e592a3e06d1fa0d43988c7c7d9948ca836f644b6",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": ">=1",
+                "php": "^5.2.4|^5.3|^5.4|^5.5|^5.6|^7|^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^3|^4|^5|^6|^7|^8|^9"
+            },
+            "suggest": {
+                "ext-libsodium": "PHP < 7.0: Better performance, password hashing (Argon2i), secure memory management (memzero), and better security.",
+                "ext-sodium": "PHP >= 7.0: Better performance, password hashing (Argon2i), secure memory management (memzero), and better security."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com"
+                },
+                {
+                    "name": "Frank Denis",
+                    "email": "jedisct1@pureftpd.org"
+                }
+            ],
+            "description": "Pure PHP implementation of libsodium; uses the PHP extension if it exists",
+            "keywords": [
+                "Authentication",
+                "BLAKE2b",
+                "ChaCha20",
+                "ChaCha20-Poly1305",
+                "Chapoly",
+                "Curve25519",
+                "Ed25519",
+                "EdDSA",
+                "Edwards-curve Digital Signature Algorithm",
+                "Elliptic Curve Diffie-Hellman",
+                "Poly1305",
+                "Pure-PHP cryptography",
+                "RFC 7748",
+                "RFC 8032",
+                "Salpoly",
+                "Salsa20",
+                "X25519",
+                "XChaCha20-Poly1305",
+                "XSalsa20-Poly1305",
+                "Xchacha20",
+                "Xsalsa20",
+                "aead",
+                "cryptography",
+                "ecdh",
+                "elliptic curve",
+                "elliptic curve cryptography",
+                "encryption",
+                "libsodium",
+                "php",
+                "public-key cryptography",
+                "secret-key cryptography",
+                "side-channel resistant"
+            ],
+            "support": {
+                "issues": "https://github.com/paragonie/sodium_compat/issues",
+                "source": "https://github.com/paragonie/sodium_compat/tree/v1.20.0"
+            },
+            "time": "2023-04-30T00:54:53+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -4294,6 +5229,68 @@
             "time": "2023-07-15T19:42:19+00:00"
         },
         {
+            "name": "pusher/pusher-php-server",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pusher/pusher-http-php.git",
+                "reference": "416e68dd5f640175ad5982131c42a7a666d1d8e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/416e68dd5f640175ad5982131c42a7a666d1d8e9",
+                "reference": "416e68dd5f640175ad5982131c42a7a666d1d8e9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.2",
+                "paragonie/sodium_compat": "^1.6",
+                "php": "^7.3|^8.0",
+                "psr/log": "^1.0|^2.0|^3.0"
+            },
+            "require-dev": {
+                "overtrue/phplint": "^2.3",
+                "phpunit/phpunit": "^9.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pusher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Library for interacting with the Pusher REST API",
+            "keywords": [
+                "events",
+                "messaging",
+                "php-pusher-server",
+                "publish",
+                "push",
+                "pusher",
+                "real time",
+                "real-time",
+                "realtime",
+                "rest",
+                "trigger"
+            ],
+            "support": {
+                "issues": "https://github.com/pusher/pusher-http-php/issues",
+                "source": "https://github.com/pusher/pusher-http-php/tree/7.2.3"
+            },
+            "time": "2023-05-17T16:00:06+00:00"
+        },
+        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -4517,6 +5514,69 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "rap2hpoutre/laravel-log-viewer",
+            "version": "v2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rap2hpoutre/laravel-log-viewer.git",
+                "reference": "c4148ec364d78be13eb2ab81ce860946bfd91c4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rap2hpoutre/laravel-log-viewer/zipball/c4148ec364d78be13eb2ab81ce860946bfd91c4c",
+                "reference": "c4148ec364d78be13eb2ab81ce860946bfd91c4c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.2.*|5.*|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.7.*|^7.0",
+                "phpunit/phpunit": "^7|^9.5.10"
+            },
+            "type": "laravel-package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rap2hpoutre\\LaravelLogViewer\\LaravelLogViewerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Rap2hpoutre\\LaravelLogViewer\\": "src/"
+                },
+                "classmap": [
+                    "src/controllers"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "rap2hpoutre",
+                    "email": "raphaelht@gmail.com"
+                }
+            ],
+            "description": "A Laravel log reader",
+            "keywords": [
+                "laravel",
+                "log",
+                "log-reader",
+                "log-viewer",
+                "logging",
+                "lumen"
+            ],
+            "support": {
+                "issues": "https://github.com/rap2hpoutre/laravel-log-viewer/issues",
+                "source": "https://github.com/rap2hpoutre/laravel-log-viewer/tree/v2.3.0"
+            },
+            "time": "2023-02-15T07:36:34+00:00"
         },
         {
             "name": "react/promise",
@@ -5220,6 +6280,56 @@
             "time": "2023-07-26T14:13:11+00:00"
         },
         {
+            "name": "statamic/collaboration",
+            "version": "v0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/statamic/collaboration.git",
+                "reference": "d20a31e58e319680993a70c876316e7d2e6a0675"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/statamic/collaboration/zipball/d20a31e58e319680993a70c876316e7d2e6a0675",
+                "reference": "d20a31e58e319680993a70c876316e7d2e6a0675",
+                "shasum": ""
+            },
+            "require": {
+                "pixelfear/composer-dist-plugin": "^0.1.4",
+                "statamic/cms": "^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Statamic\\Collaboration\\ServiceProvider"
+                    ]
+                },
+                "statamic": {
+                    "name": "Collaboration",
+                    "description": "Collaboration tools"
+                },
+                "download-dist": {
+                    "url": "https://github.com/statamic/collaboration/releases/download/{$version}/dist.tar.gz",
+                    "path": "resources/dist"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Statamic\\Collaboration\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Collaboration tools for Statamic 3",
+            "support": {
+                "issues": "https://github.com/statamic/collaboration/issues",
+                "source": "https://github.com/statamic/collaboration/tree/v0.7.2"
+            },
+            "time": "2023-06-27T19:21:23+00:00"
+        },
+        {
             "name": "statamic/stringy",
             "version": "3.1.3",
             "source": {
@@ -5286,6 +6396,59 @@
                 "source": "https://github.com/statamic/Stringy"
             },
             "time": "2022-05-04T18:41:52+00:00"
+        },
+        {
+            "name": "stefangalescu/statamic-heroicons",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefangalescu/statamic-heroicons.git",
+                "reference": "759f850ec1d90feeeca43fdd38c27e32ebf8ebf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefangalescu/statamic-heroicons/zipball/759f850ec1d90feeeca43fdd38c27e32ebf8ebf7",
+                "reference": "759f850ec1d90feeeca43fdd38c27e32ebf8ebf7",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-heroicons": "^2.1",
+                "php": "^8.1 || ^8.2",
+                "statamic/cms": "^3.4 || ^4"
+            },
+            "require-dev": {
+                "facade/ignition-contracts": "^1.0",
+                "laravel/pint": "^1.5",
+                "nunomaduro/collision": "^4.2 || ^5.0 || ^6.1",
+                "orchestra/testbench": "^7.0 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "statamic-heroicons",
+                    "description": ""
+                },
+                "laravel": {
+                    "providers": [
+                        "StefanGalescu\\Heroicons\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "StefanGalescu\\Heroicons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Use and easily customize Heroicons in your Statamic templates",
+            "support": {
+                "issues": "https://github.com/stefangalescu/statamic-heroicons/issues",
+                "source": "https://github.com/stefangalescu/statamic-heroicons/tree/v2.1.1"
+            },
+            "time": "2023-07-09T16:26:10+00:00"
         },
         {
             "name": "stillat/antlers-components",
@@ -5393,6 +6556,65 @@
             "time": "2023-05-13T19:08:29+00:00"
         },
         {
+            "name": "stillat/proteus",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stillat/proteus.git",
+                "reference": "8d1a6ad21f5179ca8e80c570c1efa5a88155241e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stillat/proteus/zipball/8d1a6ad21f5179ca8e80c570c1efa5a88155241e",
+                "reference": "8d1a6ad21f5179ca8e80c570c1efa5a88155241e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^7.0 || ^8.0 || ^9.0 || ^10.0",
+                "nikic/php-parser": "^4.10.3"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.6",
+                "orchestra/testbench": "^5.0 || ^6.0",
+                "phpunit/phpunit": "^8.5 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Stillat\\Proteus\\WriterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stillat\\Proteus\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Koster",
+                    "email": "john@stillat.com"
+                }
+            ],
+            "description": "Provides utilities for parsing and updating Laravel-style PHP configuration files.",
+            "support": {
+                "issues": "https://github.com/Stillat/proteus/issues",
+                "source": "https://github.com/Stillat/proteus/tree/v2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JohnathonKoster",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-07-23T17:04:17+00:00"
+        },
+        {
             "name": "stillat/relationships",
             "version": "v2.1.1",
             "source": {
@@ -5459,6 +6681,74 @@
                 }
             ],
             "time": "2023-05-27T13:46:21+00:00"
+        },
+        {
+            "name": "swiftmade/statamic-clear-assets",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmade/statamic-clear-assets.git",
+                "reference": "35f84b9602fe7900be3fca326bce22c51b4eda12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmade/statamic-clear-assets/zipball/35f84b9602fe7900be3fca326bce22c51b4eda12",
+                "reference": "35f84b9602fe7900be3fca326bce22c51b4eda12",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^7.30.3 || ^8.24 || ^9.0 || ^10.0",
+                "php": "^7.4|^8.0",
+                "statamic/cms": "^3.0.0|^4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.8",
+                "nunomaduro/collision": "^4.1 || ^5.0 || ^6.0",
+                "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Clear Assets",
+                    "description": "Deletes unused assets."
+                },
+                "laravel": {
+                    "providers": [
+                        "Swiftmade\\StatamicClearAssets\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Swiftmade\\StatamicClearAssets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ahmet Ozisik",
+                    "email": "ahmet@swiftmade.co",
+                    "homepage": "https://swiftmade.co",
+                    "role": "Founder"
+                }
+            ],
+            "description": "Deletes unused assets. Saves storage space.",
+            "homepage": "https://statamic.com/addons/swiftmade/clear-assets",
+            "support": {
+                "issues": "https://github.com/swiftmade/statamic-clear-assets/issues",
+                "source": "https://github.com/swiftmade/statamic-clear-assets/tree/v2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/swiftmade",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-07T13:30:11+00:00"
         },
         {
             "name": "symfony/console",
@@ -5681,6 +6971,73 @@
                 }
             ],
             "time": "2023-05-23T14:45:45+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v6.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "8aa333f41f05afc7fc285a976b58272fd90fc212"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/8aa333f41f05afc7fc285a976b58272fd90fc212",
+                "reference": "8aa333f41f05afc7fc285a976b58272fd90fc212",
+                "shasum": ""
+            },
+            "require": {
+                "masterminds/html5": "^2.6",
+                "php": ">=8.1",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "^5.4|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Eases DOM navigation for HTML and XML documents",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dom-crawler/tree/v6.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-06-05T15:30:22+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -8149,6 +9506,59 @@
             "time": "2023-04-28T13:28:14+00:00"
         },
         {
+            "name": "teamnovu/statamic-images-missing-alt",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teamnovu/statamic-images-missing-alt.git",
+                "reference": "4a0096b69256a6e8587c2070e02a9934806cbcea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teamnovu/statamic-images-missing-alt/zipball/4a0096b69256a6e8587c2070e02a9934806cbcea",
+                "reference": "4a0096b69256a6e8587c2070e02a9934806cbcea",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Images Missing Alt",
+                    "description": "Addon to list all images with no alt text on your Statamic dashboard."
+                },
+                "laravel": {
+                    "providers": [
+                        "Teamnovu\\StatamicImagesMissingAlt\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Teamnovu\\StatamicImagesMissingAlt\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Diggelmann"
+                }
+            ],
+            "description": "Addon to list all images with no alt text on your Statamic dashboard.",
+            "support": {
+                "email": "developers@novu.ch",
+                "source": "https://github.com/teamnovu/statamic-images-missing-alt/tree/v1.0.1"
+            },
+            "time": "2023-06-30T09:56:25+00:00"
+        },
+        {
             "name": "thecodingmachine/safe",
             "version": "v2.5.0",
             "source": {
@@ -8288,6 +9698,54 @@
             "time": "2023-04-05T11:54:14+00:00"
         },
         {
+            "name": "thoughtco/statamic-blurhash",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thoughtco/statamic-blurhash.git",
+                "reference": "01a6a0b4df958da2ae6d31a842b4825a565427cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thoughtco/statamic-blurhash/zipball/01a6a0b4df958da2ae6d31a842b4825a565427cb",
+                "reference": "01a6a0b4df958da2ae6d31a842b4825a565427cb",
+                "shasum": ""
+            },
+            "require": {
+                "bepsvpt/blurhash": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "BlurHash",
+                    "description": "Generate and decode blurhash images from Statamic assets"
+                },
+                "laravel": {
+                    "providers": [
+                        "Thoughtco\\BlurHash\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Thoughtco\\BlurHash\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Ryan Mitchell"
+                }
+            ],
+            "description": "A Statamic add-on to generate and decode blurhash images",
+            "support": {
+                "email": "help@thoughtcollective.com",
+                "issues": "https://github.com/thoughtco/statamic-blurhash/issues",
+                "source": "https://github.com/thoughtco/statamic-blurhash/tree/1.0.4"
+            },
+            "time": "2022-11-14T15:10:45+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.6",
             "source": {
@@ -8408,6 +9866,136 @@
                 }
             ],
             "time": "2023-06-25T19:44:51+00:00"
+        },
+        {
+            "name": "visuellverstehen/statamic-anchor-navigation",
+            "version": "v0.3.4-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/visuellverstehen/statamic-anchor-navigation.git",
+                "reference": "91745f7aa7743ee8cefaf74dcdca28c30436e183"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/visuellverstehen/statamic-anchor-navigation/zipball/91745f7aa7743ee8cefaf74dcdca28c30436e183",
+                "reference": "91745f7aa7743ee8cefaf74dcdca28c30436e183",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "statamic/cms": "^3.4 || ^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Anchor Navigation",
+                    "description": "A Statamic tag for creating an anchor nav for all headings generated by the bard editor."
+                },
+                "laravel": {
+                    "providers": [
+                        "VV\\AnchorNavigation\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "VV\\AnchorNavigation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "visuellverstehen"
+                }
+            ],
+            "description": "A Statamic tag for creating an anchor nav for all headings generated by the bard editor.",
+            "keywords": [
+                "addon",
+                "anchor",
+                "bard",
+                "navigation",
+                "statamic",
+                "v3",
+                "v4"
+            ],
+            "support": {
+                "email": "hello@visuellverstehen.de",
+                "issues": "https://github.com/visuellverstehen/statamic-anchor-navigation/issues",
+                "source": "https://github.com/visuellverstehen/statamic-anchor-navigation/tree/v0.3.4-beta"
+            },
+            "time": "2023-07-19T12:42:00+00:00"
+        },
+        {
+            "name": "visuellverstehen/statamic-classify",
+            "version": "2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/visuellverstehen/statamic-classify.git",
+                "reference": "9c1093b4fad8708d4d75f443a4b1ebc711fa54b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/visuellverstehen/statamic-classify/zipball/9c1093b4fad8708d4d75f443a4b1ebc711fa54b5",
+                "reference": "9c1093b4fad8708d4d75f443a4b1ebc711fa54b5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0 || ^9.0 || ^10.0",
+                "php": "^7.4 || ^8.0",
+                "statamic/cms": "^3.0.38 || ^4.0",
+                "symfony/css-selector": "^5.4 || ^6.0",
+                "symfony/dom-crawler": "^5.4 || ^6.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0 || ^7.0 || ^8 || ^9",
+                "phpunit/phpunit": "^9.3 || ^10.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Classify",
+                    "description": "A useful helper to add CSS classes to all HTML tags generated by the bard editor."
+                },
+                "laravel": {
+                    "providers": [
+                        "VV\\Classify\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "VV\\Classify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "visuellverstehen"
+                }
+            ],
+            "description": "A useful helper to add CSS classes to all HTML tags generated by the bard editor.",
+            "keywords": [
+                "addon",
+                "bard",
+                "css",
+                "prose",
+                "statamic",
+                "typography",
+                "v3",
+                "v4"
+            ],
+            "support": {
+                "email": "hello@visuellverstehen.de",
+                "issues": "https://github.com/visuellverstehen/statamic-classify/issues",
+                "source": "https://github.com/visuellverstehen/statamic-classify/tree/2.6.1"
+            },
+            "time": "2023-05-10T11:30:08+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

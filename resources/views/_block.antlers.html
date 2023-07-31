@@ -1,5 +1,12 @@
-{{ if use_custom_html }}
-    {{ custom_html }}
-{{ else }}
-    {{ $slot }}
+<div data-block="{{ id }}">
+    {{ if use_custom_html }}
+        {{ custom_html }}
+    {{ else }}
+        {{ $slot }}
+    {{ /if }}
+</div>
+{{ if advanced_options:custom_css:code }}
+    <style>
+        {{ advanced_options:custom_css:code | replace('selector', '[data-block="{id}"]') }}
+    </style>
 {{ /if }}

@@ -1,4 +1,7 @@
-data: {  }
+data:
+  color_dominant: '#7F4B24'
+  color_average: '#76776F'
+  focus: 45-26-1
 size: 193248
 last_modified: 1690575740
 width: 800

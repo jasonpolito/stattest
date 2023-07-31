@@ -14,69 +14,61 @@ fields:
       visibility: visible
       hide_display: false
   -
-    handle: title_tag
+    handle: details
     field:
-      options:
-        h1: H1
-        h2: H2
-        h3: H3
-        h4: H4
-        h5: H5
-      taggable: false
-      push_tags: false
-      multiple: false
-      clearable: false
-      searchable: true
-      cast_booleans: false
-      default: h1
-      type: select
-      display: 'Title tag'
-      icon: select
-      width: 33
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      hide_display: false
-  -
-    handle: title_size
-    field:
-      options:
-        lg: Large
-        md: Medium
-        sm: Small
-      taggable: false
-      push_tags: false
-      multiple: false
-      clearable: false
-      searchable: true
-      cast_booleans: false
-      default: lg
-      type: select
-      display: 'Title size'
-      icon: select
-      width: 33
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      hide_display: false
-  -
-    handle: align_title
-    field:
-      options:
-        left: Left
-        center: Center
-        right: Right
-      taggable: false
-      push_tags: false
-      multiple: false
-      clearable: false
-      searchable: true
-      cast_booleans: false
-      default: left
-      type: select
-      display: 'Align title'
-      icon: select
-      width: 33
+      fields:
+        -
+          handle: title_tag
+          field:
+            options:
+              h1: H1
+              h2: H2
+              h3: H3
+              h4: H4
+            type: button_group
+            display: 'Title tag'
+            icon: button_group
+            width: 33
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+            default: h1
+        -
+          handle: align_text
+          field:
+            options:
+              left: Left
+              center: Center
+              right: Right
+            type: button_group
+            display: 'Align text'
+            icon: button_group
+            width: 33
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+            default: left
+        -
+          handle: size
+          field:
+            options:
+              sm: sm
+              md: md
+              lg: lg
+            type: button_group
+            display: Size
+            icon: button_group
+            width: 33
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+            default: md
+      type: collapse
+      display: 'Title options'
+      icon: section
       listable: hidden
       instructions_position: above
       visibility: visible

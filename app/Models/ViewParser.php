@@ -10,7 +10,7 @@ class ViewParser extends Model
 {
     use HasFactory;
 
-    public static function parseVariables($str)
+    public static function parseVariables($str): array
     {
         $res = [];
         $patterns = [

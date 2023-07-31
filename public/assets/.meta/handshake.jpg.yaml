@@ -1,4 +1,6 @@
-data: {  }
+data:
+  color_dominant: '#992123'
+  color_average: '#998E88'
 size: 272731
 last_modified: 1690575760
 width: 800

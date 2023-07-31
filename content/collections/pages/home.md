@@ -5,11 +5,11 @@ title: Home
 author: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
 mode: htmlmixed
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1690575825
+updated_at: 1690758425
 template: default
 custom_content: false
 use_blocks: true
-meta_description: 'asfdasfdaasdg asdg asdg asdg asdg asdgasdg asgasdoig aosdg asfdasfdaasdg asdg asdg asdg asdg asdgasdg asgasdoig aosdg asfdasfdaasdg asdg asdg asdg asdg asdgasdg asgasdoig aosdg asfdasfdaasdg asdg asdg asdg asdg asdgasdg asgasdoig aosdg'
+opengraph_image: minis.jpeg
 content:
   -
     type: set
@@ -44,12 +44,34 @@ content:
             open_in_new_tab: false
             type: buttons
             enabled: true
+            more:
+              style: primary
+              size: null
+              icon: arrow-right-small
+              new_tab: false
+            details:
+              style: primary
+              size: normal
+              icon: arrow-right-small
+              new_tab: false
         use_custom_html: false
         custom_html:
           code: null
           mode: htmlmixed
         image_on_left: false
         image: smile.jpeg
+        advanced_options:
+          custom_css:
+            code: ''
+            mode: css
+          use_custom_html: false
+          custom_html:
+            code: null
+            mode: htmlmixed
+        details:
+          title_tag: h1
+          align_text: left
+          size: lg
   -
     type: set
     attrs:
@@ -83,6 +105,10 @@ content:
         custom_html:
           code: null
           mode: htmlmixed
+        details:
+          title_tag: h1
+          align_text: left
+          size: md
   -
     type: set
     attrs:
@@ -103,6 +129,10 @@ content:
         title_size: md
         title_text: 'AcceptAmerica Immigration Services'
         align_title: center
+        details:
+          title_tag: h1
+          align_text: center
+          size: md
   -
     type: set
     attrs:
@@ -143,6 +173,10 @@ content:
           mode: htmlmixed
         image_on_left: true
         image: handshake.jpg
+        details:
+          title_tag: h1
+          align_text: left
+          size: md
   -
     type: paragraph
     attrs:
