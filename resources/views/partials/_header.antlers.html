@@ -1,5 +1,5 @@
 <header class="py-4">
-    {{ partial:partials/layout/container }}
+    <x-container>
         <div class="flex items-center justify-between">
             <div>
                 <a href="/" class="block w-[12rem] md:w-[16rem]">
@@ -16,7 +16,6 @@
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
-
                 </button>
                 <ul class="absolute right-0 z-10 items-center hidden pb-4 bg-white lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
                     :class="{'block': open, 'hidden': !open}">
@@ -36,5 +35,5 @@
                 </ul>
             </nav>
         </div>
-    {{ /partial:partials/layout/container }}
+    </x-container>
 </header>

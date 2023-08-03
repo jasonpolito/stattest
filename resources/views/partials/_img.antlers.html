@@ -1,9 +1,4 @@
 <div class="fill-parent">
-    {{ if image }}
-        {{ blur_hash:image class="object-cover h-full min-w-full fill-parent" style="aspect-ratio: {image:width} / {image:height}; object-position: {image:focus_css};" }}
-    {{ else }}
-        {{ blur_hash image='assets/no_asset.jpg' class="object-cover h-full min-w-full fill-parent" style="aspect-ratio: {image:width} / {image:height}; object-position: {image:focus_css};" }}
-    {{ /if }}
     <img src="{{ image ?? 'assets/no_asset.jpg' }}" alt="{{ image:alt }}"
         style="aspect-ratio: {{ image:width }} / {{ image:height }}; object-position: {{ image:focus_css }};"
         class="object-cover h-full min-w-full transition-all fill-parent ">

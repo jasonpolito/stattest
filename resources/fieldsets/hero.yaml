@@ -1,18 +1,7 @@
 title: Hero
 fields:
   -
-    handle: title
-    field:
-      input_type: text
-      placeholder: 'A nice hero title.'
-      antlers: true
-      type: text
-      display: Title
-      icon: text
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      hide_display: true
+    import: title
   -
     handle: content
     field:

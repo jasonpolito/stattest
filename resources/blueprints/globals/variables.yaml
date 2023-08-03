@@ -1,0 +1,58 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: variables
+            field:
+              collapse: false
+              previews: true
+              fullscreen: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    variable:
+                      display: Variable
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: text
+                          field:
+                            input_type: text
+                            placeholder: 'Actual text to display, ex: Company Name'
+                            antlers: false
+                            type: text
+                            display: Text
+                            icon: text
+                            width: 75
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: handle
+                          field:
+                            input_type: text
+                            placeholder: company_name
+                            antlers: false
+                            type: text
+                            display: Handle
+                            icon: text
+                            width: 25
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+              type: replicator
+              display: Variables
+              icon: replicator
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false

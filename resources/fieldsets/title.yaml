@@ -69,7 +69,7 @@ fields:
       type: collapse
       display: 'Title options'
       icon: section
-      listable: hidden
+      listable: false
       instructions_position: above
       visibility: visible
       hide_display: false

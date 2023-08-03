@@ -42,13 +42,6 @@ fields:
           instructions: null
           icon: layout-flip-down
           sets:
-            hero:
-              display: Hero
-              instructions: null
-              icon: align-object-top
-              fields:
-                -
-                  import: hero
             side_by_side:
               display: 'Side by side'
               instructions: null
@@ -56,6 +49,13 @@ fields:
               fields:
                 -
                   import: side-by-side
+            hero:
+              display: Hero
+              instructions: null
+              icon: align-object-top
+              fields:
+                -
+                  import: hero
             cards:
               display: Cards
               instructions: null

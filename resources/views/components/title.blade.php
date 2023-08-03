@@ -10,6 +10,6 @@
         'sm' => 'text-2xl md:text-3xl lg:text-4xl',
     ];
 @endphp
-<{{ $tag }} {{ $attributes->class([$sizes[$size ?? 'md'], 'xl:mb-12 mb-8 font-bold', "text-$align"]) }}>
+<{{ $tag }} {{ $attributes->class([$sizes[$size ?? 'md'], "mb-8 font-bold font-title text-$align"]) }}>
     {{ $slot }}
     </{{ $tag }}>

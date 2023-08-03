@@ -22,11 +22,11 @@
         "michaelmannucci/shades": "^1.0",
         "ndx/statamic-bard-color-picker": "^1.2",
         "o1y/statamic-flexible-width": "^1.0",
+        "placement/faker": "dev-main",
         "pusher/pusher-php-server": "^5.0",
         "statamic/cms": "^4.0",
         "statamic/collaboration": "^0.7.2",
         "stefangalescu/statamic-heroicons": "^2.1",
-        "stillat/antlers-components": "^2.0",
         "stillat/relationships": "^2.1",
         "swiftmade/statamic-clear-assets": "^2.0",
         "teamnovu/statamic-images-missing-alt": "^1.0",
@@ -93,5 +93,11 @@
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "addons/placement/faker"
+        }
+    ]
 }

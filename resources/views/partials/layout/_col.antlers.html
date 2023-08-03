@@ -1,0 +1,11 @@
+{{#
+    @format false
+#}}
+{{ padding = [
+    'normal' => '-mx-4 xl:-mx-6',
+    'sm' => '-mx-2 xl:-mx-4',
+    'none' => '',
+] }}
+<div class="w-full {{ padding[gap ?? 'normal'] }} {{ class }}">
+    {{ slot }}
+</div>

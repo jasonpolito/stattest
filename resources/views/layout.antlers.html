@@ -13,6 +13,9 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
     {{ style:color_primary | shades:tailwind:primary }}
+    <link
+        href="https://fonts.googleapis.com/css2?family={{ style:font_body | replace(' ', '+') }}:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family={{ style:font_title | replace(' ', '+') }}:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -50,6 +53,16 @@
         }
     </script>
     <style type="text/tailwindcss">
+        * {
+            position: relative;
+        }
+
+        .font-title {
+            font-family: '{{ style:font_title }}';
+        }
+        .font-body {
+            font-family: '{{ style:font_body }}';
+        }
         @media screen(md) {
             .md\:fill-parent {
                 position: absolute;
@@ -59,12 +72,6 @@
                 height: 100%;
             }
         }
-    </style>
-    <style>
-        * {
-            position: relative;
-        }
-
         .fill-parent {
             position: absolute;
             top: 0;
@@ -92,15 +99,19 @@
         }
     </style>
 </head>
-<body class="leading-normal text-gray-800">
-    {{ site:header }}
-        {{ content }}
-        {{ /content }}
-        {{ partial:blocks }}
-    {{ /site:header }}
+<body class="leading-normal text-gray-800 font-body">
+    {{ if {partial:exists src="header"} }}
+        {{ partial src="header" }}
+    {{ else }}
+        {{ site:header }}
+            {{ content }}
+            {{ /content }}
+            {{ partial:blocks }}
+        {{ /site:header }}
+    {{ /if }}
     {{ template_content }}
-    {{ if {partial:exists src="footer"} }}
-        {{ partial src="footer" }}
+    {{ if {partial:exists src="global/footer"} }}
+        {{ partial src="global/footer" }}
     {{ else }}
         {{ site:footer }}
             {{ content }}

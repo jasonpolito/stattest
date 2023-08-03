@@ -1,19 +1,17 @@
 <footer class="text-white bg-gray-900">
-    <x-section>
-        <x-container>
-            <ul class="flex flex-wrap md:gap-8 md:justify-between">
-                {{ footer:link_columns }}
-                    <li class="w-full sm:w-1/2 md:w-auto md:max-w-[24rem]">
-                        {{ if title }}
-                            <h5 class="mb-6 text-lg font-bold">{{ title }}</h5>
-                        {{ /if }}
-                        <div
-                            class="mb-8 font-light prose-sm prose prose-a:opacity-60 prose-a:hover:opacity-75 prose-invert prose-a:font-light prose-p:font-light prose-a:no-underline hover:prose-a:underline">
-                            {{ content }}
-                        </div>
-                    </li>
-                {{ /footer:link_columns }}
-            </ul>
-        </x-container>
-    </x-section>
+    {{ partial:section }}
+        <ul class="flex flex-wrap md:gap-8 md:justify-between">
+            {{ footer:link_columns }}
+                <li class="w-full sm:w-1/2 md:w-auto md:max-w-[24rem]">
+                    {{ if title }}
+                        <h5 class="mb-6 text-lg font-bold">{{ title }}</h5>
+                    {{ /if }}
+                    <div
+                        class="mb-8 font-light prose-sm prose prose-a:opacity-60 prose-a:hover:opacity-75 prose-invert prose-a:font-light prose-p:font-light prose-a:no-underline hover:prose-a:underline">
+                        {{ content }}
+                    </div>
+                </li>
+            {{ /footer:link_columns }}
+        </ul>
+    {{ /partial:section }}
 </footer>

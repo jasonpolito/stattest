@@ -15,8 +15,8 @@ class ViewParser extends Model
         $res = [];
         $patterns = [
             '/\$([a-zA-z0-9-_]+\b)/i', // basic
-            // '/\{{2}\s*([\$\!a-z\d_(\->)\?\:\'\"\s]+)\s*\}{2}/i', // basic
-            // '/\{\!\!\s*\$([a-z\d_(\->)]+)\s*\!\!\}/i' // raw
+            '/\{{2}\s*([\$\!a-z\d_(\->)\?\:\'\"\s]+)\s*\}{2}/i', // basic
+            '/\{\!\!\s*\$([a-z\d_(\->)]+)\s*\!\!\}/i' // raw
         ];
         foreach ($patterns as $pattern) {
             preg_match_all($pattern, $str, $matches);

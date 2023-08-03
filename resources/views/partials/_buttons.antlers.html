@@ -2,12 +2,7 @@
     <div class="pt-8"></div>
 {{ /if }}
 {{ buttons }}
-    <x-btn url="{url}" style="{details.style}" size="{details.size}">
+    {{ partial:partials/content/btn :icon="details:icon" :url="url" :style="details:style" :size="details:size" }}
         {{ text }}
-        {{ if details:icon }}
-            <x-slot:icon>
-                {{ heroicon:solid icon="{details.icon | replace('-small', '')}" }}
-            </x-slot:icon>
-        {{ /if }}
-    </x-btn>
+    {{ /partial:partials/content/btn }}
 {{ /buttons }}

@@ -5,12 +5,52 @@ title: Home
 author: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
 mode: htmlmixed
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1690758425
+updated_at: 1691076015
 template: default
 custom_content: false
 use_blocks: true
 opengraph_image: minis.jpeg
 content:
+  -
+    type: set
+    attrs:
+      id: lkva0pad
+      values:
+        type: hero
+        title_text: 'Immigration Lawyer Online'
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Need assistance with your immigration status?'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Compassionate legal support for individuals and families.'
+        buttons:
+          -
+            id: lkva1ch5
+            text: 'Schedule Consultation'
+            url: '#'
+            details:
+              style: primary
+              size: normal
+              icon: arrow-right-small
+              new_tab: false
+            type: buttons
+            enabled: true
+        use_custom_html: false
+        custom_html:
+          code: null
+          mode: htmlmixed
+        details:
+          title_tag: h1
+          align_text: left
+          size: md
   -
     type: set
     attrs:
@@ -101,6 +141,11 @@ content:
             open_in_new_tab: false
             type: buttons
             enabled: true
+            details:
+              style: primary
+              size: normal
+              icon: arrow-right-small
+              new_tab: false
         use_custom_html: false
         custom_html:
           code: null

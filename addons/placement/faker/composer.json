@@ -1,0 +1,19 @@
+{
+    "name": "placement/faker",
+    "autoload": {
+        "psr-4": {
+            "Placement\\Faker\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Faker",
+            "description": "Faker addon"
+        },
+        "laravel": {
+            "providers": [
+                "Placement\\Faker\\ServiceProvider"
+            ]
+        }
+    }
+}

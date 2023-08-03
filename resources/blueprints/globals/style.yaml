@@ -15,3 +15,49 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+          -
+            handle: font_title
+            field:
+              options:
+                Roboto: Roboto
+                'Roboto Slab': 'Roboto Slab'
+                Inter: Inter
+                'Playfair Display': 'Playfair Display'
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: Inter
+              type: select
+              display: 'Title Font'
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
+          -
+            handle: font_body
+            field:
+              options:
+                Roboto: Roboto
+                'Roboto Slab': 'Roboto Slab'
+                Inter: Inter
+                'Playfair Display': 'Playfair Display'
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: Inter
+              type: select
+              display: 'Body Font'
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50

@@ -1,5 +1,19 @@
+{{#
+    @format false
+#}}
+
+{{ sizes = [
+    'lg' => 'text-4xl md:text-5xl lg:text-6xl',
+    'md' => 'text-3xl md:text-4xl lg:text-5xl',
+    'sm' => 'text-2xl md:text-3xl lg:text-4xl',
+] }}
 {{ if title_text }}
+    <{{ details:title_tag }} class="{{ sizes[details:size] }} mb-8 font-bold font-title text-{{ details:align_text }}">
+        {{ title_text }}
+    </{{ details:title_tag }}>
+{{ /if }}
+{{#
     <x-title tag="{details:title_tag}" size="{details:size}" align="{details:align_text}">
         {{ title_text }}
     </x-title>
-{{ /if }}
+#}}

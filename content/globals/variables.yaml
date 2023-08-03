@@ -1,0 +1,9 @@
+title: Variables
+data:
+  variables:
+    -
+      id: lkva9dt1
+      text: 'Accept America'
+      handle: company_name
+      type: variable
+      enabled: true
