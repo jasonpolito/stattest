@@ -1,5 +1,12 @@
 <div class="fill-parent">
-    <img src="{{ image ?? 'assets/no_asset.jpg' }}" alt="{{ image:alt }}"
-        style="aspect-ratio: {{ image:width }} / {{ image:height }}; object-position: {{ image:focus_css }};"
-        class="object-cover h-full min-w-full transition-all fill-parent ">
+    {{ if image }}
+        {{ blur_hash:image class="object-cover h-full min-w-full fill-parent" style="aspect-ratio: {image:width} / {image:height}; object-position: {image:focus_css};" }}
+        <img src="{{ glide:image format="webp" }}" alt="{{ image:alt }}"
+            style="aspect-ratio: {{ image:width }} / {{ image:height }}; object-position: {{ image:focus_css }};"
+            class="object-cover h-full min-w-full transition-all fill-parent ">
+    {{ else }}
+        {{ blur_hash image='assets/no_asset.jpg' class="object-cover h-full min-w-full fill-parent" style="aspect-ratio: 8 / 6;" }}
+        <img src="/assets/no_asset.jpg" style="aspect-ratio: 8 / 6;"
+            class="object-cover h-full min-w-full transition-all fill-parent ">
+    {{ /if }}
 </div>
