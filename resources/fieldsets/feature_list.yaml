@@ -1,0 +1,86 @@
+title: 'Feature List'
+fields:
+  -
+    handle: use_records
+    field:
+      default: false
+      type: toggle
+      display: 'Use records'
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: records
+    field:
+      mode: default
+      create: false
+      collections:
+        - pages
+        - services
+      type: entries
+      display: Records
+      icon: entries
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      if:
+        use_records: 'equals true'
+      always_save: true
+  -
+    handle: features
+    field:
+      collapse: accordion
+      previews: true
+      fullscreen: false
+      sets:
+        features:
+          display: Features
+          instructions: null
+          icon: null
+          sets:
+            feature:
+              display: Feature
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: text
+                  field:
+                    input_type: text
+                    placeholder: 'Feature text'
+                    antlers: true
+                    type: text
+                    display: Text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: url
+                  field:
+                    input_type: text
+                    placeholder: /example/url
+                    antlers: true
+                    type: text
+                    display: URL
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+      type: replicator
+      display: Features
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      if:
+        use_records: 'equals false'
+      always_save: true

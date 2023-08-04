@@ -3,9 +3,17 @@ data:
   logo: aa_logo.png
   icon: favicon-32x32.png
   header: eb9380ab-8059-4e7c-bd6e-aae985e630d9
-  footer: 34f3b9f2-8e18-45eb-98ff-844a90b0e69f
   insert_into_head:
-    code: null
+    code: |-
+      <style>
+        header nav li:last-child a {
+      	background: var(--primary-500);
+      	color: white;
+      	padding: .5rem 1rem;
+      	border-radius: .25rem;
+      	margin-left: 2rem;
+        }
+      </style>
     mode: htmlmixed
   insert_into_body:
     code: null

@@ -1,4 +1,4 @@
-<div data-block="{{ id }}">
+<div data-block-id="{{ id }}" data-block-type="{{ type }}">
     {{ if use_custom_html }}
         {{ custom_html }}
     {{ else }}
@@ -7,6 +7,6 @@
 </div>
 {{ if advanced_options:custom_css:code }}
     <style>
-        {{ advanced_options:custom_css:code | replace('selector', '[data-block="{id}"]') }}
+        {{ advanced_options:custom_css:code | replace('selector', '[data-block-id="{id}"]') }}
     </style>
 {{ /if }}

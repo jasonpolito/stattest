@@ -5,12 +5,52 @@ tabs:
       -
         fields:
           -
-            handle: color_primary
+            handle: colors
             field:
-              allow_any: true
-              type: color
-              display: 'Primary Color'
-              icon: color
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                colors:
+                  display: COlors
+                  instructions: null
+                  icon: null
+                  sets:
+                    color:
+                      display: Color
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: name
+                          field:
+                            input_type: text
+                            placeholder: Name
+                            antlers: false
+                            type: text
+                            display: Name
+                            icon: text
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: color
+                          field:
+                            allow_any: true
+                            default: '#0a96d1'
+                            type: color
+                            display: Color
+                            icon: color
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+              type: replicator
+              display: Colors
+              icon: replicator
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -19,10 +59,13 @@ tabs:
             handle: font_title
             field:
               options:
+                Inter: Inter
                 Roboto: Roboto
                 'Roboto Slab': 'Roboto Slab'
-                Inter: Inter
+                'Noto Sans': 'Noto Sans'
+                'Noto Serif': 'Noto Serif'
                 'Playfair Display': 'Playfair Display'
+                'Merriweather': 'Merriweather'
               taggable: false
               push_tags: false
               multiple: false
@@ -42,10 +85,13 @@ tabs:
             handle: font_body
             field:
               options:
+                Inter: Inter
                 Roboto: Roboto
                 'Roboto Slab': 'Roboto Slab'
-                Inter: Inter
+                'Noto Sans': 'Noto Sans'
+                'Noto Serif': 'Noto Serif'
                 'Playfair Display': 'Playfair Display'
+                'Merriweather': 'Merriweather'
               taggable: false
               push_tags: false
               multiple: false

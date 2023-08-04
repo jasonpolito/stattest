@@ -1,3 +1,13 @@
-<section class="py-16 lg:py-24 bg-cover bg-center {{ class }}" {{ attrs }}>
+{{# @format false #}}
+{{
+    sizes = [
+        'normal' => 'py-16 md:py-24 lg:py-28',
+        'sm' => 'py-10 lg:py-16',
+        'xs' => 'py-10',
+        'none' => '',
+    ];
+    padding = sectionsize ? sizes[sectionsize] : sizes['normal'];
+}}
+<section class="{{ padding }} bg-cover mx-auto bg-center {{ sectionclass }}" {{ attrs }}>
     {{ slot }}
 </section>

@@ -1,5 +1,17 @@
 title: Style
 data:
-  color_primary: '#01338e'
-  font_title: 'Roboto Slab'
-  font_body: Roboto
+  colors:
+    -
+      id: lkwle7jw
+      name: Primary
+      color: '#01338e'
+      type: color
+      enabled: true
+    -
+      id: lkwlea7q
+      name: Secondary
+      color: '#5ecaff'
+      type: color
+      enabled: true
+  font_title: Merriweather
+  font_body: Inter

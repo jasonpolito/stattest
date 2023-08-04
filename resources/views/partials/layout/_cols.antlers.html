@@ -1,11 +1,14 @@
 {{#
     @format false
 #}}
-{{ padding = [
-    'normal' => '-mx-4 xl:-mx-6',
-    'sm' => '-mx-2 xl:-mx-4',
-    'none' => '',
-] }}
-<div class="flex flex-wrap {{ padding[gap ?? 'normal'] }}">
+{{
+    padding = [
+        'normal' => '-mx-4 xl:-mx-6',
+        'sm' => '-mx-2 xl:-mx-4',
+        'none' => '',
+    ];
+    gap = gap ? padding[gap] : padding['normal'];
+}}
+<div class="flex flex-wrap {{ gap }} {{ class }}">
     {{ slot }}
 </div>

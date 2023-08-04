@@ -49,6 +49,13 @@ fields:
               fields:
                 -
                   import: side-by-side
+            touts:
+              display: Touts
+              instructions: null
+              icon: favorite-star
+              fields:
+                -
+                  import: touts
             hero:
               display: Hero
               instructions: null
@@ -70,6 +77,20 @@ fields:
               fields:
                 -
                   import: faqs
+            feature_list:
+              display: 'Feature List'
+              instructions: null
+              icon: arrow-right
+              fields:
+                -
+                  import: feature_list
+            render_partial:
+              display: Partial
+              instructions: null
+              icon: layout-table-row-insert
+              fields:
+                -
+                  import: partial
             html:
               display: HTML
               instructions: null
@@ -77,13 +98,23 @@ fields:
               fields:
                 -
                   import: html
-            render_partial:
-              display: 'Render Partial'
+            homepage_shim:
+              display: 'Homepage shim'
               instructions: null
-              icon: layout-table-row-insert
+              icon: null
               fields:
                 -
-                  import: partial
+                  handle: text_field
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Text Field'
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
       always_show_set_button: true
       collapse: accordion
       previews: true

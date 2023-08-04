@@ -1,0 +1,16 @@
+{{ partial:block }}
+    {{ partial:section sectionclass="text-white max-w-[102rem] bg-gradient-to-l from-secondary-600 via-primary to-primary-600" sectionsize="xs" }}
+        {{ partial:partials/layout/cols }}
+            {{ touts }}
+                {{ partial:partials/layout/col class="lg:w-1/{touts | count}" }}
+                    <div class="my-4 md:my-6">
+                        <h4 class="mb-2 text-lg font-title md:text-xl">{{ title }}</h4>
+                        <div class="font-light leading-relaxed text-primary-100">
+                            {{ content }}
+                        </div>
+                    </div>
+                {{ /partial:partials/layout/col }}
+            {{ /touts }}
+        {{ /partial:partials/layout/cols }}
+    {{ /partial:section }}
+{{ /partial:block }}

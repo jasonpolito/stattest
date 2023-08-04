@@ -5,7 +5,7 @@ title: Home
 author: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
 mode: htmlmixed
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1691076015
+updated_at: 1691179952
 template: default
 custom_content: false
 use_blocks: true
@@ -43,185 +43,122 @@ content:
               new_tab: false
             type: buttons
             enabled: true
-        use_custom_html: false
-        custom_html:
-          code: null
-          mode: htmlmixed
-        details:
-          title_tag: h1
-          align_text: left
-          size: md
-  -
-    type: set
-    attrs:
-      id: lkn07jv7
-      values:
-        type: side_by_side
-        title_text: 'Immigration<br>Lawyer Online'
-        title_tag: h1
-        title_size: lg
-        align_title: left
-        content:
           -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Need assistance with your immigration status?'
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Compassionate legal support for individuals and families.'
-        buttons:
-          -
-            id: lkmztggs
-            text: 'Schedule Consultation'
-            url: '#'
-            style: primary
-            icon: arrow-right-small
-            open_in_new_tab: false
+            id: lkwltsif
+            text: 'Immigration Services'
+            url: '#services'
+            details:
+              style: unstyled
+              size: normal
+              icon: null
+              new_tab: false
             type: buttons
             enabled: true
-            more:
-              style: primary
-              size: null
-              icon: arrow-right-small
-              new_tab: false
-            details:
-              style: primary
-              size: normal
-              icon: arrow-right-small
-              new_tab: false
         use_custom_html: false
         custom_html:
           code: null
           mode: htmlmixed
-        image_on_left: false
-        image: smile.jpeg
-        advanced_options:
-          custom_css:
-            code: ''
-            mode: css
-          use_custom_html: false
-          custom_html:
-            code: null
-            mode: htmlmixed
         details:
           title_tag: h1
           align_text: left
           size: lg
+        image: smile.jpeg
   -
     type: set
     attrs:
-      id: lkn0x467
+      id: lkwie232
       values:
-        type: side_by_side
-        title_text: 'Helping <span class="text-primary">Individuals & Families</span> With Their Immigration Needs'
-        title_tag: h3
-        title_size: md
-        align_title: left
-        content:
+        type: touts
+        touts:
           -
-            type: paragraph
+            id: lkwie3os
+            title: Expertise
             content:
               -
-                type: text
-                text: 'Committed to bridging borders, our mission is to provide comprehensive and compassionate legal support for individuals and families striving to start a new chapter in the United States. We believe in the American Dream and are dedicated to making it a reality for our clients, navigating the complexities of the immigration process with expertise, integrity, and an unwavering commitment to our clients’ success.'
-        image: minis.jpeg
-        image_on_left: true
-        buttons:
-          -
-            id: lkn0xw5n
-            text: 'How Can We Help?'
-            url: '#'
-            style: primary
-            icon: arrow-right-small
-            open_in_new_tab: false
-            type: buttons
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Our immigration attorneys have in-depth knowledge of complex laws and regulations.'
+            type: touts
             enabled: true
-            details:
-              style: primary
-              size: normal
-              icon: arrow-right-small
-              new_tab: false
-        use_custom_html: false
-        custom_html:
-          code: null
-          mode: htmlmixed
-        details:
-          title_tag: h1
-          align_text: left
-          size: md
+          -
+            id: lkwieiu8
+            title: Guidance
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Providing tailored advice for your unique situation and immigration goals.'
+            type: touts
+            enabled: true
+          -
+            id: lkwifdyp
+            title: Advocacy
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Representing you, we increase the chances of a positive outcome during proceedings.'
+            type: touts
+            enabled: true
+        advanced_options:
+          custom_css:
+            code: |-
+              selector section:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url(/assets/minis.jpeg);
+                background-position: center center;
+                background-size: cover;
+                mix-blend-mode: multiply;
+                filter: grayscale(100%);
+                opacity: 0.5;
+              }
+            mode: css
   -
     type: set
     attrs:
-      id: lklo30oc
+      id: lkwnp6ms
       values:
-        type: cards
-        entries:
+        type: feature_list
+        features:
+          -
+            id: lkwnp9gj
+            record: 2e670dd1-ddb2-4bb1-8c83-25389861b6cc
+            use_records: true
+            type: feature
+            enabled: true
+          -
+            id: lkwnpli2
+            record: 5f3d7f6a-2845-431b-a470-1a3a4d4892fe
+            use_records: true
+            type: feature
+            enabled: true
+        use_records: true
+        records:
+          - 5ead9cc5-2224-4e04-8b9d-07b9075fac92
+          - 5f3d7f6a-2845-431b-a470-1a3a4d4892fe
+          - 1007ce7c-20f0-49ce-ada9-55fef395c58e
           - 750153ce-2fbf-4d6e-9be0-54bc47a84dfc
+          - c3104a9e-94c9-4631-9bc1-79cdb1581f12
           - c8cb10ac-eaa0-4393-912d-8e8c48e613d3
           - cf6c3bb1-d42a-42e3-90ec-e6e97d3b5a5d
-          - c3104a9e-94c9-4631-9bc1-79cdb1581f12
-          - 1007ce7c-20f0-49ce-ada9-55fef395c58e
-          - 5f3d7f6a-2845-431b-a470-1a3a4d4892fe
-          - 5ead9cc5-2224-4e04-8b9d-07b9075fac92
-        text: 'AcceptAmerica Immigration Services'
-        tag: h2
-        title_tag: h2
-        title_size: md
-        title_text: 'AcceptAmerica Immigration Services'
-        align_title: center
-        details:
-          title_tag: h1
-          align_text: center
-          size: md
   -
     type: set
     attrs:
-      id: lkmyri6i
+      id: lkwzlzhy
       values:
-        type: render_partial
-        selected_partial: a8e473f9-03bf-4cc1-b281-0fa968c8ea0a
-  -
-    type: set
-    attrs:
-      id: lkmzt33a
-      values:
-        type: side_by_side
-        title_text: 'Embracing Your Immigration Journey with Care and Expertise'
-        title_tag: h2
-        title_size: sm
-        align_title: left
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: "At Accept America, we know that your immigration journey is about more than just navigating legal procedures. It's about you, your family, your dreams, your future. Our team is not only well-versed in immigration laws, but we're also passionate about understanding and supporting you on a personal level."
-        buttons:
-          -
-            id: lkmztggs
-            text: 'Schedule Consultation'
-            url: '#'
-            style: primary
-            icon: arrow-right-small
-            open_in_new_tab: false
-            type: buttons
-            enabled: true
-        use_custom_html: false
-        custom_html:
-          code: null
-          mode: htmlmixed
-        image_on_left: true
-        image: handshake.jpg
-        details:
-          title_tag: h1
-          align_text: left
-          size: md
+        type: homepage_shim
   -
     type: paragraph
     attrs:

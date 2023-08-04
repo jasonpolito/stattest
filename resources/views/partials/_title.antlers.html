@@ -1,19 +1,18 @@
-{{#
-    @format false
-#}}
+{{# @format false #}}
 
-{{ sizes = [
-    'lg' => 'text-4xl md:text-5xl lg:text-6xl',
-    'md' => 'text-3xl md:text-4xl lg:text-5xl',
-    'sm' => 'text-2xl md:text-3xl lg:text-4xl',
-] }}
-{{ if title_text }}
-    <{{ details:title_tag }} class="{{ sizes[details:size] }} mb-8 font-bold font-title text-{{ details:align_text }}">
+{{
+    sizes = [
+        'lg' => 'text-4xl md:text-5xl lg:text-6xl lg:leading-tight md:leading-tight leading-tight',
+        'md' => 'text-3xl md:text-4xl lg:text-5xl lg:leading-tight md:leading-normal leading-normal',
+        'sm' => 'text-2xl md:text-3xl lg:text-4xl lg:leading-normal',
+    ];
+    size_class = details:size ? sizes[details:size] : (size ? sizes[size] : sizes['md']);
+}}
+
+<{{ details:title_tag ?? 'h3' }} class="{{ size_class }} mb-8  font-title text-{{ details:align_text }}">
+    {{ if title_text }}
         {{ title_text }}
-    </{{ details:title_tag }}>
-{{ /if }}
-{{#
-    <x-title tag="{details:title_tag}" size="{details:size}" align="{details:align_text}">
-        {{ title_text }}
-    </x-title>
-#}}
+    {{ else }}
+        {{ slot }}
+    {{ /if }}
+</{{ details:title_tag ?? 'h3' }}>

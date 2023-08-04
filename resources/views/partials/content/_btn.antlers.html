@@ -1,27 +1,24 @@
-{{#
-    @format false
-#}}
+{{# @format false #}}
 
 {{?  
-    $style = $style ?: 'primary';
-    $size = $size ?: 'normal';
+    $style = $style ?? 'primary';
+    $size = $size ?? 'normal';
     $hover = 'hover:brightness-105 hover:shadow-xl shadow-primary-500';
-    $base = 'inline-block group rounded leading-normal mb-6 transition-all mr-2';
-    $css = implode(' ', [$base, $hover]);
+    $base = 'inline-block last:mb-0 group rounded leading-normal mb-6 transition-all mr-2';
     $styles = [
-        'primary' => 'bg-primary-500 text-white',
-        'secondary' => 'bg-secondary-500 text-white',
-        'unstyled' => 'no-style',
+        'primary' => "bg-primary-500 text-white $hover",
+        'secondary' => "bg-secondary-500 text-white $hover",
+        'unstyled' => 'hover:text-primary font-medium',
     ];
     $sizes = [
         'sm' => 'py-1 px-3 sm:py-2 sm:px-4 text-sm',
         'normal' => 'py-3 px-5 sm:py-4 sm:px-6',
         'lg' => 'py-4 px-6 sm:py-6 sm:px-8 text-lg',
     ];
-    $classes = implode(' ', [$css, $styles[$style], $sizes[$size]]);
+    $classes = implode(' ', [$base, $styles[$style], $sizes[$size]]);
 ?}}
 
-<a href="{{ url ?: '#' }}" class="{{ classes }}">
+<a href="{{ url ?? '#' }}" class="{{ classes }}">
     {{ if style == 'primary' }}
         <span class="rounded opacity-50 fill-parent to-primary-600 bg-gradient-to-b from-transparent"></span>
     {{ /if }}
