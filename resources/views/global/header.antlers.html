@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between">
             <div>
                 <a href="/" class="block w-[12rem] md:w-[16rem]">
-                    <img src="{{ site:logo }}" alt="">
+                    <img src="{{ site:logo }}" width="{{ site:logo:width }}" height="{{ site:logo:height }}" alt="">
                 </a>
             </div>
             <nav x-data="{open: false}" @click.outside="open = false">

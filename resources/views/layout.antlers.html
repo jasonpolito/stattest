@@ -100,8 +100,8 @@
     </style>
 </head>
 <body class="leading-normal text-gray-800 font-body">
-    {{ if {partial:exists src="header"} }}
-        {{ partial src="header" }}
+    {{ if {partial:exists src="global/header"} }}
+        {{ partial src="global/header" }}
     {{ else }}
         {{ site:header }}
             {{ content }}
