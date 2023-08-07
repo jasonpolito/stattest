@@ -9,7 +9,7 @@
     size_class = details:size ? sizes[details:size] : (size ? sizes[size] : sizes['md']);
 }}
 
-<{{ details:title_tag ?? 'h3' }} class="{{ size_class }} mb-8 last:mb-0  font-title text-{{ details:align_text }}">
+<{{ details:title_tag ?? 'h3' }} class="{{ size_class }} {{ titleclass }} mb-8 last:mb-0  font-title text-{{ details:align_text }}">
     {{ if title_text }}
         {{ title_text }}
     {{ else }}

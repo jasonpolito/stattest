@@ -73,3 +73,140 @@
         {{ /partial:content/btn }}
     {{ /partial:layout/container }}
 {{ /partial:layout/section }}
+
+{{
+    services = [
+        "Asylum Services" => "From affirmative applications to assisting unaccompanied minors, we guide you through asylum proceedings, appeals, and more, ensuring a haven for those in need.",
+        "Citizenship Services" => "Navigate the path to citizenship with our comprehensive support—from naturalization applications to dual citizenship consultations and exam preparations.",
+        "Deportation Defense" => "Face removal proceedings with confidence. Whether seeking relief from removal, attending bond hearings, or appealing a decision, our team stands with you.",
+        "Residency Services" => "Streamline your journey to permanent residency. We assist in adjusting status, and guiding both family and employment-based green card applications.",
+        "Student Services" => "Empowering international students with robust support—from F-1 visa applications to changes in status and Optional Practical Training (OPT) insights.",
+        "Worker Services" => "For professionals on the move, we offer assistance with H-1B visas, intra-company transfers, employment authorizations, and paths to permanent residency.",
+    ];
+}}
+
+{{ partial:section }}
+    {{ partial:title size="sm" titleclass="text-center" }}
+        Immigration Services
+    {{ /partial:title }}
+    {{ partial:layout/cols gap="sm" }}
+        {{ foreach:services as="key|value" }}
+            {{ partial:layout/col class="pb-8 lg:w-1/3" gap="sm" }}
+                <a href="#" class="block h-full p-8 bg-gray-100 rounded hover:bg-primary hover:text-white">
+                    <div class="mb-4 text-lg font-bold font-title">{{ key }}</div>
+                    <div>{{ value }}</div>
+                </a>
+            {{ /partial:layout/col }}
+        {{ /foreach:services }}
+    {{ /partial:layout/cols }}
+{{ /partial:section }}
+
+{{
+    faqs = [
+        'What types of services does an immigration attorney offer?' => 'Immigration attorneys guide individuals through U.S. immigration laws and processes, including obtaining visas for travel, work, or study, permanent relocation, family or employment-based relocation, and asylum. They also represent and advocate for those detained or facing deportation. View Accept America’s <a href="" class="text-primary">immigration services</a>.',
+        'When should I consider hiring an immigration attorney?' => '',
+        'What is the difference between a visa, a green card, and citizenship?' => '',
+        'How can I apply for U.S. citizenship?' => '',
+        'Can an immigration attorney help with asylum applications?' => '',
+        'I’ve been deported from the U.S. Can an attorney help me return?' => ''
+    ];
+}}
+
+{{ partial:section sectionclass="bg-gray-100" }}
+    {{ partial:title size="sm" titleclass="text-center" }}
+        Common Immigration Questions
+    {{ /partial:title }}
+    {{ partial:layout/cols class="justify-center" }}
+        {{ partial:layout/col class="lg:w-2/3" }}
+            <div class="p-8 bg-white rounded">
+                <ul>
+                    {{ foreach:faqs as="title|answer" }}
+                        <li x-data="{open: false}">
+                            <a href="#faq_{{ id }}" @click.prevent="open = !open" :class="{'text-primary': open}"
+                                class="flex justify-between text-lg transition border-b hover:text-primary-600 border-primary-50">
+                                <span class="py-4">{{ title }}</span>
+                                <span class="py-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition top-1"
+                                        :class="{'rotate-90': open}">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div id="faq_{{ id }}" class="p-4 mb-8 text-lg prose" style="display: none;"
+                                x-show="open">
+                                {{ answer ?? '// pending' }}
+                            </div>
+                        </li>
+                    {{ /foreach:faqs }}
+                </ul>
+            </div>
+        {{ /partial:layout/col }}
+    {{ /partial:layout/cols }}
+{{ /partial:section }}
+
+{{ partial:layout/section sectionclass="bg-primary text-white text-center" sectionsize="sm" }}
+    <div class="bg-center bg-cover opacity-50 fill-parent mix-blend-multiply grayscale"
+    style="background-image: url(/assets/flags.jpeg)"></div>
+    {{ partial:layout/container }}
+        {{ partial:title size="sm" }}
+        Your family’s well-being is personal.<br>
+        So is our approach to immigration.
+        {{ /partial:title }}
+        {{ partial:content/btn size="lg" style="white" }}
+            Get Started
+        {{ /partial:content/btn }}
+    {{ /partial:layout/container }}
+{{ /partial:layout/section }}
+
+{{
+    cols = [
+        "Immigration Resources" => [
+            "Navigating the U.S. Visa Process: A Step-by-Step Guide",
+            "DACA Updates: What Dreamers Need to Know in 2023",
+            "Green Card Holders: Rights and Renewals",
+            "The Path to Citizenship: Common Myths Debunked",
+            "Recent Changes in U.S. Immigration Policy",
+            "View all immigration blogs",
+        ],
+        "Immigration Services" => [
+            "Asylum Services",
+            "Citizenship Services",
+            "Deportation Defense",
+            "Residency Services",
+            "Student Services",
+            "Worker Services",
+        ],
+        "Immigration Support" => [
+            "(833) 333-3333",
+            "Schedule Consultation",
+            "Fill out Immigration Form",
+            "Client Login",
+        ]
+    ];
+}}
+
+{{ partial:section sectionclass="bg-primary-700 text-white" }}
+    {{ partial:layout/cols class="justify-around" }}
+        {{ foreach:cols as="key|links" }}
+            {{ partial:layout/col class="md:w-auto" }}
+                <h4 class="mb-6 text-lg text-primary-100 font-title">{{ key }}</h4>
+                <ul class="font-thin leading-loose text-primary-200">
+                    {{ links }}
+                        <li><a href="#" class="hover:underline hover:text-white">{{ value }}</a></li>
+                    {{ /links }}
+                </ul>
+            {{ /partial:layout/col }}
+        {{ /foreach:cols }}
+    {{ /partial:layout/cols }}
+{{ /partial:section }}
+
+<div class="py-6 text-xs font-thin bg-primary-900 text-primary-200">
+    {{ partial:layout/container }}
+        <div class="flex justify-between">
+            <div>© Accept America 2023 | Privacy Policy | Terms of Service</div>
+            <div>Powered by Vasilaros Wagner</div>
+        </div>
+    {{ /partial:layout/container }}
+</div>
