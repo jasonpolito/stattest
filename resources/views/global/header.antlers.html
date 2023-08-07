@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-50 py-4 bg-white">
+<header class="sticky top-0 z-50 py-4 bg-white/90 backdrop-blur-sm">
     {{ partial:partials/layout/container }}
         <div class="flex items-center justify-between">
             <div>
@@ -17,7 +17,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <ul class="absolute right-0 z-10 items-center hidden pb-4 bg-white lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
+                <ul class="absolute right-0 z-10 items-center hidden pb-4 bg-white lg:bg-transparent lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
                     :class="{'block': open, 'hidden': !open}">
                     {{ nav:main }}
                         <li>

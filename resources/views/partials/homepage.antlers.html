@@ -7,8 +7,7 @@
                 Compassionate Immigration
                 Lawyers
             {{ /partial:title }}
-            <p class="mb-8 text-lg leading-relaxed">Compassionate Immigration
-                Lawyers
+            <p class="mb-8 text-lg leading-relaxed">
                 Let our team of expert immigration lawyers be your one-stop destination for all your immigration and
                 visa needs.</p>
             {{ partial:content/btn style="primary" size="lg" }}
@@ -16,9 +15,29 @@
             {{ /partial:content/btn }}
         {{ /partial:layout/col }}
         {{ partial:layout/col class="pt-20 sm:w-2/3 lg:w-3/5 lg:pt-0" }}
-            <div class="absolute w-full rounded-full lg:-ml-24 bg-secondary-100" style="padding-top: 100%;"></div>
-            <img src="/assets/plane.png" alt="" class="absolute right-12 top-32 md:top-8">
+            <div class="rellax" data-rellax-speed="-4">
+                <div class="absolute w-full rounded-full lg:-ml-24 bg-secondary-100" style="padding-top: 100%;"></div>
+            </div>
+            <div data-plane class="absolute top-0 text-secondary -right-20 -rotate-12 mix-blend-multiply">
+                <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="/assets/airplane.json"
+                    style="width: 26rem"
+                    >
+                    </lottie-player>
+            </div>
+            <style>
+                [data-plane] svg path[style] {
+                    stroke: currentColor !important;
+                }
+            </style>
+            {{# <img src="/assets/plane.png" alt="" class="absolute right-12 top-32 md:top-8"> #}}
+
+        <div class="rellax" data-rellax-speed="-2">
             <img src="/assets/masthead.png" alt="">
+        </div>
         {{ /partial:layout/col }}
     {{ /partial:layout/cols }}
 {{ /partial:section }}
@@ -36,8 +55,8 @@
 
 {{
     touts = [
-        "Complete Online Form" => 'Begin your immigration journey with our friendly <a href="#" class="font-medium border-b border-dotted hover:border-solid text-primary-400 border-primary-400 hover:bg-secondary-50">online form</a>.',
-        "Schedule Consultation" => 'Our lawyers provide clarity on your path ahead. <a href="#" class="font-medium border-b border-dotted hover:border-solid text-primary-400 border-primary-400 hover:bg-secondary-50">Schedule meeting</a>.',
+        "Complete Online Form" => 'Begin your immigration journey with our friendly <a href="#" class="font-medium border-b border-dotted hover:border-solid text-primary-400 border-primary-400">online form</a>.',
+        "Schedule Consultation" => 'Our lawyers provide clarity on your path ahead. <a href="#" class="font-medium border-b border-dotted hover:border-solid text-primary-400 border-primary-400">Schedule meeting</a>.',
         "Guided Support" => 'Your journey, our expertise. Our lawyers are with you each step.',
     ];
 }}
@@ -67,7 +86,7 @@
             style="background-image: url(/assets/liberty.jpeg)"></div>
         {{ partial:layout/container }}
             <div class="flex justify-center">
-                <div class="w-full mb-16 lg:w-3/4">
+                <div class="w-full mb-8 lg:w-3/4">
                     {{ partial:title size="sm" }}
                         We believe in the American Dream. We are dedicated to making it a reality for our clients, navigating the
                         complexities of the immigration process with legal expertise, integrity, and an unwavering commitment.
@@ -150,7 +169,7 @@
                 </ul>
             </div>
             <div class="pt-8 text-center">
-                Have a different Immigration question? <a href="" class="border-b border-dotted hover:border-solid text-primary-400 border-primary-400 hover:bg-secondary-50">Contact support</a>.
+                Have a different Immigration question? <a href="" class="border-b border-dotted hover:border-solid text-primary-400 border-primary-400">Contact support</a>.
             </div>
         {{ /partial:layout/col }}
     {{ /partial:layout/cols }}
@@ -222,3 +241,12 @@
         </div>
     {{ /partial:layout/container }}
 </div>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+
+<script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+  </script>
