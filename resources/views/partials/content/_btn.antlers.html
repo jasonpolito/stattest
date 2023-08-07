@@ -8,12 +8,13 @@
     $styles = [
         'primary' => "bg-primary-500 text-white $hover",
         'secondary' => "bg-secondary-500 text-white $hover",
+        'white' => "bg-white text-primary $hover",
         'unstyled' => 'hover:text-primary font-medium',
     ];
     $sizes = [
-        'sm' => 'py-1 px-3 sm:py-2 sm:px-4 text-sm',
-        'normal' => 'py-3 px-5 sm:py-4 sm:px-6',
-        'lg' => 'py-4 px-6 sm:py-6 sm:px-8 text-lg',
+        'sm' => 'py-1 px-3 sm:py-2 sm:px-6 text-sm',
+        'normal' => 'py-3 px-5 sm:py-4 sm:px-8',
+        'lg' => 'py-4 px-6 sm:py-6 sm:px-12 text-lg',
     ];
     $classes = implode(' ', [$base, $styles[$style], $sizes[$size]]);
 ?}}

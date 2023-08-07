@@ -1,4 +1,5 @@
-{{ partial:partials/layout/section :sectionclass="sectionclass" :sectionsize="sectionsize" }}
+{{ partial:partials/layout/section :sectionclass="sectionclass" :sectionsize="sectionsize" :style="style" }}
+    {{ slot:precontent }}
     {{ partial:partials/layout/container }}
         {{ slot }}
     {{ /partial:partials/layout/container }}

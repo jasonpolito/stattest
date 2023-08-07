@@ -23,7 +23,8 @@
             {{ partial:blocks }}
         {{ /site:header }}
     {{ /if }}
-    {{ template_content }}
+    {{ partial:homepage }}
+    {{# {{ template_content }} #}}
     {{ if {partial:exists src="global/footer"} }}
         {{ partial src="global/footer" }}
     {{ else }}

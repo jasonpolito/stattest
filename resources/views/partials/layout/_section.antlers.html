@@ -8,6 +8,7 @@
     ];
     padding = sectionsize ? sizes[sectionsize] : sizes['normal'];
 }}
-<section class="{{ padding }} bg-cover mx-auto bg-center {{ sectionclass }}" {{ attrs }}>
+<section style="{{ style }}" class="{{ padding }} bg-cover mx-auto bg-center {{ sectionclass }}" {{ attrs }}>
+    {{ slot:precontent }}
     {{ slot }}
 </section>
