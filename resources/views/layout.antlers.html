@@ -1,9 +1,12 @@
+{{ meta_title = 'Accept America: Expert Immigration Lawyers & Visa Service' }}
+{{ meta_description = 'Choose Accept America for compassionate and expert guidance on immigration and visa procedures. Let our dedicated team navigate your journey to a brighter future in the U.S' }}
 <!doctype html>
 <html lang="{{ site:short_locale }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
     <title>{{ meta_title ?? title ?? site:name }}</title>
     <meta property="og:title" content="{{ meta_title ?? title ?? site:name }}" />
     <meta property="og:description" content="{{ meta_description ?? title ?? site:name }}" />
@@ -13,7 +16,7 @@
     {{ partial:styles }}
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="leading-normal text-gray-800 font-body">
+<body class="leading-normal text-gray-700 font-body">
     {{ if {partial:exists src="global/header"} }}
         {{ partial src="global/header" }}
     {{ else }}
