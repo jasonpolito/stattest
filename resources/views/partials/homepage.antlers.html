@@ -44,16 +44,14 @@
     {{ /partial:layout/cols }}
 {{ /partial:section }}
 
-<div class="max-w-[102rem] mx-auto">
-    {{ partial:layout/section sectionclass="bg-primary text-white text-center" sectionsize="sm" }}
-        {{ partial:layout/container }}
-            {{ partial:title size="sm" }}
-                Your Passport to a Secure Future: <br>
-                Immigration Law, Simplified.
-            {{ /partial:title }}
-        {{ /partial:layout/container }}
-    {{ /partial:layout/section }}
-</div>
+{{ partial:layout/section sectionclass="bg-primary text-white text-center" sectionsize="sm" }}
+    {{ partial:layout/container }}
+        {{ partial:title size="sm" }}
+            Your Passport to a Secure Future: <br>
+            Immigration Law, Simplified.
+        {{ /partial:title }}
+    {{ /partial:layout/container }}
+{{ /partial:layout/section }}
 
 {{
     touts = [
