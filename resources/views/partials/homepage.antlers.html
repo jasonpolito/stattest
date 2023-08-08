@@ -217,7 +217,7 @@
 {{ partial:section sectionclass="bg-primary-700 text-white" }}
     {{ partial:layout/cols class="justify-around" }}
         {{ foreach:cols as="key|links" }}
-            {{ partial:layout/col class="md:w-auto" }}
+            {{ partial:layout/col class="my-8 md:w-auto" }}
                 <h4 class="mb-6 text-lg text-primary-100 font-title">{{ key }}</h4>
                 <ul class="font-thin leading-loose text-primary-200">
                     {{ links }}
@@ -229,11 +229,11 @@
     {{ /partial:layout/cols }}
 {{ /partial:section }}
 
-<div class="py-6 text-xs font-thin bg-primary-900 text-primary-200">
+<div class="py-6 text-xs font-thin text-center bg-primary-900 text-primary-200">
     {{ partial:layout/container }}
-        <div class="flex justify-between">
-            <div>© Accept America 2023 | Privacy Policy | Terms of Service</div>
-            <div>Powered by Vasilaros Wagner</div>
+        <div class="flex flex-wrap justify-center sm:justify-between">
+            <div class="py-2">© Accept America 2023 | Privacy Policy | Terms of Service</div>
+            <div class="py-2">Powered by Vasilaros Wagner</div>
         </div>
     {{ /partial:layout/container }}
 </div>
