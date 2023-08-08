@@ -82,25 +82,23 @@
     {{ /partial:layout/cols }}
 {{ /partial:section }}
 
-<div class="max-w-[102rem] mx-auto">
-    {{ partial:layout/section sectionclass="bg-primary text-white text-center" }}
-        <div class="bg-center bg-cover opacity-60 fill-parent mix-blend-multiply grayscale"
-            style="background-image: url(/assets/liberty.jpeg)"></div>
-        {{ partial:layout/container }}
-            <div class="flex justify-center">
-                <div class="w-full mb-8 lg:w-3/4">
-                    {{ partial:title size="sm" }}
-                        We believe in the American Dream. We are dedicated to making it a reality for our clients, navigating the
-                        complexities of the immigration process with legal expertise, integrity, and an unwavering commitment.
-                    {{ /partial:title }}
-                </div>
+{{ partial:layout/section sectionclass="bg-primary text-white text-center" }}
+    <div class="bg-center bg-cover opacity-60 fill-parent mix-blend-multiply grayscale"
+        style="background-image: url(/assets/liberty.jpeg)"></div>
+    {{ partial:layout/container }}
+        <div class="flex justify-center">
+            <div class="w-full mb-8 lg:w-3/4">
+                {{ partial:title size="sm" }}
+                    We believe in the American Dream. We are dedicated to making it a reality for our clients, navigating the
+                    complexities of the immigration process with legal expertise, integrity, and an unwavering commitment.
+                {{ /partial:title }}
             </div>
-            {{ partial:content/btn style="white" size="lg" }}
-                <b>Get Started</b>
-            {{ /partial:content/btn }}
-        {{ /partial:layout/container }}
-    {{ /partial:layout/section }}
-</div>
+        </div>
+        {{ partial:content/btn style="white" size="lg" }}
+            <b>Get Started</b>
+        {{ /partial:content/btn }}
+    {{ /partial:layout/container }}
+{{ /partial:layout/section }}
 
 {{
     services = [
@@ -177,21 +175,19 @@
     {{ /partial:layout/cols }}
 {{ /partial:section }}
 
-<div class="max-w-[102rem] mx-auto">
-    {{ partial:layout/section sectionclass="bg-primary text-white text-center" sectionsize="sm" }}
-        <div class="bg-center bg-cover opacity-50 fill-parent mix-blend-multiply grayscale"
-        style="background-image: url(/assets/flags.jpeg)"></div>
-        {{ partial:layout/container }}
-            {{ partial:title size="sm" }}
-            Your family’s well-being is personal.<br>
-            So is our approach to immigration.
-            {{ /partial:title }}
-            {{ partial:content/btn size="lg" style="white" }}
-                Get Started
-            {{ /partial:content/btn }}
-        {{ /partial:layout/container }}
-    {{ /partial:layout/section }}
-</div>
+{{ partial:layout/section sectionclass="bg-primary text-white text-center" sectionsize="sm" }}
+    <div class="bg-center bg-cover opacity-50 fill-parent mix-blend-multiply grayscale"
+    style="background-image: url(/assets/flags.jpeg)"></div>
+    {{ partial:layout/container }}
+        {{ partial:title size="sm" }}
+        Your family’s well-being is personal.<br>
+        So is our approach to immigration.
+        {{ /partial:title }}
+        {{ partial:content/btn size="lg" style="white" }}
+            Get Started
+        {{ /partial:content/btn }}
+    {{ /partial:layout/container }}
+{{ /partial:layout/section }}
 
 {{
     cols = [
