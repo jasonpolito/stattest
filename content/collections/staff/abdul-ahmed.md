@@ -65,4 +65,6 @@ services:
   - 33bcd641-0205-43db-b6eb-1acb245969dd
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
 updated_at: 1692215323
+locations:
+  - 2fbf9510-9a54-4f70-a106-24d20d10c22f
 ---

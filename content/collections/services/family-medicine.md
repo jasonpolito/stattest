@@ -5,4 +5,6 @@ title: 'Family Medicine'
 staff:
   - 26e4584b-2706-4d81-aaa6-db292493760d
   - c94c75c2-0231-445c-b07c-8ff1a989de29
+locations:
+  - eb1b8712-e334-499f-bb64-3835268705ce
 ---

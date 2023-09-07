@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
-    <title>{{ meta_title ?? title ?? site:name }}</title>
-    <meta property="og:title" content="{{ meta_title ?? title ?? site:name }}" />
+    {{# <title>{{ meta_title ?? title ?? site:name }}</title> #}}
+    {{# <meta property="og:title" content="{{ meta_title ?? title ?? site:name }}" /> #}}
     <meta property="og:description" content="{{ meta_description ?? title ?? site:name }}" />
     <meta property="og:image" content="{{ config:app:url }}{{ opengraph_image }}" />
     {{ site:icon | favicon }}
@@ -17,25 +17,27 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body class="leading-normal text-gray-700 font-body">
-    {{ if {partial:exists src="global/header"} }}
-        {{ partial src="global/header" }}
-    {{ else }}
-        {{ site:header }}
-            {{ content }}
-            {{ /content }}
-            {{ partial:blocks }}
-        {{ /site:header }}
-    {{ /if }}
+    {{#
+        {{ if {partial:exists src="global/header"} }}
+            {{ partial src="global/header" }}
+        {{ else }}
+            {{ site:header }}
+                {{ content }}
+                {{ /content }}
+                {{ partial:blocks }}
+            {{ /site:header }}
+        {{ /if }}
+    #}}
     {{ template_content }}
-    {{ if {partial:exists src="global/footer"} }}
-        {{ partial src="global/footer" }}
-    {{ else }}
-        {{ site:footer }}
-            {{ content }}
-            {{ /content }}
-            {{ partial:blocks }}
-        {{ /site:footer }}
-    {{ /if }}
-    {{ site:insert_into_body }}
-</body>
-</html>
+    {{#
+        {{ if {partial:exists src="global/footer"} }}
+            {{ partial src="global/footer" }}
+        {{ else }}
+            {{ site:footer }}
+                {{ content }}
+                {{ /content }}
+                {{ partial:blocks }}
+            {{ /site:footer }}
+        {{ /if }}
+        {{ site:insert_into_body }}
+    #}}

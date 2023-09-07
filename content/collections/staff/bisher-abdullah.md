@@ -17,4 +17,6 @@ bio: |2-
 primary_specialty: 6e3195e9-0097-4ddf-b9c3-27765b0b1865
 services:
   - 6e3195e9-0097-4ddf-b9c3-27765b0b1865
+locations:
+  - 2fbf9510-9a54-4f70-a106-24d20d10c22f
 ---

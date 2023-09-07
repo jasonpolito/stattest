@@ -9,4 +9,6 @@ staff:
   - 5fa3e600-79bc-48d0-ae8f-8e2ef3955be0
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
 updated_at: 1692216775
+locations:
+  - 2fbf9510-9a54-4f70-a106-24d20d10c22f
 ---
