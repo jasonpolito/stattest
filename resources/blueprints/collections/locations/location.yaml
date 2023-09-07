@@ -12,22 +12,37 @@ tabs:
               validate:
                 - required
           -
-            handle: related_doctors
+            handle: staff
             field:
-              mode: select
-              create: false
+              mode: default
+              create: true
               collections:
-                - doctors
+                - staff
               type: entries
-              display: Doctors
+              display: Staff
               icon: entries
+              width: 50
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
           -
-            handle: content
-            field: rich_content.content
+            handle: services
+            field:
+              mode: default
+              create: true
+              collections:
+                - services
+              type: entries
+              display: Services
+              icon: entries
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            import: rich_content
   sidebar:
     display: Sidebar
     sections:
@@ -39,15 +54,24 @@ tabs:
               type: slug
               localizable: true
           -
-            handle: template
+            handle: use_blocks
             field:
-              hide_partials: true
-              blueprint: false
-              type: template
-              display: Template
-              icon: template
+              default: true
+              type: toggle
+              display: 'Use blocks'
+              icon: toggle
+              instructions: 'By enabling this option, this record will utilize the block builder instead of the selected template.'
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - locations
+              max_items: 1
+              listable: false
+              localizable: true
 title: Location

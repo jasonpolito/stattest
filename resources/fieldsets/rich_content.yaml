@@ -115,6 +115,13 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
+            masthead:
+              display: Masthead
+              instructions: null
+              icon: null
+              fields:
+                -
+                  import: masthead
       always_show_set_button: true
       collapse: accordion
       previews: true

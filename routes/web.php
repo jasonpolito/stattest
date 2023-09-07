@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\ImportController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
+use Statamic\Facades\Entry;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('import-data', [ImportController::class, 'import']);
 
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'

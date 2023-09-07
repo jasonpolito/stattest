@@ -11,15 +11,3 @@ tabs:
               display: 'Alt Text'
               type: text
               instructions: 'Description of the image'
-          -
-            handle: kjhkjhkjh
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: kjhkjhkjh
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false

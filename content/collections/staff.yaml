@@ -1,15 +1,17 @@
-title: Services
+title: Staff
 template: default
 layout: layout
 revisions: false
-route: "services/{{ parent_uri | replace('services/', '') | replace('.html', '') }}/{{ slug }}.html"
+route: 'staff/{parent_uri}/{slug}'
+slugs: false
 sort_dir: asc
 date_behavior:
   past: public
   future: private
 preview_targets:
-  - label: Entry
-    url: "{permalink}"
+  -
+    label: Entry
+    url: '{permalink}'
     refresh: true
 structure:
   root: false

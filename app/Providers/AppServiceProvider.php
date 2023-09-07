@@ -21,10 +21,22 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        ini_set('max_execution_time', '2');
+        ini_set('max_execution_time', '30');
         Relate::manyToMany(
             'locations.related_doctors',
             'doctors.related_locations'
+        );
+        Relate::manyToMany(
+            'services.staff',
+            'staff.services'
+        );
+        Relate::manyToMany(
+            'locations.staff',
+            'staff.locations'
+        );
+        Relate::manyToMany(
+            'locations.services',
+            'services.locations'
         );
         // Statamic::vite('app', [
         //     'resources/js/cp.js',

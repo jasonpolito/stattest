@@ -26,8 +26,7 @@
             {{ partial:blocks }}
         {{ /site:header }}
     {{ /if }}
-    {{ partial:homepage }}
-    {{# {{ template_content }} #}}
+    {{ template_content }}
     {{ if {partial:exists src="global/footer"} }}
         {{ partial src="global/footer" }}
     {{ else }}

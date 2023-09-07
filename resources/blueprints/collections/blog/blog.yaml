@@ -12,14 +12,20 @@ tabs:
               validate:
                 - required
           -
-            handle: staff
+            handle: content
+            field:
+              type: markdown
+              localizable: true
+          -
+            handle: tags
             field:
               mode: default
               create: true
               collections:
-                - staff
+                - services
+                - tags
               type: entries
-              display: Staff
+              display: Tags
               icon: entries
               listable: hidden
               instructions_position: above
@@ -35,4 +41,4 @@ tabs:
             field:
               type: slug
               localizable: true
-title: Service
+title: Blog

@@ -1,0 +1,11 @@
+---
+id: fb1291d3-9b60-4a73-b19a-fb48d67d0b0f
+blueprint: blog
+title: 'This is a blog post with services and news'
+tags:
+  - d38a959c-8530-4160-87aa-2bfd13013aa6
+  - 3d2d6099-39fe-4bd5-8519-8235bf8ada87
+  - 606cb968-83de-4cc8-9d08-caf3864777fc
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1692215456
+---
