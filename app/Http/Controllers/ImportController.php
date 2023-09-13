@@ -14,7 +14,7 @@ class ImportController extends Controller
         $education = $data[7];
         $residency = $data[8];
         $fellowship = $data[8];
-        $bio = "
+        return "
             <h4>Medical Education</h4>
             <p>$education</p>
             <h4>Residency</h4>
@@ -22,7 +22,6 @@ class ImportController extends Controller
             <h4>Fellowship</h4>
             <p>$fellowship</p>
         ";
-        return $bio;
     }
 
     /**

@@ -17,7 +17,3 @@ use Statamic\Facades\Entry;
 */
 
 Route::get('import-data', [ImportController::class, 'import']);
-
-// Route::statamic('example', 'example-view', [
-//    'title' => 'Example'
-// ]);
