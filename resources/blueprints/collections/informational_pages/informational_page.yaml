@@ -105,22 +105,7 @@ tabs:
               type: slug
               localizable: true
           -
-            handle: image
-            field:
-              max_files: 1
-              mode: grid
-              container: assets
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: Image
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
+            import: image
           -
             handle: tag
             field:
@@ -150,7 +135,7 @@ tabs:
               icon: select
               instructions: 'Group informational pages within parents.'
               listable: hidden
-              instructions_position: below
+              instructions_position: above
               visibility: visible
               hide_display: false
               placeholder: 'Select a Tag'

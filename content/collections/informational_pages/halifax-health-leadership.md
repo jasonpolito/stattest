@@ -1,6 +1,5 @@
 ---
 id: a799fdcc-50e2-497f-9fe7-609f46dc6880
-published: false
 blueprint: informational_page
 title: 'Halifax Health Leadership'
 short_title: '{{ title }}'
@@ -9,7 +8,7 @@ opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 informational_page_parent: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695226547
+updated_at: 1695301729
 meta_title: 'Halifax Health Leadership | Halifax Health'
 meta_description: 'Learn about the leadership team at Halifax Health, including Chief Administrative Officers, Vice Presidents, and Directors.'
 content:
@@ -23,20 +22,14 @@ content:
         text: 'Chief Administrative Officers'
   -
     type: paragraph
-    content:
-      -
-        type: image
-        attrs:
-          src: null
-          alt: ''
   -
     type: paragraph
     content:
       -
         type: image
         attrs:
-          src: null
-          alt: ''
+          src: 'asset::assets::feasel-jeff-1-682x1024.jpeg'
+          alt: null
   -
     type: paragraph
     content:
@@ -56,19 +49,13 @@ content:
         text: 'President & Chief Executive Officer'
   -
     type: paragraph
-    content:
-      -
-        type: image
-        attrs:
-          src: null
-          alt: ''
   -
     type: paragraph
     content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::crossman_margaret_md-e1604434388761.jpg'
           alt: 'Margaret G. Crossman, MD'
   -
     type: paragraph
@@ -95,7 +82,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::fulcherkim2105-e1630516774391.jpg'
           alt: 'Picture of Kim Fulcher'
   -
     type: paragraph
@@ -125,7 +112,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::kelly.jpg'
           alt: 'Photo of Kelly Parsons-Kwiatek Senior Vice President & General Counsel at Halfiax Health'
   -
     type: paragraph
@@ -152,7 +139,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::headshot-2023.jpg'
           alt: ''
   -
     type: paragraph
@@ -177,7 +164,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::steven-miles.jpg'
           alt: 'Headshot of Dr. Steven Miles'
   -
     type: paragraph
@@ -206,7 +193,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::peburn_eric-1360x2048.jpg'
           alt: 'Headshot of Eric Peburn'
   -
     type: paragraph
@@ -233,7 +220,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::tineo_alberto_hres_1.jpg'
           alt: 'Picture of Alberto Tineo'
   -
     type: paragraph
@@ -254,20 +241,8 @@ content:
         text: "Sr. Vice President & Hospital\_Chief Operating Officer for Daytona Beach, Port Orange and Deltona"
   -
     type: paragraph
-    content:
-      -
-        type: image
-        attrs:
-          src: null
-          alt: ''
   -
     type: paragraph
-    content:
-      -
-        type: image
-        attrs:
-          src: null
-          alt: ''
   -
     type: heading
     attrs:
@@ -282,7 +257,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::maryjo-1695301010.jpg'
           alt: 'Headshot of Mary Jo Allen, Vice President & Chief Nursing Officer'
   -
     type: paragraph
@@ -308,8 +283,8 @@ content:
       -
         type: image
         attrs:
-          src: null
-          alt: ''
+          src: 'asset::assets::eby_ben3-731x1024.jpeg'
+          alt: null
   -
     type: paragraph
     content:
@@ -334,7 +309,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::guthrie.jpg'
           alt: 'Headshot of John Guthrie Vice President, Communications Executive Dir. Healthy Communities Halifax Health'
   -
     type: paragraph
@@ -358,7 +333,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::joni_hunt_8_2015-681x1024.jpg'
           alt: 'Picture of Joni Hunt'
   -
     type: paragraph
@@ -382,7 +357,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::long_terri-680x1024.jpg'
           alt: ''
   -
     type: paragraph
@@ -410,15 +385,14 @@ content:
         type: hardBreak
   -
     type: paragraph
+  -
+    type: paragraph
     content:
       -
         type: image
         attrs:
-          src: null
-          alt: ''
-  -
-    type: paragraph
-    content:
+          src: 'asset::assets::mach_steve-680x1024.jpg'
+          alt: null
       -
         type: hardBreak
       -
@@ -451,7 +425,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::marques_mike-735x1024.jpg'
           alt: ''
   -
     type: paragraph
@@ -475,7 +449,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::montz_jeremy-2-731x1024.jpg'
           alt: ''
   -
     type: paragraph
@@ -499,17 +473,11 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::najib_jacob-818x1024.jpg'
           alt: ''
   -
     type: paragraph
     content:
-      -
-        type: hardBreak
-      -
-        type: hardBreak
-      -
-        type: hardBreak
       -
         type: hardBreak
       -
@@ -525,11 +493,17 @@ content:
         text: 'Vice President Corporate Facilities & Engineering'
   -
     type: paragraph
+  -
+    type: paragraph
+  -
+    type: paragraph
+  -
+    type: paragraph
     content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::odum_lottie-755x1024.jpg'
           alt: ''
   -
     type: paragraph
@@ -545,6 +519,11 @@ content:
       -
         type: text
         text: 'Vice President Clinical Coordination'
+  -
+    type: paragraph
+  -
+    type: paragraph
+    content:
       -
         type: hardBreak
   -
@@ -553,8 +532,8 @@ content:
       -
         type: image
         attrs:
-          src: null
-          alt: ''
+          src: 'asset::assets::petkus_matt3-680x1024.jpg'
+          alt: null
   -
     type: paragraph
     content:
@@ -569,6 +548,9 @@ content:
       -
         type: text
         text: 'Vice President Physician Services'
+  -
+    type: paragraph
+    content:
       -
         type: hardBreak
   -
@@ -577,7 +559,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::remington_shawn-680x1024.jpg'
           alt: ''
   -
     type: paragraph
@@ -597,11 +579,15 @@ content:
     type: paragraph
   -
     type: paragraph
+  -
+    type: paragraph
+  -
+    type: paragraph
     content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::roster_fe-755x1024.jpg'
           alt: ''
   -
     type: paragraph
@@ -634,20 +620,14 @@ content:
         text: 'Continuum Officer'
   -
     type: paragraph
-    content:
-      -
-        type: image
-        attrs:
-          src: null
-          alt: ''
   -
     type: paragraph
-    content:
-      -
-        type: image
-        attrs:
-          src: null
-          alt: ''
+  -
+    type: paragraph
+  -
+    type: paragraph
+  -
+    type: paragraph
   -
     type: paragraph
   -
@@ -664,7 +644,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::bill.jpg'
           alt: 'Headshot of Bill Griffin'
   -
     type: paragraph
@@ -680,6 +660,11 @@ content:
       -
         type: text
         text: 'Director Strategic Planning'
+  -
+    type: paragraph
+  -
+    type: paragraph
+    content:
       -
         type: hardBreak
   -
@@ -688,13 +673,8 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::miller_janet-e1652122929980-797x1024-1695301649.jpg'
           alt: ''
-  -
-    type: paragraph
-    content:
-      -
-        type: hardBreak
       -
         type: hardBreak
       -
@@ -713,6 +693,11 @@ content:
       -
         type: text
         text: 'Director of Hospice and Palliative Care'
+  -
+    type: paragraph
+  -
+    type: paragraph
+    content:
       -
         type: hardBreak
   -
@@ -721,7 +706,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::joe.jpg'
           alt: 'Headshot of Joe Petrock Executive Director of Halifax Health – Foundation and Government Relations Halifax Health'
   -
     type: paragraph
@@ -750,7 +735,7 @@ content:
       -
         type: image
         attrs:
-          src: null
+          src: 'asset::assets::chan_jenniferl_do_hres-scaled.jpg'
           alt: 'Headshot of Jennifer Chan'
   -
     type: paragraph

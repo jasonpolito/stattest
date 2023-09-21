@@ -53,6 +53,3 @@ preferences:
         - status
         - slug
         - date
-  assets:
-    assets:
-      mode: grid

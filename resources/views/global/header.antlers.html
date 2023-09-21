@@ -1,48 +1,40 @@
-<header class="sticky top-0 z-50 py-4 bg-white/90 backdrop-blur-sm">
-    {{ partial:partials/layout/container }}
-        <div class="flex items-center justify-between">
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+    <div class="hidden border-b border-slate-200 lg:block">
+        <div class="container px-8 mx-auto lg:px-12 xl:max-w-7xl">
             <div>
-                <a href="/" class="block w-[12rem] md:w-[16rem]">
-                    <img src="{{ site:logo }}" width="{{ site:logo:width }}" height="{{ site:logo:height }}" alt="">
-                </a>
-            </div>
-            <nav x-data="{open: false}" @click.outside="open = false" class="flex items-center">
-                <button class="p-4 -m-4 lg:hidden" @click="open = !open">
-                    <svg xmlns="http://www.w3.org/2000/svg" x-show="!open" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none" x-show="open" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-                <ul class="absolute right-0 z-10 items-center hidden pb-4 bg-white lg:bg-transparent lg:pb-0 whitespace-nowrap lg:flex lg:relative top-full"
-                    :class="{'block': open, 'hidden': !open}">
-                    {{ nav:main }}
+                <ul class="flex justify-between gap-4">
+                    {{ nav handle="main_nav" }}
                         <li>
-                            <a href="{{ url }}"
-                                class="block px-4 py-2 hover:text-primary lg:px-5 lg:py-4">{{ title }}</a>
-                            {{#
+                            <div class="-mx-2 group">
+                                <a href="https://hhwf.placementlabs.com/glossary?t=patients"
+                                    class="flex items-center gap-3 px-2 py-4 group peer">
+                                    <span>{{ title }}</span>
+                                    {{ if children }}
+                                        <svg class="w-6 h-6 transition text-slate-300 group-focus-within:rotate-180 group-focus-within:text-primary-500 group-hover:rotate-180 group-hover:text-slate-500"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                                        </svg>
+                                    {{ /if }}
+                                </a>
                                 {{ if children }}
-                                    <ul>
+                                    <ul
+                                        class="absolute z-10 min-w-full px-6 pt-2 pb-4 -mt-px -ml-6 bg-white border-b shadow-lg opacity-0 pointer-events-none left-2 top-full whitespace-nowrap border-x border-slate-200 focus-within:pointer-events-auto focus-within:opacity-100 hover:pointer-events-auto hover:opacity-100 peer-hover:pointer-events-auto peer-hover:opacity-100 peer-focus:pointer-events-auto peer-focus:opacity-100">
                                         {{ children }}
-                                            <li><a href="{{ url }}">{{ title }}</a></li>
+                                            {{ style:colors:primary | dump }}
+                                            <li>
+                                                <a href="{{ target ? target:url : url }}"
+                                                    class="block px-3 py-1 pr-8 -mx-3 decoration-slate-400 decoration-1 hover:bg-[{{ style:colors:primary | shades:tint:50 }}] hover:underline">{{ title }}</a>
+                                            </li>
                                         {{ /children }}
                                     </ul>
                                 {{ /if }}
-                            #}}
-                    {{ /nav:main }}
+                            </div>
+                        </li>
+                    {{ /nav }}
                 </ul>
-                {{#
-                    <a href="#" class="hidden p-4 ml-6 xl:block">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-                        </svg>
-                    </a>
-                #}}
-            </nav>
+            </div>
         </div>
-    {{ /partial:partials/layout/container }}
+    </div>
 </header>

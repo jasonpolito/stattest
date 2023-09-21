@@ -1,7 +1,7 @@
-{{ content }}
+{{ page_blocks }}
     {{ if {partial:exists src="sets/{type}"} }}
         {{ partial src="sets/{type}" }}
     {{ else }}
         {{ partial:render_view }}
     {{ /if }}
-{{ /content }}
+{{ /page_blocks }}

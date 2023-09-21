@@ -1,8 +1,1 @@
 enabled: true
-scripts:
-  -
-    id: lmrz6g23
-    enabled: true
-    name: Testing
-    script: '<!-- this is a test -->'
-    position: head

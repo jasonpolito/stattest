@@ -98,6 +98,22 @@ fields:
                     visibility: visible
                     hide_display: true
                     width: 50
+                -
+                  handle: color
+                  field:
+                    swatches:
+                      - '#01338e'
+                      - '#5ecaff'
+                      - '#ffffff'
+                    allow_any: false
+                    type: color
+                    display: Color
+                    icon: color
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    default: '#01338e'
       type: replicator
       display: Buttons
       icon: replicator

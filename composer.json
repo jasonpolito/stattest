@@ -24,6 +24,7 @@
         "ndx/statamic-bard-color-picker": "^1.2",
         "o1y/statamic-flexible-width": "^1.0",
         "pusher/pusher-php-server": "^5.0",
+        "simonridley/tracking-code-manager": "^1.0",
         "statamic/cms": "^4.0",
         "statamic/collaboration": "^0.7.2",
         "stefangalescu/statamic-heroicons": "^2.1",
@@ -34,6 +35,7 @@
         "visuellverstehen/statamic-anchor-navigation": "^0.3.4@beta",
         "visuellverstehen/statamic-classify": "^2.6",
         "webographen/statamic-admin-log": "^1.0",
+        "webographen/statamic-widget-continue-editing": "^1.1",
         "xndbogdan/statamic-bard-text-color": "^4.0"
     },
     "require-dev": {

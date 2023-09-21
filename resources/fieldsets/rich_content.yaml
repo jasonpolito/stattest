@@ -1,129 +1,56 @@
 title: 'Page Blocks'
 fields:
   -
-    handle: content
+    handle: page_blocks
     field:
-      buttons:
-        - h2
-        - h3
-        - bold
-        - italic
-        - unorderedlist
-        - orderedlist
-        - removeformat
-        - quote
-        - anchor
-        - image
-        - table
-        - h1
-        - h4
-        - underline
-        - strikethrough
-        - alignleft
-        - aligncenter
-        - alignright
       smart_typography: false
       save_html: false
       inline: false
       toolbar_mode: fixed
       reading_time: false
+      word_count: false
       fullscreen: true
       allow_source: true
       enable_input_rules: true
       enable_paste_rules: true
       remove_empty_nodes: false
+      placeholder: 'Build a page using "sets" by clicking the plus icon to the left.'
       antlers: true
       link_noopener: false
       link_noreferrer: false
       target_blank: false
       sets:
-        blocks:
-          display: Blocks
+        basic:
+          display: Basic
           instructions: null
-          icon: layout-flip-down
+          icon: addon-boxes-stack
           sets:
-            side_by_side:
-              display: 'Side by side'
-              instructions: null
-              icon: layout-two-columns
-              fields:
-                -
-                  import: side-by-side
-            touts:
-              display: Touts
-              instructions: null
-              icon: favorite-star
-              fields:
-                -
-                  import: touts
             hero:
               display: Hero
               instructions: null
               icon: align-object-top
               fields:
                 -
-                  import: hero
-            cards:
-              display: Cards
-              instructions: null
-              icon: dashboard-layout
-              fields:
-                -
-                  import: cards
-            faqs:
-              display: FAQs
-              instructions: null
-              icon: alert-help-question
-              fields:
-                -
-                  import: faqs
-            feature_list:
-              display: 'Feature List'
-              instructions: null
-              icon: arrow-right
-              fields:
-                -
-                  import: feature_list
-            render_partial:
-              display: Partial
-              instructions: null
-              icon: layout-table-row-insert
-              fields:
-                -
-                  import: partial
-            html:
-              display: HTML
-              instructions: null
-              icon: programming-script-code-brackets
-              fields:
-                -
-                  import: html
-            homepage_shim:
-              display: 'Homepage shim'
-              instructions: null
-              icon: null
-              fields:
-                -
-                  handle: text_field
+                  handle: image
                   field:
-                    input_type: text
-                    antlers: false
-                    type: text
-                    display: 'Text Field'
-                    icon: text
+                    max_files: 1
+                    mode: grid
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    show_set_alt: true
+                    type: assets
+                    display: Image
+                    icon: assets
                     listable: hidden
                     instructions_position: above
                     visibility: visible
                     hide_display: false
-            masthead:
-              display: Masthead
-              instructions: null
-              icon: null
-              fields:
                 -
-                  import: masthead
-      always_show_set_button: true
-      collapse: accordion
+                  import: content
+      always_show_set_button: false
+      collapse: false
       previews: true
       type: bard
       display: 'Page Blocks'
@@ -133,6 +60,3 @@ fields:
       visibility: visible
       hide_display: false
       always_save: true
-      if:
-        use_blocks: 'equals true'
-      word_count: false

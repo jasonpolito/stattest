@@ -131,7 +131,7 @@ return [
 
     'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Halifax Health'),
 
-    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', 'https://halifaxcms.placementlabs.com/assets/hh_logo.png'),
+    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/assets/hh_logo-1695327274.png'),
 
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 

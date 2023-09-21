@@ -5,7 +5,7 @@ tabs:
       -
         fields:
           -
-            handle: entry
+            handle: target
             field:
               max_items: 1
               mode: default

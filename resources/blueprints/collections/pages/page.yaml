@@ -23,7 +23,7 @@ tabs:
           -
             import: seo
   sidebar:
-    display: Details
+    display: Sidebar
     sections:
       -
         fields:
@@ -43,18 +43,6 @@ tabs:
               visibility: visible
               hide_partials: true
               blueprint: false
-              hide_display: false
-          -
-            handle: use_blocks
-            field:
-              default: true
-              type: toggle
-              display: 'Use blocks'
-              icon: toggle
-              instructions: 'By enabling this option, this record will utilize the block builder instead of the selected template.'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
               hide_display: false
           -
             handle: parent

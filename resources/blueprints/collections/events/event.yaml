@@ -1,0 +1,91 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: date
+            field:
+              type: date
+              default: now
+              mode: single
+              inline: false
+              full_width: false
+              columns: 1
+              rows: 1
+              time_enabled: false
+              time_seconds_enabled: false
+              display: Date
+              icon: date
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: location
+            field:
+              input_type: text
+              placeholder: 'Location of event'
+              antlers: true
+              type: text
+              display: Location
+              icon: text
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: start_time
+            field:
+              input_type: time
+              placeholder: 'Start Time'
+              antlers: false
+              type: text
+              display: 'Start Time'
+              icon: text
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: end_time
+            field:
+              input_type: time
+              placeholder: 'End Time'
+              antlers: true
+              type: text
+              display: 'End Time'
+              icon: text
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            import: content
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            import: image
+title: Event
