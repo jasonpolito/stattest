@@ -1,5 +1,5 @@
 ---
-id: 96ea40a3-a52c-4827-8986-547c06978052
+id: ffef451b-f967-41ed-a565-1168a77e9637
 blueprint: staff
 title: 'Falastin Abu-Samn, DDS'
 first_name: Falastin
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Children's Hospital of Michigan Pediatric Residency</p>
           
-primary_specialty: c36c4759-7512-4448-94b8-d74eccba68f0
+primary_specialty: 44b4a2cc-c9fe-49c9-bc5a-7be3b2751940
 services:
-  - c36c4759-7512-4448-94b8-d74eccba68f0
+  - 44b4a2cc-c9fe-49c9-bc5a-7be3b2751940
 ---

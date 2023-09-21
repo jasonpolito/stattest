@@ -1,5 +1,5 @@
 ---
-id: 90f253ff-3d25-4de6-b2fa-7c6499e5a448
+id: b6c21f08-ed75-4b5a-9c78-399cbb6d8852
 blueprint: staff
 title: 'Jose Abando, MD'
 first_name: Jose
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Elmhurst Hospital Center-Mount Sinai Svc</p>
           
-primary_specialty: 606cb968-83de-4cc8-9d08-caf3864777fc
+primary_specialty: d2505433-0e4b-4430-b427-892a5be33892
 services:
-  - 606cb968-83de-4cc8-9d08-caf3864777fc
+  - d2505433-0e4b-4430-b427-892a5be33892
 ---

@@ -1,0 +1,14 @@
+<div>
+    <div class="xl:container xl:mx-auto 2xl:px-32">
+        <div class="pt-24 bg-center bg-cover bg-primary" style="background-image: url({{ image }})">
+            <div class="pt-24 pb-16 bg-gradient-to-b from-transparent via-[rgba(0,25,49,0.8)] to-primary-900">
+                <div class="container px-8 mx-auto lg:px-12 xl:max-w-7xl">
+                    <div
+                        class="mr-4 prose md:prose-img:my-16 prose-a:text-sky-700 lg:prose-lg xl:prose-xl max-w-none prose-headings:font-serif prose-headings:font-medium prose-white prose-headings:leading-tight prose-p:font-light">
+                        {{ slot }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

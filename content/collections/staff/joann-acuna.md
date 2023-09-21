@@ -1,5 +1,5 @@
 ---
-id: 732a1706-0a68-44c2-a44a-a93ed7a48f00
+id: 6249c2eb-af85-4bad-879b-ffaa54d1cbdf
 blueprint: staff
 title: 'Joann Acuna, MD'
 first_name: Joann
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Pennsylvania Hospital</p>
           
-primary_specialty: c82ea9d0-74df-4cae-a88c-c1506f14b20d
+primary_specialty: d019e64a-62e4-4e47-81d9-68b5739fd16d
 services:
-  - c82ea9d0-74df-4cae-a88c-c1506f14b20d
+  - d019e64a-62e4-4e47-81d9-68b5739fd16d
 ---

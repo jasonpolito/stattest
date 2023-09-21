@@ -1,8 +1,10 @@
 tabs:
-  main:
-    display: Main
+  hero:
+    display: Hero
     sections:
       -
+        display: 'Hero Content'
+        instructions: 'This content will display in the page hero section. (<a href="https://halifaxcms.placementlabs.com/assets/location_hero.png" target="_blank">view example</a>)'
         fields:
           -
             handle: title
@@ -12,16 +14,219 @@ tabs:
               validate:
                 - required
           -
-            handle: staff
+            handle: description
             field:
-              mode: default
-              create: true
-              collections:
-                - staff
-              type: entries
-              display: Staff
-              icon: entries
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: true
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: Description
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: hero_ctas
+            field:
+              collapse: false
+              previews: true
+              fullscreen: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    call_to_action:
+                      display: 'Call to Action'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: link_text
+                          field:
+                            input_type: text
+                            antlers: true
+                            type: text
+                            display: 'Link Text'
+                            icon: text
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                            placeholder: 'Link text'
+                        -
+                          handle: custom_url
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'Custom URL'
+                            icon: text
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                            placeholder: /link-url
+                            always_save: true
+                            if:
+                              use_custom_url: 'equals true'
+                        -
+                          handle: link_url
+                          field:
+                            max_items: 1
+                            mode: default
+                            create: true
+                            collections:
+                              - pages
+                              - informational_pages
+                              - locations
+                              - services
+                              - staff
+                              - blog
+                            type: entries
+                            display: 'Link URL'
+                            icon: entries
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                            always_save: true
+                            unless:
+                              use_custom_url: 'equals true'
+                        -
+                          handle: target_blank
+                          field:
+                            inline_label: 'Open In New Tab'
+                            default: false
+                            type: toggle
+                            display: 'Target Blank'
+                            icon: toggle
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: true
+                        -
+                          handle: use_custom_url
+                          field:
+                            inline_label: 'Use Custom URL'
+                            default: false
+                            type: toggle
+                            icon: toggle
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: true
+                            width: 50
+              type: replicator
+              display: 'Hero CTAs'
+              icon: replicator
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            import: rich_content
+  details:
+    display: Details
+    sections:
+      -
+        display: 'Location Details'
+        fields:
+          -
+            handle: address
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Address
+              icon: text
               width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: phone
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Phone
+              icon: text
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: visiting_hours
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Visiting Hours'
+              icon: bard
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -42,7 +247,28 @@ tabs:
               visibility: visible
               hide_display: false
           -
-            import: rich_content
+            handle: staff
+            field:
+              mode: default
+              create: true
+              collections:
+                - staff
+              type: entries
+              display: Staff
+              icon: entries
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'Search Engine Optimization'
+        fields:
+          -
+            import: seo
   sidebar:
     display: Sidebar
     sections:
@@ -54,9 +280,50 @@ tabs:
               type: slug
               localizable: true
           -
+            handle: image
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: city
+            field:
+              options:
+                'Daytona Beach': 'Daytona Beach'
+                Deltona: Deltona
+                'Port Orange': 'Port Orange'
+                'New Smyrna ': 'New Smyrna'
+                'Ormond Beach': 'Ormond Beach'
+                'Palm Coast': 'Palm Coast'
+              taggable: true
+              push_tags: true
+              placeholder: 'Select City'
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: City
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: use_blocks
             field:
-              default: true
+              default: false
               type: toggle
               display: 'Use blocks'
               icon: toggle

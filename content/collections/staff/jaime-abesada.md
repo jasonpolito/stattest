@@ -1,5 +1,5 @@
 ---
-id: 5fa3e600-79bc-48d0-ae8f-8e2ef3955be0
+id: 06f500d1-6698-421f-a6db-24bead0e034f
 blueprint: staff
 title: 'Jaime Abesada, MD'
 first_name: Jaime
@@ -14,8 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>University of Puerto Rico of Medical School</p>
           
-primary_specialty: 04504c69-293d-4606-a165-e20343bf53b7
+primary_specialty: 4eff4372-19f5-453d-8bea-c5fd5c25729b
 services:
-  - 04504c69-293d-4606-a165-e20343bf53b7
-  - 33bcd641-0205-43db-b6eb-1acb245969dd
+  - 4eff4372-19f5-453d-8bea-c5fd5c25729b
 ---

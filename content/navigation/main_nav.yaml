@@ -1,0 +1,9 @@
+title: 'Main nav'
+collections:
+  - pages
+  - informational_pages
+  - services
+  - locations
+  - blog
+  - staff
+max_depth: 2

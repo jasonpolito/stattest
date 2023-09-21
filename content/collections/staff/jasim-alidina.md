@@ -1,5 +1,5 @@
 ---
-id: ba336ab6-806a-4194-8f07-fc840b616dc9
+id: f6ba67e5-b792-49c3-83b8-59eb169e6f07
 blueprint: staff
 title: 'Jasim Alidina, MD'
 first_name: Jasim
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Columbia University</p>
           
-primary_specialty: a9b5be7b-8b2c-41bd-98aa-ee182e0ea96b
+primary_specialty: 97fe6d39-f3fe-49ab-954a-d6891ae1bf54
 services:
-  - a9b5be7b-8b2c-41bd-98aa-ee182e0ea96b
+  - 97fe6d39-f3fe-49ab-954a-d6891ae1bf54
 ---

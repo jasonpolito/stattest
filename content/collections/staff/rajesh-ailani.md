@@ -1,5 +1,5 @@
 ---
-id: 71b65173-9d53-4aeb-aea5-0eeb67929c3f
+id: 65e0d068-6504-4e7f-9b91-97b25fba4dc9
 blueprint: staff
 title: 'Rajesh Ailani, MD'
 first_name: Rajesh
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Byl Nair Hospital</p>
           
-primary_specialty: cf3150c9-6c91-48d2-863a-9568eda2b312
+primary_specialty: 6fbb2d2f-9b9c-4b5b-a518-31a78ad52d40
 services:
-  - cf3150c9-6c91-48d2-863a-9568eda2b312
+  - 6fbb2d2f-9b9c-4b5b-a518-31a78ad52d40
 ---

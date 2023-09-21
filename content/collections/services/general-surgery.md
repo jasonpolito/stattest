@@ -1,14 +1,30 @@
 ---
-id: 33bcd641-0205-43db-b6eb-1acb245969dd
+id: 4c5c2ebe-6dd8-4bd3-b605-298b099ad56b
 blueprint: service
 title: 'General Surgery'
 staff:
-  - 21eb6d31-bca9-4a51-8b8a-72598414b7c1
-  - 26e4584b-2706-4d81-aaa6-db292493760d
-  - 5363595b-2f36-42ff-b19b-ed189bb69b3b
-  - 5fa3e600-79bc-48d0-ae8f-8e2ef3955be0
-updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1692216775
-locations:
-  - 2fbf9510-9a54-4f70-a106-24d20d10c22f
+  - 9ab093d0-9d0c-4848-bf7c-806e0e13cfa2
+  - f6bfb463-b697-4df1-9032-3f8a3c6136ea
+  - 1d554438-3e9f-4f97-b309-ccbe3cff9e42
+  - 2e4262b8-d7b8-4955-bd1d-291a5f1a0d43
+  - efadf9c8-520a-4050-aa21-7c3d08e14bdc
+  - 48e6d89c-c2c2-4bc2-8fbf-c4df375f28ce
+  - 7d95b223-1e00-47b1-91f9-4b7190e7f398
+  - 426f1423-6413-4ec3-9787-efe7b56872e5
+  - 67f40bef-c914-4bfa-81d8-4026067b7b0d
+  - becb1a2a-9aed-449e-bed2-97573518a2ee
+  - 52007b01-f7e6-4fd2-9385-f6edb528b615
+  - 6bc51632-6d93-4ece-a651-a93007f3de21
+  - d4896980-b210-4cf7-8390-d57ad9f13266
+  - 90700a2e-fd20-494a-a4eb-ba2fd6eced94
+  - e52dcaac-1d07-4d67-ad92-02ca399d76f0
+  - 1ca66f6b-8e54-4ab8-92ef-e33fee74626b
+  - f0661235-c090-42dd-91ea-ebe86a5d49c1
+  - 8373e358-ec7d-411f-9a1d-e10d2349e054
+  - e82b9143-4a9d-43d3-b7f5-adcc97029ef6
+  - 3b633203-e887-45b1-8ff4-a5abaa2e2464
+  - cdcd1b33-d4cc-48d0-a6a1-fcd431f0967d
+  - f6181e8d-9192-44a3-aa04-dcba3516f1c5
+  - 27623f5e-0f19-4d1b-907e-b023d9faeed1
+  - 07542c7f-caa3-4ed6-80c3-6496190435a2
 ---

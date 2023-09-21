@@ -1,0 +1,20 @@
+---
+id: a846f760-8a1a-4366-b13f-dfefe7203cca
+blueprint: service
+title: Ophthalmology
+staff:
+  - 1ce24b7e-fe11-4471-87e1-292eb6b2fa96
+  - 9589bb5e-bae6-4b76-accd-9a64054e65ad
+  - fe242034-cc74-4fe2-a759-98569cb8a9b3
+  - 22ede117-b05c-4c39-857b-040a3b64f30c
+  - c5993790-b059-4fc6-9af9-5177f3e137a3
+  - 5af8a643-6f13-4351-8112-65169d04caff
+  - d64b2b7e-f83e-4570-a081-d83e0cc52aa1
+  - 7df0927f-b5a8-49c1-b57f-b494e2215933
+  - c440bc94-6642-4659-bc54-c32fa858cad4
+  - 2fade03b-d707-47b9-89f6-e7906f558e47
+  - 6368d371-77e4-47ae-be1e-2b53d2612260
+  - bf867eea-5159-49d8-973c-64018fe3555a
+  - 9c622840-661d-42e5-a22d-a2c01d0ff0ce
+  - 875d6f09-38d6-4a3d-9cb3-82548e30e4b7
+---

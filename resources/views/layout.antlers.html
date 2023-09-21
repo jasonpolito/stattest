@@ -1,5 +1,3 @@
-{{ meta_title = 'Accept America: Expert Immigration Lawyers & Visa Service' }}
-{{ meta_description = 'Choose Accept America for compassionate and expert guidance on immigration and visa procedures. Let our dedicated team navigate your journey to a brighter future in the U.S' }}
 <!doctype html>
 <html lang="{{ site:short_locale }}">
 <head>
@@ -7,37 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
-    {{# <title>{{ meta_title ?? title ?? site:name }}</title> #}}
-    {{# <meta property="og:title" content="{{ meta_title ?? title ?? site:name }}" /> #}}
-    <meta property="og:description" content="{{ meta_description ?? title ?? site:name }}" />
+    <title>{{ meta_title }}</title>
+    <meta property="og:title" content="{{ meta_title }}" />
+    <meta property="og:description" content="{{ meta_description }}" />
     <meta property="og:image" content="{{ config:app:url }}{{ opengraph_image }}" />
     {{ site:icon | favicon }}
     {{ site:insert_into_head }}
     {{ partial:styles }}
     <script src="//unpkg.com/alpinejs" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    typography: ({
+                        theme
+                    }) => ({
+                        white: {
+                            css: {
+                                '--tw-prose-body': 'white',
+                                '--tw-prose-headings': 'white',
+                                '--tw-prose-lead': 'white',
+                                '--tw-prose-links': 'white',
+                                '--tw-prose-bold': 'white',
+                                '--tw-prose-counters': 'white',
+                                '--tw-prose-bullets': 'white',
+                                '--tw-prose-hr': 'white',
+                                '--tw-prose-quotes': 'white',
+                                '--tw-prose-quote-borders': 'white',
+                                '--tw-prose-captions': 'white',
+                                '--tw-prose-code': 'white',
+                                '--tw-prose-pre-code': 'white',
+                                '--tw-prose-pre-bg': 'white',
+                                '--tw-prose-th-borders': 'white',
+                                '--tw-prose-td-borders': 'white',
+                                '--tw-prose-invert-body': 'white',
+                                '--tw-prose-invert-headings': 'white',
+                                '--tw-prose-invert-lead': 'white',
+                                '--tw-prose-invert-links': 'white',
+                                '--tw-prose-invert-bold': 'white',
+                                '--tw-prose-invert-counters': 'white',
+                                '--tw-prose-invert-bullets': 'white',
+                                '--tw-prose-invert-hr': 'white',
+                                '--tw-prose-invert-quotes': 'white',
+                                '--tw-prose-invert-quote-borders': 'white',
+                                '--tw-prose-invert-captions': 'white',
+                                '--tw-prose-invert-code': 'white',
+                                '--tw-prose-invert-pre-code': 'white',
+                                '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+                                '--tw-prose-invert-th-borders': 'white',
+                                '--tw-prose-invert-td-borders': 'white',
+                            },
+                        },
+                    }),
+                    fontFamily: {
+                        'title': ['{{ style:font_title }}'],
+                        'serif': ['Libre Baskerville'],
+                    },
+                    colors: {
+                        'bg': {
+                            'alt': '#F6F5F8',
+                            DEFAULT: '#f4f4f4'
+                        },
+                        'primary': {
+                            DEFAULT: '#00529C',
+                            50: '#EEF7FF',
+                            100: '#CFEAFF',
+                            200: '#92CEFF',
+                            300: '#55B2FF',
+                            400: '#1794FF',
+                            500: '#0074D9',
+                            600: '#00529C',
+                            700: '#003E78',
+                            800: '#002B55',
+                            900: '#001931'
+                        },
+                        'secondary': {
+                            50: 'var(--secondary-50)',
+                            100: 'var(--secondary-100)',
+                            200: 'var(--secondary-200)',
+                            300: 'var(--secondary-300)',
+                            400: 'var(--secondary-400)',
+                            DEFAULT: 'var(--secondary-500)',
+                            500: 'var(--secondary-500)',
+                            600: 'var(--secondary-600)',
+                            700: 'var(--secondary-700)',
+                            800: 'var(--secondary-800)',
+                            900: 'var(--secondary-900)',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="leading-normal text-gray-700 font-body">
-    {{#
-        {{ if {partial:exists src="global/header"} }}
-            {{ partial src="global/header" }}
-        {{ else }}
-            {{ site:header }}
-                {{ content }}
-                {{ /content }}
-                {{ partial:blocks }}
-            {{ /site:header }}
-        {{ /if }}
-    #}}
+<body>
     {{ template_content }}
-    {{#
-        {{ if {partial:exists src="global/footer"} }}
-            {{ partial src="global/footer" }}
-        {{ else }}
-            {{ site:footer }}
-                {{ content }}
-                {{ /content }}
-                {{ partial:blocks }}
-            {{ /site:footer }}
-        {{ /if }}
-        {{ site:insert_into_body }}
-    #}}
+</body>
+</html>

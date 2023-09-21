@@ -1,0 +1,83 @@
+title: Link
+fields:
+  -
+    handle: link_text
+    field:
+      input_type: text
+      placeholder: 'Link Text'
+      antlers: true
+      type: text
+      display: 'Link Text'
+      icon: text
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: custom_url
+    field:
+      input_type: text
+      placeholder: /custom-url
+      antlers: true
+      type: text
+      display: 'Custom URL'
+      icon: text
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      if:
+        use_custom_url: 'equals true'
+      always_save: true
+  -
+    handle: link_url
+    field:
+      max_items: 1
+      mode: default
+      create: true
+      collections:
+        - pages
+        - informational_pages
+        - services
+        - locations
+        - blog
+        - staff
+      type: entries
+      display: 'Link URL'
+      icon: entries
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      unless:
+        use_custom_url: 'equals true'
+      always_save: true
+  -
+    handle: target_blank
+    field:
+      inline_label: 'Open In New Tab'
+      default: false
+      type: toggle
+      display: 'Target Blank'
+      icon: toggle
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: true
+  -
+    handle: use_custom_url
+    field:
+      inline_label: 'Use Custom URL'
+      default: false
+      type: toggle
+      display: 'Use Custom URL'
+      icon: toggle
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: true

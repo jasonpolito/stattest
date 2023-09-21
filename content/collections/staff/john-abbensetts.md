@@ -1,5 +1,5 @@
 ---
-id: 21eb6d31-bca9-4a51-8b8a-72598414b7c1
+id: 9ab093d0-9d0c-4848-bf7c-806e0e13cfa2
 blueprint: staff
 title: 'John Abbensetts, MD'
 first_name: John
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Maimonides Medical Center</p>
           
-primary_specialty: 33bcd641-0205-43db-b6eb-1acb245969dd
+primary_specialty: 4c5c2ebe-6dd8-4bd3-b605-298b099ad56b
 services:
-  - 33bcd641-0205-43db-b6eb-1acb245969dd
+  - 4c5c2ebe-6dd8-4bd3-b605-298b099ad56b
 ---

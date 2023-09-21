@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        ini_set('max_execution_time', '30');
+        ini_set('max_execution_time', '120');
         Relate::manyToMany(
             'locations.related_doctors',
             'doctors.related_locations'

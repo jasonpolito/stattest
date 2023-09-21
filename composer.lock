@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff02c0cfc69f5520026f879a3ba978be",
+    "content-hash": "445c4fd08aceffda12bde94e30261d1e",
     "packages": [
         {
             "name": "acquaint-softtech/stata-mailer",
@@ -181,6 +181,73 @@
                 }
             ],
             "time": "2023-05-31T13:33:19+00:00"
+        },
+        {
+            "name": "aryehraber/statamic-impersonator",
+            "version": "v2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aryehraber/statamic-impersonator.git",
+                "reference": "dc273fba769dbe67c1a21c3d6992fd18076e8b18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aryehraber/statamic-impersonator/zipball/dc273fba769dbe67c1a21c3d6992fd18076e8b18",
+                "reference": "dc273fba769dbe67c1a21c3d6992fd18076e8b18",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^3.0|^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Impersonator",
+                    "slug": "impersonator",
+                    "description": "Give Admins the ability to authenticate as any user for easier debugging.",
+                    "version": "2.5.0"
+                },
+                "laravel": {
+                    "providers": [
+                        "AryehRaber\\Impersonator\\ImpersonatorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AryehRaber\\Impersonator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aryeh Raber",
+                    "email": "aryeh.raber@gmail.com",
+                    "homepage": "https://aryeh.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Give Admins the ability to authenticate as any user for easier debugging.",
+            "homepage": "https://github.com/aryehraber/statamic-impersonator",
+            "keywords": [
+                "Authentication",
+                "impersonator",
+                "statamic"
+            ],
+            "support": {
+                "issues": "https://github.com/aryehraber/statamic-impersonator/issues",
+                "source": "https://github.com/aryehraber/statamic-impersonator/tree/v2.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/aryehraber",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-15T12:47:06+00:00"
         },
         {
             "name": "aryehraber/statamic-logbook",
@@ -4840,35 +4907,6 @@
             "time": "2021-05-24T14:05:38+00:00"
         },
         {
-            "name": "placement/faker",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "addons/placement/faker",
-                "reference": "f7192e8ea05e7d3a0a1847fa7a3c4a7ae415169f"
-            },
-            "type": "library",
-            "extra": {
-                "statamic": {
-                    "name": "Faker",
-                    "description": "Faker addon"
-                },
-                "laravel": {
-                    "providers": [
-                        "Placement\\Faker\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Placement\\Faker\\": "src"
-                }
-            },
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
             "name": "psr/clock",
             "version": "1.0.0",
             "source": {
@@ -6308,16 +6346,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v4.20.0",
+            "version": "v4.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "9f324a57aba71fad79049012da138684da29210a"
+                "reference": "2bf44858a0cf7561e8f787a4ae4852ba332f5eea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/9f324a57aba71fad79049012da138684da29210a",
-                "reference": "9f324a57aba71fad79049012da138684da29210a",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/2bf44858a0cf7561e8f787a4ae4852ba332f5eea",
+                "reference": "2bf44858a0cf7561e8f787a4ae4852ba332f5eea",
                 "shasum": ""
             },
             "require": {
@@ -6398,7 +6436,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v4.20.0"
+                "source": "https://github.com/statamic/cms/tree/v4.22.0"
             },
             "funding": [
                 {
@@ -6406,7 +6444,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-30T16:40:23+00:00"
+            "time": "2023-09-18T21:23:03+00:00"
         },
         {
             "name": "statamic/collaboration",
@@ -10247,6 +10285,51 @@
             "time": "2022-06-03T18:03:27+00:00"
         },
         {
+            "name": "webographen/statamic-admin-log",
+            "version": "v1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stoffelio/statamic-admin-log.git",
+                "reference": "734f693a33b65da35139dd8b9018101598da329a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stoffelio/statamic-admin-log/zipball/734f693a33b65da35139dd8b9018101598da329a",
+                "reference": "734f693a33b65da35139dd8b9018101598da329a",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^3.0||^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Admin Log",
+                    "description": "Logs all user actions in the control panel"
+                },
+                "laravel": {
+                    "providers": [
+                        "Webographen\\AdminLog\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webographen\\AdminLog\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Logs all user actions in the control panel",
+            "support": {
+                "issues": "https://github.com/stoffelio/statamic-admin-log/issues",
+                "source": "https://github.com/stoffelio/statamic-admin-log/tree/v1.0.8"
+            },
+            "time": "2023-06-14T12:13:07+00:00"
+        },
+        {
             "name": "webonyx/graphql-php",
             "version": "v14.11.10",
             "source": {
@@ -12926,7 +13009,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "placement/faker": 20,
         "visuellverstehen/statamic-anchor-navigation": 10
     },
     "prefer-stable": true,

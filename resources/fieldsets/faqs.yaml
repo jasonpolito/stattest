@@ -1,23 +1,21 @@
 title: FAQs
 fields:
   -
-    import: title
-  -
     handle: faqs
     field:
       collapse: false
       previews: true
       fullscreen: true
       sets:
-        new_set_group:
-          display: 'New Set Group'
+        faqs:
+          display: FAQs
           instructions: null
-          icon: null
+          icon: alert-help-question
           sets:
-            new_set:
-              display: 'New Set'
+            faqs:
+              display: FAQs
               instructions: null
-              icon: null
+              icon: alert-help-question
               fields:
                 -
                   handle: question
@@ -31,12 +29,17 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
+                    placeholder: 'Why did the chicken cross the road?'
                 -
                   handle: answer
                   field:
                     buttons:
+                      - h3
+                      - h4
                       - bold
                       - italic
+                      - underline
+                      - strikethrough
                       - unorderedlist
                       - orderedlist
                       - removeformat
@@ -68,6 +71,8 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
+                    placeholder: 'To get to the other side.'
+                    container: assets
       type: replicator
       display: FAQs
       icon: replicator

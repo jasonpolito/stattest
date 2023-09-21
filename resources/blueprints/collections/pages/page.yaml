@@ -18,51 +18,10 @@ tabs:
     display: SEO
     sections:
       -
+        display: 'Search Engine Optimization'
         fields:
           -
-            handle: meta_title
-            field:
-              input_type: text
-              placeholder: 'Meta title'
-              character_limit: 80
-              antlers: true
-              type: text
-              display: 'Meta Title'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: meta_description
-            field:
-              placeholder: 'Meta description'
-              character_limit: '200'
-              antlers: true
-              type: textarea
-              display: 'Meta Description'
-              icon: textarea
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: opengraph_image
-            field:
-              max_files: 1
-              mode: grid
-              container: assets
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: 'OpenGraph Image'
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
+            import: seo
   sidebar:
     display: Details
     sections:

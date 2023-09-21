@@ -1,0 +1,10 @@
+roles:
+  - editor
+name: 'Katrina Exconde'
+super: false
+id: b4edca85-1aed-4414-b76d-caa31d61829f
+password_hash: $2y$10$QZM8v4M6D.ipqdFxx6RqiOI1erIBWw1Imq39qaWUBD4iKdg5wGNi2
+preferences:
+  assets:
+    assets:
+      per_page: 500

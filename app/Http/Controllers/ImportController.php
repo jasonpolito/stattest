@@ -28,27 +28,32 @@ class ImportController extends Controller
      * Create a new staff member from CSV data
      *
      * @param array $data
-     * @return Entry
+     * @return Entry|bool
      */
-    public function makeStaff(array $data): Entry
+    public function makeStaff(array $data): Entry|bool
     {
         $fname = $data[0];
         $lname = $data[1];
-        $degree = $data[2];
-        $bio = $this->makeBio($data);
-        $staff = Entry::make()
-            ->collection('staff')
-            ->slug(Str::slug(implode(' ', [$fname, $lname])))
-            ->data([
-                'title' => "$fname $lname, $degree",
-                'first_name' => $fname,
-                'last_name' => $lname,
-                'degree' => $degree,
-                'bio' => $bio,
-            ]);
+        $staffSlug = Str::slug("$fname $lname");
+        $staff = Entry::query()->where('slug', $staffSlug)->first();
+        if (!$staff) {
+            $degree = $data[2];
+            $bio = $this->makeBio($data);
+            $staff = Entry::make()
+                ->collection('staff')
+                ->slug(Str::slug(implode(' ', [$fname, $lname])))
+                ->data([
+                    'title' => "$fname $lname, $degree",
+                    'first_name' => $fname,
+                    'last_name' => $lname,
+                    'degree' => $degree,
+                    'bio' => $bio,
+                ]);
 
-        $staff->save();
-        return $staff;
+            $staff->save();
+            return $staff;
+        }
+        return false;
     }
 
     /**
@@ -123,15 +128,17 @@ class ImportController extends Controller
      */
     public function import()
     {
-        $limit = 20;
+        $limit = 9999;
         if (($handle = fopen(resource_path() . "/data/doctor_export.csv", "r")) !== FALSE) {
             $count = 0;
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE && $count < $limit) {
                 if ($count) {
                     $staff = $this->makeStaff($data);
-                    $service = $this->makeService($data);
-                    $this->attachServiceToStaff($service, $staff);
-                    $this->attachStaffToService($staff, $service);
+                    if ($staff) {
+                        $service = $this->makeService($data);
+                        $this->attachServiceToStaff($service, $staff);
+                        $this->attachStaffToService($staff, $service);
+                    }
                 }
                 $count++;
             }

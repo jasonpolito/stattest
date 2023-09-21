@@ -16,4 +16,4 @@ use Statamic\Facades\Entry;
 |
 */
 
-Route::get('import-data', [ImportController::class, 'import']);
+// Route::get('import-data', [ImportController::class, 'import']);

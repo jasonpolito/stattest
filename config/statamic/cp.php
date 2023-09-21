@@ -44,6 +44,11 @@ return [
             'limit' => 5, // Default: 5 – The number of images to display in the widget.
             'width' => 50, // Default: 100 – The size of the widget.
         ],
+        [
+            'type' => 'continue_editing',
+            'width' => 50,
+            'limit' => 10
+        ],
         // 'getting_started',
     ],
 
@@ -111,7 +116,7 @@ return [
     |
     */
 
-    'theme' => env('STATAMIC_THEME', 'rad'),
+    'theme' => env('STATAMIC_THEME', 'business'),
 
     /*
     |--------------------------------------------------------------------------
@@ -124,9 +129,9 @@ return [
     |
     */
 
-    'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Statamic'),
+    'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Halifax Health'),
 
-    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
+    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', 'https://halifaxcms.placementlabs.com/assets/hh_logo.png'),
 
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 

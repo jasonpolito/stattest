@@ -1,8 +1,9 @@
 tabs:
-  main:
-    display: Main
+  overview:
+    display: Overview
     sections:
       -
+        display: 'Service Overview'
         fields:
           -
             handle: title
@@ -11,6 +12,25 @@ tabs:
               required: true
               validate:
                 - required
+          -
+            import: content
+  details:
+    display: Details
+    sections:
+      -
+        display: 'Hero Content'
+        instructions: 'This content will display in the page hero section. (<a href="https://halifaxcms.placementlabs.com/assets/hhwf.placementlabs.com_services_show-(1).png" target="_blank">view example</a>)'
+        fields:
+          -
+            import: title
+            prefix: hero_
+          -
+            import: content
+            prefix: hero_
+      -
+        display: 'Staff & Locations'
+        instructions: 'Attach staff member and location entries to this service. This is a two-way relation, staff and location entries will stay synced.'
+        fields:
           -
             handle: staff
             field:
@@ -25,6 +45,30 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              width: 50
+          -
+            handle: locations
+            field:
+              mode: default
+              create: true
+              collections:
+                - locations
+              type: entries
+              display: Locations
+              icon: entries
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'Search Engine Optimization'
+        fields:
+          -
+            import: seo
   sidebar:
     display: Sidebar
     sections:
@@ -34,5 +78,43 @@ tabs:
             handle: slug
             field:
               type: slug
+              localizable: true
+          -
+            handle: image
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: use_blocks
+            field:
+              default: false
+              type: toggle
+              display: 'Use blocks'
+              icon: toggle
+              instructions: 'By enabling this option, this record will utilize the block builder instead of the selected template.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - services
+              max_items: 1
+              listable: false
               localizable: true
 title: Service

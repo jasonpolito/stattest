@@ -1,5 +1,5 @@
 ---
-id: c319ba67-4e22-4513-a650-602bc0f6e4eb
+id: a7714b6f-50dd-4fdc-87da-21e95c43d818
 blueprint: staff
 title: 'Bisher Abdullah, MD'
 first_name: Bisher
@@ -14,9 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Medical College of Ohio</p>
           
-primary_specialty: 6e3195e9-0097-4ddf-b9c3-27765b0b1865
+primary_specialty: 40f79e9c-a7a7-4e4d-8ae5-0af39d764451
 services:
-  - 6e3195e9-0097-4ddf-b9c3-27765b0b1865
-locations:
-  - 2fbf9510-9a54-4f70-a106-24d20d10c22f
+  - 40f79e9c-a7a7-4e4d-8ae5-0af39d764451
 ---

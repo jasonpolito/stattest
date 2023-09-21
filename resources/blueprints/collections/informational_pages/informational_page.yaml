@@ -1,0 +1,213 @@
+tabs:
+  content:
+    display: Content
+    sections:
+      -
+        display: 'Page Content'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              width: 50
+          -
+            handle: short_title
+            field:
+              input_type: text
+              placeholder: 'Add a short title'
+              antlers: true
+              type: text
+              display: 'Short Title'
+              icon: text
+              instructions: 'Add a shorter title to the page.'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              hide_display: false
+              default: '{{ title }}'
+              width: 50
+          -
+            import: content
+          -
+            handle: sidebar_content
+            field:
+              buttons:
+                - h3
+                - unorderedlist
+                - orderedlist
+                - anchor
+              smart_typography: true
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: true
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Sidebar Content'
+              icon: bard
+              width: 66
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              unless:
+                informational_page_parent: 'equals true'
+              always_save: true
+          -
+            handle: sidebar_title
+            field:
+              input_type: text
+              placeholder: 'Ex: Financial Assistance'
+              default: '{{ title }}'
+              antlers: true
+              type: text
+              display: 'Sidebar Title'
+              icon: text
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              unless:
+                informational_page_parent: 'equals true'
+              always_save: true
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'Search Engine Optimization'
+        fields:
+          -
+            import: seo
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: image
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: tag
+            field:
+              options:
+                'General Information': 'General Information'
+                'Patient Services & Amenities': 'Patient Services & Amenities'
+                'Billing & Financial Assistance': 'Billing & Financial Assistance'
+                'Patient Resources & Tools': 'Patient Resources & Tools'
+                'Insurance Information': 'Insurance Information'
+                'Board of Commissioners': 'Board of Commissioners'
+                'Partners & Special Programs': 'Partners & Special Programs'
+                'Governance & Ethics': 'Governance & Ethics'
+                'Careers & Team Members': 'Careers & Team Members'
+                'Chief Administrative Officers': 'Chief Administrative Officers'
+                'Vice Presidents': 'Vice Presidents'
+                Directors: Directors
+                'Career Opportunities': 'Career Opportunities'
+                'Team Information': 'Team Information'
+              taggable: true
+              push_tags: true
+              multiple: false
+              clearable: true
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Tag
+              icon: select
+              instructions: 'Group informational pages within parents.'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              hide_display: false
+              placeholder: 'Select a Tag'
+          -
+            handle: informational_page_parent
+            field:
+              default: false
+              type: toggle
+              display: 'Informational Page Parent'
+              icon: toggle
+              instructions: 'This page only acts as a _parent grouping_ for other informational pages.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: page_description
+            field:
+              buttons:
+                - bold
+                - italic
+                - removeformat
+              smart_typography: true
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: true
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Page Description'
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              if:
+                informational_page_parent: 'equals true'
+              always_save: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - informational_pages
+              max_items: 1
+              listable: false
+              localizable: true
+title: 'Informational Page'

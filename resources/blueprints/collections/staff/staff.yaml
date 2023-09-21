@@ -1,8 +1,9 @@
 tabs:
-  main:
-    display: Main
+  overview:
+    display: Overview
     sections:
       -
+        display: 'Staff Overview'
         fields:
           -
             handle: title
@@ -10,13 +11,14 @@ tabs:
               type: text
               required: false
               input_type: text
-              antlers: false
+              antlers: true
               display: Title
               icon: text
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
+              placeholder: 'Jane Doe, MD'
           -
             handle: first_name
             field:
@@ -30,6 +32,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              placeholder: Jane
           -
             handle: last_name
             field:
@@ -43,6 +46,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              placeholder: Doe
           -
             handle: degree
             field:
@@ -56,23 +60,42 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              placeholder: MD
           -
-            handle: image
+            import: content
+  details:
+    display: Details
+    sections:
+      -
+        display: 'Staff Details'
+        fields:
+          -
+            handle: show_call_to_action
             field:
-              max_files: 1
-              mode: grid
-              container: assets
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: Image
-              icon: assets
+              default: false
+              type: toggle
+              display: 'Show Call To Action'
+              icon: toggle
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
+          -
+            handle: call_to_action
+            field:
+              fields:
+                -
+                  import: link
+              type: collapse
+              display: 'Call To Action'
+              icon: section
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: true
+              if:
+                show_call_to_action: 'equals true'
+              always_save: true
           -
             handle: primary_specialty
             field:
@@ -105,51 +128,36 @@ tabs:
               hide_display: false
               width: 50
           -
-            handle: bio
+            handle: primary_location
             field:
-              buttons:
-                - h2
-                - h3
-                - h4
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - removeformat
-                - quote
-                - anchor
-                - image
-                - table
-                - color
-                - alignleft
-                - aligncenter
-                - alignright
-              smart_typography: true
-              save_html: false
-              inline: false
-              toolbar_mode: fixed
-              reading_time: false
-              word_count: false
-              fullscreen: true
-              allow_source: true
-              enable_input_rules: true
-              enable_paste_rules: true
-              remove_empty_nodes: false
-              antlers: true
-              link_noopener: false
-              link_noreferrer: false
-              target_blank: false
-              always_show_set_button: false
-              collapse: false
-              previews: true
-              type: bard
-              display: Bio
-              icon: bard
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - locations
+              type: entries
+              display: 'Primary Location'
+              icon: entries
+              width: 50
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
-              always_save: true
+          -
+            handle: locations
+            field:
+              mode: default
+              create: true
+              collections:
+                - locations
+              type: entries
+              display: 'All Locations'
+              icon: entries
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
@@ -161,6 +169,23 @@ tabs:
               type: slug
               localizable: true
           -
+            handle: image
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: parent
             field:
               type: entries
@@ -169,4 +194,12 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'Search Engine Optimization'
+        fields:
+          -
+            import: seo
 title: Staff

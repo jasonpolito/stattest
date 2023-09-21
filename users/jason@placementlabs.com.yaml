@@ -1,6 +1,6 @@
-name: jason
+name: 'Jason Polito'
 super: true
-avatar: yannick-apollon-f93mcmzhd4i-unsplash.jpg
+avatar: t091jqw85-u091jaabs-fea794e1b130-512.jpeg
 id: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
 password_hash: $2y$10$6AyOXE1oRISsPbz6YnovWeeh9m71ZIiyH7OwW2zrcM8rfRhmHC1pO
 preferences:
@@ -15,6 +15,11 @@ preferences:
         - status
     locations:
       after_save: continue_editing
+      columns:
+        - title
+        - city
+        - phone
+        - status
     views:
       after_save: continue_editing
       columns:
@@ -35,13 +40,19 @@ preferences:
         - slug
         - primary_specialty
       after_save: continue_editing
+    informational_pages:
+      after_save: continue_editing
+      columns:
+        - title
+        - slug
+        - status
+        - tag
+    blog:
+      columns:
+        - title
+        - status
+        - slug
+        - date
   assets:
     assets:
       mode: grid
-  nav:
-    content:
-      reorder: true
-      items:
-        'content::collections::pages': '@move'
-        'content::collections::partials': '@move'
-        'content::collections::blocks': '@move'

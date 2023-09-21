@@ -1,13 +1,7 @@
 ---
-id: 2fbf9510-9a54-4f70-a106-24d20d10c22f
+id: 75613768-4079-47d4-945a-89d14b4745e9
 blueprint: location
 title: 'Halifax Health – Medical Center of Daytona Beach'
-address: '201 N Clyde Morris Blvd Suite 110 Daytona Beach, FL 32114'
-phone: 386.425.4000
-staff:
-  - 26e4584b-2706-4d81-aaa6-db292493760d
-  - 9b55550e-6c71-49ea-9db0-6e603f8144be
-  - c319ba67-4e22-4513-a650-602bc0f6e4eb
 description:
   -
     type: paragraph
@@ -15,12 +9,23 @@ description:
       -
         type: text
         text: 'Halifax Health Medical Center of Daytona Beach is a 563-bed hospital. All major medical and surgical services are available. The 24-hours emergency department (ED) includes the area’s only Level II Trauma Center.'
-use_blocks: false
-updated_by: 95963937-3885-4d7e-8bc2-d672d4bae9c7
-updated_at: 1694091006
-services:
-  - 606cb968-83de-4cc8-9d08-caf3864777fc
-  - 33bcd641-0205-43db-b6eb-1acb245969dd
+main_image: andrey-k-oaddhrvsyjs-unsplash.jpg
+masthead_ctas:
+  -
+    id: lm97rp8m
+    link_text: 'Find Doctors'
+    type: call_to_action
+    enabled: true
+    target_blank: false
+    use_custom_url: false
+  -
+    id: lm97rwal
+    type: call_to_action
+    enabled: true
+    target_blank: false
+    use_custom_url: false
+address: '201 N Clyde Morris Blvd Suite 110 Daytona Beach, FL 32114'
+phone: 386.425.4000
 visiting_hours:
   -
     type: paragraph
@@ -60,16 +65,12 @@ visiting_hours:
       -
         type: text
         text: 'Critical Care is open 24 hours a day, 7 days a week.'
-main_image: blogexamle.jpeg
-content:
-  -
-    type: set
-    attrs:
-      id: lm95oz9n
-      values:
-        type: faqs
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
+use_blocks: false
+city: 'Daytona Beach'
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+meta_title: 'Halifax Health Medical Center of Daytona Beach'
+meta_description: 'Halifax Health Medical Center of Daytona Beach is a 563-bed hospital. All major medical and surgical services are available.'
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1695051769
 ---

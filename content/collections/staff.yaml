@@ -1,10 +1,11 @@
-title: Staff
+title: 'Staff Members'
 template: default
 layout: layout
-revisions: false
-route: 'staff/{parent_uri}/{slug}'
+revisions: true
+route: '/staff/{slug}'
 slugs: false
 sort_dir: asc
+default_status: draft
 date_behavior:
   past: public
   future: private

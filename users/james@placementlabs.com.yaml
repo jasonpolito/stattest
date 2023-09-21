@@ -1,0 +1,22 @@
+name: 'James McCarthy'
+super: true
+id: 95963937-3885-4d7e-8bc2-d672d4bae9c7
+password_hash: $2y$10$g3xME1WBCl2BkoKvZvqNpecvLssNe.LglnEUn2jmzZuG.f45IRz2G
+preferences:
+  collections:
+    locations:
+      after_save: continue_editing
+    staff:
+      columns:
+        - first_name
+        - last_name
+        - slug
+        - status
+  nav:
+    content:
+      'content::collections':
+        action: '@modify'
+        reorder: true
+        children:
+          'content::collections::informational_pages': '@inherit'
+          'content::collections::blocks': '@inherit'

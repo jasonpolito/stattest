@@ -1,69 +1,20 @@
 ---
-id: 5363595b-2f36-42ff-b19b-ed189bb69b3b
+id: 82261b53-d0c4-4a67-afaf-8179ad98adaf
 blueprint: staff
 title: 'Fariya Afridi, MD'
 first_name: Fariya
 last_name: Afridi
 degree: MD
-bio:
-  -
-    type: heading
-    attrs:
-      level: 4
-      textAlign: left
-    content:
-      -
-        type: text
-        text: 'Medical Education'
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-    content:
-      -
-        type: text
-        text: 'Sind Medical College'
-  -
-    type: heading
-    attrs:
-      level: 4
-      textAlign: left
-    content:
-      -
-        type: text
-        text: Residency
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-    content:
-      -
-        type: text
-        text: 'UMDNJ-New Jersey Medical School'
-  -
-    type: heading
-    attrs:
-      level: 4
-      textAlign: left
-    content:
-      -
-        type: text
-        text: Fellowship
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-    content:
-      -
-        type: text
-        text: 'UMDNJ-New Jersey Medical School'
-primary_specialty: 421f75e8-b499-4d20-b00b-d5ba7bcdfeda
+bio: |2-
+
+              <h4>Medical Education</h4>
+              <p>Sind Medical College</p>
+              <h4>Residency</h4>
+              <p>UMDNJ-New Jersey Medical School</p>
+              <h4>Fellowship</h4>
+              <p>UMDNJ-New Jersey Medical School</p>
+          
+primary_specialty: bab0771d-6510-49a2-ae8a-0ca2b81ec4ba
 services:
-  - 421f75e8-b499-4d20-b00b-d5ba7bcdfeda
-  - 3d2d6099-39fe-4bd5-8519-8235bf8ada87
-  - 33bcd641-0205-43db-b6eb-1acb245969dd
-updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1692216749
-locations:
-  - eb1b8712-e334-499f-bb64-3835268705ce
+  - bab0771d-6510-49a2-ae8a-0ca2b81ec4ba
 ---

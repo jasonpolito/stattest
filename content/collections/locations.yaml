@@ -1,7 +1,7 @@
 title: Locations
 template: default
 layout: layout
-revisions: false
+revisions: true
 route: '/locations/{slug}'
 sort_dir: asc
 date_behavior:

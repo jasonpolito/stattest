@@ -1,5 +1,5 @@
 ---
-id: dd1d6afa-0194-4e0b-b219-21cada1cc72f
+id: 56de8bb0-df8d-49df-aafb-f4b58c24626f
 blueprint: staff
 title: 'Osman Ahmad, MD'
 first_name: Osman
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Maimonides Medical Center</p>
           
-primary_specialty: 6e3195e9-0097-4ddf-b9c3-27765b0b1865
+primary_specialty: 40f79e9c-a7a7-4e4d-8ae5-0af39d764451
 services:
-  - 6e3195e9-0097-4ddf-b9c3-27765b0b1865
+  - 40f79e9c-a7a7-4e4d-8ae5-0af39d764451
 ---

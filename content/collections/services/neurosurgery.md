@@ -1,0 +1,15 @@
+---
+id: 50200329-ebd0-461f-8745-1fd48b8fba28
+blueprint: service
+title: Neurosurgery
+staff:
+  - 9309c5f8-b267-44d1-9b69-475a8327e026
+  - 29cda5de-5dd4-4062-875d-1e176c421417
+  - 7fe6d093-8758-4d4d-9343-cfdcbad7b53f
+  - 09e18d93-3329-4e28-8134-decd2df9a338
+  - 1249ca12-cc34-43d9-ab7b-11f8bff87795
+  - bf0c0422-c256-4094-a945-50f0174cf62d
+  - 57c54a55-e7b5-4175-8ffc-42921bcb2844
+  - 2d856770-5a83-4641-a356-0d5c4bb995bb
+  - ea773eb9-37dd-42a1-a8c2-59abe942434f
+---

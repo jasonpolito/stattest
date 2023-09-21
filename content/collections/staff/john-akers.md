@@ -1,5 +1,5 @@
 ---
-id: b71f4c94-0b30-4d6b-868c-6e5e41ca766f
+id: e322a885-ee74-4649-babd-ef3be7d2c148
 blueprint: staff
 title: 'John Akers, DDS'
 first_name: John
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Medical University of South Carolina</p>
           
-primary_specialty: 2a122a2c-0daf-4d63-abdb-f3889219a746
+primary_specialty: 679adcb0-9f21-4e05-b844-4d29077d5da9
 services:
-  - 2a122a2c-0daf-4d63-abdb-f3889219a746
+  - 679adcb0-9f21-4e05-b844-4d29077d5da9
 ---

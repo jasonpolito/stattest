@@ -1,8 +1,7 @@
 ---
-id: f177c6c5-a7d5-4587-b157-9d330b92a748
+id: 0ed4a456-8027-4c46-be8b-7e4977ccbb7b
 blueprint: service
 title: 'Pediatric Infectious Disease'
 staff:
-  - 30126e14-5d10-4a44-988e-4041c5c6843e
-  - 26e4584b-2706-4d81-aaa6-db292493760d
+  - 9dcc5a73-a4e2-4558-9666-ce3deaa55361
 ---

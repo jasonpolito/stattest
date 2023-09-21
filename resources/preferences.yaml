@@ -1,0 +1,5 @@
+nav:
+  tools:
+    'tools::tracking_code_mgr':
+      display: Tracking
+      action: '@modify'

@@ -1,5 +1,5 @@
 ---
-id: 30126e14-5d10-4a44-988e-4041c5c6843e
+id: 9dcc5a73-a4e2-4558-9666-ce3deaa55361
 blueprint: staff
 title: 'Salman Ahmed, MD'
 first_name: Salman
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Texas Tech University</p>
           
-primary_specialty: f177c6c5-a7d5-4587-b157-9d330b92a748
+primary_specialty: 0ed4a456-8027-4c46-be8b-7e4977ccbb7b
 services:
-  - f177c6c5-a7d5-4587-b157-9d330b92a748
+  - 0ed4a456-8027-4c46-be8b-7e4977ccbb7b
 ---

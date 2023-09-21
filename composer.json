@@ -12,6 +12,7 @@
         "php": "^8.1",
         "acquaint-softtech/stata-mailer": "^0.0.3",
         "aryehraber/statamic-color-extractor": "^1.4",
+        "aryehraber/statamic-impersonator": "^2.6",
         "aryehraber/statamic-logbook": "^3.1",
         "goldnead/statamic-collapse-fieldtype": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
@@ -22,7 +23,6 @@
         "michaelmannucci/shades": "^1.0",
         "ndx/statamic-bard-color-picker": "^1.2",
         "o1y/statamic-flexible-width": "^1.0",
-        "placement/faker": "dev-main",
         "pusher/pusher-php-server": "^5.0",
         "statamic/cms": "^4.0",
         "statamic/collaboration": "^0.7.2",
@@ -33,6 +33,7 @@
         "thoughtco/statamic-blurhash": "^1.0",
         "visuellverstehen/statamic-anchor-navigation": "^0.3.4@beta",
         "visuellverstehen/statamic-classify": "^2.6",
+        "webographen/statamic-admin-log": "^1.0",
         "xndbogdan/statamic-bard-text-color": "^4.0"
     },
     "require-dev": {
@@ -95,9 +96,5 @@
         ]
     },
     "repositories": [
-        {
-            "type": "path",
-            "url": "addons/placement/faker"
-        }
     ]
 }

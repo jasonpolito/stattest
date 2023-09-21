@@ -1,0 +1,19 @@
+---
+id: 98f4156f-66d2-4a58-96a7-8bb7e2381455
+blueprint: service
+title: Nephrology
+staff:
+  - c2123bc4-6d9d-4555-a626-e7b0a1c45896
+  - 2d5323ac-bd6c-4e44-b2aa-15bb95105851
+  - 1e311348-bcd9-4cb7-ba59-a9f817faf398
+  - a9701440-7334-49c2-bcae-4e21135955a5
+  - 6edcc972-b2cf-46c3-b868-876f22b5cc7e
+  - 0fae4b6e-ee3b-489e-8312-db5433d65753
+  - 7b3baa0b-ac0b-4821-bc80-bcac48ad6900
+  - a20ada32-d283-451f-815e-099f0e720967
+  - ffa77964-887d-40be-8630-2cc0155c51c1
+  - 5b96527b-7985-4857-960c-25c16dc44199
+  - 6c6b5505-dc95-44fc-a488-30c81103eeed
+  - 92289d65-991e-4d61-a2ca-ab4abf5c8f55
+  - 1d3bbef5-5a4d-4c00-b366-a93d1489dda9
+---

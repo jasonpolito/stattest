@@ -1,5 +1,5 @@
 ---
-id: cf36c6d3-c073-4c35-af25-aef71b165468
+id: 7f06aebe-2447-41bc-ad1b-e533103ac6e5
 blueprint: staff
 title: 'Kunal Agrawal, MD'
 first_name: Kunal
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>George Washington University Hospital (Washington, DC)</p>
           
-primary_specialty: 3d2d6099-39fe-4bd5-8519-8235bf8ada87
+primary_specialty: 4f88f307-b6a6-4f02-90ce-6859b4963d10
 services:
-  - 3d2d6099-39fe-4bd5-8519-8235bf8ada87
+  - 4f88f307-b6a6-4f02-90ce-6859b4963d10
 ---

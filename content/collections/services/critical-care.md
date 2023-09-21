@@ -1,0 +1,16 @@
+---
+id: 865dcbc4-be10-4a2d-a488-adb50cd37238
+blueprint: service
+title: 'Critical Care'
+staff:
+  - 26fe02c5-9c38-44c8-9d60-36826c373391
+  - 5f1a003c-5839-49af-812d-da499de0af86
+  - 23a20af5-a73d-4531-a837-e7ee1820ee77
+  - c5766a1b-d090-4cff-b200-76c97fe05507
+  - 214fc13d-f805-45c0-a1e4-9013c82a87d6
+  - 0c4e7413-0c88-4889-b06b-548b962ead49
+  - 86bacad9-33cc-4132-b2e5-7c77d08fd1b4
+  - 93dc1547-fa36-45dc-97ec-d2558c9930a6
+  - f5e5b990-564d-48e3-a908-97d6a7c96f57
+  - ff3f750a-6b46-4b29-ae85-51fae9932049
+---

@@ -1,8 +1,9 @@
 tabs:
-  main:
-    display: Main
+  content:
+    display: Content
     sections:
       -
+        display: 'Blog Content'
         fields:
           -
             handle: title
@@ -12,10 +13,99 @@ tabs:
               validate:
                 - required
           -
-            handle: content
+            handle: excerpt
             field:
-              type: markdown
+              buttons:
+                - bold
+                - italic
+                - anchor
+                - removeformat
+              smart_typography: true
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: false
+              allow_source: false
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: true
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: Excerpt
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              instructions: 'A concise description of this articles content.'
+          -
+            import: content
+          -
+            handle: related_content
+            field:
+              mode: default
+              create: true
+              collections:
+                - blog
+              type: entries
+              display: 'Related Content'
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              instructions: 'By default, related content will be pulled from posts with similar tags. Use this option for finer control.'
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'Search Engine Optimization'
+        fields:
+          -
+            import: seo
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
               localizable: true
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: image
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
           -
             handle: tags
             field:
@@ -31,14 +121,4 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
-  sidebar:
-    display: Sidebar
-    sections:
-      -
-        fields:
-          -
-            handle: slug
-            field:
-              type: slug
-              localizable: true
 title: Blog

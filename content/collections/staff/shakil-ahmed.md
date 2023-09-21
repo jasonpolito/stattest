@@ -1,5 +1,5 @@
 ---
-id: 9d73863a-3eb9-44b9-9197-a994b33c6960
+id: 81159f19-1a5d-424c-befe-c94fcdb9e0e6
 blueprint: staff
 title: 'Shakil Ahmed, MD'
 first_name: Shakil
@@ -14,7 +14,7 @@ bio: |2-
               <h4>Fellowship</h4>
               <p>Texas Tech Univ. Health Science Ctr</p>
           
-primary_specialty: 606cb968-83de-4cc8-9d08-caf3864777fc
+primary_specialty: d2505433-0e4b-4430-b427-892a5be33892
 services:
-  - 606cb968-83de-4cc8-9d08-caf3864777fc
+  - d2505433-0e4b-4430-b427-892a5be33892
 ---

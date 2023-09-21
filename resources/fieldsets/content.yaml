@@ -1,0 +1,197 @@
+title: Content
+fields:
+  -
+    handle: content
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - quote
+        - image
+        - anchor
+        - table
+        - removeformat
+      smart_typography: true
+      save_html: false
+      inline: false
+      toolbar_mode: fixed
+      reading_time: false
+      word_count: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: false
+      antlers: true
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      sets:
+        basic:
+          display: Basic
+          instructions: null
+          icon: addon-boxes-stack
+          sets:
+            buttons:
+              display: Buttons
+              instructions: 'Group of inline buttons'
+              icon: form-text-field
+              fields:
+                -
+                  import: inline_buttons
+            file_upload:
+              display: 'File Upload'
+              instructions: 'Link to a downloadable asset'
+              icon: download-arrow-down
+              fields:
+                -
+                  handle: link_text
+                  field:
+                    input_type: text
+                    placeholder: 'Downloadable File.pdf'
+                    antlers: true
+                    type: text
+                    display: 'Link Text'
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: file_upload
+                  field:
+                    max_files: 1
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    show_set_alt: true
+                    type: assets
+                    display: 'File Upload'
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+            faqs:
+              display: FAQs
+              instructions: 'A set of expandable FAQs'
+              icon: alert-help-question
+              fields:
+                -
+                  import: faqs
+        layout:
+          display: Layout
+          instructions: null
+          icon: layout-three-columns
+          sets:
+            columns:
+              display: Columns
+              instructions: 'Content columns with titles'
+              icon: layout-three-columns
+              fields:
+                -
+                  handle: columns
+                  field:
+                    collapse: false
+                    previews: true
+                    fullscreen: true
+                    sets:
+                      '':
+                        display: null
+                        instructions: null
+                        icon: null
+                        sets:
+                          columns:
+                            display: Columns
+                            instructions: null
+                            icon: null
+                            fields:
+                              -
+                                handle: column_title
+                                field:
+                                  input_type: text
+                                  placeholder: 'Column Title'
+                                  antlers: true
+                                  type: text
+                                  display: 'Column Title'
+                                  icon: text
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: column_content
+                                field:
+                                  buttons:
+                                    - bold
+                                    - italic
+                                    - unorderedlist
+                                    - orderedlist
+                                    - removeformat
+                                    - anchor
+                                  smart_typography: true
+                                  save_html: false
+                                  inline: false
+                                  toolbar_mode: fixed
+                                  reading_time: false
+                                  word_count: false
+                                  fullscreen: true
+                                  allow_source: true
+                                  enable_input_rules: true
+                                  enable_paste_rules: true
+                                  remove_empty_nodes: false
+                                  placeholder: 'Column content.'
+                                  antlers: true
+                                  link_noopener: false
+                                  link_noreferrer: false
+                                  target_blank: false
+                                  always_show_set_button: false
+                                  collapse: false
+                                  previews: true
+                                  type: bard
+                                  display: 'Column Content'
+                                  icon: bard
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                    type: replicator
+                    display: Columns
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+        advanced:
+          display: Advanced
+          instructions: null
+          icon: labs-idea-experimental-flask
+          sets:
+            code:
+              display: Code
+              instructions: 'Custom HTML markup'
+              icon: programming-script-code-brackets
+              fields:
+                -
+                  import: html
+      always_show_set_button: false
+      collapse: false
+      previews: true
+      type: bard
+      display: Content
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      placeholder: 'Write some nice content. Add "sets" by clicking the plus icon to the left.'
+      always_save: true
+      container: assets

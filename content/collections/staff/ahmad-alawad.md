@@ -1,68 +1,20 @@
 ---
-id: 9b55550e-6c71-49ea-9db0-6e603f8144be
+id: 67b00ab2-9da7-40cd-a49d-a7e2f602f843
 blueprint: staff
 title: 'Ahmad Alawad, MD'
 first_name: Ahmad
 last_name: Alawad
 degree: MD
-bio:
-  -
-    type: heading
-    attrs:
-      level: 4
-      textAlign: left
-    content:
-      -
-        type: text
-        text: 'Medical Education'
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-    content:
-      -
-        type: text
-        text: 'Aleppo University School of Medicine'
-  -
-    type: heading
-    attrs:
-      level: 4
-      textAlign: left
-    content:
-      -
-        type: text
-        text: Residency
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-    content:
-      -
-        type: text
-        text: 'MedStar Franklin Square Medical Center - Internal Medicine internship and residency'
-  -
-    type: heading
-    attrs:
-      level: 4
-      textAlign: left
-    content:
-      -
-        type: text
-        text: Fellowship
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-    content:
-      -
-        type: text
-        text: 'MedStar Franklin Square Medical Center - Internal Medicine internship and residency'
-primary_specialty: eacd0571-3b60-44f6-95da-645e19f3f0ba
+bio: |2-
+
+              <h4>Medical Education</h4>
+              <p>Aleppo University School of Medicine</p>
+              <h4>Residency</h4>
+              <p>MedStar Franklin Square Medical Center - Internal Medicine internship and residency</p>
+              <h4>Fellowship</h4>
+              <p>MedStar Franklin Square Medical Center - Internal Medicine internship and residency</p>
+          
+primary_specialty: 5e346d0e-a69a-47f3-b045-05773d5330c1
 services:
-  - eacd0571-3b60-44f6-95da-645e19f3f0ba
-  - c82ea9d0-74df-4cae-a88c-c1506f14b20d
-updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1692037472
-locations:
-  - 2fbf9510-9a54-4f70-a106-24d20d10c22f
+  - 5e346d0e-a69a-47f3-b045-05773d5330c1
 ---
