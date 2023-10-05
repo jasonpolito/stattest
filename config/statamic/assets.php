@@ -141,8 +141,8 @@ return [
     */
 
     'thumbnails' => [
-        'max_width' => 10000,
-        'max_height' => 10000,
+        'max_width' => 1000,
+        'max_height' => 1000,
     ],
 
     /*
@@ -156,7 +156,7 @@ return [
     |
     */
 
-    'google_docs_viewer' => false,
+    'google_docs_viewer' => true,
 
     /*
     |--------------------------------------------------------------------------

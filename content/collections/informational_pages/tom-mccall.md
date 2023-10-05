@@ -7,10 +7,11 @@ sidebar_title: '{{ title }}'
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 informational_page_parent: false
-updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695225431
 meta_title: 'Tom McCall | Halifax Health'
 meta_description: 'Learn more information about Tom McCall, an esteemed member of the Halifax Health Board of Commissioners.'
+tag: 'Board of Commissioners'
+updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
+updated_at: 1696266272
 content:
   -
     type: paragraph

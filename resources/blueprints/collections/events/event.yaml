@@ -11,6 +11,14 @@ tabs:
               required: true
               validate:
                 - required
+              display: 'Event Title'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
           -
             handle: date
             field:

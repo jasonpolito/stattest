@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 24f79023-7e6f-418e-99be-661b3176eea7
 services:
   - 24f79023-7e6f-418e-99be-661b3176eea7
+show_call_to_action: false
+image: hh-amy-juraszek.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696432017
 ---

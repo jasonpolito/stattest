@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 50200329-ebd0-461f-8745-1fd48b8fba28
 services:
   - 50200329-ebd0-461f-8745-1fd48b8fba28
+show_call_to_action: false
+image: han_patricmd3-e1622577497186-300x300.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696425601
 ---

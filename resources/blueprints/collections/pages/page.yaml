@@ -6,13 +6,6 @@ tabs:
       -
         fields:
           -
-            handle: title
-            field:
-              type: text
-              required: true
-              validate:
-                - required
-          -
             import: rich_content
   seo:
     display: SEO
@@ -27,6 +20,22 @@ tabs:
     sections:
       -
         fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: 'Entry Title'
+              instructions: 'This is only visible to administrators.'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
           -
             handle: slug
             field:

@@ -12,6 +12,14 @@ tabs:
               required: true
               validate:
                 - required
+              display: 'Page Title'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
               width: 50
           -
             handle: short_title
@@ -20,7 +28,7 @@ tabs:
               placeholder: 'Add a short title'
               antlers: true
               type: text
-              display: 'Short Title'
+              display: 'Hero Title'
               icon: text
               instructions: 'Add a shorter title to the page.'
               listable: hidden
@@ -28,6 +36,7 @@ tabs:
               visibility: visible
               hide_display: false
               default: '{{ title }}'
+              replicator_preview: true
               width: 50
           -
             import: content

@@ -9,8 +9,9 @@ meta_description: 'Daytona Beach offers a host of activities for families and in
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 informational_page_parent: false
-updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695312875
+tag: 'Local Information'
+updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
+updated_at: 1696266878
 content:
   -
     type: heading

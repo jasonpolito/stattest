@@ -7,10 +7,11 @@ sidebar_title: '{{ title }}'
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 informational_page_parent: false
-updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695302249
 meta_title: 'Public Records | Halifax Health'
 meta_description: 'Halifax Health has served in our community for over 90 years. This page is your resource for Public Records associated with Halifax Health.'
+tag: 'Governance & Ethics'
+updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
+updated_at: 1696266512
 content:
   -
     type: heading

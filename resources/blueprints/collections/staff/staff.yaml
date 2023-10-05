@@ -6,20 +6,6 @@ tabs:
         display: 'Staff Overview'
         fields:
           -
-            handle: title
-            field:
-              type: text
-              required: false
-              input_type: text
-              antlers: true
-              display: Title
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-              placeholder: 'Jane Doe, MD'
-          -
             handle: first_name
             field:
               input_type: text
@@ -69,33 +55,6 @@ tabs:
       -
         display: 'Staff Details'
         fields:
-          -
-            handle: show_call_to_action
-            field:
-              default: false
-              type: toggle
-              display: 'Show Call To Action'
-              icon: toggle
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: call_to_action
-            field:
-              fields:
-                -
-                  import: link
-              type: collapse
-              display: 'Call To Action'
-              icon: section
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: true
-              if:
-                show_call_to_action: 'equals true'
-              always_save: true
           -
             handle: primary_specialty
             field:
@@ -158,11 +117,63 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+          -
+            handle: show_call_to_action
+            field:
+              default: false
+              type: toggle
+              display: 'Show Call To Action'
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              instructions: 'This staff member will have a call to action in the hero section of their page.'
+          -
+            handle: call_to_action
+            field:
+              fields:
+                -
+                  import: link
+              type: collapse
+              display: 'Call To Action'
+              icon: section
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: true
+              if:
+                show_call_to_action: 'equals true'
+              always_save: true
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'Search Engine Optimization'
+        fields:
+          -
+            import: seo
   sidebar:
     display: Sidebar
     sections:
       -
         fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: false
+              input_type: text
+              antlers: true
+              display: 'Entry Title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              placeholder: 'Jane Doe, MD'
+              instructions: 'This is only visible to administrators.'
+              replicator_preview: true
           -
             handle: slug
             field:
@@ -194,12 +205,4 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
-  seo:
-    display: SEO
-    sections:
-      -
-        display: 'Search Engine Optimization'
-        fields:
-          -
-            import: seo
 title: Staff

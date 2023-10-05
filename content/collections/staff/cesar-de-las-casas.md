@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 20290da4-2481-4ea9-9388-26f08452a89d
 services:
   - 20290da4-2481-4ea9-9388-26f08452a89d
+show_call_to_action: false
+image: de-las-casas_cesar-scaled-e1676490413697-300x263.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696337187
 ---

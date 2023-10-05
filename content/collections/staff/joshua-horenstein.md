@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: f3350fa9-ad15-4e00-861d-2c8229ad5112
 services:
   - f3350fa9-ad15-4e00-861d-2c8229ad5112
+show_call_to_action: false
+image: horenstein_joshua-md-e1602083028426.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696429881
 ---

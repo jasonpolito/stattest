@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: a6626791-62de-40f0-ac40-eaa3b3f8c5d6
 services:
   - a6626791-62de-40f0-ac40-eaa3b3f8c5d6
+show_call_to_action: false
+image: jamidar_humayun-md-hres-scaled-e1602082919621-286x300.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696429611
 ---

@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: dabf9e46-cefa-427c-8210-248cea4e71f0
 services:
   - dabf9e46-cefa-427c-8210-248cea4e71f0
+show_call_to_action: false
+image: hh-magdalen-gondor.png
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696423996
 ---

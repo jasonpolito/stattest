@@ -7,10 +7,11 @@ sidebar_title: '{{ title }}'
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 informational_page_parent: false
-updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695225647
 meta_title: 'Glenn Ritchey | Halifax Health'
 meta_description: 'Glenn Ritchey has a long history of business achievement and community leadership in Volusia, having served as City of Daytona Beach Mayor for six years.'
+tag: 'Board of Commissioners'
+updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
+updated_at: 1696266311
 content:
   -
     type: paragraph

@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 89596176-dd5d-43a2-8f57-df9b59dc73dd
 services:
   - 89596176-dd5d-43a2-8f57-df9b59dc73dd
+show_call_to_action: false
+image: mark-gillespy-md-2-300x288.png
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696424537
 ---

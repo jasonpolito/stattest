@@ -7,10 +7,11 @@ sidebar_title: '{{ title }}'
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 informational_page_parent: false
-updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695225367
 meta_title: 'Carl W. "Rick" Lentz, III, MD | Halifax Health'
 meta_description: "Born in Daytona Beach, the son of a pioneer family, Dr. Carl Lentz III was raised around the world. Read Dr. Lentz's biography."
+tag: 'Board of Commissioners'
+updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
+updated_at: 1696266249
 content:
   -
     type: paragraph

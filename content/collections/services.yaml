@@ -1,9 +1,10 @@
 title: Services
-template: default
+template: templates/service
 layout: layout
 revisions: true
-route: "services/{{ parent_uri | replace('services/', '') | replace('.html', '') }}/{{ slug }}.html"
+route: "services/{{ parent_uri | replace('services/', '') | replace('.html', '') }}/{{ slug }}"
 sort_dir: asc
+default_status: draft
 date_behavior:
   past: public
   future: private

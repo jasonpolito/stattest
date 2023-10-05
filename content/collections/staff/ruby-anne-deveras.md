@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 20290da4-2481-4ea9-9388-26f08452a89d
 services:
   - 20290da4-2481-4ea9-9388-26f08452a89d
+show_call_to_action: false
+image: deveras_ruby-anne-md-hres-scaled-e1603484746727-279x300.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696344079
 ---

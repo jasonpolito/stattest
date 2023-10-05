@@ -1,25 +1,10 @@
 tabs:
-  overview:
-    display: Overview
-    sections:
-      -
-        display: 'Service Overview'
-        fields:
-          -
-            handle: title
-            field:
-              type: text
-              required: true
-              validate:
-                - required
-          -
-            import: content
-  details:
-    display: Details
+  hero:
+    display: Hero
     sections:
       -
         display: 'Hero Content'
-        instructions: 'This content will display in the page hero section. (<a href="https://halifaxcms.placementlabs.com/assets/hhwf.placementlabs.com_services_show-(1).png" target="_blank">view example</a>)'
+        instructions: 'This content will display in the page hero section. (<a href="/assets/servicehero.png" target="_blank">view example</a>)'
         fields:
           -
             import: title
@@ -27,6 +12,17 @@ tabs:
           -
             import: content
             prefix: hero_
+  overview:
+    display: Content
+    sections:
+      -
+        display: 'Service Content'
+        fields:
+          -
+            import: content
+  staff_locations:
+    display: 'Staff & Locations'
+    sections:
       -
         display: 'Staff & Locations'
         instructions: 'Attach staff member and location entries to this service. This is a two-way relation, staff and location entries will stay synced.'
@@ -46,6 +42,10 @@ tabs:
               visibility: visible
               hide_display: false
               width: 50
+              replicator_preview: true
+              always_save: true
+              unless:
+                override_staff: 'equals true'
           -
             handle: locations
             field:
@@ -61,6 +61,192 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              replicator_preview: true
+              always_save: true
+              unless:
+                override_staff: 'equals true'
+          -
+            handle: staff_is_customized
+            field:
+              html: 'This service has custom staff sections. Existing relations are unaffected.'
+              type: html
+              display: 'Staff Is Customized'
+              icon: html
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: true
+              if:
+                override_staff: 'equals true'
+      -
+        display: 'Custom Staff'
+        fields:
+          -
+            handle: override_staff
+            field:
+              default: false
+              type: toggle
+              display: 'Override Staff'
+              icon: toggle
+              instructions: 'Customize the staff section of this service. Does not affect existing relations.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: staff_sections
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    staff_section:
+                      display: 'Staff Section'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: text_field
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'Section Title'
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            placeholder: 'Cancer Care Provider'
+                        -
+                          handle: section_staff_members
+                          field:
+                            mode: default
+                            create: true
+                            collections:
+                              - staff
+                            type: entries
+                            display: 'Section Staff Members'
+                            icon: entries
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: 'Staff Sections'
+              icon: replicator
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              always_save: true
+              if:
+                override_staff: 'equals true'
+  details:
+    display: Details
+    sections:
+      -
+        display: 'Eloqua Form'
+        fields:
+          -
+            handle: eloqua_form_embed_code
+            field:
+              theme: material
+              mode: htmlmixed
+              mode_selectable: false
+              indent_type: tabs
+              indent_size: 4
+              key_map: default
+              line_numbers: true
+              line_wrapping: true
+              antlers: false
+              type: code
+              display: 'Eloqua Form Embed Code'
+              icon: code
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Child Services'
+        fields:
+          -
+            handle: show_child_services
+            field:
+              default: false
+              type: toggle
+              display: 'Show Child Services'
+              icon: toggle
+              instructions: "By enabling this option, this service will display it's `children` services. To feature child services, set this as the `parent` page."
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: child_services_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Child Services Title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              if:
+                show_child_services: 'equals true'
+              always_save: true
+          -
+            handle: bard_field
+            field:
+              buttons:
+                - bold
+                - italic
+                - removeformat
+                - anchor
+              smart_typography: true
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Child Services Text'
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              always_save: true
+              if:
+                show_child_services: 'equals true'
   seo:
     display: SEO
     sections:
@@ -75,24 +261,27 @@ tabs:
       -
         fields:
           -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+              display: 'Service Title'
+          -
             handle: slug
             field:
               type: slug
               localizable: true
           -
             import: image
-          -
-            handle: use_blocks
-            field:
-              default: false
-              type: toggle
-              display: 'Use blocks'
-              icon: toggle
-              instructions: 'By enabling this option, this record will utilize the block builder instead of the selected template.'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
           -
             handle: parent
             field:

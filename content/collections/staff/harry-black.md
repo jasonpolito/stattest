@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 4c5c2ebe-6dd8-4bd3-b605-298b099ad56b
 services:
   - 4c5c2ebe-6dd8-4bd3-b605-298b099ad56b
+show_call_to_action: false
+image: hh-harry-black-md.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1695397293
 ---

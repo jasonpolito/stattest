@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 865dcbc4-be10-4a2d-a488-adb50cd37238
 services:
   - 865dcbc4-be10-4a2d-a488-adb50cd37238
+show_call_to_action: false
+image: harman_p-kent-md-hres-scaled-e1601388888380-279x300.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696425968
 ---

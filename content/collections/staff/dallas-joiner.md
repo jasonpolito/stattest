@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 0b56d500-0db5-48ae-af72-955a0519e5df
 services:
   - 0b56d500-0db5-48ae-af72-955a0519e5df
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: joiner_dallasmd-200x300.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696509401
 ---

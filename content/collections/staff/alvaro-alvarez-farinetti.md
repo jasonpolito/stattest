@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 005a845a-0851-4546-a9eb-daf71a61a5f4
 services:
   - 005a845a-0851-4546-a9eb-daf71a61a5f4
+show_call_to_action: false
+image: alvarez-farinetti_alvaro-md-hres-scaled-e1603485075509-300x285.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1695395114
 ---

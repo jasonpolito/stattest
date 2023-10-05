@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 4f88f307-b6a6-4f02-90ce-6859b4963d10
 services:
   - 4f88f307-b6a6-4f02-90ce-6859b4963d10
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: johnson_lindsey-md-1-scaled-e1629305417295-206x300.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696510013
 ---

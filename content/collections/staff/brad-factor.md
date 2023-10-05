@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 005a845a-0851-4546-a9eb-daf71a61a5f4
 services:
   - 005a845a-0851-4546-a9eb-daf71a61a5f4
+show_call_to_action: false
+image: factor_brad-md-hres-scaled-e1603484800672-300x266.jpg
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696344953
 ---
