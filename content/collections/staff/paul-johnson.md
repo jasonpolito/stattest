@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: b31fdc4b-f953-41f6-a353-8b5541ba4832
 services:
   - b31fdc4b-f953-41f6-a353-8b5541ba4832
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: johnson_paulmd-200x300.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696510590
 ---

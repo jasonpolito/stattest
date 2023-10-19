@@ -17,4 +17,11 @@ bio: |2-
 primary_specialty: 63ae9707-9618-4e61-9d1a-9a894194f00c
 services:
   - 63ae9707-9618-4e61-9d1a-9a894194f00c
+staff_type: Provider
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: hh-michael-kohen.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696514917
 ---

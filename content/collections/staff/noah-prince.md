@@ -17,4 +17,11 @@ bio: |2-
 primary_specialty: 1d713bbf-f40f-4521-9847-70f66aaea176
 services:
   - 1d713bbf-f40f-4521-9847-70f66aaea176
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+noindex: false
+image: dr-prince-new-headshot-240x300.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696604321
 ---

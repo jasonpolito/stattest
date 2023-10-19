@@ -8,3 +8,11 @@ preferences:
   assets:
     assets:
       per_page: 500
+      mode: grid
+  collections:
+    staff:
+      per_page: 500
+      columns:
+        - slug
+        - status
+        - image

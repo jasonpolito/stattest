@@ -78,3 +78,16 @@ fields:
       visibility: visible
       hide_display: false
       instructions: 'An `OpenGraph image` is the image of a webpage when shared on social media platforms. `1200x630` is recommended.'
+  -
+    handle: noindex
+    field:
+      default: false
+      type: toggle
+      display: 'Discourage search engines from indexing this page'
+      icon: toggle
+      instructions: 'Adds a `noindex` meta tag. It is up to search engines to honor this request.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

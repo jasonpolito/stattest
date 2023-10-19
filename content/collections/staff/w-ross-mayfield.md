@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 196bc439-c125-4dc0-aca1-7c4b2f524e3e
 services:
   - 196bc439-c125-4dc0-aca1-7c4b2f524e3e
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: hh-w-ross-mayfield.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696518686
 ---

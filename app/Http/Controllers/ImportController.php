@@ -129,9 +129,9 @@ class ImportController extends Controller
     public function import()
     {
         $limit = 9999;
-        if (($handle = fopen(resource_path() . "/data/doctor_export.csv", "r")) !== FALSE) {
+        if (($handle = fopen(resource_path() . "/data/doctor_export.csv", "r")) !== false) {
             $count = 0;
-            while (($data = fgetcsv($handle, 1000, ",")) !== FALSE && $count < $limit) {
+            while (($data = fgetcsv($handle, 1000, ",")) !== false && $count < $limit) {
                 if ($count) {
                     $staff = $this->makeStaff($data);
                     if ($staff) {

@@ -6,7 +6,7 @@
                     <div class="w-full px-8 -mt-2 xl:w-2/3">
                         <div>
                             <div
-                                class="mr-4 prose md:prose-img:my-16 prose-headings:leading-snug prose-a:text-sky-700 lg:prose-lg xl:prose-xl max-w-none prose-headings:font-serif prose-headings:font-medium prose-headings:leading-tight">
+                                class="mr-4 prose md:prose-img:my-16 prose-headings:leading-tight prose-a:text-sky-700 lg:prose-lg xl:prose-xl max-w-none prose-headings:font-serif prose-headings:font-medium">
                                 <h1>{{ hero_title_text }}</h1>
                             </div>
                         </div>
@@ -51,12 +51,10 @@
                 <div class="row-span-2 text-white group p-14 bg-primary-900">
                     <div>
                         <div
-                            class="mr-4 prose md:prose-img:my-16 prose-headings:leading-snug prose-a:text-sky-700 lg:prose-lg xl:prose-xl max-w-none prose-headings:font-serif prose-headings:font-medium prose-white prose-p:font-thin">
+                            class="mr-4 prose prose-invert md:prose-img:my-16 prose-headings:leading-snug prose-a:text-sky-700 lg:prose-lg xl:prose-xl max-w-none prose-headings:font-serif prose-headings:font-[300] prose-white prose-p:font-thin">
                             {{ hero_content }}
-                                {{ if {partial:exists src="sets/{type}"} }}
-                                    {{ partial src="sets/{type}" }}
-                                {{ else }}
-                                    {{ partial:render_view }}
+                                {{ if type == "text" }}
+                                    {{ text }}
                                 {{ /if }}
                             {{ /hero_content }}
                         </div>
@@ -86,14 +84,77 @@
 </div>
 
 {{ partial:section }}
-    <div class="prose">
-        {{ content | dump }}
-        {{ content }}
-            {{ if {partial:exists src="sets/{type}"} }}
-                {{ partial src="sets/{type}" }}
-            {{ else }}
-                {{ partial:render_view }}
-            {{ /if }}
-        {{ /content }}
-    </div>
+    {{ content }}
+        {{ if {partial:exists src="sets/{type}"} }}
+            {{ partial src="sets/{type}" }}
+        {{ else }}
+            {{ partial:render_view }}
+        {{ /if }}
+    {{ /content }}
 {{ /partial:section }}
+{{ if show_child_services }}
+    <div class="bg-primary-50">
+        {{ partial:section }}
+            <div class="flex justify-between mb-8">
+                <div class="w-1/2">
+                    {{ partial:prose }}
+                        <h2>{{ child_services_title }}</h2>
+                    {{ /partial:prose }}
+                </div>
+            </div>
+            {{ partial:layout/cols }}
+                {{ partial:layout/col class="lg:w-1/2" }}
+                    {{ partial:prose }}
+                        {{ child_services_text }}
+                    {{ /partial:prose }}
+                {{ /partial:layout/col }}
+                {{ partial:layout/col class="lg:w-1/2" }}
+                    <div class="flex justify-between">
+                        <div class="w-full md:w-1/3">
+                            <div
+                                class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
+                                <ul>
+                                    {{ nav :from="slug" }}
+                                        {{ unless no_results }}
+                                            <li>
+                                                <a href="{{ url }}">{{ title }}</a>
+                                            </li>
+                                        {{ /unless }}
+                                    {{ /nav }}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {{ /partial:layout/col }}
+            {{ /partial:layout/cols }}
+        {{ /partial:section }}
+    </div>
+{{ /if }}
+<div id="doctors">
+    {{ partial:section }}
+        {{? $gap = 2 ?}}
+        {{ partial:prose class="mb-8" }}
+            <h2>Meet Your {{ title }} Team</h2>
+            <h4>{{ title }} Providers</h4>
+        {{ /partial:prose }}
+        <ul class="-mx-{{ gap }} mb-16 flex flex-wrap">
+            {{ staff }}
+                <li class="px-{{ gap }} w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                    <a href="{{ url }}" class="mb-{{ gap * 2 }} group flex w-full items-center">
+                        <div class="w-1/4">
+                            <div class="block bg-cover border bg-primary-50 border-slate-400 group-hover:border-primary"
+                                style="padding-top: 100%; background-position: center top; background-image: url({{ image }})">
+                            </div>
+                        </div>
+                        <div class="p-{{ gap * 2 }} block w-3/4 text-sm group-hover:text-primary" href="{{ url }}">
+                            {{ full_name }}
+                            <div class="text-xs text-slate-500">
+                                {{ primary_specialty.title }} Provider
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            {{ /staff }}
+        </ul>
+    {{ /partial:section }}
+</div>

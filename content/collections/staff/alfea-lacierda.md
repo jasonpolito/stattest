@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: d2505433-0e4b-4430-b427-892a5be33892
 services:
   - d2505433-0e4b-4430-b427-892a5be33892
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: lacierda_alfea-md-hres-scaled-e1601325058725-284x300.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696513458
 ---

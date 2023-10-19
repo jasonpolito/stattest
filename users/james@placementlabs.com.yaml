@@ -12,6 +12,39 @@ preferences:
         - last_name
         - slug
         - status
+        - image
+        - primary_specialty
+      filters:
+        cancer_care:
+          display: 'Cancer Care'
+          filters:
+            fields:
+              primary_specialty:
+                field: title
+                operator: like
+                value: cancer
+        urology:
+          display: Urology
+          filters:
+            fields:
+              primary_specialty:
+                field: title
+                operator: '='
+                value: Urology
+        family_medicine:
+          display: 'Family Medicine'
+          filters:
+            fields:
+              primary_specialty:
+                field: title
+                operator: '='
+                value: 'Family Medicine'
+    services:
+      columns:
+        - title
+        - slug
+        - status
+        - meta_title
   nav:
     content:
       'content::collections':

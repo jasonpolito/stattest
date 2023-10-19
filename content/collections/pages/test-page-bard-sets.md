@@ -1,7 +1,7 @@
 ---
 id: 831d8e08-35c3-49b3-9153-d7eca65f3cdb
 blueprint: page
-title: 'Test Page / Bard Sets'
+title: 'Example Child'
 page_blocks:
   -
     type: set
@@ -49,6 +49,7 @@ page_blocks:
                     type: button
                     enabled: true
                     color: '#5ecaff'
+                    bg_color: '#01338e'
           -
             type: paragraph
   -
@@ -56,6 +57,7 @@ page_blocks:
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 template: templates/default
+noindex: false
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1695325446
+updated_at: 1697056799
 ---

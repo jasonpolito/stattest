@@ -112,7 +112,7 @@ return [
         |
         */
 
-        'generate_presets_on_upload' => true,
+        'generate_presets_on_upload' => false,
 
     ],
 

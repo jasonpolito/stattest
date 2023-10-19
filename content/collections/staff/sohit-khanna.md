@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 8414396c-48b8-4868-bdeb-b9a11b7486e3
 services:
   - 8414396c-48b8-4868-bdeb-b9a11b7486e3
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: khanna_sohit-md-hres-scaled-e1652296749251-300x271.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696511130
 ---

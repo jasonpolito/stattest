@@ -211,7 +211,7 @@ tabs:
                 show_child_services: 'equals true'
               always_save: true
           -
-            handle: bard_field
+            handle: child_services_text
             field:
               buttons:
                 - bold

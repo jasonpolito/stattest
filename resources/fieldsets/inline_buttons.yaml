@@ -99,7 +99,7 @@ fields:
                     hide_display: true
                     width: 50
                 -
-                  handle: color
+                  handle: bg_color
                   field:
                     swatches:
                       - '#01338e'
@@ -107,7 +107,7 @@ fields:
                       - '#ffffff'
                     allow_any: false
                     type: color
-                    display: Color
+                    display: Background
                     icon: color
                     listable: hidden
                     instructions_position: above

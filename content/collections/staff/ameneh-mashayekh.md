@@ -17,4 +17,11 @@ bio: |2-
 primary_specialty: 97fe6d39-f3fe-49ab-954a-d6891ae1bf54
 services:
   - 97fe6d39-f3fe-49ab-954a-d6891ae1bf54
+staff_type: Provider
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: hh-ameneh-mashayekh.png
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696516283
 ---

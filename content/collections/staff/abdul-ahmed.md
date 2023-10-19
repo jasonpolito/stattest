@@ -21,6 +21,7 @@ show_call_to_action: false
 image: ahmed_abdulmd-scaled-e1606234339370-300x298.jpg
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
-updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695395335
+noindex: false
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1696952824
 ---

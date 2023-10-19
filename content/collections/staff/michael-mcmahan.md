@@ -17,4 +17,11 @@ bio: |2-
 primary_specialty: 7035bd9e-4cef-4b12-b322-dd3c280d8d9c
 services:
   - 7035bd9e-4cef-4b12-b322-dd3c280d8d9c
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+noindex: false
+image: hh-michael-mcmahan.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696596194
 ---

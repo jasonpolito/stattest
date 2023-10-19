@@ -15,6 +15,4 @@ bio: |2-
               <p>Emory University School of Medicine</p>
           
 primary_specialty: a846f760-8a1a-4366-b13f-dfefe7203cca
-services:
-  - a846f760-8a1a-4366-b13f-dfefe7203cca
 ---

@@ -26,12 +26,6 @@ preferences:
         - title
         - status
         - handle
-    services:
-      columns:
-        - title
-        - slug
-        - status
-        - staff
     staff:
       columns:
         - title
@@ -39,6 +33,7 @@ preferences:
         - last_name
         - slug
         - primary_specialty
+        - image
       after_save: continue_editing
     informational_pages:
       after_save: continue_editing
@@ -53,3 +48,9 @@ preferences:
         - status
         - slug
         - date
+        - image
+    services:
+      columns:
+        - title
+        - slug
+        - locations

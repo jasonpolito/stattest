@@ -17,4 +17,10 @@ bio: |2-
 primary_specialty: 82b5f831-223c-424c-a72c-8072e9c2e8da
 services:
   - 82b5f831-223c-424c-a72c-8072e9c2e8da
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+image: mangum_courtneymd-scaled-e1630441774700-280x300.jpg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1696517069
 ---

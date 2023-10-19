@@ -17,4 +17,11 @@ bio: |2-
 primary_specialty: 33464ca1-5dba-4259-9429-6634685b39a2
 services:
   - 33464ca1-5dba-4259-9429-6634685b39a2
+show_call_to_action: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+noindex: false
+image: rumbak_dania-md-e1677682786265-270x300.jpeg
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1697720108
 ---

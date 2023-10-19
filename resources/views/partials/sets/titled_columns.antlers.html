@@ -1,0 +1,15 @@
+<div class="py-8">
+    {{ partial:layout/cols }}
+        {{ columns }}
+            {{ partial:layout/col class="w-full lg:w-1/3" }}
+                <h3 class="py-4 mb-4 font-serif text-xl border-b border-slate-400">
+                    {{ column_title }}
+                </h3>
+                <div
+                    class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
+                    {{ column_content }}
+                </div>
+            {{ /partial:layout/col }}
+        {{ /columns }}
+    {{ /partial:layout/cols }}
+</div>

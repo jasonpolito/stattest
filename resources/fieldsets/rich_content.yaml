@@ -49,6 +49,37 @@ fields:
                     hide_display: false
                 -
                   import: content
+            rich_text:
+              display: 'Rich Text'
+              instructions: null
+              icon: text-formatting-all-caps
+              fields:
+                -
+                  import: content
+            custom_code:
+              display: 'Custom Code'
+              instructions: null
+              icon: programming-script-code-brackets
+              fields:
+                -
+                  handle: custom_code
+                  field:
+                    theme: material
+                    mode: htmlmixed
+                    mode_selectable: true
+                    indent_type: tabs
+                    indent_size: 4
+                    key_map: default
+                    line_numbers: true
+                    line_wrapping: true
+                    antlers: true
+                    type: code
+                    display: 'Custom Code'
+                    icon: code
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
       always_show_set_button: false
       collapse: false
       previews: true
@@ -60,3 +91,15 @@ fields:
       visibility: visible
       hide_display: false
       always_save: true
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table

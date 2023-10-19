@@ -39,11 +39,34 @@ bard_field:
       -
         type: text
         text: 'Our specialized team is equipped to provide treatment for various types of cancers, addressing diverse needs and ensuring personalized care for each patient.'
-meta_title: kjnekjnefnkedfnjk
-meta_description: dfdfdfd
-image: cancercare-1696507636.jpg
-updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1696507712
+meta_title: 'Comprehensive Cancer Treatment | Halifax Health'
+meta_description: 'Discover compassionate cancer care at Halifax Health. Our dedicated oncologists are here to support you in your journey. Better care leads to better outcomes.'
+override_staff: false
+staff_sections:
+  -
+    id: lndbat45
+    text_field: Navigators
+    section_staff_members:
+      - 7b3baa0b-ac0b-4821-bc80-bcac48ad6900
+      - 3d5d96fd-f5a6-4e11-b8bf-a2a0c4f6acb7
+      - 9200b791-3c05-4af5-8be7-f11232b89da5
+      - 57c54a55-e7b5-4175-8ffc-42921bcb2844
+    type: staff_section
+    enabled: true
+  -
+    id: lndbbg15
+    type: staff_section
+    enabled: true
+noindex: false
+child_services_text:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Our specialized team is equipped to provide treatment for various types of cancers, addressing diverse needs and ensuring personalized care for each patient.'
+updated_by: 95963937-3885-4d7e-8bc2-d672d4bae9c7
+updated_at: 1697720349
 content:
   -
     type: heading
@@ -80,16 +103,14 @@ content:
       values:
         type: request_appointment_button
   -
-    type: paragraph
-  -
     type: set
     attrs:
-      id: lnamexdh
+      id: lnkkgyfe
       values:
-        type: columns
+        type: titled_columns
         columns:
           -
-            id: lnamezls
+            id: lnkkgz75
             column_title: 'Patient Information'
             column_content:
               -
@@ -146,10 +167,10 @@ content:
                                   target: null
                                   title: null
                             text: 'Financial Information'
-            type: columns
+            type: column
             enabled: true
           -
-            id: lnamf4t8
+            id: lnkkhw82
             column_title: 'Cancer Care'
             column_content:
               -
@@ -206,10 +227,10 @@ content:
                                   target: null
                                   title: null
                             text: 'Financial Information'
-            type: columns
+            type: column
             enabled: true
           -
-            id: lnamf9q3
+            id: lnkkhxx6
             column_title: 'Resources & Support'
             column_content:
               -
@@ -266,8 +287,28 @@ content:
                                   target: null
                                   title: null
                             text: 'Financial Information'
-            type: columns
+            type: column
             enabled: true
+  -
+    type: set
+    attrs:
+      id: lnkncq7g
+      values:
+        type: faqs
+        faqs:
+          -
+            id: lnkncsp6
+            question: test
+            type: faqs
+            enabled: true
+  -
+    type: set
+    attrs:
+      id: lnknerql
+      values:
+        type: file_upload
+  -
+    type: paragraph
   -
     type: paragraph
     content:

@@ -45,6 +45,22 @@ fields:
               fields:
                 -
                   import: inline_buttons
+            request_appointment_button:
+              display: 'Request Appointment Button'
+              instructions: 'A predefined button that links to request appointment.'
+              icon: form-text-field
+              fields:
+                -
+                  handle: request_appt_button
+                  field:
+                    type: html
+                    icon: html
+                    instructions: 'A "Request An Appointment" button will display here.'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: true
             file_upload:
               display: 'File Upload'
               instructions: 'Link to a downloadable asset'
@@ -92,8 +108,8 @@ fields:
           instructions: null
           icon: layout-three-columns
           sets:
-            columns:
-              display: Columns
+            titled_columns:
+              display: 'Titled Columns'
               instructions: 'Content columns with titles'
               icon: layout-three-columns
               fields:
@@ -109,8 +125,8 @@ fields:
                         instructions: null
                         icon: null
                         sets:
-                          columns:
-                            display: Columns
+                          column:
+                            display: Column
                             instructions: null
                             icon: null
                             fields:
@@ -170,6 +186,7 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
+                    replicator_preview: true
         advanced:
           display: Advanced
           instructions: null
@@ -195,3 +212,4 @@ fields:
       placeholder: 'Write some nice content. Add "sets" by clicking the plus icon to the left.'
       always_save: true
       container: assets
+      replicator_preview: true
