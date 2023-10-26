@@ -106,6 +106,7 @@
 <body>
     {{ partial:global/header }}
     {{ template_content }}
+    {{ partial:global/footer }}
     {{ if current_user }}
         <div class="fixed bottom-0 right-0 z-[9999] p-4">
             <a href="{{ edit_url }}"
