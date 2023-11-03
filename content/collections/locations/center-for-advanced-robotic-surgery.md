@@ -25,4 +25,6 @@ city: 'Daytona Beach'
 use_blocks: false
 updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
 updated_at: 1695130141
+staff:
+  - a64f5ce3-e9d0-4c1c-807b-c10e9c11c7f2
 ---

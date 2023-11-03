@@ -21,6 +21,146 @@ show_call_to_action: false
 image: afridi_fariya-md-hres-scaled-e1601317516902-300x295.jpg
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
+noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695827599
+updated_at: 1698976744
+content:
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Education & Fellowship'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Sind Medical College'
+      -
+        type: text
+        text: ' '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Medical Education '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "Karachi, PAKISTAN USA\_"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Sind Medical College'
+      -
+        type: text
+        text: ' '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Medical Education '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Karachi, PAKISTAN USA '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'June 1993 – June 1994'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Halifax Medical Center'
+      -
+        type: text
+        text: ' '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Internship '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Daytona Beach, FL USA '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'October 1996 – July 1998'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'UMDNJ-New Jersey Medical School'
+      -
+        type: text
+        text: ' '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Residency '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Newark, NJ USA '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'May 1999 – June 2002'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Long Island Jewish Medical Center'
+      -
+        type: text
+        text: ' '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Fellowship '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'New Hyde Park, NY USA '
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'July 2002 – June 2004'
 ---

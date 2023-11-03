@@ -3,3 +3,58 @@ roles:
   - editor
 id: ab0ca761-57b9-4cca-b88b-7732686bffe9
 password_hash: $2y$10$Uwzjdw9mQ8f0yE5xw6dqAOlbOs.6iD1jZkPEt/p0/pc6zc5Vg8Zv6
+preferences:
+  collections:
+    blocks:
+      after_save: continue_editing
+    pages:
+      after_save: continue_editing
+      columns:
+        - title
+        - slug
+        - status
+    locations:
+      after_save: continue_editing
+      columns:
+        - title
+        - city
+        - phone
+        - status
+    views:
+      after_save: continue_editing
+      columns:
+        - title
+        - status
+        - handle
+    staff:
+      columns:
+        - title
+        - first_name
+        - last_name
+        - slug
+        - primary_specialty
+        - image
+      after_save: continue_editing
+    informational_pages:
+      after_save: continue_editing
+      columns:
+        - title
+        - slug
+        - status
+        - tag
+    blog:
+      after_save: continue_editing
+      columns:
+        - title
+        - status
+        - slug
+        - date
+        - image
+    services:
+      after_save: continue_editing
+      columns:
+        - title
+        - slug
+        - locations
+
+

@@ -21,6 +21,14 @@ show_call_to_action: false
 image: bartholomew_beth-md-hres-scaled-e1596054527527-270x300.jpg
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
+noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695396898
+updated_at: 1698987037
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Beth A. Bartholomew, MD is a Halifax Health cardiology specialist providing heart care services in Daytona Beach and Port Orange.'
 ---

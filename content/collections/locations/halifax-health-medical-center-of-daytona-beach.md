@@ -36,9 +36,8 @@ visiting_hours:
           -
             type: bold
         text: Guests
-  -
-    type: paragraph
-    content:
+      -
+        type: hardBreak
       -
         type: text
         text: 'Visiting hours are 8:00 am to 8:00 pm, 7 days a week.'
@@ -59,9 +58,8 @@ visiting_hours:
           -
             type: italic
         text: '(3rd & 5th floor)'
-  -
-    type: paragraph
-    content:
+      -
+        type: hardBreak
       -
         type: text
         text: 'Critical Care is open 24 hours a day, 7 days a week.'
@@ -71,6 +69,45 @@ opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 meta_title: 'Halifax Health Medical Center of Daytona Beach'
 meta_description: 'Halifax Health Medical Center of Daytona Beach is a 563-bed hospital. All major medical and surgical services are available.'
+hero_content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Voted the area’s most preferred emergency department, Halifax Health – Medical Center of Port Orange is open 24 hours a day, seven days a week, providing a seamless care transition with access to over 500 physicians and 56 specialties to meet all of your healthcare needs.'
+noindex: false
+image: portorange.jpg
+hero_ctas:
+  -
+    id: lo66fxhl
+    link_text: 'Find Doctors'
+    custom_url: '#doctors'
+    target_blank: false
+    use_custom_url: true
+    type: call_to_action
+    enabled: true
+  -
+    id: lo66gqsp
+    link_text: 'Express Care'
+    target_blank: false
+    use_custom_url: false
+    type: call_to_action
+    enabled: true
+  -
+    id: lo66gwki
+    link_text: 'Emergency Department'
+    target_blank: false
+    use_custom_url: false
+    type: call_to_action
+    enabled: true
+  -
+    id: lo66h21q
+    link_text: 'Browse Treatments'
+    target_blank: false
+    use_custom_url: false
+    type: call_to_action
+    enabled: true
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1695051769
+updated_at: 1698330864
 ---

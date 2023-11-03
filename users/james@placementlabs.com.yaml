@@ -6,6 +6,10 @@ preferences:
   collections:
     locations:
       after_save: continue_editing
+      columns:
+        - slug
+        - status
+        - meta_title
     staff:
       columns:
         - first_name
@@ -43,6 +47,12 @@ preferences:
       columns:
         - title
         - slug
+        - status
+        - meta_title
+    blog:
+      columns:
+        - slug
+        - date
         - status
         - meta_title
   nav:

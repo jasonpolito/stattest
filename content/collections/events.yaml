@@ -4,6 +4,7 @@ layout: layout
 revisions: true
 route: '/events/{slug}'
 sort_dir: asc
+autosave: true
 date_behavior:
   past: public
   future: private

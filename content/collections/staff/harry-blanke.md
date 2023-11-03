@@ -21,6 +21,54 @@ show_call_to_action: false
 image: hh-harry-blanke-iii-md.png
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
+noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695397793
+updated_at: 1698987627
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Harry (Buddy) Blanke, MD, is a board-certified family medicine physician and a retired Colonel from the United States Air Force where he served on active duty for almost 28 years. He received his Bachelor of Arts degree from The Citadel, a Master’s Degree from Weber University, and a Master’s Degree in Strategic Studies from the Air Force War College before taking his pre-requisite science classes for medical school at Spartanburg Community College and the University of South Carolina-Upstate. He attended the Medical University of South Carolina for medical school and completed his residency at Halifax Health – Family Medicine Residency Program, service as chief resident his third year.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'In addition to his regular duties as a family medicine physician, he provides prenatal care to the community. He enjoys providing full-spectrum care including preventive care, sports, geriatric and community medicine, women’s health and minor surgical procedures.'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Education & Fellowship'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Medical University of South Carolina'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: Residency
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Halifax Health – Family Medicine Residency Program'
 ---

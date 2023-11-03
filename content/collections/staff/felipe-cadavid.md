@@ -21,6 +21,20 @@ show_call_to_action: false
 image: cadavid-felipe-1-scaled-e1685376713332-300x292.jpg
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
+noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695400286
+updated_at: 1698988271
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Felipe Cadavid, MD, graduated summa cum laude from University of Florida with a bachelor’s degree in biology. A graduate of Florida State University College of Medicine, Cadavid completed his general surgery residency at University of Florida College of Medicine and his vascular and endovascular surgery fellowship at University of Alabama at Birmingham. He has won numerous awards and honors and has teaching experience.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Cadavid is an avid collector of vinyl albums, CDs and digital music. He is a guitar player and collector and also enjoys playing the ukulele, organ, synthesizer and electronic drums. He enjoys outdoor pastimes such as skeet, trap and sporting clays. Cadavid is bilingual in English and Spanish and is an authorized Spanish language medical interpreter.'
 ---

@@ -1,9 +1,11 @@
 title: Locations
-template: default
+template: templates/location
 layout: layout
 revisions: true
 route: '/locations/{slug}'
 sort_dir: asc
+default_status: draft
+autosave: true
 date_behavior:
   past: public
   future: private

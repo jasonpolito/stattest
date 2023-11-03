@@ -26,6 +26,12 @@ hero_content:
       -
         type: text
         text: 'When cancer affects your life, you deserve excellent care. At Halifax Health – Cancer Center for Hope, our expert team collaborates with national oncologists, utilizing advanced treatments and technologies for the best outcomes.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: '{{ variables:phone_number }}'
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 use_blocks: false
@@ -65,8 +71,8 @@ child_services_text:
       -
         type: text
         text: 'Our specialized team is equipped to provide treatment for various types of cancers, addressing diverse needs and ensuring personalized care for each patient.'
-updated_by: 95963937-3885-4d7e-8bc2-d672d4bae9c7
-updated_at: 1697720349
+updated_by: 688cce98-ba3d-457b-9a79-874449aae8ea
+updated_at: 1698325118
 content:
   -
     type: heading

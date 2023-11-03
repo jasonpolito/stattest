@@ -130,6 +130,32 @@ opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 city: Deltona
 use_blocks: false
-updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
-updated_at: 1695049539
+staff:
+  - a64f5ce3-e9d0-4c1c-807b-c10e9c11c7f2
+hero_content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Our highly trained clinicians treat a wide range of both neurologic and orthopedic conditions utilizing an evidence-based treatment approach.\_ Our mission is to empower you to reach the highest level of recovery and to provide you with the best experience."
+noindex: false
+hero_ctas:
+  -
+    id: lo6268ml
+    link_text: 'Test CTA'
+    target_blank: false
+    use_custom_url: false
+    type: call_to_action
+    enabled: true
+  -
+    id: lo626gxy
+    link_text: 'Another CTA'
+    link_url: 46a3c5ef-af28-4db6-81b4-4ba06ed4b426
+    target_blank: false
+    use_custom_url: false
+    type: call_to_action
+    enabled: true
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1698256696
 ---

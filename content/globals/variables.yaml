@@ -3,7 +3,19 @@ data:
   variables:
     -
       id: lkva9dt1
-      text: 'Accept America'
+      text: 'Halifax Health'
       handle: company_name
+      type: variable
+      enabled: true
+    -
+      id: lo76uxu2
+      text: '(386) 425-4000'
+      handle: phone_number
+      type: variable
+      enabled: true
+    -
+      id: lo76vkbm
+      text: 'Live Your Life Well'
+      handle: tagline
       type: variable
       enabled: true

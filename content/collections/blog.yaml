@@ -1,7 +1,8 @@
 title: 'Blog Posts'
-template: default
+template: templates/post
 layout: layout
 revisions: true
+autosave: true
 route: '/{slug}'
 date: true
 sort_dir: asc

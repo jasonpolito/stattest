@@ -1,11 +1,12 @@
 title: 'Staff Members'
-template: default
+template: templates/staff
 layout: layout
 revisions: true
 route: '/staff/{slug}'
 slugs: false
 sort_dir: asc
 default_status: draft
+autosave: true
 date_behavior:
   past: public
   future: private

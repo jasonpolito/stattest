@@ -4,7 +4,7 @@ tabs:
     sections:
       -
         display: 'Hero Content'
-        instructions: 'This content will display in the page hero section. (<a href="https://halifaxcms.placementlabs.com/assets/location_hero.png" target="_blank">view example</a>)'
+        instructions: 'This content will display in the page hero section. (<a href="https://phpstack-1152677-4012775.cloudwaysapps.com/assets/location_hero.png" target="_blank">view example</a>)'
         fields:
           -
             handle: title
@@ -22,7 +22,7 @@ tabs:
               antlers: false
               hide_display: false
           -
-            handle: description
+            handle: hero_content
             field:
               buttons:
                 - h2
@@ -41,7 +41,7 @@ tabs:
               inline: false
               toolbar_mode: fixed
               reading_time: false
-              word_count: false
+              word_count: true
               fullscreen: true
               allow_source: true
               enable_input_rules: true
@@ -55,12 +55,15 @@ tabs:
               collapse: false
               previews: true
               type: bard
-              display: Description
+              display: 'Hero Content'
               icon: bard
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
+              instructions: 'A brief description of this location.'
+              replicator_preview: true
+              character_limit: 300
           -
             handle: hero_ctas
             field:

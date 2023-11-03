@@ -16,3 +16,9 @@ preferences:
         - slug
         - status
         - image
+    services:
+      columns:
+        - slug
+        - status
+        - hero_title_text
+        - title

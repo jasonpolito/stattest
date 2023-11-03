@@ -5,6 +5,7 @@ revisions: true
 route: "services/{{ parent_uri | replace('services/', '') | replace('.html', '') }}/{{ slug }}"
 sort_dir: asc
 default_status: draft
+autosave: true
 date_behavior:
   past: public
   future: private
