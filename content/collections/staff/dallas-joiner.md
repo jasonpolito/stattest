@@ -20,7 +20,98 @@ services:
 show_call_to_action: false
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
-image: joiner_dallasmd-200x300.jpg
+image: joiner_dallasmd-200x300-1699155125.jpg
+noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1696509401
+updated_at: 1699155207
+content:
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Education & Fellowship'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Medical School'
+      -
+        type: hardBreak
+        marks:
+          -
+            type: bold
+      -
+        type: text
+        text: 'University of Florida'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Gainesville, FL'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: '2012 – May 2016'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Residency, Emergency Medicine'
+      -
+        type: hardBreak
+        marks:
+          -
+            type: bold
+      -
+        type: text
+        text: 'Orlando Health'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Orlando, FL'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: '2016 – 2019'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Fellowship, Anesthesia Critical Care'
+      -
+        type: hardBreak
+        marks:
+          -
+            type: bold
+      -
+        type: text
+        text: 'Jackson Memorial Hospital'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Miami, FL'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: '2019 – June 2021'
 ---

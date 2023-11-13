@@ -18,9 +18,10 @@ primary_specialty: 0b56d500-0db5-48ae-af72-955a0519e5df
 services:
   - 0b56d500-0db5-48ae-af72-955a0519e5df
 show_call_to_action: false
-image: hh-shelly-birch-md.png
+image: hh-shelly-birch-md-2.png
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
+noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1695399665
+updated_at: 1699130797
 ---

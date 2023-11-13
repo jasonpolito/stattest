@@ -18,12 +18,12 @@ primary_specialty: 1d713bbf-f40f-4521-9847-70f66aaea176
 services:
   - 1d713bbf-f40f-4521-9847-70f66aaea176
 show_call_to_action: false
-image: dr.-cohen-shohet-new-headshot-200x300.jpg
+image: dr.-cohen-shohet-new-headshot-200x300-2.jpg
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1699020315
+updated_at: 1699133299
 content:
   -
     type: heading

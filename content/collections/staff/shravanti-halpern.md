@@ -21,6 +21,149 @@ show_call_to_action: false
 image: hh-shravanti-halpern.png
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
+noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1696426954
+updated_at: 1699150169
+content:
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Education & Fellowship'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Government Medical College Nagpur'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Medical Education'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Nagpur, Maharashtra, India'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'July 1991 – June 1996'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Children’s Hospital of Buffalo'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: Fellowship
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Buffalo, NY USA'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'July 2004 – June 2006'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: Internship
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Government Medical College Nagpur'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Nagpur, Maharashtra, India'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'July 1996 – December 1996'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: Residency
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Flushing Hospital Medical Center'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Flushing, NY USA'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'July 2000 – June 2003'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Buffalo General Hospital'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Buffalo, NY USA'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'July 2006 – May 2009'
 ---

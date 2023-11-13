@@ -18,12 +18,12 @@ primary_specialty: 82b5f831-223c-424c-a72c-8072e9c2e8da
 services:
   - 82b5f831-223c-424c-a72c-8072e9c2e8da
 show_call_to_action: false
-image: dufresne_morgan-md-200x300.jpg
+image: dufresne_morgan-md-200x300-2.jpg
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1699024542
+updated_at: 1699134746
 content:
   -
     type: heading
