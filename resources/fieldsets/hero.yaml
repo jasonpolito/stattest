@@ -62,6 +62,4 @@ fields:
       hide_display: false
       max_files: 1
   -
-    import: buttons
-  -
     import: custom_html

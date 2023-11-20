@@ -1,7 +1,20 @@
 <div class="container px-8 mx-auto lg:px-12 xl:max-w-7xl" id="">
-    <div class="-mx-12">
+    <div class="-mx-14">
         <div class="grid grid-cols-2">
             <div class="col-span-2 bg-primary-50 p-14">
+                <ul class="flex items-center gap-4 mb-16 -mt-6 text-slate-400">
+                    <li><a href="/services"
+                            class="text-slate-400 focus:text-primary hover:text-primary hover:underline focus:underline">Services</a>
+                    </li>
+                    <li class="text-2xl font-thin">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </li>
+                    <li><a href="#" class="text-primary hocus:underline">{{ title }}</a>
+                    </li>
+                </ul>
                 <div class="flex flex-wrap items-center -mx-8">
                     <div class="w-full px-8 -mt-2 xl:w-2/3">
                         <div>
@@ -16,10 +29,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row-span-3 bg-center bg-cover" style="background-image: url({{ image }})">
-                <div class="fill-parent">
+            <div class="row-span-3 bg-center bg-cover" style="
+                background-image: url({{ image }})
+                ">
+                {{ if !image }}
+                    <div class="fill-parent bg-gradient-to-l from-primary to-primary-700">
 
-                </div>
+                    </div>
+                {{ /if }}
             </div>
             {{ if eloqua_form_embed_code }}
                 <a href="#request-appointment" class="row-span-2 text-white group p-14 bg-primary-900">
@@ -84,13 +101,7 @@
 </div>
 
 {{ partial:section }}
-    {{ content }}
-        {{ if {partial:exists src="sets/{type}"} }}
-            {{ partial src="sets/{type}" }}
-        {{ else }}
-            {{ partial:render_view }}
-        {{ /if }}
-    {{ /content }}
+    {{ partial:content }}
 {{ /partial:section }}
 {{ if show_child_services }}
     <div class="bg-primary-50">
@@ -130,31 +141,34 @@
         {{ /partial:section }}
     </div>
 {{ /if }}
-<div id="doctors">
-    {{ partial:section }}
-        {{? $gap = 2 ?}}
-        {{ partial:prose class="mb-8" }}
-            <h2>Meet Your {{ title }} Team</h2>
-            <h4>{{ title }} Providers</h4>
-        {{ /partial:prose }}
-        <ul class="-mx-{{ gap }} mb-16 flex flex-wrap">
-            {{ staff }}
-                <li class="px-{{ gap }} w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <a href="{{ url }}" class="mb-{{ gap * 2 }} group flex w-full items-center">
-                        <div class="w-1/4">
-                            <div class="block bg-cover border bg-primary-50 border-slate-400 group-hover:border-primary"
-                                style="padding-top: 100%; background-position: center top; background-image: url({{ image }})">
+{{ if staff }}
+    <div id="doctors">
+        {{ partial:section }}
+            {{? $gap = 2 ?}}
+            {{ partial:prose class="mb-8" }}
+                <h2>Meet Your {{ title }} Team</h2>
+                <h4>{{ title }} Providers</h4>
+            {{ /partial:prose }}
+            <ul class="-mx-{{ gap }} mb-16 flex flex-wrap">
+                {{ staff }}
+                    <li class="px-{{ gap }} w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                        <a href="{{ url }}" class="mb-{{ gap * 2 }} group flex w-full items-center">
+                            <div class="w-1/4">
+                                <div class="block bg-cover border bg-primary-50 border-slate-400 group-hover:border-primary"
+                                    style="padding-top: 100%; background-position: center top; background-image: url({{ image }})">
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-{{ gap * 2 }} block w-3/4 text-sm group-hover:text-primary" href="{{ url }}">
-                            {{ full_name }}
-                            <div class="text-xs text-slate-500">
-                                {{ primary_specialty.title }} Provider
+                            <div class="p-{{ gap * 2 }} block w-3/4 text-sm group-hover:text-primary"
+                                href="{{ url }}">
+                                {{ full_name }}
+                                <div class="text-xs text-slate-500">
+                                    {{ primary_specialty.title }} Provider
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-            {{ /staff }}
-        </ul>
-    {{ /partial:section }}
-</div>
+                        </a>
+                    </li>
+                {{ /staff }}
+            </ul>
+        {{ /partial:section }}
+    </div>
+{{ /if }}

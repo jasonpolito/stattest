@@ -12,9 +12,9 @@ page_description:
       -
         type: text
         text: 'Find information about patient services, billing & financial assistance, patient resources and tools, and more we are committed to providing you with the best possible experience.'
-image: daytona3.webp
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
+noindex: false
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1694642204
+updated_at: 1699990713
 ---

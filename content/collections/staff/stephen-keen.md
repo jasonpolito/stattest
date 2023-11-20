@@ -20,7 +20,8 @@ services:
 show_call_to_action: false
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
-image: hh-stephen-keen.jpg
+image: hh-stephen-keen-1700007289.jpg
+noindex: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1696511236
+updated_at: 1700007310
 ---

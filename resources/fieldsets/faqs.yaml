@@ -1,80 +1,40 @@
-title: FAQs
+title: Accordion
 fields:
   -
-    handle: faqs
+    handle: accordion
     field:
       collapse: false
       previews: true
       fullscreen: true
       sets:
         faqs:
-          display: FAQs
+          display: Accordion
           instructions: null
-          icon: alert-help-question
+          icon: text-formatting-image-top
           sets:
-            faqs:
-              display: FAQs
+            accordion:
+              display: 'Accordion Item'
               instructions: null
-              icon: alert-help-question
+              icon: text-formatting-image-top
               fields:
                 -
-                  handle: question
+                  handle: title
                   field:
                     input_type: text
                     antlers: true
                     type: text
-                    display: Question
+                    display: Title
                     icon: text
                     listable: hidden
                     instructions_position: above
                     visibility: visible
                     hide_display: false
                     placeholder: 'Why did the chicken cross the road?'
+                    replicator_preview: true
                 -
-                  handle: answer
-                  field:
-                    buttons:
-                      - h3
-                      - h4
-                      - bold
-                      - italic
-                      - underline
-                      - strikethrough
-                      - unorderedlist
-                      - orderedlist
-                      - removeformat
-                      - quote
-                      - anchor
-                      - image
-                    smart_typography: true
-                    save_html: false
-                    inline: false
-                    toolbar_mode: fixed
-                    reading_time: false
-                    word_count: false
-                    fullscreen: true
-                    allow_source: true
-                    enable_input_rules: true
-                    enable_paste_rules: true
-                    remove_empty_nodes: false
-                    antlers: true
-                    link_noopener: false
-                    link_noreferrer: false
-                    target_blank: false
-                    always_show_set_button: false
-                    collapse: false
-                    previews: true
-                    type: bard
-                    display: Answer
-                    icon: bard
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    hide_display: false
-                    placeholder: 'To get to the other side.'
-                    container: assets
+                  import: content_simple
       type: replicator
-      display: FAQs
+      display: Accordion
       icon: replicator
       listable: hidden
       instructions_position: above

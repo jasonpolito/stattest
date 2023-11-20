@@ -26,17 +26,11 @@ hero_content:
       -
         type: text
         text: 'When cancer affects your life, you deserve excellent care. At Halifax Health – Cancer Center for Hope, our expert team collaborates with national oncologists, utilizing advanced treatments and technologies for the best outcomes.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: '{{ variables:phone_number }}'
 opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 use_blocks: false
 hero_title_text: 'Cancer Care'
-show_child_services: true
+show_child_services: false
 child_services_title: 'Cancers We Treat'
 bard_field:
   -
@@ -71,8 +65,10 @@ child_services_text:
       -
         type: text
         text: 'Our specialized team is equipped to provide treatment for various types of cancers, addressing diverse needs and ensuring personalized care for each patient.'
-updated_by: 688cce98-ba3d-457b-9a79-874449aae8ea
-updated_at: 1698325118
+image: cancercare-1700244812.jpg
+link_externally: false
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1700253221
 content:
   -
     type: heading
@@ -111,13 +107,13 @@ content:
   -
     type: set
     attrs:
-      id: lnkkgyfe
+      id: lp2uldjv
       values:
         type: titled_columns
         columns:
           -
-            id: lnkkgz75
-            column_title: 'Patient Information'
+            id: lp2ule7y
+            column_title: 'Patient Information & Access'
             column_content:
               -
                 type: bulletList
@@ -134,24 +130,7 @@ content:
                               -
                                 type: link
                                 attrs:
-                                  href: '#'
-                                  rel: null
-                                  target: null
-                                  title: null
-                            text: 'Current Patients'
-                  -
-                    type: listItem
-                    content:
-                      -
-                        type: paragraph
-                        content:
-                          -
-                            type: text
-                            marks:
-                              -
-                                type: link
-                                attrs:
-                                  href: '#'
+                                  href: 'statamic://entry::ecda9155-13ee-4b95-a934-b4c03931cc71'
                                   rel: null
                                   target: null
                                   title: null
@@ -168,16 +147,33 @@ content:
                               -
                                 type: link
                                 attrs:
-                                  href: '#'
+                                  href: 'https://www.halifaxoncology.org/patientPortal/login'
+                                  rel: null
+                                  target: _blank
+                                  title: null
+                            text: 'Patient Portal'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            marks:
+                              -
+                                type: link
+                                attrs:
+                                  href: /locations
                                   rel: null
                                   target: null
                                   title: null
-                            text: 'Financial Information'
+                            text: 'Cancer Care Locations'
             type: column
             enabled: true
           -
-            id: lnkkhw82
-            column_title: 'Cancer Care'
+            id: lp2umemk
+            column_title: 'Treatment & Support'
             column_content:
               -
                 type: bulletList
@@ -194,11 +190,11 @@ content:
                               -
                                 type: link
                                 attrs:
-                                  href: '#'
+                                  href: 'statamic://entry::d8e45727-916f-4b25-a35a-c81bad44dea7'
                                   rel: null
                                   target: null
                                   title: null
-                            text: 'Current Patients'
+                            text: 'Cancer Resources & Support'
                   -
                     type: listItem
                     content:
@@ -211,33 +207,16 @@ content:
                               -
                                 type: link
                                 attrs:
-                                  href: '#'
+                                  href: 'statamic://entry::a9df2708-71f3-47bf-b8aa-da557dac4b56'
                                   rel: null
                                   target: null
                                   title: null
-                            text: 'New Patients'
-                  -
-                    type: listItem
-                    content:
-                      -
-                        type: paragraph
-                        content:
-                          -
-                            type: text
-                            marks:
-                              -
-                                type: link
-                                attrs:
-                                  href: '#'
-                                  rel: null
-                                  target: null
-                                  title: null
-                            text: 'Financial Information'
+                            text: 'Patient Navigators'
             type: column
             enabled: true
           -
-            id: lnkkhxx6
-            column_title: 'Resources & Support'
+            id: lp2um0mf
+            column_title: 'Advanced Cancer Care Treatments'
             column_content:
               -
                 type: bulletList
@@ -254,11 +233,11 @@ content:
                               -
                                 type: link
                                 attrs:
-                                  href: '#'
+                                  href: 'statamic://entry::35293d2a-39cc-4020-aad4-c6b95e5ffd8c'
                                   rel: null
                                   target: null
                                   title: null
-                            text: 'Current Patients'
+                            text: 'Da Vinci Robotic Surgery'
                   -
                     type: listItem
                     content:
@@ -271,11 +250,11 @@ content:
                               -
                                 type: link
                                 attrs:
-                                  href: '#'
+                                  href: 'statamic://entry::ac989c58-7f9d-4bc1-ab89-738157819a3a'
                                   rel: null
                                   target: null
                                   title: null
-                            text: 'New Patients'
+                            text: 'INTRABEAM® IORT'
                   -
                     type: listItem
                     content:
@@ -288,44 +267,38 @@ content:
                               -
                                 type: link
                                 attrs:
-                                  href: '#'
+                                  href: 'statamic://entry::b61e81be-26c2-44d3-b62a-9ab4894d091a'
                                   rel: null
                                   target: null
                                   title: null
-                            text: 'Financial Information'
+                            text: 'Novalis Certification'
             type: column
             enabled: true
   -
     type: set
     attrs:
-      id: lnkncq7g
+      id: lp31wtod
       values:
-        type: faqs
-        faqs:
+        type: side_by_side
+        content_simple:
           -
-            id: lnkncsp6
-            question: test
-            type: faqs
-            enabled: true
-  -
-    type: set
-    attrs:
-      id: lnknerql
-      values:
-        type: file_upload
-  -
-    type: paragraph
-  -
-    type: paragraph
-    content:
-      -
-        type: hardBreak
-        marks:
-          -
-            type: link
+            type: heading
             attrs:
-              href: 'https://hhwf.placementlabs.com/services/show#request-appointment'
-              rel: null
-              target: null
-              title: null
+              level: 3
+            content:
+              -
+                type: text
+                text: 'Personalized Cancer Care'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Our expert team from top cancer institutions delivers personalized cancer treatment in our community, using the latest in personalized medicine, chemotherapy, immunotherapy, and radiation advancements.'
+        image: sbs.jpg
+        has_cta: true
+        cta_text: 'Find an Oncologist Near Me'
+        cta_url: '#'
+  -
+    type: paragraph
 ---

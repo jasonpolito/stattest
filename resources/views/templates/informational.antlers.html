@@ -12,9 +12,9 @@
     <div class="container px-8 mx-auto lg:px-12 xl:max-w-7xl">
         {{ if parent }}
             <ul class="flex items-center gap-4 mb-16 -mt-8 lg:-mt-16 text-slate-400">
-                {{ if parent:parent }}
-                    <li><a href="{{ parent:parent:url }}"
-                            class="text-slate-400 hocus:text-primary hocus:underline">{{ parent:parent:title }}</a>
+                {{ if parent:alternate_parent }}
+                    <li><a href="{{ parent:alternate_parent:url }}"
+                            class="text-slate-400 hover:text-primary hover:underline">{{ parent:alternate_parent:title }}</a>
                     </li>
                     <li class="text-2xl font-thin">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -22,38 +22,92 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </li>
+                {{ else }}
+                    {{ if parent:parent }}
+                        <li><a href="{{ parent:parent:url }}"
+                                class="text-slate-400 hover:text-primary hover:underline">{{ parent:parent:title }}</a>
+                        </li>
+                        <li class="text-2xl font-thin">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </li>
+                    {{ /if }}
                 {{ /if }}
                 <li><a href="{{ parent:url }}"
-                        class="text-slate-400 hocus:text-primary hocus:underline">{{ parent:title }}</a></li>
+                        class="text-slate-400 hover:text-primary hover:underline">{{ parent:title }}</a></li>
                 <li class="text-2xl font-thin">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
                 </li>
-                <li><a href="#" class="text-primary hocus:underline">{{ title }}</a>
+                <li><a href="#" class="text-primary hover:underline">{{ title }}</a>
                 </li>
             </ul>
         {{ /if }}
-        <div class="flex flex-wrap -mx-3">
-            {{ children = {nav:collection:informational_pages max_depth="1" :from="uri"} }}
-            {{ children group_by="tag" }}
-                {{ groups }}
-                    <div class="w-full px-3 md:w-1/3">
-                        <h3 class="py-4 mb-4 font-serif text-xl border-b border-slate-400">
-                            {{ group ?? 'Uncategorized' }}
-                        </h3>
-                        <div
-                            class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
-                            <ul>
-                                {{ items }}
-                                    <li><a href="{{ url }}" class="hover:underline">{{ title }}</a></li>
-                                {{ /items }}
-                            </ul>
-                        </div>
+        {{ if alternate_parent }}
+            <ul class="flex items-center gap-4 mb-24 -mt-8 lg:-mt-16 text-slate-400">
+                <li><a href="{{ alternate_parent:url }}"
+                        class="text-slate-400 hover:text-primary hover:underline">{{ alternate_parent:title }}</a></li>
+                <li class="text-2xl font-thin">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </li>
+                <li><a href="#" class="text-primary hover:underline">{{ title }}</a>
+                </li>
+            </ul>
+        {{ /if }}
+        {{ if content }}
+            <div class="flex flex-wrap -mx-8">
+                <div class="w-full px-8 lg:w-2/3">
+                    {{ partial:content }}
+                </div>
+                <div class="w-full px-8 lg:w-1/3">
+                    <div class="sticky top-0 pt-16 lg:pt-24 lg:-mt-24">
+                        {{ if sidebar_content }}
+                            <div class="mb-8">
+                                <h3 class="py-4 mb-4 -mt-4 font-serif text-xl border-b border-slate-400">
+                                    {{ sidebar_title }}
+                                </h3>
+                                <div
+                                    class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
+                                    {{ sidebar_content }}
+                                </div>
+                            </div>
+                        {{ else }}
+                            <div class="-mt-4">
+                                {{ children = {nav:collection:informational_pages max_depth="1" :from="uri"} }}
+                                {{ children group_by="tag" }}
+                                    {{ groups }}
+                                        <div class="mb-8">
+                                            <h3 class="py-4 mb-4 font-serif text-xl border-b border-slate-400">
+                                                {{ group ?? 'Uncategorized' }}
+                                            </h3>
+                                            <div
+                                                class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
+                                                <ul>
+                                                    {{ items }}
+                                                        <li><a href="{{ url }}"
+                                                                class="hover:underline">{{ title }}</a>
+                                                        </li>
+                                                    {{ /items }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    {{ /groups }}
+                                {{ /children }}
+                            </div>
+                        {{ /if }}
                     </div>
-                {{ /groups }}
-            {{ /children }}
-        </div>
+                </div>
+            </div>
+        {{ /if }}
+        {{ if !content }}
+            <div class="-mt-16">{{ livewire:search-informational-pages uri="{uri}" }}</div>
+        {{ /if }}
     </div>
 </section>

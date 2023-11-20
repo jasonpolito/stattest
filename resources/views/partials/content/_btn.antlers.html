@@ -1,7 +1,7 @@
 {{# @format false #}}
 
 {{?  
-
+    $color = $color ?? $bg_color;
     $is_light = hexdec(substr($color,0,2))+hexdec(substr($color,2,2))+hexdec(substr($color,4,2)) > 381;
     $hover = 'hover:shadow-lg';
     $base = 'inline-block no-underline last:mb-0 group rounded leading-normal mb-6 transition-all mr-2';
@@ -20,7 +20,7 @@
 ?}}
 
 {{ bg = color }}
-<a href="{{ url ?? '#' }}" class="
+<a href="{{ link_target:url ?? url ?? '#' }}" class="
     {{ classes }}
     bg-[{{ bg }}]
     hover:bg-[{{ bg | shades:tint:10 }}]

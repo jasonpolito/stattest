@@ -39,4 +39,80 @@ staff:
   - 8157200b-0ce8-4a4d-9796-7d56dde83fae
   - 44b7812e-81a9-457f-b96e-eace6fecca76
   - 547fcd5b-95ad-4028-b1b3-d0ee1f463f13
+override_staff: true
+staff_sections:
+  -
+    id: lp0613mz
+    type: staff_section
+    enabled: true
+show_child_services: true
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+noindex: false
+hero_content:
+  -
+    type: set
+    attrs:
+      id: lp1d4f4u
+      values:
+        type: accordion
+        accordion:
+          -
+            id: lp1d4g6s
+            content_simple:
+              -
+                type: set
+                attrs:
+                  id: lp1d4o9j
+                  values:
+                    type: new_set
+              -
+                type: paragraph
+            type: accordion
+            enabled: true
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1700150288
+content:
+  -
+    type: set
+    attrs:
+      id: lp1cqr70
+      values:
+        type: accordion
+        accordion:
+          -
+            id: lp1cqs9c
+            title: Testing
+            content_simple:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Something or another thing'
+              -
+                type: set
+                attrs:
+                  id: lp1diqtm
+                  values:
+                    type: youtube_video
+                    youtube_video: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+              -
+                type: paragraph
+            type: accordion
+            enabled: true
+          -
+            id: lp1dkvob
+            title: '43f34g43ga gahds haf'
+            content_simple:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '43h afh afhdasdh asdhasdh '
+            type: accordion
+            enabled: true
+  -
+    type: paragraph
 ---

@@ -1,0 +1,22 @@
+{{# @format false #}}
+
+{{?
+    $vid_id = false;
+    if (isset($youtube_video) || isset($youtube_video_url)) {
+        $vid_value = $youtube_video ?? $youtube_video_url;
+        if (strpos($vid_value, '?v=')) {
+            $vid_id = explode('?v=', $vid_value)[1];
+        } else {
+            $parts = explode('/', $vid_value);
+            $vid_id = $parts[count($parts) - 1];
+        }
+    }
+?}}
+
+{{ if vid_id }}
+<div class="my-8 prose lg:prose-lg xl:prose-xl">
+    <div style="padding-top: 56.25%">
+        <iframe class="absolute top-0 left-0 w-full h-full" width="679" height="382" src="https://www.youtube.com/embed/{{ vid_id }}" title="Halifax Health | Brooks Rehabilitation - Adaptive Sports, Recreation and Wellness Programs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+{{ /if }}

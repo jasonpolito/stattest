@@ -2,10 +2,10 @@ title: 'Informational Pages'
 template: templates/informational
 layout: layout
 revisions: true
+autosave: true
 route: '/{parent_uri}/{slug}'
 sort_dir: asc
 default_status: draft
-autosave: true
 date_behavior:
   past: public
   future: private

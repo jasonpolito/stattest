@@ -13,12 +13,25 @@
     {{ site:icon | favicon }}
     {{ site:insert_into_head }}
     {{ partial:styles }}
+    {{ livewire:styles }}
     <script src="//unpkg.com/alpinejs" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+
+    <style>
+        .prose>p:first-child,
+        .prose>p>img:first-child {
+            margin-top: 0;
+        }
+
+        .prose>p>img {
+            margin-bottom: 2rem;
+        }
+    </style>
+
     <script>
         tailwind.config = {
             theme: {
@@ -122,5 +135,11 @@
             </a>
         </div>
     {{ /if }}
+    {{ livewire:scripts }}
+    <script>
+        document.querySelectorAll('.prose-white > .prose').forEach(el => {
+            el.classList.add('prose-white');
+        })
+    </script>
 </body>
 </html>

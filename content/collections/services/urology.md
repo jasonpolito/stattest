@@ -12,4 +12,51 @@ staff:
   - 7e811f21-9790-4b14-ac60-9e0984d1b10a
   - 0c8a9972-4b8f-45bf-9330-30aa128117ca
   - af5f1667-f8ef-4ebf-a36f-b92fd3e77461
+hero_title_text: 'Live life to the fullest.'
+hero_content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'As the first practice in Volusia County to employ robotic surgery-trained and certified urologists, we can offer you a full range of urological surgeries, including minimally invasive procedures and state-of-the-art technologies like the da Vinci xi Surgical System.'
+override_staff: false
+show_child_services: false
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+noindex: false
+image: urology.jpg
+link_externally: false
+meta_title: 'UF Health Urology | Halifax Health'
+meta_description: 'UF Health Urology at Halifax Health delivers a full range of urological surgeries including minimally invasive procedures and state-of-the-art technologies.'
+updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
+updated_at: 1700247208
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Our board-certified surgeons offer a specialized program for kidney stones and a seamless integration with our medical and radiation oncology staff for urological and prostate cancer. No matter why you’ve come to us, you can expect the finest care from a staff of dedicated experts.'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Pediatric Urology'
+  -
+    type: set
+    attrs:
+      id: lp21d9m3
+      values:
+        type: youtube_video
+        youtube_video_url: 'https://youtu.be/-3TQ-YNYFCc'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Pediatric Urology is a sub-specialty of pediatrics concerned with disorders that impair function of the urinary system. Our team is focused on bringing the latest research and most innovative treatments to patients.'
 ---
