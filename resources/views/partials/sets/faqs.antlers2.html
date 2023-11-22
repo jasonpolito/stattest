@@ -1,0 +1,33 @@
+{{ partial:block }}
+    <x-section>
+        <x-container>
+            {{ partial:partials/title }}
+            <x-cols class="justify-center">
+                <x-col class="w-full lg:w-2/3">
+                    <ul>
+                        {{ faqs }}
+                            <li x-data="{open: false}">
+                                <a href="#faq_{{ id }}" @click.prevent="open = !open" :class="{'text-primary': open}"
+                                    class="flex justify-between text-xl transition border-b hover:text-primary-600 border-primary-50">
+                                    <span class="py-4">{{ question }}</span>
+                                    <span class="py-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition top-1"
+                                            :class="{'rotate-90': open}">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div id="faq_{{ id }}" class="p-4 mb-6 text-lg prose" style="display: none;"
+                                    x-show="open">
+                                    {{ answer }}
+                                </div>
+                            </li>
+                        {{ /faqs }}
+                    </ul>
+                </x-col>
+            </x-cols>
+        </x-container>
+    </x-section>
+{{ /partial:block }}

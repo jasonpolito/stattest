@@ -49,8 +49,16 @@ sidebar_content:
                       title: null
                 text: 'Cancer Care at Halifax Health'
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1700253786
+updated_at: 1700256815
 content:
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Supportive Resources for Your Cancer Journey'
   -
     type: paragraph
     content:

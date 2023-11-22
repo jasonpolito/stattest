@@ -1,14 +1,24 @@
 <div>
     <label class="flex items-center w-full mb-4 border-b group border-slate-400">
-        <input type="text" wire:model.live.debounce.20ms="query" placeholder="Search"
-            class="w-full py-4 leading-7 bg-transparent border-none">
-        <a href="#"
-            class="flex items-center gap-2 px-4 py-4 -mx-px text-sm leading-6 text-slate-400 group-focus-within:text-primary hocus:text-primary">
-            <svg class="w-6 h-6 left-px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <input @keyup="window.scrollTo(0, document.querySelector('#search-container').offsetTop - 57)" type="text"
+            wire:model.live.debounce.20ms="query" placeholder="Search" name="search"
+            class="w-full px-4 py-4 leading-7 bg-transparent border-none outline-none appearance-none">
+        <div class="flex items-center gap-2 px-4 py-4 -mx-px text-sm leading-6 pointer-events-none text-slate-300">
+            <svg wire:loading.class="hidden" class="w-6 h-6 left-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z">
                 </path>
-            </svg> </a>
+            </svg>
+            <svg class="w-6 h-6 stroke-current left-px text-slate-300" style="display: none" wire:loading width="64"
+                height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke-dasharray="15" stroke-dashoffset="15" stroke-linecap="round" stroke-width="2"
+                    d="M12 3C16.9706 3 21 7.02944 21 12">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0" />
+                    <animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate"
+                        values="0 12 12;360 12 12" />
+                </path>
+            </svg>
+        </div>
     </label>
 </div>

@@ -6,7 +6,7 @@ tabs:
       -
         fields:
           -
-            import: rich_content
+            import: content
   seo:
     display: SEO
     sections:

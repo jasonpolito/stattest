@@ -12,7 +12,7 @@ tabs:
               validate:
                 - required
           -
-            import: rich_content
+            import: content_simple
   sidebar:
     display: Sidebar
     sections:

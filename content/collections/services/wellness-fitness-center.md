@@ -1,14 +1,28 @@
 ---
 id: d689986e-5ab9-4437-b969-d2d745e94de4
 blueprint: service
-hero_title_text: 'Movement is life.'
+hero_title_text: 'Wellness & Fitness Center'
 hero_content:
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Movement is life.'
   -
     type: paragraph
     content:
       -
         type: text
         text: 'We are proud to offer our community a winning combination of personalized attention, state-of-the-art equipment and a variety of comprehensive health and wellness programs.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Backed by years of experience and education, our trained professionals will work closely with you every step of the way to help you reach your fitness goals. To ensure success, each member receives a complete fitness evaluation, a personalized fitness plan and one-on-one instruction.'
 override_staff: false
 show_child_services: false
 opengraph_title: '{{ meta_title }}'
@@ -18,15 +32,10 @@ title: 'Wellness & Fitness Center'
 image: wellness.jpg
 meta_title: 'Wellness & Fitness Center | Halifax Health'
 meta_description: 'We are proud to offer our community a combination of personalized attention, state-of-the-art equipment and a variety of health and wellness programs.'
-updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
-updated_at: 1700244819
+link_externally: false
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1700267216
 content:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Backed by years of experience and education, our trained professionals will work closely with you every step of the way to help you reach your fitness goals. To ensure success, each member receives a complete fitness evaluation, a personalized fitness plan and one-on-one instruction.'
   -
     type: paragraph
     content:
@@ -66,7 +75,7 @@ content:
         text: Lynn.Blanford@halifax.org
       -
         type: text
-        text: "\_for details.Fre"
+        text: "\_for details."
   -
     type: set
     attrs:
@@ -90,19 +99,21 @@ content:
                   -
                     type: text
                     text: 'You can also download the application and fax it to us at 386.947.2982. Once the application is completed, an appointment is scheduled with an Exercise Physiologist for a fitness evaluation and orientation to the equipment.'
-              -
-                type: paragraph
-                content:
                   -
                     type: hardBreak
+                  -
+                    type: hardBreak
+                  -
+                    type: text
                     marks:
                       -
                         type: link
                         attrs:
-                          href: 'https://halifaxhealth.org/wp-content/uploads/2019/09/0815-2912_wellnesss_center_application.pdf'
+                          href: 'statamic://asset::assets::0815-2912_wellnesss_center_application.pdf'
                           rel: null
                           target: null
-                          title: null
+                          title: Application
+                    text: 'Wellness Center Application'
             type: accordion
             enabled: true
           -
@@ -383,6 +394,8 @@ content:
                     type: request_appointment_button
             type: accordion
             enabled: true
+  -
+    type: paragraph
   -
     type: paragraph
 ---

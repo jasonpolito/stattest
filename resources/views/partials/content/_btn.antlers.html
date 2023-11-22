@@ -20,7 +20,7 @@
 ?}}
 
 {{ bg = color }}
-<a href="{{ link_target:url ?? url ?? '#' }}" class="
+<a href="{{ custom_url ?? link_target:url ?? url ?? '#' }}" class="
     {{ classes }}
     bg-[{{ bg }}]
     hover:bg-[{{ bg | shades:tint:10 }}]

@@ -26,5 +26,8 @@ class EntryComputedValuesProvider extends ServiceProvider
             $degree = $entry->get('degree');
             return $degree ? "$firstName $lastName, $degree" : "$firstName $lastName";
         });
+        Collection::computed('services', 'location_ids_piped', function ($entry) {
+            return implode('|', collect($entry->get('locations'))->toArray());
+        });
     }
 }

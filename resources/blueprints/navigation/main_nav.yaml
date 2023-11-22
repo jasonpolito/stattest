@@ -2,25 +2,4 @@ tabs:
   main:
     display: Main
     sections:
-      -
-        fields:
-          -
-            handle: target
-            field:
-              max_items: 1
-              mode: default
-              create: true
-              collections:
-                - pages
-                - informational_pages
-                - services
-                - locations
-                - blog
-                - staff
-              type: entries
-              display: Entry
-              icon: entries
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
+      - {  }

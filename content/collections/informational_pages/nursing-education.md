@@ -8,10 +8,11 @@ opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 informational_page_parent: false
 parent: e07cbe29-409a-4266-9bb9-80d80034998a
-updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1695128797
 meta_title: 'Nursing Education | Halifax Health'
 meta_description: 'To inquire about our continuing education opportunities or to register for a specific class, please contact Kristy Lutes at 386.425.5225.'
+noindex: false
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1700664716
 content:
   -
     type: paragraph

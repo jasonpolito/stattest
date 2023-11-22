@@ -30,7 +30,7 @@ opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 use_blocks: false
 hero_title_text: 'Cancer Care'
-show_child_services: false
+show_child_services: true
 child_services_title: 'Cancers We Treat'
 bard_field:
   -
@@ -41,7 +41,7 @@ bard_field:
         text: 'Our specialized team is equipped to provide treatment for various types of cancers, addressing diverse needs and ensuring personalized care for each patient.'
 meta_title: 'Comprehensive Cancer Treatment | Halifax Health'
 meta_description: 'Discover compassionate cancer care at Halifax Health. Our dedicated oncologists are here to support you in your journey. Better care leads to better outcomes.'
-override_staff: false
+override_staff: true
 staff_sections:
   -
     id: lndbat45
@@ -57,6 +57,11 @@ staff_sections:
     id: lndbbg15
     type: staff_section
     enabled: true
+    text_field: Billing
+    section_staff_members:
+      - 57c54a55-e7b5-4175-8ffc-42921bcb2844
+      - 67b00ab2-9da7-40cd-a49d-a7e2f602f843
+      - aff9545d-d25a-4571-8c10-5f328b0cf5e2
 noindex: false
 child_services_text:
   -
@@ -67,8 +72,12 @@ child_services_text:
         text: 'Our specialized team is equipped to provide treatment for various types of cancers, addressing diverse needs and ensuring personalized care for each patient.'
 image: cancercare-1700244812.jpg
 link_externally: false
+locations:
+  - 651665e7-b66c-4cd8-bf49-a0faaf5d970c
+  - 75613768-4079-47d4-945a-89d14b4745e9
+  - 29d76c2a-ee1a-42f1-989e-3247dda12f6e
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1700253221
+updated_at: 1700658880
 content:
   -
     type: heading
@@ -299,6 +308,45 @@ content:
         has_cta: true
         cta_text: 'Find an Oncologist Near Me'
         cta_url: '#'
+  -
+    type: set
+    attrs:
+      id: lp4gic1e
+      values:
+        type: testimonial
+        testimonial:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'I felt like the most important thing for me was the doctor that I chose to work with. I knew I was in the right place. I knew that Halifax Health was going to take care of it. We are so lucky to have Halifax Health in our community.'
+        attribution: 'Cici Brown'
+        title: 'Breast Cancer Survivor'
+        image: cici-brown-breast-cancer-survivor.jpg
+  -
+    type: set
+    attrs:
+      id: lp8entxp
+      values:
+        type: buttons
+        buttons:
+          -
+            id: lp8enuq7
+            button_text: 'Nick Cangemi'
+            use_custom_url: true
+            target_blank: false
+            bg_color: '#01338e'
+            type: button
+            enabled: true
+          -
+            id: lp8eqsq4
+            button_text: 'Katrina Exconde'
+            use_custom_url: false
+            target_blank: false
+            bg_color: '#5ecaff'
+            type: button
+            enabled: true
   -
     type: paragraph
 ---

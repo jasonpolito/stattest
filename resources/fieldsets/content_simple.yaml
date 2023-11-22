@@ -1,0 +1,81 @@
+title: 'Content (simple)'
+fields:
+  -
+    handle: content_simple
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+      smart_typography: true
+      save_html: false
+      inline: false
+      toolbar_mode: fixed
+      reading_time: false
+      word_count: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: false
+      placeholder: 'Write some nice content. Add "sets" with the plus icon.'
+      antlers: true
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      sets:
+        basic:
+          display: Basic
+          instructions: null
+          icon: addon-boxes-stack
+          sets:
+            buttons:
+              display: Buttons
+              instructions: 'Set of inline buttons.'
+              icon: form-text-field
+              fields:
+                -
+                  import: inline_buttons
+            youtube_video:
+              display: 'YouTube Video'
+              instructions: 'Embed a YouTube video from URL'
+              icon: social-youtube
+              fields:
+                -
+                  import: youtube_video
+            request_appointment_button:
+              display: 'Request Appointment Button'
+              instructions: 'A predefined button that links to request appointment.'
+              icon: form-text-field
+              fields:
+                -
+                  handle: request_appt_button
+                  field:
+                    type: html
+                    icon: html
+                    instructions: 'A "Request An Appointment" button will display here.'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: true
+      always_show_set_button: true
+      collapse: accordion
+      previews: true
+      type: bard
+      display: Content
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      container: assets

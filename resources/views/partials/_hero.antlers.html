@@ -1,14 +1,25 @@
 <div>
     <div class="xl:container xl:mx-auto 2xl:px-32">
-        <div class="pt-24 bg-center bg-cover bg-primary" style="background-image: url({{ image }})">
-            {{ if !image }}
+        <div class="pt-24 bg-center bg-cover bg-primary" style="background-image: url({{ hero_image ?? image }})">
+            {{ if !image && !hero_image }}
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-primary to-primary-800"></div>
             {{ /if }}
             <div class="pt-24 pb-16 bg-gradient-to-b from-transparent via-[rgba(0,25,49,0.8)] to-primary-900">
                 <div class="container px-8 mx-auto lg:px-12 xl:max-w-7xl">
-                    <div
-                        class="mr-4 prose md:prose-img:my-16 prose-a:text-sky-700 lg:prose-lg xl:prose-xl max-w-none prose-headings:font-serif prose-headings:font-medium prose-white prose-headings:leading-tight prose-p:font-light">
-                        {{ slot }}
+                    <div class="flex flex-wrap items-center -mx-3">
+                        <div class="w-full px-3 -mt-2 xl:w-1/2">
+                            <div
+                                class="mr-4 prose md:prose-img:my-16 prose-headings:leading-snug prose-a:text-sky-700 lg:prose-lg xl:prose-xl max-w-none prose-headings:font-serif prose-headings:font-medium prose-white prose-p:font-light">
+                                <h1>
+                                    {{ title }}
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="w-full px-3 -mt-2 xl:w-1/2">
+                            <div class="text-lg leading-loose text-white/80">
+                                {{ content }}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

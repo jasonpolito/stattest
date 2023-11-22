@@ -85,7 +85,6 @@
                     <div class="flex items-center justify-between gap-16">
                         <span class="w-full">Meet Our Doctors</span>
                         <div class="flex items-center">
-
                             <svg class="w-12 h-12 transition group-hover:translate-x-2 group-focus:translate-x-2"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true">
@@ -103,6 +102,9 @@
 {{ partial:section }}
     {{ partial:content }}
 {{ /partial:section }}
+{{ if !show_child_services }}
+    <div class="h-px -my-16 md:-my-24 lg:-my-28"></div>
+{{ /if }}
 {{ if show_child_services }}
     <div class="bg-primary-50">
         {{ partial:section }}
@@ -120,55 +122,246 @@
                     {{ /partial:prose }}
                 {{ /partial:layout/col }}
                 {{ partial:layout/col class="lg:w-1/2" }}
-                    <div class="flex justify-between">
-                        <div class="w-full md:w-1/3">
-                            <div
-                                class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
-                                <ul>
-                                    {{ nav :from="slug" }}
-                                        {{ unless no_results }}
-                                            <li>
-                                                <a href="{{ url }}">{{ title }}</a>
-                                            </li>
-                                        {{ /unless }}
-                                    {{ /nav }}
-                                </ul>
-                            </div>
-                        </div>
+                    <div
+                        class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
+                        <ul class="flex flex-wrap -mx-4">
+                            {{ collection:services parent:is="{id}" }}
+                                <li class="px-4 my-0 md:w-1/2">
+                                    <a href="{{ url }}">{{ title }}</a>
+                                </li>
+                            {{ /collection:services }}
+                        </ul>
                     </div>
                 {{ /partial:layout/col }}
             {{ /partial:layout/cols }}
         {{ /partial:section }}
     </div>
 {{ /if }}
-{{ if staff }}
+{{ if eloqua_form_embed_code }}
+    <div>
+        <div id="request-appointment" style="position: absolute; top: -8rem;"></div>
+        <section class="py-16 bg-center bg-cover md:py-24 lg:py-28">
+            <div class="container px-8 mx-auto lg:px-12 xl:max-w-7xl">
+                <div class="flex flex-wrap -mx-6">
+                    <div class="w-full px-6 -mt-36 lg:w-2/3">
+                        <div class="p-16 mb-8 bg-white border border-slate-400">
+                            <div class="flex flex-wrap -mx-4">
+                                <div class="w-full px-4 md:w-1/2">
+                                    <label for="655dfd42076f9" class="block mb-6">
+                                        <h4 class="text-xs leading-6 text-slate-900">First name</h4>
+                                        <span class="flex items-center w-full border-b group border-slate-400">
+                                            <input id="655dfd42076f9" type="text" placeholder="John"
+                                                class="w-full py-2 leading-6 bg-transparent">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="w-full px-4 md:w-1/2">
+                                    <label for="655dfd4207e86" class="block mb-6">
+                                        <h4 class="text-xs leading-6 text-slate-900">Last name</h4>
+                                        <span class="flex items-center w-full border-b group border-slate-400">
+                                            <input id="655dfd4207e86" type="text" placeholder="Doe"
+                                                class="w-full py-2 leading-6 bg-transparent">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="w-full px-4 md:w-1/2">
+                                    <label for="655dfd42081bb" class="block mb-6">
+                                        <h4 class="text-xs leading-6 text-slate-900">Phone</h4>
+                                        <span class="flex items-center w-full border-b group border-slate-400">
+                                            <input id="655dfd42081bb" type="text" placeholder="(555) 555-5555"
+                                                class="w-full py-2 leading-6 bg-transparent">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="w-full px-4 md:w-1/2">
+                                    <label for="655dfd42084c3" class="block mb-6">
+                                        <h4 class="text-xs leading-6 text-slate-900">Email</h4>
+                                        <span class="flex items-center w-full border-b group border-slate-400">
+                                            <input id="655dfd42084c3" type="text" placeholder="email@example.com"
+                                                class="w-full py-2 leading-6 bg-transparent">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="w-full px-4 md:w-1/2">
+                                    <label for="655dfd4208797" class="block mb-6">
+                                        <h4 class="text-xs leading-6 text-slate-900">Select location(s)
+                                        </h4>
+                                        <span class="flex items-center w-full border-b group border-slate-400">
+                                            <input id="655dfd4208797" type="text" placeholder="Select location(s)"
+                                                class="w-full py-2 leading-6 bg-transparent">
+                                            <a href="#"
+                                                class="flex items-center gap-2 px-4 py-2 -mx-4 text-sm leading-6 text-slate-400 group-focus-within:text-primary hocus:text-primary">
+                                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z">
+                                                    </path>
+                                                </svg> </a>
+                                            <div style="max-height: 280px"
+                                                class="absolute left-0 z-10 hidden w-full overflow-scroll bg-white border shadow-lg pointer-events-none top-full border-slate-400 group-focus-within:pointer-events-auto group-focus-within:block">
+
+                                            </div>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="w-full px-4 md:w-1/2">
+                                    <label for="655dfd420a369" class="block mb-6">
+                                        <h4 class="text-xs leading-6 text-slate-900">Insurance carrier
+                                        </h4>
+                                        <span class="flex items-center w-full border-b group border-slate-400">
+                                            <input id="655dfd420a369" type="text" placeholder="Allstate"
+                                                class="w-full py-2 leading-6 bg-transparent">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="w-full px-4 md:w-1/2">
+                                    <label for="655dfd420a683" class="block mb-6">
+                                        <h4 class="text-xs leading-6 text-slate-900">How did you hear
+                                            about us?</h4>
+                                        <span class="flex items-center w-full border-b group border-slate-400">
+                                            <input id="655dfd420a683" type="text"
+                                                placeholder="How did you hear about us?"
+                                                class="w-full py-2 leading-6 bg-transparent">
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="flex mb-8">
+                                <label for="655dfd420bbd8"
+                                    class="flex gap-3 py-1 leading-6 cursor-pointer group hover:underline">
+                                    <span>
+                                        <span>
+                                            <input type="checkbox" id="655dfd420bbd8" checked=""
+                                                class="w-6 h-6 border appearance-none cursor-pointer peer border-slate-400 checked:border-primary checked:bg-primary group-hover:border-primary">
+                                        </span>
+                                    </span>
+                                    <span>Sign me up for future communication</span>
+                                </label>
+                            </div>
+                            <div class="flex">
+                                <a href="https://hhwf.placementlabs.com"
+                                    class="flex items-center gap-4 px-8 py-4 text-lg text-white transition rounded-full group bg-primary hover:bg-primary-700">
+                                    <span>Request Appointment</span>
+                                    <svg class="w-6 h-6 transition group-hover:translate-x-2"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-6 lg:-mt-16 lg:w-1/3">
+                        <h3 class="py-4 mb-4 font-serif text-xl border-b border-slate-400">
+                            In An Emergency?
+                        </h3>
+                        <div class="mb-8 prose">If you are experiencing a medical emergency, <b class="underline">
+                                please call
+                                9-1-1 immediately
+                            </b>. We cannot assist with emergency requests through this form.
+                        </div>
+                        <h3 class="py-4 mb-4 font-serif text-xl border-b border-slate-400">
+                            Medical Records Request
+                        </h3>
+                        <div
+                            class="mb-8 prose prose-a:font-normal prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+                            <a href="#">Authorization to Release Information Form</a>
+                            <br>
+                            <a href="#">Authorization to Release Information Form <i>(esp)</i></a>
+                        </div>
+                        <h3 class="py-4 mb-4 font-serif text-xl border-b border-slate-400">
+                            For Job Seekers
+                        </h3>
+                        <div
+                            class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+                            <a href="https://hhwf.placementlabs.com/careers">
+                                Join our team! Apply here
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{{ /if }}
+{{ if override_staff }}
     <div id="doctors">
         {{ partial:section }}
             {{? $gap = 2 ?}}
             {{ partial:prose class="mb-8" }}
                 <h2>Meet Your {{ title }} Team</h2>
-                <h4>{{ title }} Providers</h4>
             {{ /partial:prose }}
-            <ul class="-mx-{{ gap }} mb-16 flex flex-wrap">
-                {{ staff }}
-                    <li class="px-{{ gap }} w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                        <a href="{{ url }}" class="mb-{{ gap * 2 }} group flex w-full items-center">
-                            <div class="w-1/4">
-                                <div class="block bg-cover border bg-primary-50 border-slate-400 group-hover:border-primary"
-                                    style="padding-top: 100%; background-position: center top; background-image: url({{ image }})">
+            {{ staff_sections }}
+                {{ partial:prose class="mb-8" }}
+                    <h4>{{ text_field }}</h4>
+                {{ /partial:prose }}
+                <ul class="-mx-{{ gap }} mb-16 flex flex-wrap">
+                    {{ section_staff_members }}
+                        <li class="px-{{ gap }} w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                            <a href="{{ url }}" class="mb-{{ gap * 2 }} group flex w-full items-center">
+                                <div class="w-1/4">
+                                    <div class="block bg-cover border bg-primary-50 border-slate-400 group-hover:border-primary"
+                                        style="padding-top: 100%; background-position: center top; background-image: url({{ image }})">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="p-{{ gap * 2 }} block w-3/4 text-sm group-hover:text-primary"
-                                href="{{ url }}">
-                                {{ full_name }}
-                                <div class="text-xs text-slate-500">
-                                    {{ primary_specialty.title }} Provider
+                                <div class="p-{{ gap * 2 }} block w-3/4 text-sm group-hover:text-primary"
+                                    href="{{ url }}">
+                                    {{ full_name }}
+                                    <div class="text-xs text-slate-500">
+                                        {{ primary_specialty.title }} Provider
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                {{ /staff }}
-            </ul>
+                            </a>
+                        </li>
+                    {{ /section_staff_members }}
+                </ul>
+            {{ /staff_sections }}
         {{ /partial:section }}
     </div>
+{{ else }}
+    {{ if staff }}
+        <div id="doctors">
+            {{ partial:section }}
+                {{? $gap = 2 ?}}
+                {{ partial:prose class="mb-8" }}
+                    <h2>Meet Your {{ title }} Team</h2>
+                    <h4>{{ title }} Providers</h4>
+                {{ /partial:prose }}
+                <ul class="-mx-{{ gap }} mb-16 flex flex-wrap">
+                    {{ staff }}
+                        <li class="px-{{ gap }} w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                            <a href="{{ url }}" class="mb-{{ gap * 2 }} group flex w-full items-center">
+                                <div class="w-1/4">
+                                    <div>
+                                        <div class="flex items-center justify-center bg-primary-50 fill-parent">
+                                            <div class="w-1/2 text-slate-200 mix-blend-multiply"><svg
+                                                    class="fill-current " data-name="Layer 2"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.48 73.15">
+                                                    <path
+                                                        d="m2.36,64.43h23.64l1.32,1.17H2.36v-1.17Zm0-3.73h17.88l1.32.85H2.36v-.85Zm0-3.81h12.53l1.24.77H2.36v-.77ZM63.48,14.54S52.95,0,31.75,0c-.02,0,0,2.46,0,2.46,0,0,17.51-.86,29.37,13.01v37.7h-9.26v1.39l-1.7,1.09h10.96v2.65h-14.54l-2.64,1.7h17.18v2.02h-19.97l-2.48,1.87h22.46v2.01h-25.41l-2.48,2.02h27.9v2.85H2.36v-2.23h29.46l-.05-32.9-20.31,11.3v7.46H2.36V15.47C14.23,1.59,31.73,2.46,31.73,2.46c0,0,.02-2.46,0-2.46C10.53,0,0,14.54,0,14.54v58.56h0v.05h63.48v-.05h0V14.54m-23.27,40.18v.62l5.13,2.8.31-9.01-4.82-4.97-2.64,3.27.15,2.64,1.4,1.4v-3.72l.78-.94,2.65,2.96-.16,6.37m2.54-32.84v14.79l4.5,2.54v-16.11c-.15-.23.21-1.89-1.86-2.72-2.23-.52-2.59,1.14-2.64,1.5m-6.01-3.31v14.79l4.51,2.53v-16.1c-.16-.24.2-1.89-1.87-2.72-2.23-.52-2.59,1.14-2.65,1.5m-6-3.42v14.79l4.51,2.54v-16.11c-.16-.23.21-1.89-1.86-2.72-2.23-.51-2.59,1.14-2.65,1.5m-4.48,15.32l-2.87,1.56v-14.68c.02-.49-.08-1.96,1.05-2.99l.02,15.97,1.81-.98v1.13h-.01Zm-6.11,3.41l-2.87,1.55v-14.68c.02-.48-.08-1.96,1.05-2.99v15.96l1.83-.98v1.14h-.01Zm-6.11,3.31l-2.88,1.55v-14.68c.02-.49-.08-1.97,1.05-2.99l.02,15.96,1.81-.98v1.14Zm35.07,6.02v-.83l-20.13-11.04V11.47l-1.89,1.04v-2.69h-1.09v-1.79h-2.1v6.23l-1.47.81v-2.68h-1.09v-1.79h-2.1v6.22l-1.71.93v-2.88h-1.09v-1.79h-2.1v6.43l-1.71.93v-2.77h-1.09v-1.78h-2.1v6.31l-.77.42.02,23.74,20.28-11.42v-1.45m20.13,12.49l-20.13-11.04v.72l20.13,11.14m-2.52-31.69h-2.1v1.79h-1.09v2.65l3.19,1.78m-4.51-8.7h-2.1v1.79h-1.08v2.64l3.19,1.79m-6.84-6.99h-1.09v2.64l3.19,1.79v-6.21h-2.1m-4.74-.93h-1.08v2.64l3.18,1.78v-6.22h-2.1">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+
+                                        <div class="block bg-cover border border-slate-400 group-hover:border-primary"
+                                            style="padding-top: 100%; background-position: center top; background-image: url({{ image }})">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-{{ gap * 2 }} block w-3/4 text-sm group-hover:text-primary"
+                                    href="{{ url }}">
+                                    {{ full_name }}
+                                    <div class="text-xs text-slate-500">
+                                        {{ primary_specialty.title }} Provider
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    {{ /staff }}
+                </ul>
+            {{ /partial:section }}
+        </div>
+    {{ /if }}
 {{ /if }}

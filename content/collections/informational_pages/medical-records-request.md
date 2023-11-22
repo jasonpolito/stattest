@@ -11,51 +11,51 @@ opengraph_description: '{{ meta_description }}'
 informational_page_parent: false
 parent: 52478858-f462-4e37-86a2-b7935f7fc242
 tag: 'Patient Resources & Tools'
-updated_by: 370ab10c-b4c0-4aad-88e3-96966f89e595
-updated_at: 1696265518
+noindex: false
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1700664804
 content:
   -
-    type: heading
-    attrs:
-      level: 1
+    type: bulletList
     content:
       -
-        type: text
-        text: 'Medical Records Request'
-  -
-    type: paragraph
-    content:
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://halifaxhealth.org/wp-content/uploads/2022/03/Auth-to-Release-FORM.pdf'
+                      rel: null
+                      target: null
+                      title: null
+                  -
+                    type: bold
+                text: 'Authorization to Release Information Form'
       -
-        type: text
-        marks:
+        type: listItem
+        content:
           -
-            type: link
-            attrs:
-              href: 'https://halifaxhealth.org/wp-content/uploads/2022/03/Auth-to-Release-FORM.pdf'
-              rel: null
-              target: null
-              title: null
-          -
-            type: bold
-        text: 'Authorization to Release Information Form'
-  -
-    type: paragraph
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              href: 'https://halifaxhealth.org/wp-content/uploads/2019/09/2018_span.pdf'
-              rel: 'noreferrer noopener'
-              target: _blank
-              title: null
-          -
-            type: bold
-        text: "Authorization\_to Release Information Form (Spanish)"
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://halifaxhealth.org/wp-content/uploads/2019/09/2018_span.pdf'
+                      rel: 'noreferrer noopener'
+                      target: _blank
+                      title: null
+                  -
+                    type: bold
+                text: "Authorization\_to Release Information Form (Spanish)"
   -
     type: heading
     attrs:

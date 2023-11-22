@@ -1,0 +1,16 @@
+title: 'YouTube Video'
+fields:
+  -
+    handle: youtube_video
+    field:
+      input_type: text
+      placeholder: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+      antlers: true
+      type: text
+      display: 'YouTube Video'
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

@@ -30,6 +30,33 @@
         .prose>p>img {
             margin-bottom: 2rem;
         }
+
+        .prose table td>*:first-child {
+            margin-top: 0;
+        }
+
+        .prose table td>*:last-child {
+            margin-bottom: 0;
+        }
+
+        [type='text'],
+        input:where(:not([type])),
+        [type='email'],
+        [type='url'],
+        [type='password'],
+        [type='number'],
+        [type='date'],
+        [type='datetime-local'],
+        [type='month'],
+        [type='search'],
+        [type='tel'],
+        [type='time'],
+        [type='week'],
+        [multiple],
+        textarea,
+        select {
+            border: none;
+        }
     </style>
 
     <script>

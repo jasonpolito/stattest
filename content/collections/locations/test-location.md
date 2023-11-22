@@ -1,23 +1,14 @@
 ---
-id: eb1b8712-e334-499f-bb64-3835268705ce
+id: 29d76c2a-ee1a-42f1-989e-3247dda12f6e
 blueprint: location
 title: 'Test Location'
-staff:
-  - 96ea40a3-a52c-4827-8986-547c06978052
-  - c94c75c2-0231-445c-b07c-8ff1a989de29
-  - ba336ab6-806a-4194-8f07-fc840b616dc9
-  - c319ba67-4e22-4513-a650-602bc0f6e4eb
-  - 5363595b-2f36-42ff-b19b-ed189bb69b3b
-services:
-  - 33bcd641-0205-43db-b6eb-1acb245969dd
-  - c82ea9d0-74df-4cae-a88c-c1506f14b20d
-  - c36c4759-7512-4448-94b8-d74eccba68f0
-  - f177c6c5-a7d5-4587-b157-9d330b92a748
-  - 2a122a2c-0daf-4d63-abdb-f3889219a746
-  - 3d2d6099-39fe-4bd5-8519-8235bf8ada87
-  - 606cb968-83de-4cc8-9d08-caf3864777fc
-  - f73b5a7d-e939-445c-b9ab-06b5a9439742
+opengraph_title: '{{ meta_title }}'
+opengraph_description: '{{ meta_description }}'
+noindex: false
 use_blocks: false
 updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1694089907
+updated_at: 1700683110
+services:
+  - 20290da4-2481-4ea9-9388-26f08452a89d
+  - dbdde713-d3df-4e0a-b098-ab8f8f207720
 ---

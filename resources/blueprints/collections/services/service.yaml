@@ -1,23 +1,38 @@
 tabs:
-  hero:
-    display: Hero
+  content:
+    display: Content
     sections:
       -
-        display: 'Hero Content'
-        instructions: 'This content will display in the page hero section. (<a href="/assets/servicehero.png" target="_blank">view example</a>)'
+        display: 'Service Content'
         fields:
+          -
+            handle: hero
+            field:
+              type: tab
+              display: Hero
+              icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path fill="currentColor" d="M253.75 166.28L231.46 92a13.91 13.91 0 0 0-13.41-10H208a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L240 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H160a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L192 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H38a13.91 13.91 0 0 0-13.46 10L2.28 166.2v.2a2.79 2.79 0 0 0-.1.39a.11.11 0 0 0 0 .05A6 6 0 0 0 8 174h240a6 6 0 0 0 5.75-7.72ZM36 95.42A2 2 0 0 1 38 94h84.1a2 2 0 0 1 1.9 1.43L144 162H16.06Z"></path></svg>'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             import: title
             prefix: hero_
           -
             import: content
             prefix: hero_
-  overview:
-    display: Content
-    sections:
-      -
-        display: 'Service Content'
-        fields:
+          -
+            handle: main_content
+            field:
+              type: tab
+              display: 'Main Content'
+              icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path fill="currentColor" d="M253.75 166.28L231.46 92a13.91 13.91 0 0 0-13.41-10H208a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L240 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H160a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L192 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H38a13.91 13.91 0 0 0-13.46 10L2.28 166.2v.2a2.79 2.79 0 0 0-.1.39a.11.11 0 0 0 0 .05A6 6 0 0 0 8 174h240a6 6 0 0 0 5.75-7.72ZM36 95.42A2 2 0 0 1 38 94h84.1a2 2 0 0 1 1.9 1.43L144 162H16.06Z"></path></svg>'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             import: content
   staff_locations:
@@ -156,8 +171,19 @@ tabs:
     display: Details
     sections:
       -
-        display: 'Eloqua Form'
+        display: 'Service Details'
         fields:
+          -
+            handle: eloqua_form
+            field:
+              type: tab
+              display: 'Eloqua Form'
+              icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path fill="currentColor" d="M253.75 166.28L231.46 92a13.91 13.91 0 0 0-13.41-10H208a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L240 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H160a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L192 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H38a13.91 13.91 0 0 0-13.46 10L2.28 166.2v.2a2.79 2.79 0 0 0-.1.39a.11.11 0 0 0 0 .05A6 6 0 0 0 8 174h240a6 6 0 0 0 5.75-7.72ZM36 95.42A2 2 0 0 1 38 94h84.1a2 2 0 0 1 1.9 1.43L144 162H16.06Z"></path></svg>'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: eloqua_form_embed_code
             field:
@@ -178,9 +204,17 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-      -
-        display: 'Child Services'
-        fields:
+          -
+            handle: child_services
+            field:
+              type: tab
+              display: 'Child Services'
+              icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path fill="currentColor" d="M253.75 166.28L231.46 92a13.91 13.91 0 0 0-13.41-10H208a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L240 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H160a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L192 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H38a13.91 13.91 0 0 0-13.46 10L2.28 166.2v.2a2.79 2.79 0 0 0-.1.39a.11.11 0 0 0 0 .05A6 6 0 0 0 8 174h240a6 6 0 0 0 5.75-7.72ZM36 95.42A2 2 0 0 1 38 94h84.1a2 2 0 0 1 1.9 1.43L144 162H16.06Z"></path></svg>'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: show_child_services
             field:
@@ -247,6 +281,47 @@ tabs:
               always_save: true
               if:
                 show_child_services: 'equals true'
+          -
+            handle: external_link
+            field:
+              type: tab
+              display: 'External Link'
+              icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path fill="currentColor" d="M253.75 166.28L231.46 92a13.91 13.91 0 0 0-13.41-10H208a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L240 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H160a6 6 0 0 0 0 12h10.05a2 2 0 0 1 1.95 1.42L192 162h-35.54l-21-70a13.91 13.91 0 0 0-13.41-10H38a13.91 13.91 0 0 0-13.46 10L2.28 166.2v.2a2.79 2.79 0 0 0-.1.39a.11.11 0 0 0 0 .05A6 6 0 0 0 8 174h240a6 6 0 0 0 5.75-7.72ZM36 95.42A2 2 0 0 1 38 94h84.1a2 2 0 0 1 1.9 1.43L144 162H16.06Z"></path></svg>'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: link_externally
+            field:
+              default: false
+              type: toggle
+              display: 'Link Externally'
+              icon: toggle
+              instructions: 'This service should link to an external URL'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: external_url
+            field:
+              input_type: text
+              placeholder: 'https://www.google.com/'
+              antlers: true
+              type: text
+              display: 'External URL'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              if:
+                link_externally: 'equals true'
+              always_save: true
   seo:
     display: SEO
     sections:

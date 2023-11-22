@@ -1,17 +1,7 @@
-{{ _entry = ({collection:blocks handle:is="{type}" limit="1"} | first); }}
-{{ if _entry }}
-    {{ preBladeMarkup = _entry.markup | antlers }}
-    {{? 
-    use Illuminate\Support\Facades\Blade;
-    $markup = Blade::render($preBladeMarkup);
-?}}
-    {{ markup }}
-{{ else }}
-    <div class="p-4 my-6 border-l-4 lg:my-8 lg:p-8 lg:text-xl bg-amber-50 text-amber-900 border-amber-700">
-        Preview unavailable: The <code
-            class="inline-block px-1 font-mono text-sm border lg:text-lg bg-amber-100 border-amber-200">{{ type }}</code>
-        set
-        is currently
-        under development.
-    </div>
-{{ /if }}
+<div class="p-4 my-6 border-l-4 lg:my-8 lg:p-8 lg:text-xl bg-amber-50 text-amber-900 border-amber-700">
+    Preview unavailable: The <code
+        class="inline-block px-1 font-mono text-sm border lg:text-lg bg-amber-100 border-amber-200">{{ type }}</code>
+    set
+    is currently
+    under development.
+</div>

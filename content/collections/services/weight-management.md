@@ -1,8 +1,16 @@
 ---
 id: 7e8be34f-6b73-4ab4-ad7c-41087ef8e96d
 blueprint: service
-hero_title_text: 'Reclaim your life.'
+hero_title_text: 'Weight Management'
 hero_content:
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Reclaim your life.'
   -
     type: paragraph
     content:
@@ -25,8 +33,8 @@ image: weightmanagement-1700226863.jpg
 meta_title: 'Weight Management | Halifax Health'
 meta_description: 'Halifax Health – Weight Management has more than three decades of experience helping clients lose weight and maintain weight loss.'
 link_externally: false
-updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1700244918
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1700300238
 content:
   -
     type: heading
@@ -104,6 +112,12 @@ content:
                   -
                     type: text
                     text: 'Weekly attendance is strongly recommended to achieve the best results. Please arrange your schedule to be able to attend.'
+              -
+                type: set
+                attrs:
+                  id: lp3uustq
+                  values:
+                    type: request_appointment_button
             type: accordion
             enabled: true
   -

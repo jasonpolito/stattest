@@ -61,48 +61,46 @@ fields:
                     visibility: visible
                     replicator_preview: true
                     hide_display: true
-            file_upload:
-              display: 'File Upload'
-              instructions: 'Link to a downloadable asset'
-              icon: download-arrow-down
+            accordion:
+              display: Accordion
+              instructions: 'An collapsible accordion'
+              icon: text-formatting-image-top
               fields:
                 -
-                  handle: link_text
+                  import: faqs
+            youtube_video:
+              display: 'YouTube Video'
+              instructions: 'Embed a YouTube video from URL'
+              icon: social-youtube
+              fields:
+                -
+                  handle: youtube_video_url
                   field:
                     input_type: text
-                    placeholder: 'Downloadable File.pdf'
+                    placeholder: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
                     antlers: true
                     type: text
-                    display: 'Link Text'
+                    display: 'YouTube Video URL'
                     icon: text
                     listable: hidden
                     instructions_position: above
                     visibility: visible
+                    replicator_preview: true
                     hide_display: false
-                -
-                  handle: file_upload
-                  field:
-                    max_files: 1
-                    mode: list
-                    container: assets
-                    restrict: false
-                    allow_uploads: true
-                    show_filename: true
-                    show_set_alt: true
-                    type: assets
-                    display: 'File Upload'
-                    icon: assets
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    hide_display: false
-            faqs:
-              display: FAQs
-              instructions: 'A set of expandable FAQs'
-              icon: alert-help-question
+            testimonial:
+              display: Testimonial
+              instructions: 'A brief endorsement.'
+              icon: text-formatting-quotation
               fields:
                 -
-                  import: faqs
+                  import: testimonial_single
+            notice:
+              display: Notice
+              instructions: 'Simple notice with multiple types.'
+              icon: alert-warning-exclamation-mark
+              fields:
+                -
+                  import: notice
         layout:
           display: Layout
           instructions: null
@@ -187,11 +185,32 @@ fields:
                     visibility: visible
                     hide_display: false
                     replicator_preview: true
+            side_by_side:
+              display: 'Side by side'
+              instructions: 'Image with content and CTA'
+              icon: layout-split-right
+              fields:
+                -
+                  import: side-by-side
+            hero:
+              display: Hero
+              instructions: null
+              icon: align-object-top
+              fields:
+                -
+                  import: hero
         advanced:
           display: Advanced
           instructions: null
           icon: labs-idea-experimental-flask
           sets:
+            search_entries:
+              display: 'Search Entries'
+              instructions: null
+              icon: search-magnifying-glass
+              fields:
+                -
+                  import: search_entries
             code:
               display: Code
               instructions: 'Custom HTML markup'
@@ -199,8 +218,8 @@ fields:
               fields:
                 -
                   import: html
-      always_show_set_button: false
-      collapse: false
+      always_show_set_button: true
+      collapse: accordion
       previews: true
       type: bard
       display: Content

@@ -1,489 +1,728 @@
 title: Footer
 data:
-  link_columns:
+  columns:
     -
-      id: lkagvz0z
-      content:
+      id: lp9wusg2
+      sections:
         -
-          type: paragraph
-          attrs:
-            textAlign: left
+          id: lp9wut54
+          title: 'For Patients & Visitors'
           content:
             -
-              type: text
-              text: '{{ site:logo_html }}'
-        -
-          type: paragraph
-          attrs:
-            textAlign: left
-          content:
-            -
-              type: text
-              marks:
+              type: bulletList
+              content:
                 -
-                  type: link
-                  attrs:
-                    href: 'https://maps.google.com/?q=728%20Fentress%20Blvd,%20%20%20%20%20%20%20%20Daytona%20Beach,%20FL%2032114'
-                    rel: 'noopener noreferrer'
-                    target: _blank
-                    title: null
-              text: '728 Fentress Blvd, Daytona Beach, FL'
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/services/cancer-care#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Find a Medical Service'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/services/cancer-care#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Find a Doctor'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/services/cancer-care#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Billing Information'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/services/cancer-care#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Pay My Bill'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/services/cancer-care#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Medical Records'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/services/cancer-care#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Gift Shop'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/services/cancer-care#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Visitation Policy'
+          type: section
+          enabled: true
         -
-          type: paragraph
-          attrs:
-            textAlign: start
+          id: lp9wwhav
+          title: 'For Medical Professionals'
           content:
             -
-              type: text
-              text: 'Placement Labs is a top-rated digital marketing agency based in Daytona Beach, Florida.'
+              type: bulletList
+              content:
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Residency & Fellowship'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: Referrals
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Physician Opportunities'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Medical Library'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Physician Portal'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Medical Staff Services'
+          type: section
+          enabled: true
       type: column
       enabled: true
     -
-      id: lkafye4c
-      title: 'Digital Marketing'
+      id: lp9wwm9z
+      sections:
+        -
+          id: lp9wwq6q
+          title: 'For Job Seekers'
+          content:
+            -
+              type: bulletList
+              content:
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Search Jobs'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Seasonal Pool Program'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Employment Resources'
+          type: section
+          enabled: true
+        -
+          id: lp9wwvvc
+          title: 'For Billing'
+          content:
+            -
+              type: bulletList
+              content:
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Pay My Bill'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Patient Portal'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Price Estimates'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Pricing Transparency'
+          type: section
+          enabled: true
+        -
+          id: lp9wxb3j
+          title: 'For Donations'
+          content:
+            -
+              type: bulletList
+              content:
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Make a Donation'
+          type: section
+          enabled: true
+        -
+          id: lp9wxjod
+          title: 'In The Media'
+          content:
+            -
+              type: bulletList
+              content:
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/blog'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'News Articles'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/events'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Upcoming Events'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Halifax Podcast'
+          type: section
+          enabled: true
       type: column
       enabled: true
-      bard_field:
-        -
-          type: bulletList
-          content:
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/web-design'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Web Design & Development'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/logo-design'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Branding & Identity'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/search-engine-optimization'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Search Engine Optimization'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/paid-search-marketing'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Paid Search Marketing'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/social-media-marketing'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Social Media Marketing'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/geofencing'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Geofencing Marketing'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'All Digital Marketing Services'
-      content:
-        -
-          type: bulletList
-          content:
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/web-design'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Web Design & Development'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/logo-design'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Branding & Identity'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/search-engine-optimization'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Search Engine Optimization'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/paid-search-marketing'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Paid Search Marketing'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/social-media-marketing'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Social Media Marketing'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services/geofencing'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Geofencing Marketing'
-            -
-              type: listItem
-              content:
-                -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
-                  content:
-                    -
-                      type: text
-                      marks:
-                        -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/services'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'All Digital Marketing Services'
     -
-      id: lkafytjg
-      title: 'Recent Projects'
-      type: column
-      enabled: true
-      content:
+      id: lp9wxg6u
+      sections:
         -
-          type: bulletList
+          id: lp9wxvgt
+          title: Support
           content:
             -
-              type: listItem
+              type: bulletList
               content:
                 -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
+                  type: listItem
                   content:
                     -
-                      type: text
-                      marks:
+                      type: paragraph
+                      content:
                         -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/work/uf-health'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'UF Health Spine Center at Halifax Health'
-            -
-              type: listItem
-              content:
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/contact'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Contact Us'
                 -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
+                  type: listItem
                   content:
                     -
-                      type: text
-                      marks:
+                      type: paragraph
+                      content:
                         -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/work/law-firm-digital-marketing'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Innovative Law Firm Digital Marketing'
-            -
-              type: listItem
-              content:
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://halifaxcms.placementlabs.com/for-medical-professionals/nursing-education#'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Billing Questions'
                 -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
+                  type: listItem
                   content:
                     -
-                      type: text
-                      marks:
+                      type: paragraph
+                      content:
                         -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/work/mmb-campaign'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Dr. Mary McLeod Bethune Statuary Project'
-    -
-      id: lkafz145
-      title: Connect
-      type: column
-      enabled: true
-      content:
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'tel:386.425.4000'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 386.425.4000
+          type: section
+          enabled: true
         -
-          type: bulletList
+          id: lp9wy5a2
+          title: 'Main Campuses'
           content:
             -
-              type: listItem
+              type: bulletList
               content:
                 -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
+                  type: listItem
                   content:
                     -
-                      type: text
-                      marks:
+                      type: paragraph
+                      content:
                         -
-                          type: link
-                          attrs:
-                            href: 'tel:3863127777'
-                            rel: null
-                            target: null
-                            title: null
-                      text: '(386) 312-7777'
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/locations/show?l=0'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Daytona Beach'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/locations/show?l=1'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Port Orange'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/locations/show?l=2'
+                                rel: null
+                                target: null
+                                title: null
+                          text: Deltona
+          type: section
+          enabled: true
+        -
+          id: lp9wybre
+          title: 'About Halifax Health'
+          content:
             -
-              type: listItem
+              type: bulletList
               content:
                 -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
+                  type: listItem
                   content:
                     -
-                      type: text
-                      marks:
+                      type: paragraph
+                      content:
                         -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/start'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Free Consultation'
-            -
-              type: listItem
-              content:
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/glossary?t=about'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Board of Commissioners'
                 -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
+                  type: listItem
                   content:
                     -
-                      type: text
-                      marks:
+                      type: paragraph
+                      content:
                         -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/blog'
-                            rel: null
-                            target: null
-                            title: null
-                      text: 'Marketing Blog'
-            -
-              type: listItem
-              content:
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/glossary?t=about'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Financial Statement'
                 -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
+                  type: listItem
                   content:
                     -
-                      type: text
-                      marks:
+                      type: paragraph
+                      content:
                         -
-                          type: link
-                          attrs:
-                            href: 'https://placementlabs.com/careers'
-                            rel: null
-                            target: null
-                            title: null
-                      text: Careers
-            -
-              type: listItem
-              content:
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/glossary?t=about'
+                                rel: null
+                                target: null
+                                title: null
+                          text: Leadership
                 -
-                  type: paragraph
-                  attrs:
-                    textAlign: left
+                  type: listItem
                   content:
                     -
-                      type: text
-                      marks:
+                      type: paragraph
+                      content:
                         -
-                          type: link
-                          attrs:
-                            href: 'https://clients.placementlabs.com/login'
-                            rel: null
-                            target: _blank
-                            title: null
-                      text: 'Client Login'
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/glossary?t=about'
+                                rel: null
+                                target: null
+                                title: null
+                          text: Meetings
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/glossary?t=about'
+                                rel: null
+                                target: null
+                                title: null
+                          text: 'Our History'
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/glossary?t=about'
+                                rel: null
+                                target: null
+                                title: null
+                          text: Partnerships
+                -
+                  type: listItem
+                  content:
+                    -
+                      type: paragraph
+                      content:
+                        -
+                          type: text
+                          marks:
+                            -
+                              type: link
+                              attrs:
+                                href: 'https://hhwf.placementlabs.com/glossary?t=about'
+                                rel: null
+                                target: null
+                                title: null
+                          text: Testimonials
+          type: section
+          enabled: true
+      type: column
+      enabled: true

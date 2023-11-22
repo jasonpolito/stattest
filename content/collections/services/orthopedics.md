@@ -65,8 +65,9 @@ opengraph_title: '{{ meta_title }}'
 opengraph_description: '{{ meta_description }}'
 noindex: false
 image: gettyimages-1226463366-1-scaled.jpg
+link_externally: false
 updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
-updated_at: 1700236041
+updated_at: 1700266398
 content:
   -
     type: heading
@@ -266,6 +267,338 @@ content:
                   id: lp2sda8h
                   values:
                     type: request_appointment_button
+            type: accordion
+            enabled: true
+          -
+            id: lp39d0qw
+            title: 'Treatment Philosophy'
+            content_simple:
+              -
+                type: set
+                attrs:
+                  id: lp39dwnm
+                  values:
+                    type: youtube_video
+                    youtube_video: 'https://www.youtube.com/watch?v=I1-a2-4VcFU'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Our orthopedic practice has a state-of-the-art facility with four clean-air operating suites. Our dedicated nursing staff specializes in orthopedic care. We offer pre-operation classes for patients as well as comprehensive education on joint replacement for our patients. We provide multiple post-operation physical therapy sessions every day.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'We believe a multidisciplinary approach is key to providing patient-centric care. Our anesthesia staff offers each patient superior pain management specifically designed for orthopedic patient needs. We offer a comprehensive continuum of care including diagnostics and education along with inpatient and outpatient rehabilitation.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Our board-certified surgeons specialize in:'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Total Knee Replacements'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Total Hip Replacements'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Hip Fracture Repairs'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Back and Neck Surgery'
+              -
+                type: set
+                attrs:
+                  id: lp39ekwa
+                  values:
+                    type: request_appointment_button
+            type: accordion
+            enabled: true
+          -
+            id: lp39dtnt
+            title: 'Recovering After Surgery'
+            content_simple:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Halifax Health - Center for Orthopedics offers comprehensive care for joint replacement surgery. We are proud to offer our successful recovery and rehabilitation program to all of our knee and hip surgery patients.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'What makes our program so unique?'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: "With our unique\_"
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'Enhanced Recovery After Surgery Program'
+                  -
+                    type: text
+                    text: ', Halifax Health patients are not only receiving exceptional care from our expert team, but will have the peace of mind that when their surgery is over they can return to doing what they love.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'Recovery results that get our patients home and back on their feet faster.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'ERAS started as a pilot program for knee replacement patients, the successful outcomes from this program over a 90 day trial period showed positive results patient after patient.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: "Halifax Health patients receive special care from the\_areas only Orthopedic/Neuro Patient Navigator before, during and after surgery."
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: "For more information or to schedule a tour call\_"
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 386.425.0611
+                  -
+                    type: text
+                    text: "\_and speak to our Orthopedic/Neuro Patient Navigator."
+              -
+                type: set
+                attrs:
+                  id: lp3aodl4
+                  values:
+                    type: request_appointment_button
+            type: accordion
+            enabled: true
+          -
+            id: lp3aifwk
+            title: 'Mako Technology'
+            content_simple:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Mako Robotic-Arm Assisted Total Knee replacement is a treatment option for adults living with mid to late-stage osteoarthritis (OA) of the knee. Mako provides you with a personalized surgical plan based on your unique anatomy. First, a CT scan of the diseased knee joint is taken. This CT scan is uploaded into the Mako System software, where a 3D model of your knee is created. This model is then used to pre-plan and assist your surgeon in performing your total knee replacement.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'At Halifax Health – Center for Orthopedics we offer state-of-the-art technology that helps you maintain your quality of life.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'We focus on providing the latest techniques and technology in orthopedic procedures providing you with clinical outcomes you deserve and expect.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'We are proud to offer Mako for total knee replacement.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: link
+                        attrs:
+                          href: 'http://patients.stryker.com/knee-replacement/procedures/mako-robotic-arm-assisted-total-knee?cid=cdn'
+                          rel: 'noreferrer noopener'
+                          target: _blank
+                          title: null
+                    text: "Mako Robotic-Arm Assisted Total Knee\_replacement"
+                  -
+                    type: text
+                    text: ' is a treatment option for adults living with mid to late-stage osteoarthritis (OA) of the knee. Mako provides you with a personalized surgical plan based on your unique anatomy. First, a CT scan of the diseased knee joint is taken. This CT scan is uploaded into the Mako System software, where a 3D model of your knee is created. This 3D model is used to pre-plan and assist your surgeon in performing your total knee replacement.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'One of the latest innovations in medical science, Mako surgery is a minimally invasive option for patients seeking to maintain joint function. The procedure can be done with a much lower risk of infection, pain or loss of mobility. The surgical procedure is typically completed in about an hour and has significantly less bruising, swelling and risk of postoperative infections than traditional methods. With the Mako procedure, you will experience a better range of motion, less pain and a quicker recovery time when compared with traditional surgery.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Diagnosis and treatment of knee pain'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: "Each patient is unique and can experience knee pain for different reasons. It’s important to talk to us about the reason for your\_"
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: link
+                        attrs:
+                          href: 'https://patients.stryker.com/knee-replacement/understanding-knee-pain?cid=cdn'
+                          rel: 'noreferrer noopener'
+                          target: _blank
+                          title: null
+                    text: "knee\_pain"
+                  -
+                    type: text
+                    text: "\_so you can understand the treatment options available to you."
+              -
+                type: paragraph
+                content:
+                  -
+                    type: image
+                    attrs:
+                      src: 'asset::assets::hh-arthritis-1.jpg'
+                      alt: 'Knee compartments'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Knee compartment arthritis, one possible reason for knee pain, can affect one or more of the three compartments of the knee. Take a look at the different areas where arthritis can affect the knee joint:'
+              -
+                type: orderedList
+                attrs:
+                  start: 1
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'The inside of the knee, or medial compartment'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'The outside of the knee, or lateral compartment'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'The top of the knee is also known as the kneecap or patella compartment'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Pain from arthritis and joint degeneration can be constant or come and go, occur with movement or after a period of rest, or be located in one spot or many parts of the body. If you haven’t experienced adequate relief with medication and other conservative treatments, total knee replacement may provide you with relief from your arthritis.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'How surgery works'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'In the operating room, your surgeon follows your personalized surgical plan while preparing the bone for the Triathlon Total Knee implant. With over a decade of clinical history, Triathlon knee replacements are different than traditional knee replacements because they are designed to work with the body to promote natural-like circular motion.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'The surgeon guides the robotic arm to remove diseased bone and cartilage within the pre-defined area and the Mako System helps the surgeon stay within the planned boundaries that were defined when the personalized pre-operative plan was created. In a laboratory study, Mako Technology demonstrated accurate placement of implants to a personalized surgical plan.'
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'The surgery is performed by an orthopedic surgeon, who guides the robotic arm during the surgery to position the implant in the knee joint. The robotic arm does not perform surgery, make decisions on its own or move without the surgeon guiding the robotic arm. The Mako System also allows your surgeon to make adjustments to your plan during surgery as needed.'
+              -
+                type: set
+                attrs:
+                  id: lp3al1ag
+                  values:
+                    type: request_appointment_button
+              -
+                type: paragraph
+                content:
+                  -
+                    type: hardBreak
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: italic
+                    text: "1\_Nawabi DH, Conditt MA, Ranawat AS, Dunbar NJ, Jones J, Banks SA, Padgett DE. Haptically guided robotic technology in total hip arthroplasty – a cadaver investigation. Proc Inst Mech Eng H. 2013 Marc 22 7(3): 302-9.2\_Illgen R. Robotic assisted total hip arthroplasty improves accuracy and clinical outcome compared with manual technique. 44th Annual Advances in Arthroplasty Course. October 7-10, 2014, Cambridge, MA."
+                  -
+                    type: text
+                    text: "\_"
             type: accordion
             enabled: true
 ---

@@ -48,8 +48,8 @@ sidebar_content:
                       target: null
                       title: 'More Cancer Information'
                 text: 'Cancer Information'
-updated_by: 95963937-3885-4d7e-8bc2-d672d4bae9c7
-updated_at: 1700254501
+updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
+updated_at: 1700574613
 content:
   -
     type: heading
@@ -175,10 +175,10 @@ content:
         type: buttons
         buttons:
           -
-            id: lp2vetuq
-            button_text: 'More About Cancer Care'
-            link_target: 20290da4-2481-4ea9-9388-26f08452a89d
-            use_custom_url: false
+            id: lp8e75jp
+            button_text: 'New Patient Paperwork'
+            custom_url: 'https://halifaxcms.placementlabs.com/assets/new-patient-packet-2023-with-consents-and-daytona-map.pdf'
+            use_custom_url: true
             target_blank: false
             bg_color: '#01338e'
             type: button

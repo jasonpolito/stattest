@@ -5,7 +5,7 @@ tabs:
       -
         fields:
           -
-            handle: link_columns
+            handle: columns
             field:
               collapse: false
               previews: true
@@ -22,55 +22,78 @@ tabs:
                       icon: null
                       fields:
                         -
-                          handle: title
+                          handle: sections
                           field:
-                            input_type: text
-                            antlers: false
-                            type: text
-                            display: Title
-                            icon: text
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            hide_display: false
-                        -
-                          handle: content
-                          field:
-                            buttons:
-                              - bold
-                              - italic
-                              - unorderedlist
-                              - orderedlist
-                              - removeformat
-                              - quote
-                              - anchor
-                              - image
-                              - alignleft
-                              - aligncenter
-                              - alignright
-                            smart_typography: false
-                            save_html: false
-                            inline: false
-                            toolbar_mode: fixed
-                            reading_time: false
-                            fullscreen: true
-                            allow_source: true
-                            enable_input_rules: true
-                            enable_paste_rules: true
-                            remove_empty_nodes: false
-                            antlers: true
-                            link_noopener: false
-                            link_noreferrer: false
-                            target_blank: false
-                            always_show_set_button: false
                             collapse: false
                             previews: true
-                            type: bard
-                            display: Content
-                            icon: bard
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  section:
+                                    display: Section
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: title
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: Title
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: content
+                                        field:
+                                          buttons:
+                                            - bold
+                                            - italic
+                                            - unorderedlist
+                                            - orderedlist
+                                            - removeformat
+                                            - anchor
+                                          smart_typography: true
+                                          save_html: false
+                                          inline: false
+                                          toolbar_mode: fixed
+                                          reading_time: false
+                                          word_count: false
+                                          fullscreen: true
+                                          allow_source: true
+                                          enable_input_rules: true
+                                          enable_paste_rules: true
+                                          remove_empty_nodes: false
+                                          antlers: false
+                                          link_noopener: false
+                                          link_noreferrer: false
+                                          target_blank: false
+                                          always_show_set_button: false
+                                          collapse: false
+                                          previews: true
+                                          type: bard
+                                          display: Content
+                                          icon: bard
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                            type: replicator
+                            display: Sections
+                            icon: replicator
                             listable: hidden
                             instructions_position: above
                             visibility: visible
+                            replicator_preview: true
                             hide_display: false
               type: replicator
               display: Columns
@@ -79,3 +102,4 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              replicator_preview: true

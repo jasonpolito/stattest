@@ -17,8 +17,16 @@ staff:
   - 3d9e7933-8338-475d-9e97-ce185a917c96
   - c99a2bf0-4534-4694-8226-e53056d44c18
   - 29f5cff3-8452-4476-b94f-44d0e46b7204
-hero_title_text: 'Let kids be kids.'
+hero_title_text: Pediatrics
 hero_content:
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Let kids be kids.'
   -
     type: paragraph
     content:
@@ -52,8 +60,8 @@ image: pediatrics.jpg
 meta_title: 'Pediatrics | Halifax Health'
 meta_description: 'With four convenient locations, treating everything from runny noses to broken bones, the Halifax Health Pediatrics team has your family covered.'
 link_externally: false
-updated_by: 2d2d6685-b06b-4c36-ac61-bb3b0bd2b14f
-updated_at: 1700244596
+updated_by: b4edca85-1aed-4414-b76d-caa31d61829f
+updated_at: 1700335456
 content:
   -
     type: heading
@@ -63,13 +71,6 @@ content:
       -
         type: text
         text: 'High Level Pediatric Care'
-  -
-    type: set
-    attrs:
-      id: lp18q7ec
-      values:
-        type: youtube_video
-        youtube_video_url: 'https://www.youtube.com/watch?v=CY3DbmwBqa0'
   -
     type: set
     attrs:
@@ -322,6 +323,12 @@ content:
                           -
                             type: text
                             text: 'pediatric recreation'
+              -
+                type: set
+                attrs:
+                  id: lp4fnpww
+                  values:
+                    type: request_appointment_button
             type: accordion
             enabled: true
           -
@@ -340,6 +347,27 @@ content:
                   -
                     type: text
                     text: 'We offer leading edge minimally invasive treatments, including laparoscopic and robotic surgery for pediatric urologic conditions.'
+              -
+                type: set
+                attrs:
+                  id: lp4fp1fq
+                  values:
+                    type: buttons
+                    buttons:
+                      -
+                        id: lp4fp2fm
+                        button_text: 'Learn More'
+                        link_target: 43e4a759-861d-4c71-84c8-eb73ed8ded64
+                        use_custom_url: false
+                        target_blank: false
+                        bg_color: '#01338e'
+                        type: button
+                        enabled: true
+              -
+                type: paragraph
+                content:
+                  -
+                    type: hardBreak
             type: accordion
             enabled: true
           -

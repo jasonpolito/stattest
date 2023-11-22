@@ -29,7 +29,7 @@ fields:
                     instructions_position: above
                     visibility: visible
                     hide_display: false
-                    placeholder: 'Why did the chicken cross the road?'
+                    placeholder: 'How can we provide the highest level of care today?'
                     replicator_preview: true
                 -
                   import: content_simple
