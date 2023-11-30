@@ -57,6 +57,39 @@
         select {
             border: none;
         }
+
+
+        .auto-links nav .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .auto-links nav .pagination a,
+        .auto-links nav .pagination span {
+            display: block;
+            border-top-width: 3px;
+            border-color: transparent;
+            text-align: center;
+            padding: .5rem .75rem;
+        }
+
+        .auto-links nav .pagination a:hover,
+        .auto-links nav .pagination .active span {
+            color: var(--primary-500);
+        }
+
+        .auto-links nav .pagination .active span {
+            border-color: var(--primary-500);
+        }
+
+        select[multiple] {
+            padding: 0;
+        }
+
+        select[multiple] option {
+            padding: 0.5rem 1rem;
+        }
     </style>
 
     <script>
@@ -143,6 +176,10 @@
             }
         }
     </script>
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+    </link>
+
 </head>
 <body>
     {{ partial:global/header }}
@@ -166,7 +203,7 @@
     <script>
         document.querySelectorAll('.prose-white > .prose').forEach(el => {
             el.classList.add('prose-white');
-        })
+        });
     </script>
 </body>
 </html>

@@ -2,43 +2,80 @@
     <div class="container px-8 pt-16 mx-auto lg:px-12 xl:max-w-7xl">
         <div class="flex flex-wrap -mx-3">
             <div class="w-full px-3 lg:w-1/4">
-                <div class="sticky top-0 pt-24 pr-8 -mt-24 text-sm">
+                <div class="sticky top-0 pt-16 pr-8 -mt-16">
                     {{ partial:search-input }}
-                    <div class="pl-4 text-xs text-slate-600">
-                        {{ if query }}
-                            {{ collection from="{entrytype:value}" limit="5" sort="order" as="entries" title:contains="{query}" }}
-                                <ul>
-                                    {{ entries }}
-                                        <li class="py-1"><a href="{{ url }}"
-                                                class="hover:text-primary hover:underline">{{ title | mark(query) }}</a>
-                                        </li>
-                                    {{ /entries }}
-                                    {{ if entries | is_empty }}
-                                        <li class="py-1">No results found for "<b>{{ query }}</b>".</li>
-                                    {{ /if }}
-                                </ul>
-                            {{ /collection }}
-                        {{ /if }}
+                    <div class="mb-2">
+                        <div
+                            class="w-full px-4 pt-2 leading-7 bg-transparent border-none outline-none appearance-none text-slate-400">
+                            Filter by city</div>
+                        <ul class="text-sm border-t border-slate-400">
+                            {{ city_opts = ['Daytona Beach', 'Deltona', 'Port Orange', 'New Smyrna', 'Palm Coast'] }}
+                            {{ city_opts }}
+                                <li>
+                                    <label for="{{ value | slugify }}"
+                                        class="flex gap-2 px-4 py-2 cursor-pointer hover:text-primary hover:underline">
+                                        <input type="checkbox" wire:model.live="cities" value="{{ value }}"
+                                            id="{{ value | slugify }}" name="cities[]" class="top-0.5 peer" />
+                                        <span
+                                            class="peer-checked:font-bold peer-checked:text-primary">{{ value }}</span>
+                                    </label>
+                                </li>
+                            {{ /city_opts }}
+                        </ul>
                     </div>
+                    {{ if entrytype:value !== 'services' }}
+                        <div>
+                            <div
+                                class="w-full px-4 pt-2 leading-7 bg-transparent border-none outline-none appearance-none text-slate-400">
+                                Filter by service</div>
+                            <ul class="pb-8 overflow-scroll text-sm border-t border-slate-400 max-h-56">
+                                {{ collection:services }}
+                                    <li>
+                                        <label for="service{{ id }}"
+                                            class="flex gap-2 px-4 py-2 cursor-pointer hover:text-primary hover:underline">
+                                            <input type="checkbox" wire:model.live="services" value="{{ id }}"
+                                                id="service{{ id }}" name="services[]" class="top-0.5 peer" />
+                                            <span
+                                                class="peer-checked:font-bold peer-checked:text-primary">{{ title }}</span>
+                                        </label>
+                                    </li>
+                                {{ /collection:services }}
+                            </ul>
+                            <div class="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-b from-transparent to-white">
+                            </div>
+                        </div>
+                    {{ /if }}
                 </div>
             </div>
             <div class="w-full px-3 lg:w-3/4">
-                {{ collection from="{entrytype:value}" paginate="36" sort="order" as="entries" title:contains="{query}" }}
+                {{ collection from="{entrytype:value}" paginate="36" sort="{sortorder ?? 'order'}" as="entries" query_scope="search_entries" :searchterms="query" :cities="cities" :services="services" title:contains="{query}" }}
                     <h4 class="flex gap-6 py-4 text-xs leading-7 border-b text-slate-500 border-slate-400">
-                        {{ if query }}
-                            <span>
-                                <strong>{{ entries | count }}</strong>
-                                result(s)
-                                match your search
-                                criteria
-                            </span>
-                        {{ else }}
-                            {{ paginate }}
-                                <span>Page {{ current_page }} of {{ total_pages }}</span>
-                            {{ /paginate }}
-                        {{ /if }}
+                        <div style="display: none" wire:loading>
+                            Searching...
+                        </div>
+                        <div wire:loading.class="hidden">
+                            {{ if query or {services | count} or {cities | count} }}
+                                <span>
+                                    <strong>{{ entries | count }}</strong>
+                                    result(s)
+                                    match your search
+                                    criteria
+                                </span>
+                            {{ else }}
+                                {{ paginate }}
+                                    <span>Page {{ current_page }} of {{ total_pages }}</span>
+                                {{ /paginate }}
+                            {{ /if }}
+                        </div>
                     </h4>
-                    <div class="flex flex-wrap pt-6 -mx-3">
+                    <div class="flex flex-wrap pt-6 -mx-3 transition-all" wire:loading.class="opacity-50">
+                        {{ if no_results }}
+                            <div class="flex w-full gap-4 px-3 mb-8 text-2xl font-title text-slate-400">
+                                <p>No results found.</p>
+                                <p><a href="#" class="hover:text-primary hover:underline"
+                                        wire:click.prevent="clearSearch">Clear search</a></p>
+                            </div>
+                        {{ /if }}
                         {{ entries }}
                             <div class="w-full px-3 mb-8 md:w-1/2 lg:w-1/3">
                                 <a href="{{ url }}"
@@ -53,50 +90,50 @@
                                                 </path>
                                             </svg></div>
                                     </div>
-                                    <div class="bg-center bg-cover fill-parent"
-                                        style="background-image: url({{ image }})">
-                                    </div>
+                                    {{ partial:img }}
                                 </a>
                                 <div class="flex gap-1 mb-2 text-xs text-slate-500">
 
                                 </div>
                                 <div
                                     class="prose-sm prose prose-headings:font-serif prose-headings:font-normal prose-a:no-underline hover:prose-a:underline">
-                                    <h3><a href="{{ url }}">{{ title | mark(query) }}</a>
+                                    <h3><a href="{{ url }}">{{ title | mark(query) | widont }}</a>
                                     </h3>
                                 </div>
                             </div>
                         {{ /entries }}
                     </div>
-                    {{ paginate }}
-                        <div class="flex justify-center" x-data>
-                            <div
-                                class="flex items-center justify-center px-8 mt-16 border-t border-slate-300 text-slate-300">
-                                <a href="{{ prev_page }}" class="block w-12 h-12">
-                                    <div
-                                        class="flex items-center justify-center font-bold fill-parent hover:text-slate-900">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15.75 19.5L8.25 12l7.5-7.5" />
-                                        </svg>
-                                    </div>
-                                </a>
-                                <span class="block px-4 text-sm">
-                                    <span>{{ current_page }} of {{ total_pages }}</span>
-                                </span>
-                                <a href="{{ next_page }}" class="block w-12 h-12">
-                                    <div class="flex items-center justify-center fill-parent hover:text-slate-900">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                        </svg>
-                                    </div>
-                                </a>
+                    {{ if !no_results }}
+                        {{ paginate }}
+                            <div class="flex justify-center" x-data>
+                                <div
+                                    class="flex items-center justify-center px-8 mt-16 border-t border-slate-300 text-slate-300">
+                                    <a href="{{ prev_page }}" class="block w-12 h-12">
+                                        <div
+                                            class="flex items-center justify-center font-bold fill-parent hover:text-slate-900">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <span class="block px-4 text-sm">
+                                        <span>{{ current_page }} of {{ total_pages }}</span>
+                                    </span>
+                                    <a href="{{ next_page }}" class="block w-12 h-12">
+                                        <div class="flex items-center justify-center fill-parent hover:text-slate-900">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    {{ /paginate }}
+                        {{ /paginate }}
+                    {{ /if }}
                 {{ /collection }}
             </div>
         </div>

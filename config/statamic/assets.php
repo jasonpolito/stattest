@@ -112,7 +112,7 @@ return [
         |
         */
 
-        'generate_presets_on_upload' => false,
+        'generate_presets_on_upload' => true,
 
     ],
 
@@ -141,8 +141,8 @@ return [
     */
 
     'thumbnails' => [
-        'max_width' => 1000,
-        'max_height' => 1000,
+        'max_width' => 2000,
+        'max_height' => 2000,
     ],
 
     /*

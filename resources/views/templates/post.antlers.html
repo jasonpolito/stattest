@@ -24,13 +24,8 @@
 
 <div class="my-12 xl:my-18 md:my-16">
     <div class="xl:container xl:mx-auto 2xl:px-32">
-        <div class="pt-24 bg-center bg-cover bg-primary-50"
-            style="background-position: center top; background-image: url({{ image }})">
-            <div class="pt-24 pb-16 ">
-                <div class="container px-8 mx-auto lg:px-12 xl:max-w-7xl">
-                    <div class="sm:py-20 lg:py-32 xl:py-40"></div>
-                </div>
-            </div>
+        <div class="h-[66vh] bg-primary-50">
+            {{ partial:img }}
         </div>
     </div>
 </div>
@@ -85,64 +80,42 @@
             </div>
             <div class="w-full px-8 lg:w-1/3">
                 <div class="sticky top-0 pt-8 -mt-8">
-                    <h4 class="pt-3 text-xs text-slate-500">Related content:</h4>
+                    <h4 class="pt-3 text-xs text-slate-500">Recent Articles</h4>
                     <ul>
-                        <li class="my-8">
-                            <h3>
-                                <a href="https://hhwf.placementlabs.com/blog/show" class="flex gap-8 first:mt-0 group">
-                                    <div class="w-full ">
-                                        <div
-                                            class="flex justify-between gap-4 py-2 mb-4 font-serif border-b sm:text-base decoration-slate-400 decoration-1 border-slate-400 group-hover:underline group-focus-within:underline">
-                                            <span>Halifax Health | Brooks Rehabilitation Community Programs</span>
-                                            <div class="flex justify-end w-8 pr-2 -mt-1">
-                                                <svg class="w-8 h-8 transition group-hover:translate-x-2 group-focus:translate-x-2"
-                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-                                                </svg>
+                        {{ collection:blog limit="3" }}
+                            <li class="my-8">
+                                <h3>
+                                    <a href="{{ url }}" class="flex gap-8 first:mt-0 group">
+                                        <div class="w-full ">
+                                            <div
+                                                class="flex justify-between gap-4 py-2 mb-4 font-serif border-b sm:text-base decoration-slate-400 decoration-1 border-slate-400 group-hover:underline group-focus-within:underline">
+                                                <span>{{ title | safe_truncate(65, '...') | smartypants }}</span>
+                                                <div class="flex justify-end w-8 pr-2 -mt-1">
+                                                    <svg class="w-8 h-8 transition group-hover:translate-x-2 group-focus:translate-x-2"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        aria-hidden="true">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-1 text-xs text-slate-500">
+                                                <div>{{ date }}</div>
+                                                <div>•</div>
+                                                <div>{{ content | bard_text | read_time(180) }} min read</div>
                                             </div>
                                         </div>
-                                        <div class="flex gap-1 text-xs text-slate-500">
-                                            <div>October 26th, 2023</div>
-                                            <div>•</div>
-                                            <div>7 min read</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h3>
-                        </li>
-                        <li class="my-8">
-                            <h3>
-                                <a href="https://hhwf.placementlabs.com/blog/show" class="flex gap-8 first:mt-0 group">
-                                    <div class="w-full ">
-                                        <div
-                                            class="flex justify-between gap-4 py-2 mb-4 font-serif border-b sm:text-base decoration-slate-400 decoration-1 border-slate-400 group-hover:underline group-focus-within:underline">
-                                            <span>Andrea Forster Named First Diabetes Navigator</span>
-                                            <div class="flex justify-end w-8 pr-2 -mt-1">
-                                                <svg class="w-8 h-8 transition group-hover:translate-x-2 group-focus:translate-x-2"
-                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-1 text-xs text-slate-500">
-                                            <div>October 24th, 2023</div>
-                                            <div>•</div>
-                                            <div>5 min read</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h3>
-                        </li>
+                                    </a>
+                                </h3>
+                            </li>
+                        {{ /collection:blog }}
                         <li class="mb-12">
                             <h3>
                                 <a href="/blog" class="flex gap-8 first:mt-0 group">
                                     <div class="w-full ">
                                         <div
-                                            class="flex justify-between gap-4 py-2 mb-4 font-serif border-b sm:text-base decoration-slate-400 decoration-1 border-slate-400 group-hover:underline group-focus-within:underline">
+                                            class="flex justify-between gap-4 py-2 mb-4 font-serif sm:text-base decoration-slate-400 decoration-1 border-slate-400 group-hover:underline group-focus-within:underline">
                                             <span>View more articles</span>
                                             <div class="flex justify-end w-8 pr-2 -mt-1">
                                                 <svg class="w-8 h-8 transition group-hover:translate-x-2 group-focus:translate-x-2"

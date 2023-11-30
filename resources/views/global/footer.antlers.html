@@ -11,7 +11,7 @@
                     <div class="flex items-center gap-6 pt-6 text-base not-prose">
                         <div>
 
-                            <a href="https://hhwf.placementlabs.com/blog"
+                            <a href="/blog"
                                 class="flex items-center gap-4 px-8 py-4 text-lg text-white transition rounded-full group bg-primary hover:bg-primary-700">
                                 <span>All Articles</span>
                                 <svg class="w-6 h-6 transition group-hover:translate-x-2"
@@ -80,87 +80,32 @@
             </div>
             <div class="w-full px-8 lg:w-1/2" gap="8">
                 <ul class="grid grid-rows-3 gap-6">
-                    <li class="grid grid-cols-12 row-span-1 gap-6">
-                        <a href="https://hhwf.placementlabs.com/blog/show"
-                            class="col-span-5 overflow-hidden bg-center bg-cover border group border-slate-400 bg-primary-50"
-                            style="background-image: url(https://hhwf.placementlabs.com/assets/img/andrea.jpg)">
-                            <div class="transition duration-300 bg-center bg-cover fill-parent group-hover:scale-110"
-                                style="background-image: url(https://hhwf.placementlabs.com/assets/img/andrea.jpg)">
+                    {{ collection:blog limit="3" }}
+                        <li class="grid grid-cols-12 row-span-1 gap-6">
+                            <a href="{{ url }}"
+                                class="col-span-5 overflow-hidden bg-center bg-cover border group border-slate-400 bg-primary-50"
+                                style="background-image: url({{ image }})">
+                                {{ partial:img }}
+                            </a>
+                            <div class="col-span-7 py-2">
+                                <div class="flex gap-1 mb-4 text-xs text-slate-500">
+                                    <div>{{ date }}</div>
+                                    <div>•</div>
+                                    <div>{{ content | bard_text | read_time(180) }} min read</div>
+                                </div>
+                                <div
+                                    class="mb-4 prose-sm prose prose-headings:font-serif prose-headings:font-normal prose-a:no-underline hover:prose-a:underline">
+                                    <h3>
+                                        <a href="{{ url }}" title="{{ title }}"
+                                            class="block">{{ title | safe_truncate(60, '...') | smartypants }}</a>
+                                    </h3>
+                                </div>
+                                <div class="prose-sm">
+                                    {{ excerpt | safe_truncate(100, '...') | smartypants }}
+                                </div>
                             </div>
-                        </a>
-                        <div class="col-span-7 py-2">
-                            <div class="flex gap-1 mb-4 text-xs text-slate-500">
-                                <div>October 25th, 2023</div>
-                                <div>•</div>
-                                <div>20 min read</div>
-                            </div>
-                            <div
-                                class="mb-4 prose-sm prose prose-headings:font-serif prose-headings:font-normal prose-a:no-underline hover:prose-a:underline">
-                                <h3>
-                                    <a href="https://hhwf.placementlabs.com/blog/show"
-                                        title="Andrea Forster Named First Diabetes Navigator" class="block">Andrea
-                                        Forster Named First Diabetes Navigator</a>
-                                </h3>
-                            </div>
-                            <p class="mb-4 text-sm text-slate-500">The Lohman Diabetes Center for Diabetes and
-                                Endocrinology at Halifax Health is p...</p>
-
-                        </div>
-                    </li>
-                    <li class="grid grid-cols-12 row-span-1 gap-6">
-                        <a href="https://hhwf.placementlabs.com/blog/show"
-                            class="col-span-5 overflow-hidden bg-center bg-cover border group border-slate-400 bg-primary-50"
-                            style="background-image: url(https://hhwf.placementlabs.com/assets/img/holdinghandsjpg.jpeg)">
-                            <div class="transition duration-300 bg-center bg-cover fill-parent group-hover:scale-110"
-                                style="background-image: url(https://hhwf.placementlabs.com/assets/img/holdinghandsjpg.jpeg)">
-                            </div>
-                        </a>
-                        <div class="col-span-7 py-2">
-                            <div class="flex gap-1 mb-4 text-xs text-slate-500">
-                                <div>October 25th, 2023</div>
-                                <div>•</div>
-                                <div>17 min read</div>
-                            </div>
-                            <div
-                                class="mb-4 prose-sm prose prose-headings:font-serif prose-headings:font-normal prose-a:no-underline hover:prose-a:underline">
-                                <h3>
-                                    <a href="https://hhwf.placementlabs.com/blog/show"
-                                        title="Let's talk about colon health!" class="block">Let's talk about colon
-                                        health!</a>
-                                </h3>
-                            </div>
-                            <p class="mb-4 text-sm text-slate-500">Every March National Colorectal Cancer Awareness
-                                Month spotlights this disease a...</p>
-
-                        </div>
-                    </li>
-                    <li class="grid grid-cols-12 row-span-1 gap-6">
-                        <a href="https://hhwf.placementlabs.com/blog/show"
-                            class="col-span-5 overflow-hidden bg-center bg-cover border group border-slate-400 bg-primary-50"
-                            style="background-image: url(https://hhwf.placementlabs.com/assets/img/kayak.jpg)">
-                            <div class="transition duration-300 bg-center bg-cover fill-parent group-hover:scale-110"
-                                style="background-image: url(https://hhwf.placementlabs.com/assets/img/kayak.jpg)">
-                            </div>
-                        </a>
-                        <div class="col-span-7 py-2">
-                            <div class="flex gap-1 mb-4 text-xs text-slate-500">
-                                <div>October 25th, 2023</div>
-                                <div>•</div>
-                                <div>12 min read</div>
-                            </div>
-                            <div
-                                class="mb-4 prose-sm prose prose-headings:font-serif prose-headings:font-normal prose-a:no-underline hover:prose-a:underline">
-                                <h3>
-                                    <a href="https://hhwf.placementlabs.com/blog/show"
-                                        title="Halifax Health | Brooks Rehabilitation Community Programs"
-                                        class="block">Halifax Health | Brooks Rehabilitation Community Programs</a>
-                                </h3>
-                            </div>
-                            <p class="mb-4 text-sm text-slate-500">A variety of activities are located throughout
-                                Volusia and Flagler counties and...</p>
-
-                        </div>
-                    </li>
+                        </li>
+                    {{ /collection:blog }}
                 </ul>
             </div>
         </div>

@@ -1,0 +1,18 @@
+<div>
+    <div class="elq-form-embed">
+        {{ eloqua_form_embed_code | regex_replace('\.elq-form([\s\S]+?)}', '') | regex_replace('\.form([\s\S]+?)}', '') }}
+    </div>
+    <script>
+        document.querySelectorAll('.elq-form-embed .elq-item-input').forEach(el => {
+            el.classList.add('py-2', 'px-0', 'leading-6', 'border-slate-300');
+            el.style.borderWidth = '0 0 1px 0';
+            el.style.borderStyle = 'solid';
+            const wrap = el.closest('.form-element-layout');
+            wrap.classList.add('mb-6');
+            const placeholderEl = wrap.querySelector(
+                '.col-sm-12 .elq-label');
+            placeholderEl.classList.add('leading-6', 'text-xs', 'text-slate-500', 'text-slate-900')
+            el.setAttribute('placeholder', placeholderEl.innerText.replace('*', ''));
+        });
+    </script>
+</div>

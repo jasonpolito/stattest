@@ -7,17 +7,22 @@ use Livewire\Component;
 class SearchEntries extends Component
 {
     public $query;
-    public $services;
     public $entrytype;
+    public $sortorder;
+    public $cities = [];
+    public $services = [];
 
     protected $queryString = [
-        'query' => ['except' => ''],
-        'services' => ['except' => []],
+        'query' => ['except' => '', 'as' => 'q'],
+        'services' => ['except' => [], 'as' => 's'],
+        'cities' => ['except' => [], 'as' => 'c'],
     ];
 
-    public function clearQuery()
+    public function clearSearch()
     {
         $this->query = '';
+        $this->services = [];
+        $this->cities = [];
     }
 
     public function render()
