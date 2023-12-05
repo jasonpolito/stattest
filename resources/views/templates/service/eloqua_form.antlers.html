@@ -1,18 +1,80 @@
 <div>
     <div class="elq-form-embed">
-        {{ eloqua_form_embed_code | regex_replace('\.elq-form([\s\S]+?)}', '') | regex_replace('\.form([\s\S]+?)}', '') }}
+        {{ eloqua_form_embed_code | regex_replace('\.elq-form([\s\S]+?)}', '') | regex_replace('\.form([\s\S]+?)}', '') | regex_replace('\.submit-button-style([\s\S]+?)}', '') }}
     </div>
     <script>
-        document.querySelectorAll('.elq-form-embed .elq-item-input').forEach(el => {
-            el.classList.add('py-2', 'px-0', 'leading-6', 'border-slate-300');
+        const layout = document.querySelector('.elq-form-embed .layout');
+        layout.classList.add('flex', 'flex-wrap', '-mx-4');
+        const cols = document.querySelectorAll('.elq-form-embed .layout > .row');
+        cols.forEach(el => {
+            el.classList.add('w-full', 'lg:w-1/2', 'px-4');
+        })
+        const inputs = layout.querySelectorAll('.elq-item-input');
+        inputs.forEach(el => {
+            el.classList.add('py-2', 'px-0', 'leading-6', 'border-slate-400');
             el.style.borderWidth = '0 0 1px 0';
             el.style.borderStyle = 'solid';
             const wrap = el.closest('.form-element-layout');
             wrap.classList.add('mb-6');
             const placeholderEl = wrap.querySelector(
                 '.col-sm-12 .elq-label');
-            placeholderEl.classList.add('leading-6', 'text-xs', 'text-slate-500', 'text-slate-900')
+            placeholderEl.classList.add('leading-6', 'text-xs', 'text-slate-400')
             el.setAttribute('placeholder', placeholderEl.innerText.replace('*', ''));
         });
+        const selects = layout.querySelectorAll('.elq-item-select');
+        selects.forEach(el => {
+            el.classList.add('py-2', 'px-0', 'leading-6', 'border-slate-400');
+            el.style.borderWidth = '0 0 1px 0';
+            el.style.borderStyle = 'solid';
+            el.removeAttribute('multiple');
+            const wrap = el.closest('.form-element-layout');
+            wrap.classList.add('mb-6');
+            const placeholderEl = wrap.querySelector(
+                '.col-sm-12 .elq-label');
+            placeholderEl.classList.add('leading-6', 'text-xs', 'text-slate-400')
+            el.setAttribute('placeholder', placeholderEl.innerText.replace('*', ''));
+        });
+        const checkListExists = layout.querySelector('.list-order');
+        if (checkListExists) {
+            const checkList = checkListExists.closest('.field-control-wrapper');
+            checkList.classList.add('flex', 'flex-wrap', '-mx-2');
+            const checkListWrap = checkList.closest('.form-element-layout');
+            checkListWrap.classList.add('mb-6');
+            const checkListLabel = checkListWrap.querySelector(
+                '.col-sm-12 .elq-label');
+            checkListLabel.classList.add('leading-6', 'block', 'mb-2', 'text-xs', 'text-slate-400')
+            const checkListCol = checkList.closest('.layout > .row');
+            checkListCol.classList.remove('lg:w-1/2');
+            checkListItems = checkList.querySelectorAll('.list-order');
+            checkListItems.forEach(el => {
+                const classList = [
+                    'px-2',
+                    'mb-2',
+                    'w-full',
+                    'md:w-1/3',
+                    'sm:w-1/2',
+                    'text-sm',
+                    'flex',
+                    'gap-1'
+                ];
+                el.classList.add(...classList);
+                el.querySelector('input').classList.add('cursor-pointer', 'top-[1.5px]');
+                el.querySelector('label').classList.add('cursor-pointer', 'hover:underline',
+                    'hover:text-primary');
+
+            });
+        }
+        const checkBoxSingle = layout.querySelector('.single-checkbox-row');
+        checkBoxSingle.classList.add('flex', 'gap-2', 'text-sm');
+        checkBoxSingleCol = checkBoxSingle.closest('.layout > .row');
+        checkBoxSingleCol.classList.remove('lg:w-1/2');
+        checkBoxSingleCol.classList.add('mb-6');
+        const submit = document.querySelector('.elq-form-embed .layout > .row:last-of-type');
+        submit.classList.remove('lg:w-1/2');
+        const btnClass =
+            'flex transition cursor-pointer gap-4 group items-center px-8 py-4 text-lg rounded-full text-white bg-primary hover:bg-primary-700'
+            .split(' ');
+        const btn = layout.querySelector('.submit-button-style');
+        btn.classList.add(...btnClass);
     </script>
 </div>

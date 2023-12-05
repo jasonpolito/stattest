@@ -1,0 +1,71 @@
+<div>
+    <section class="py-16 bg-center bg-cover md:py-24 lg:py-28">
+        <div class="container px-8 mx-auto lg:px-12 xl:max-w-7xl">
+            <div
+                class="mb-4 mr-4 -mt-16 prose md:prose-img:my-16 prose-headings:leading-snug prose-a:text-sky-700 lg:prose-lg xl:prose-xl max-w-none prose-headings:font-serif prose-headings:font-medium">
+                <h1>
+                    {{ if get:q }}
+                        Results for <b class="italic text-primary">{{ get:q }}</b>
+                    {{ else }}
+                        Search Halifax Health
+                    {{ /if }}
+                </h1>
+            </div>
+            <div class="flex flex-wrap justify-between -mx-8">
+                <div class="w-full px-8 lg:w-1/2">
+                    <div class="mb-8">
+                        <form action="/search" class="z-[8]">
+                            <input name="q" value="{{ get:q }}" type="text" placeholder="Search Halifax Health for..."
+                                class="block w-full py-6 pl-16 text-2xl font-light bg-transparent border-b peer border-slate-400 placeholder:font-light placeholder:text-slate-400 focus:outline-none">
+                            <svg class="absolute left-0 w-12 h-12 pointer-events-none top-4 text-slate-300 peer-focus:text-primary"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z">
+                                </path>
+                            </svg>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="flex -mx-4">
+                {{ if get:q }}
+                    {{ collection from="services|locations|blog|staff|informational_pages" as="results" title:contains="{get:q}" }}
+                        {{ if no_results }}
+                            <div class="flex w-full gap-2 px-4 text-2xl text-slate-400">
+                                <span>No results found for "{{ get:q }}"</span>
+                                <span><a href="/search" class="hover:underline hover:text-primary">Clear
+                                        search</a></span>
+                            </div>
+                        {{ /if }}
+                        {{ results | group_by('blueprint') }}
+                            {{ groups }}
+                                <div class="px-4 xl:w-1/4 lg:w-1/2">
+                                    <h3
+                                        class="sticky top-0 py-4 pt-20 mb-4 -mt-20 font-serif text-xl bg-white border-b z-[5] border-slate-400">
+                                        {{ group | replace('_', ' ') | title }} <i
+                                            class="text-slate-400">({{ items | count }})</i>
+                                    </h3>
+                                    <div
+                                        class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
+                                        <ul>
+                                            {{ items }}
+                                                <li><a
+                                                        href="{{ url }}">{{ title | safe_truncate(120, '...') | smartypants | widont | mark(get:q) }}</a>
+                                                </li>
+                                            {{ /items }}
+                                        </ul>
+                                    </div>
+                                </div>
+                            {{ /groups }}
+                        {{ /results }}
+                    {{ /collection }}
+                {{ /if }}
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    document.querySelector('[name=q]').focus();
+</script>
