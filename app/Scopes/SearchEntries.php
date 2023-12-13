@@ -15,6 +15,7 @@ class SearchEntries extends Scope
         $cities = $values['cities'];
         $services = $values['services'];
         $searchterms = $values['searchterms'];
+        $query->whereNull('parent');
         if ($searchterms) {
             $query->orWhere('searchterms', 'like', "%$searchterms%");
         }

@@ -102,7 +102,7 @@
     {{ partial:content }}
 {{ /partial:section }}
 {{ if !show_child_services and {staff | count} }}
-    <div class="h-px -my-16 md:-my-24 lg:-my-28"></div>
+    {{# <div class="h-px -my-16 md:-my-24 lg:-my-28"></div> #}}
 {{ /if }}
 {{ if show_child_services }}
     <div class="bg-primary-50">
@@ -123,12 +123,12 @@
                 {{ partial:layout/col class="lg:w-1/2" }}
                     <div
                         class="prose prose-a:font-normal prose-a:text-primary prose-a:no-underline prose-a:decoration-1 hover:prose-a:underline">
-                        <ul class="flex flex-wrap -mx-4">
-                            {{ collection:services parent:is="{id}" }}
-                                <li class="px-4 my-0 md:w-1/2">
+                        <ul class="flex flex-wrap">
+                            {{ collection from="services" parent:is="{id}" }}
+                                <li class="my-0 md:w-1/2">
                                     <a href="{{ url }}">{{ title }}</a>
                                 </li>
-                            {{ /collection:services }}
+                            {{ /collection }}
                         </ul>
                     </div>
                 {{ /partial:layout/col }}
@@ -181,7 +181,7 @@
     </div>
 {{ /if }}
 {{ if override_staff }}
-    <div id="doctors">
+    <div id="doctors" class="border-t border-slate-300">
         {{ partial:section }}
             {{? $gap = 2 ?}}
             {{ partial:prose class="mb-8" }}
@@ -216,7 +216,7 @@
     </div>
 {{ else }}
     {{ if staff }}
-        <div id="doctors">
+        <div id="doctors" class="border-t border-slate-300">
             {{ partial:section }}
                 {{? $gap = 2 ?}}
                 {{ partial:prose class="mb-8" }}
